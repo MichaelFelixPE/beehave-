@@ -29,7 +29,7 @@ const About: React.FC = () => {
           
           <div className="order-1 lg:order-2">
             <div className="space-y-6">
-              <h2 className="text-3xl md:text-4xl font-bold text-black">Sobre a BeeHave Psicologia</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-black">Sobre a beehave Psicologia</h2>
               <div className="w-24 h-1 bg-yellow-400"></div>
               
               <p className="text-gray-700">
