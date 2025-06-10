@@ -75,7 +75,7 @@ const Contact: React.FC = () => {
                   <h4 className="text-lg font-medium text-black">Telefone</h4>
                   <p className="text-gray-700 mt-1">
                     <a href="tel:+55111234567" className="hover:text-yellow-600 transition-colors">
-                      (11) 1234-5678
+                      (87) 9 8828-7826
                     </a>
                   </p>
                 </div>
