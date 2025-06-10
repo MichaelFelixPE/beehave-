@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-1">
             <div className="flex items-center mb-4">
               <Logo inverted />
-              <span className="ml-2 text-xl font-bold text-white">Beehave</span>
+              <span className="ml-2 text-xl font-bold text-white">beehave</span>
             </div>
             <p className="text-gray-300 mb-4">
               Cuidado psicológico especializado para crianças autistas, promovendo crescimento, compreensão e bem-estar.
