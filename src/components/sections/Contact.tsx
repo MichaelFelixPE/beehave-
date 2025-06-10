@@ -88,8 +88,8 @@ const Contact: React.FC = () => {
                 <div>
                   <h4 className="text-lg font-medium text-black">E-mail</h4>
                   <p className="text-gray-700 mt-1">
-                    <a href="mailto:contato@beewellpsicologia.com.br" className="hover:text-yellow-600 transition-colors">
-                      contato@beewellpsicologia.com.br
+                    <a href="mailto:empresabeehave@gmail.com" className="hover:text-yellow-600 transition-colors">
+                      empresabeehave@gmail.com
                     </a>
                   </p>
                 </div>
