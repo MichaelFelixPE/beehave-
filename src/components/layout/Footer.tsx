@@ -88,7 +88,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 mt-10 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              &copy; {new Date().getFullYear()} BeeHave Psicologia. Todos os direitos reservados.
+              &copy; {new Date().getFullYear()} beehave Psicologia. Todos os direitos reservados.
             </p>
             <div className="flex space-x-4 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Política de Privacidade</a>
