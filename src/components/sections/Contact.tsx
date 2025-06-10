@@ -61,8 +61,8 @@ const Contact: React.FC = () => {
                 <div>
                   <h4 className="text-lg font-medium text-black">Nosso Endereço</h4>
                   <p className="text-gray-700 mt-1">
-                    Rua da Terapia, 123, Sala 101<br />
-                    Cidade da Psicologia, CP 12345
+                    Rua Bahia, N808, Vila Moco<br />
+                    Petrolina-PE, CEP 56306430
                   </p>
                 </div>
               </div>
