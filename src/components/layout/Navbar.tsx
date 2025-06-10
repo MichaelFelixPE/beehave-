@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center">
               <Logo />
-              <span className="ml-2 text-xl font-bold text-black">   Beehave </span>
+              <span className="ml-2 text-xl font-bold text-black">   beehave </span>
             </Link>
           </div>
           
