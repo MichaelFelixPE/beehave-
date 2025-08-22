@@ -1,3 +1,13 @@
 beehave-
+/////////////////////////////////////////////////////////////////////////////////////////
 
-Site focado em atendimento com crianças com espectro autista
+
+Público-Alvo
+
+Crianças com Transtorno do Espectro Autista
+
+Famílias, responsáveis e educadores
+
+Instituições que trabalham com inclusão e desenvolvimento infantil
+
+///////////////////////////////////////////////////////////////////////////////////////////
