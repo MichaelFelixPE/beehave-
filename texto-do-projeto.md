@@ -47,8 +47,8 @@
 5. **Orientação para Pais**
    - "Capacitação dos pais com estratégias, técnicas e compreensão para apoiar o desenvolvimento e bem-estar de seus filhos."
 
-6. **Terapia de Comunicação**
-   - "Abordagens especializadas para desenvolver habilidades de comunicação verbal e não verbal, melhorando a autoexpressão e compreensão."
+6. **Avaliação Comportamental**
+   - "Avaliação comportamental é um processo que analisa os padrões de comportamento de um indivíduo em diferentes contextos, especialmente no ambiente de trabalho."
 
 - **Texto final**: "Nossa abordagem é individualizada para atender às necessidades específicas de cada criança, focando no desenvolvimento de pontos fortes enquanto abordamos os desafios."
 - **Botão CTA**: "Agende uma Avaliação Inicial"
