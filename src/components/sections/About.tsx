@@ -33,7 +33,7 @@ const About: React.FC = () => {
               <div className="w-24 h-1 bg-yellow-400"></div>
               
               <p className="text-gray-700">
-                Fundada em 2015, a BeeHave Psicologia é especializada em fornecer serviços psicológicos de alta qualidade para crianças com transtorno do espectro autista. Nossa clínica foi criada com a visão de proporcionar um ambiente seguro, acolhedor e compreensivo onde as crianças podem desenvolver habilidades essenciais e alcançar seu pleno potencial.
+                Fundada em 2015, a beehave Psicologia é especializada em fornecer serviços psicológicos de alta qualidade para crianças com transtorno do espectro autista. Nossa clínica foi criada com a visão de proporcionar um ambiente seguro, acolhedor e compreensivo onde as crianças podem desenvolver habilidades essenciais e alcançar seu pleno potencial.
               </p>
               
               <p className="text-gray-700">
