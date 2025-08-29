@@ -40,10 +40,12 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-20">
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className="flex items-center" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-              <a href="#" className="flex items-center" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-              <img src={beeLogo} alt="Beehave Logo" className="w-10 h-10 rounded-full" />
-              <span className="ml-2 text-xl font-bold text-black">   beehave </span>
-            </a>
+              <div className="flex-shrink-0 flex items-center">
+                <a href="#" className="flex items-center" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                  <img src={beeLogo} alt="Beehave Logo" className="w-10 h-10 rounded-full" />
+                  <span className="ml-2 text-xl font-bold text-black">beehave</span>
+                </a>
+              </div>
               <span className="ml-2 text-xl font-bold text-black">   beehave </span>
             </a>
           </div>
