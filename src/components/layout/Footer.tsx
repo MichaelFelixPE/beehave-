@@ -9,10 +9,10 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Logo e Sobre */}
           <div className="col-span-1 md:col-span-1">
-            <div className="flex items-center mb-4">
+            <a href="#" className="flex items-center mb-4" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <Logo inverted />
               <span className="ml-2 text-xl font-bold text-white">beehave</span>
-            </div>
+            </a>
             <p className="text-gray-300 mb-4">
               Cuidado psicológico especializado para crianças autistas, promovendo crescimento, compreensão e bem-estar.
             </p>
