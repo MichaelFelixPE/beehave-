@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
             </h1>
             
             <p className="mt-6 text-lg text-gray-700 max-w-2xl mx-auto lg:mx-0">
-              Na beehave Psicologia, criamos um ambiente seguro e acolhedor onde crianças, podem se desenvolver através de terapia personalizada e abordagens baseadas em evidências.
+              Na beehave Psicologia, criamos um ambiente seguro e acolhedor onde crianças, podem se desenvolver através de terapia personalizada e abordagens baseadas em evidências 10X.
             </p>
             
             <div className="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
