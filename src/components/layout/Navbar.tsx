@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className="flex items-center" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <img src="https://i.imgur.com/KukZ26T.png" alt="Beehave Logo" className="w-11 h-11" />
-              <span className="ml-2 text-xl font-bold text-black">   beehave: Soluções Comportamentais </span>
+              <span className="ml-2 text-xl font-bold text-black"> beehave: Soluções Comportamentais </span>
             </a>
           </div>
           
