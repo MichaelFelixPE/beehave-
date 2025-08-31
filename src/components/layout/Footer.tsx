@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
           {/* Logo e Sobre */}
           <div className="col-span-1 md:col-span-1">
             <a href="#" className="flex items-center mb-4" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-              <img src="https://i.imgur.com/KukZ26T.png" alt="Beehave Logo" className="w-12 h-12" />
+              <img src="https://i.imgur.com/KukZ26T.png" alt="Beehave Logo" className="w-13 h-13" />
               <span className="ml-2 text-xl font-bold text-white">beehave</span>
             </a>
             <p className="text-gray-300 mb-4">
