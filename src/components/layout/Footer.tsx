@@ -11,8 +11,9 @@ const Footer: React.FC = () => {
           <div className="col-span-1 md:col-span-1">
             <a href="#" className="flex items-center mb-4" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <img src="https://i.imgur.com/LqSTFWW.png" alt="Beehave Logo" className="w-13 h-13" />
-              <span className="ml-2 text-xl font-bold text-white"</span>
-            </a>
+              <span className="ml-2 text-xl font-bold text-white">
+  beehave: Soluções Comportamentais
+</span>
             <p className="text-gray-300 mb-4">
               Cuidado psicológico especializado para crianças autistas, promovendo crescimento, compreensão e bem-estar.
             </p>
