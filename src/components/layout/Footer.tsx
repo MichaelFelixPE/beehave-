@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
   >
     <img src="https://i.imgur.com/LqSTFWW.png" alt="Beehave Logo" className="w-13 h-13" />
     <span className="ml-2 text-xl font-bold text-white">
-      beehave
+    
     </span>
   </a>
   <p className="text-gray-300 mb-4">
