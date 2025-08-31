@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-20">
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className="flex items-center" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-              <img src="https://exemplo.com/sua-logo.png" alt="Beehave Logo" className="w-10 h-10" />
+              <img src="https://t3.ftcdn.net/jpg/13/27/25/82/360_F_1327258279_uOUApce97Vk8GlLikJEMXe5MGGYnuigs.jpg" alt="Beehave Logo" className="w-10 h-10" />
               <span className="ml-2 text-xl font-bold text-black">   beehave: Soluções Comportamentais </span>
             </a>
           </div>
