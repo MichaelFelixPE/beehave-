@@ -36,7 +36,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin size={20} className="mr-2 text-yellow-400 flex-shrink-0 mt-1" />
-                <span className="text-gray-300">Rua Bahia, N 808, Vila Moco <br />Petrolina-PE, CEP 56306430</span>
+                <span className="text-gray-300">Rua Bahia, N 808, Vila Moco <br />Petrolina-PE, CEP 56.306-430</span>
               </li>
               <li className="flex items-center">
                 <Phone size={20} className="mr-2 text-yellow-400 flex-shrink-0" />
@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li className="flex justify-between text-gray-300">
                 <span>Segunda - Sexta:</span>
-                <span>8:00 - 18:00</span>
+                <span>8:00 - 12:00 e 14:00 18:00</span>
               </li>
               <li className="flex justify-between text-gray-300">
                 <span>Sábado:</span>
