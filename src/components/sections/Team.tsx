@@ -1,5 +1,4 @@
 import React from 'react';
-import { Mail, Linkedin } from 'lucide-react';
 
 const teamMembers = [
   {
@@ -56,23 +55,6 @@ const Team: React.FC = () => {
                 <h3 className="text-xl font-semibold text-black">{member.name}</h3>
                 <p className="text-yellow-600 mb-3">{member.role}</p>
                 <p className="text-gray-700 text-sm mb-4">{member.bio}</p>
-                
-                <div className="flex space-x-3">
-                  <a 
-                    href="#" 
-                    className="p-2 bg-gray-100 rounded-full hover:bg-yellow-100 transition-colors"
-                    aria-label={`Email ${member.name}`}
-                  >
-                    <Mail size={18} className="text-gray-700" />
-                  </a>
-                  <a 
-                    href="#" 
-                    className="p-2 bg-gray-100 rounded-full hover:bg-yellow-100 transition-colors"
-                    aria-label={`Perfil LinkedIn de ${member.name}`}
-                  >
-                    <Linkedin size={18} className="text-gray-700" />
-                  </a>
-                </div>
               </div>
             </div>
           ))}
