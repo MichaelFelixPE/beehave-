@@ -29,9 +29,6 @@ const Hero: React.FC = () => {
               <Button size="large">
                 Agende uma Reunião
               </Button>
-              <Button variant="outline" size="large">
-                Saiba Mais
-              </Button>
             </div>
 
             <div className="mt-10 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
