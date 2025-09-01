@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li className="flex justify-between text-gray-300">
                 <span>Segunda - Sexta:</span>
-                <span>8:00 - 12:00 e 14:00 18:00</span>
+                <span>8:00-12:00 e 14:00-18:00</span>
               </li>
               <li className="flex justify-between text-gray-300">
                 <span>Sábado:</span>
