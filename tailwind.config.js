@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'bunday': ['Bunday Clean', 'sans-serif'],
+        'bunday': ['Bunday Clean Heavy UP', 'sans-serif'],
       },
       colors: {
         yellow: {
