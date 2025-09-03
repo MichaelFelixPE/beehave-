@@ -50,15 +50,6 @@ const About: React.FC = () => {
                   </div>
                 ))}
               </div>
-              
-              <div className="pt-4">
-                <a 
-                  href="#team" 
-                  className="text-black font-medium hover:text-yellow-600 inline-flex items-center transition-colors"
-                >
-                  Conheça Nossa Equipe <span className="ml-2">→</span>
-                </a>
-              </div>
             </div>
           </div>
         </div>
