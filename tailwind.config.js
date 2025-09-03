@@ -3,6 +3,9 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        'bunday': ['Bunday Clean', 'sans-serif'],
+      },
       colors: {
         yellow: {
           50: '#FFFDE7',

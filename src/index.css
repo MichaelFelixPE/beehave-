@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Bunday Clean', sans-serif;
+  font-weight: 900; /* Heavy weight */
 }
 
 html {
