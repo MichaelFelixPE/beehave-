@@ -40,7 +40,7 @@ const Navbar: React.FC = () => {
           <div className="flex-shrink-0 flex items-center">
             <a href="#" className="flex items-center" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <img src="https://i.imgur.com/KukZ26T.png" alt="Beehave Logo" className="w-15 h-14" />
-              <span className="ml-2 text-xl font-bold text-black"> beehave: Soluções Comportamentais </span>
+              <span className="ml-2 text-xl font-bold text-black font-bunday"> beehave: Soluções Comportamentais </span>
             </a>
           </div>
           
@@ -50,14 +50,14 @@ const Navbar: React.FC = () => {
               <a
                 key={link.name}
                 href={link.path}
-                className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-sm font-medium"
+                className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-sm font-medium font-bunday"
               >
                 {link.name}
               </a>
             ))}
             <a
               href="#contact"
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-4 py-2 rounded-md transition-colors"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-4 py-2 rounded-md transition-colors font-bunday"
             >
               Agendar Reunião
             </a>
@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
               <a
                 key={link.name}
                 href={link.path}
-                className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-base font-medium"
+                className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-base font-medium font-bunday"
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
             ))}
             <a
               href="#contact"
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium mt-2 px-4 py-2 rounded-md transition-colors text-center"
+              className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium mt-2 px-4 py-2 rounded-md transition-colors text-center font-bunday"
               onClick={() => setIsOpen(false)}
             >
               Agendar Reunião
