@@ -55,12 +55,6 @@ const Navbar: React.FC = () => {
                 {link.name}
               </a>
             ))}
-            <a
-              href="#contact"
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-4 py-2 rounded-md transition-colors font-bunday"
-            >
-              Agendar Reunião
-            </a>
           </div>
           
           {/* Mobile Nav Button */}
@@ -90,13 +84,6 @@ const Navbar: React.FC = () => {
                 {link.name}
               </a>
             ))}
-            <a
-              href="#contact"
-              className="bg-yellow-400 hover:bg-yellow-500 text-black font-medium mt-2 px-4 py-2 rounded-md transition-colors text-center font-bunday"
-              onClick={() => setIsOpen(false)}
-            >
-              Agendar Reunião
-            </a>
           </div>
         </div>
       )}
