@@ -28,8 +28,8 @@ const serviceItems = [
     icon: Lightbulb,
   },
   {
-    title: 'Terapia de Comunicação',
-    description: 'Abordagens especializadas para desenvolver habilidades de comunicação verbal e não verbal, melhorando a autoexpressão e compreensão.',
+    title: 'Avaliação Comportamental',
+    description: 'Avaliação comportamental é um processo que analisa os padrões de comportamento de um indivíduo em diferentes contextos, especialmente no ambiente de trabalho.',
     icon: MessageSquare,
   },
 ];
