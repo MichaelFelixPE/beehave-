@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Mail, Phone, MapPin, Instagram, MessageCircle } from 'lucide-react';
 import Logo from '../ui/Logo';
 
 const Footer: React.FC = () => {
@@ -72,13 +72,10 @@ const Footer: React.FC = () => {
               <h3 className="text-lg font-semibold mb-4 text-yellow-400">Siga-nos</h3>
               <div className="flex space-x-4">
                 <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                  <Facebook size={24} />
-                </a>
-                <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
                   <Instagram size={24} />
                 </a>
-                <a href="#" className="text-gray-300 hover:text-yellow-400 transition-colors">
-                  <Twitter size={24} />
+                <a href="https://wa.me/5587988287826" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                  <MessageCircle size={24} />
                 </a>
               </div>
             </div>
