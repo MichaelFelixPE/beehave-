@@ -109,17 +109,6 @@ const Contact: React.FC = () => {
                 </div>
               </div>
             </div>
-            
-            <div className="mt-8 p-6 bg-white rounded-lg border border-yellow-200">
-              <h4 className="text-lg font-medium text-black mb-3">Contato de Emergência</h4>
-              <p className="text-gray-700">
-                Em caso de emergência psicológica, ligue para nossa linha de crise 
-                <a href="tel:+55111234999" className="font-medium text-yellow-600 hover:underline ml-1">
-                  (11) 1234-9999
-                </a> 
-                ou procure o pronto-socorro mais próximo.
-              </p>
-            </div>
           </div>
           
           {/* Formulário de Contato */}
