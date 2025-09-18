@@ -1,24 +1,25 @@
 # Todos os Textos do Projeto beehave Psicologia
 
 ## 1. HTML (index.html)
-- **Título da página**: "beehave Psicologia | Cuidado Especializado para Crianças Autistas"
-- **Meta description**: "A beeHave Psicologia oferece serviços psicológicos especializados para crianças autistas em um ambiente seguro e acolhedor."
+- **Título da página**: "Beehave | Serviços de saúde e educação em ABA"
+- **Meta description**: "A Beehave oferta serviços de saúde e educação baseados em ABA."
 
 ## 2. Navbar (src/components/layout/Navbar.tsx)
 - **Logo**: "beehave"
 - **Links de navegação**:
   - "Início"
-  - "Serviços"
-  - "Sobre"
-  - "Equipe"
+  - "Quem somos"
+  - "Beehave Serviços"
+  - "Beehave Cursos"
+  - "BeeEquipe"
   - "Depoimentos"
   - "FAQ"
   - "Contato"
 - **Botão CTA**: "Agendar Reunião"
 
 ## 3. Hero Section (src/components/sections/Hero.tsx)
-- **Título principal**: "Especialistas em ABA aplicado ao TEA"
-- **Descrição**: "Na beehave Psicologia, criamos um ambiente seguro e acolhedor onde crianças, podem se desenvolver através de terapia personalizada e abordagens baseadas em evidências."
+- **Título principal**: "ABA em suas diferentes áreas de aplicação"
+- **Descrição**: "Empresa Beehave, temos duas linhas organizacionais entrelaçadas: a Beehave Serviços e a Beehave Cursos. A primeira é direcionada para assistência à(ao) cliente (e.g., Avaliação comportamental, Supervisão, Consultorias) e a segunda, para formação continuada de cliente (e.g., Cursos livres, Acompanhamento acadêmico, treinamentos) (ver Figura 1). Nossas(os) clientes são desde pessoas físicas (Aprendentes com desenvolvimento atípico e típico), a pessoas jurídicas (ex.: operadoras de saúde, clínicas)."
 - **Botões**:
   - "Agende uma Reunião"
   - "Saiba Mais"
@@ -54,36 +55,42 @@
 - **Botão CTA**: "Agende uma Avaliação Inicial"
 
 ## 5. About Section (src/components/sections/About.tsx)
-- **Título**: "Sobre a beehave Psicologia"
-- **Parágrafo 1**: "Fundada em 2015, a BeeHave Psicologia é especializada em fornecer serviços psicológicos de alta qualidade para crianças com transtorno do espectro autista. Nossa clínica foi criada com a visão de proporcionar um ambiente seguro, acolhedor e compreensivo onde as crianças podem desenvolver habilidades essenciais e alcançar seu pleno potencial."
-- **Parágrafo 2**: "Nosso nome e símbolo da abelha representam nossa filosofia central: assim como as abelhas trabalham harmoniosamente em uma colmeia, acreditamos no cuidado colaborativo que envolve crianças, famílias e profissionais trabalhando juntos em direção a objetivos comuns."
+- **Título**: "Quem somos"
+- **Parágrafo 1**: "A Beehave: Soluções comportamentais foi fundada no dia 02 de abril de 2019 sob o desejo das(o) sócias(o) Analistas do Comportamento em ofertar serviços de saúde e educação com transparência, ética e qualidade na região do Vale do São Francisco, cidades circunvizinhas e em outros Estados, de modo a seguir os princípios da Ciência Análise do Comportamento Aplicada (do inglês, Applied Behavior Analysis – ABA). Portanto, a Beehave tem construído a sua trajetória buscando fornecer diversos serviços baseados em ABA com a melhor qualidade que a nossa Equipe pode oferecer."
+- **Parágrafo 2**: "Muitas pessoas se perguntam sobre o porquê desse nome que escolhemos para a nossa empresa. Primeiramente, Beehave é um trocadilho a partir da junção de duas palavras da língua inglesa. São elas: Bee (Abelha) e Behave (do verbo to behave, que significa comportar-se). A junção das duas não foi ao acaso. Temos como pilar da nossa empresa os conceitos de pioneirismo, trabalho em equipe, tecnologia e eficiência, e nada melhor para representar isso do que a palavra “bee”.
+As abelhas trabalham em um sistema de hierarquia de forma organizada, em que o papel de cada uma na Colmeia é de extrema importância. Conhecidas por trabalharem de forma cooperativa e serem muito eficientes no que fazem, a escolha desse inseto foi a combinação perfeita para como a nossa equipe se organiza, e como o nosso foco em eficiência é central no nosso trabalho. E para fechar, não haveria palavra melhor para agregar à nossa imagem do que “behave”. Somos analistas do comportamento, e portanto trabalhamos na compreensão e intervenção sobre o comportamento humano e todas as suas facetas."
+
 - **Subtítulo**: "Nossos Valores Fundamentais"
 
 ### Valores:
-- "Abordagem centrada na criança"
-- "Respeito à neurodiversidade e diferenças individuais"
-- "Técnicas terapêuticas baseadas em evidências"
-- "Envolvimento e educação familiar"
-- "Desenvolvimento profissional contínuo"
-- "Cuidado colaborativo com escolas e outros profissionais"
+- "MISSÃO
+Prestar serviços éticos baseados em evidências científicas para melhoria da qualidade de
+vida de nossas(os) Aprendentes, clientes e Parceiras(os)."
+- "VISÃO
+Ser referência na produção de conhecimento e de serviço em Análise do Comportamento."
+- "VALORES
+• Transparência
+• Cooperação
+• Ética e qualidade na região do Vale do São Francisco, cidades circunvizinhas e em
+outros Estados, de modo a seguir os princípios de uma Ciência do Comportamento."
 
-- **Link**: "Conheça Nossa Equipe →"
+- **Link**: "Conheça a Nossa BeeEquipe →"
 
 ## 6. Team Section (src/components/sections/Team.tsx)
-- **Título**: "Nossa Equipe Especializada"
-- **Descrição**: "Conheça nossa equipe dedicada de profissionais especializados em cuidados com autismo e psicologia infantil."
+- **Título**: "Nossa BeeEquipe"
+- **Descrição**: "Conheça a nossa BeeEquipe dedicada e comprometida em ofertar serviços baseados em ABA que priorizem ciência, afeto e ética."
 
 ### Membros da equipe:
-1. **Dra. Emily Johnson**
-   - Cargo: "Diretora Clínica & Psicóloga Infantil"
+1. **Ma. Jacqueline Iukisa**
+   - Cargo: "Analista do Comportamento Supervisora; Professora; e Sócia-Diretora de Finanças e Recursos Humanos"
    - Bio: "Dra. Johnson tem mais de 15 anos de experiência trabalhando com crianças autistas. Ela é especialista em terapia cognitivo-comportamental e abordagens de integração sensorial."
 
-2. **Dr. Michael Rodriguez**
-   - Cargo: "Neuropsicólogo"
+2. **Dra. Thais Guimarães**
+   - Cargo: "Analista do Comportamento Supervisora; Professora; e Sócia-Diretora de Operações e Marketing"
    - Bio: "Dr. Rodriguez concentra-se em avaliações neuropsicológicas abrangentes e desenvolvimento de planos de tratamento individualizados para crianças com necessidades complexas."
 
-3. **Sarah Thompson**
-   - Cargo: "Especialista em Habilidades Sociais"
+3. **Me. Luiz Felipe Alves**
+   - Cargo: "Analista do Comportamento Supervisor; Professor; Sócio"
    - Bio: "Sarah lidera nossos grupos de habilidades sociais e trabalha individualmente com crianças para desenvolver habilidades de comunicação e construção de relacionamentos."
 
 4. **David Chen**
