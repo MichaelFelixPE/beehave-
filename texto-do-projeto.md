@@ -19,7 +19,7 @@
 
 ## 3. Hero Section (src/components/sections/Hero.tsx)
 - **Título principal**: "ABA em suas diferentes áreas de aplicação"
-- **Descrição**: "Empresa Beehave, temos duas linhas organizacionais entrelaçadas: a Beehave Serviços e a Beehave Cursos. A primeira é direcionada para assistência à(ao) cliente (e.g., Avaliação comportamental, Supervisão, Consultorias) e a segunda, para formação continuada de cliente (e.g., Cursos livres, Acompanhamento acadêmico, treinamentos) (ver Figura 1). Nossas(os) clientes são desde pessoas físicas (Aprendentes com desenvolvimento atípico e típico), a pessoas jurídicas (ex.: operadoras de saúde, clínicas)."
+- **Descrição**: "Na Beehave, temos duas linhas organizacionais entrelaçadas: a Beehave Serviços e a Beehave Cursos. A primeira é direcionada para assistência à(ao) cliente (e.g., Avaliação comportamental, Supervisão, Consultorias) e a segunda, para formação continuada de cliente (e.g., Cursos livres, Acompanhamento acadêmico, treinamentos) (ver Figura 1). Nossas(os) clientes são desde pessoas físicas (Aprendentes com desenvolvimento atípico e típico), a pessoas jurídicas (ex.: operadoras de saúde, clínicas)."
 - **Botões**:
   - "Agende uma Reunião"
   - "Saiba Mais"
