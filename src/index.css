@@ -2,15 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Base font configuration - Arial for all elements */
 body {
-  font-family: 'Bunday Clean Heavy UP', sans-serif;
-  font-weight: 900; /* Heavy weight */
+  font-family: Arial, sans-serif;
+  font-weight: normal;
 }
 
-/* Aplicar fonte Bunday Clean Heavy UP em todos os títulos */
+/* Keep Bunday Clean Heavy UP font only for headings */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Bunday Clean Heavy UP', sans-serif !important;
   font-weight: 900 !important;
+}
+
+/* Apply Arial to all other text elements */
+p, span, div, li, a, button, input, textarea, select, label {
+  font-family: Arial, sans-serif;
+}
+
+/* Ensure Arial applies to list elements */
+ul, ol, dl {
+  font-family: Arial, sans-serif;
+}
+
+/* Apply Arial to form elements */
+input, textarea, select, button {
+  font-family: Arial, sans-serif;
 }
 
 html {
