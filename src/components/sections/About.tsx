@@ -34,9 +34,6 @@ const About: React.FC = () => {
               
               <p className="text-gray-700">
                A Beehave: Soluções comportamentais foi fundada no dia 02 de abril de 2019 sob o desejo das(o) sócias (o) Analistas do Comportamento em ofertar serviços de saúde e educação com transparência, ética e qualidade na região do Vale do São Francisco, cidades circunvizinhas e em outros Estados, de modo a seguir os princípios da Ciência Análise do Comportamento Aplicada (do inglês, Applied Behavior Analysis – ABA). Portanto, a BeehaVe tem construído a sua trajetória buscando fornecer diversos serviços baseados em ABA com a melhor qualidade que a nossa Equipe pode oferecer.
-
-
-                
 Muitas pessoas se perguntam sobre o porquê desse nome que escolhemos para a nossa empresa. Primeiramente, BeehaVe é um trocadilho a partir da junção de duas palavras da língua inglesa. São elas: Bee (Abelha) e Behave (do verbo to behave, que significa comportar-se). A junção das duas não foi ao acaso. Temos como pilar da nossa empresa os conceitos de pioneirismo, trabalho em equipe, tecnologia e eficiência, e nada melhor para representar isso do que a palavra “bee”.
               </p>
               
