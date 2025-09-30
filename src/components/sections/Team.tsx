@@ -3,7 +3,7 @@ import React from 'react';
 const teamMembers = [
   {
     name: 'MA. Jacqueline Iukisa',
-    role: 'Conheça a nossa BeeEquipe dedicada e comprometida em ofertar serviços baseados em ABA que priorizem ciência, afeto e ética.',
+    role: 'Analista do Comportamento Supervisora; Professora; e Sócia-Diretora de Finanças e Recursos Humanos',
     image: 'https://images.pexels.com/photos/5325840/pexels-photo-5325840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     bio: 'Dra. Johnson tem mais de 15 anos de experiência trabalhando com crianças autistas. Ela é especialista em terapia cognitivo-comportamental e abordagens de integração sensorial.',
   },
