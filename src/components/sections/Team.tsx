@@ -15,7 +15,7 @@ const teamMembers = [
   },
   {
     name: 'Me. Luiz Felipe Alves',
-    role: 'Especialista em Habilidades Sociais',
+    role: 'Analista do Comportamento Supervisor; Professor; Sócio',
     image: 'https://images.pexels.com/photos/5699516/pexels-photo-5699516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     bio: 'Sarah lidera nossos grupos de habilidades sociais e trabalha individualmente com crianças para desenvolver habilidades de comunicação e construção de relacionamentos.',
   },
