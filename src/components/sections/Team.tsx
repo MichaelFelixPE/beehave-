@@ -8,7 +8,7 @@ const teamMembers = [
     bio: 'Dra. Johnson tem mais de 15 anos de experiência trabalhando com crianças autistas. Ela é especialista em terapia cognitivo-comportamental e abordagens de integração sensorial.',
   },
   {
-    name: 'Dr. Michael Rodriguez',
+    name: 'Dra. Thais Guimarães',
     role: 'Neuropsicólogo',
     image: 'https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     bio: 'Dr. Rodriguez concentra-se em avaliações neuropsicológicas abrangentes e desenvolvimento de planos de tratamento individualizados para crianças com necessidades complexas.',
