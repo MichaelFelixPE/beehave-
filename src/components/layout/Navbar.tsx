@@ -22,6 +22,7 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { name: 'Início', path: '#' },
     { name: 'Serviços', path: '#services' },
+    { name: 'Cursos', path: '/cursos' },
     { name: 'Sobre', path: '#about' },
     { name: 'Equipe', path: '#team' },
     { name: 'Depoimentos', path: '#testimonials' },
@@ -46,7 +47,25 @@ const Navbar: React.FC = () => {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-3">
             {navLinks.map((link) => (
-              <a
+              {link.path.startsWith('#') ? (
+                <a
+                  key={link.name}
+                  href={link.path}
+                  className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-sm font-medium font-bunday"
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <Link
+                  key={link.name}
+                  to={link.path}
+                  className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-sm font-medium font-bunday"
+                >
+                  {link.name}
+                </Link>
+              )}
+            ))}
+          </div>
                 key={link.name}
                 href={link.path}
                 className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-sm font-medium font-bunday"
@@ -74,14 +93,25 @@ const Navbar: React.FC = () => {
         <div className="md:hidden bg-white px-2 pt-2 pb-4 shadow-lg">
           <div className="flex flex-col space-y-2">
             {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.path}
-                className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-base font-medium font-bunday"
-                onClick={() => setIsOpen(false)}
-              >
-                {link.name}
-              </a>
+              link.path.startsWith('#') ? (
+                <a
+                  key={link.name}
+                  href={link.path}
+                  className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-base font-medium font-bunday"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.name}
+                </a>
+              ) : (
+                <Link
+                  key={link.name}
+                  to={link.path}
+                  className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-base font-medium font-bunday"
+                  onClick={() => setIsOpen(false)}
+                >
+                  {link.name}
+                </Link>
+              )
             ))}
           </div>
         </div>
