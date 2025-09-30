@@ -54,7 +54,7 @@ const Contact: React.FC = () => {
             <div className="bg-white rounded-lg shadow-md overflow-hidden">
               <div className="h-80 w-full">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.2847284847284!2d-40.50123842525896!3d-9.39089909076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x773dc4b8b8b8b8b8%3A0x1234567890abcdef!2sRua%20Bahia%2C%20808%20-%20Vila%20Moco%2C%20Petrolina%20-%20PE%2C%2056306-430!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
+                  src="https://www.google.com/maps/place/Beehave+Solu%C3%A7%C3%B5es+Comportamentais/@-9.3881401,-40.5053187,67m/data=!3m1!1e3!4m6!3m5!1s0x77371846622e211:0xa18df7506f56d3f9!8m2!3d-9.388103!4d-40.5053422!16s%2Fg%2F11q_7yfg8r?entry=ttu&g_ep=EgoyMDI1MDkyNC4wIKXMDSoASAFQAw%3D%3D"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
