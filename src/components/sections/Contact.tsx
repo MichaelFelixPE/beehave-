@@ -49,6 +49,32 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Mapa */}
+          <div className="lg:col-span-2 mb-12">
+            <div className="bg-white rounded-lg shadow-md overflow-hidden">
+              <div className="h-80 w-full">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.2847284847284!2d-40.50123842525896!3d-9.39089909076543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x773dc4b8b8b8b8b8%3A0x1234567890abcdef!2sRua%20Bahia%2C%20808%20-%20Vila%20Moco%2C%20Petrolina%20-%20PE%2C%2056306-430!5e0!3m2!1spt-BR!2sbr!4v1234567890123!5m2!1spt-BR!2sbr"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Localização da Beehave Psicologia"
+                ></iframe>
+              </div>
+              <div className="p-4 bg-yellow-50">
+                <div className="flex items-center justify-center">
+                  <MapPin className="w-5 h-5 text-yellow-500 mr-2" />
+                  <span className="text-gray-700 font-medium">
+                    Rua Bahia, N808, Vila Moco - Petrolina-PE, CEP 56306430
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Informações de Contato */}
           <div className="bg-yellow-50 p-8 rounded-lg shadow-md">
             <h3 className="text-2xl font-semibold mb-6 text-black">Fale Conosco</h3>
