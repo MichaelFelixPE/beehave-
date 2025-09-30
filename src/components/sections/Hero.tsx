@@ -22,7 +22,7 @@ const Hero: React.FC = () => {
             </h1>
             
             <p className="mt-6 text-lg text-gray-700 max-w-2xl mx-auto lg:mx-0">
-              Na beehave Psicologia, criamos um ambiente seguro e acolhedor onde crianças, podem se desenvolver através de terapia personalizada e abordagens baseadas em evidências.
+              Na Beehave, temos duas linhas organizacionais entrelaçadas: a Beehave Serviços e a Beehave Cursos. A primeira é direcionada para assistência à(ao) cliente (e.g., Avaliação comportamental, Supervisão, Consultorias) e a segunda, para formação continuada de cliente (e.g., Cursos livres, Acompanhamento acadêmico, treinamentos) (ver Figura 1). Nossas(os) clientes são desde pessoas físicas (Aprendentes com desenvolvimento atípico e típico), a pessoas jurídicas (ex.: operadoras de saúde, clínicas).
             </p>
             
             <div className="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
