@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-3">
             {navLinks.map((link) => (
-              {link.path.startsWith('#') ? (
+              link.path.startsWith('#') ? (
                 <a
                   key={link.name}
                   href={link.path}
@@ -63,15 +63,7 @@ const Navbar: React.FC = () => {
                 >
                   {link.name}
                 </Link>
-              )}
-            ))}
-          </div>
-                key={link.name}
-                href={link.path}
-                className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-sm font-medium font-bunday"
-              >
-                {link.name}
-              </a>
+              )
             ))}
           </div>
           
