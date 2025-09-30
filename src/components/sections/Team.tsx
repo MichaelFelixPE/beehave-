@@ -9,7 +9,7 @@ const teamMembers = [
   },
   {
     name: 'Dra. Thais Guimarães',
-    role: 'Neuropsicólogo',
+    role: 'Analista do Comportamento Supervisora; Professora; e Sócia-Diretora de Operações e Marketing',
     image: 'https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     bio: 'Dr. Rodriguez concentra-se em avaliações neuropsicológicas abrangentes e desenvolvimento de planos de tratamento individualizados para crianças com necessidades complexas.',
   },
