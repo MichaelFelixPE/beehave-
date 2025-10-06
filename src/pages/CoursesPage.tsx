@@ -33,7 +33,7 @@ const courses = [
       'Módulo 6: Prática Supervisionada'
     ],
     image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    color: 'from-blue-500 to-blue-600'
+    color: 'from-yellow-400 to-yellow-500'
   },
   {
     id: 2,
