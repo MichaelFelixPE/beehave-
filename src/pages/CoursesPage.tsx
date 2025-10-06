@@ -95,7 +95,7 @@ const courses = [
       'Módulo 4: Avaliação Final'
     ],
     image: 'https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    color: 'from-green-500 to-green-600'
+    color: 'from-yellow-400 to-yellow-500'
   }
 ];
 
