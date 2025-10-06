@@ -65,7 +65,7 @@ const courses = [
       'Módulo 6: Certificação Prática'
     ],
     image: 'https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    color: 'from-red-500 to-red-600'
+    color: 'from-yellow-400 to-yellow-500'
   },
   {
     id: 3,
