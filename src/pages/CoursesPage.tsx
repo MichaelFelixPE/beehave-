@@ -283,7 +283,7 @@ const CoursesPage: React.FC = () => {
               <Users className="w-5 h-5 mr-2" />
               Falar com Consultor
             </Button>
-            <Button variant="outline" size="large" className="border-yellow-500 text-yellow-700 hover:bg-yellow-400 hover:text-black border-2">
+            <Button size="large" className="bg-yellow-400 hover:bg-yellow-500 text-black">
               <Calendar className="w-5 h-5 mr-2" />
               Ver Calendário de Cursos
             </Button>
