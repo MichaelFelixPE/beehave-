@@ -139,7 +139,7 @@ const CoursesPage: React.FC = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
               Nossos Cursos Especializados
             </h2>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            <p className="text-xl text-black max-w-3xl mx-auto">
               Oferecemos cursos especializados para profissionais que desejam se capacitar 
               em ABA e gerenciamento de crises comportamentais.
             </p>
@@ -189,7 +189,7 @@ const CoursesPage: React.FC = () => {
                     <div className="lg:col-span-2 space-y-6">
                       <div>
                         <h4 className="text-xl font-semibold text-black mb-3">Sobre o Curso</h4>
-                        <p className="text-gray-700 text-lg leading-relaxed">
+                        <p className="text-black text-lg leading-relaxed">
                           {course.description}
                         </p>
                       </div>
@@ -198,7 +198,7 @@ const CoursesPage: React.FC = () => {
                         <div className="bg-gray-50 p-4 rounded-lg text-center">
                           <Clock className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
                           <p className="font-semibold text-black">{course.duration}</p>
-                          <p className="text-sm text-gray-600">Duração</p>
+                          <p className="text-sm text-black">Duração</p>
                         </div>
                         <div className="bg-gray-50 p-4 rounded-lg text-center">
                           <BookOpen className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
@@ -222,7 +222,7 @@ const CoursesPage: React.FC = () => {
                               <div className="w-8 h-8 bg-yellow-400 text-black rounded-full flex items-center justify-center text-sm font-bold mr-3">
                                 {moduleIndex + 1}
                               </div>
-                              <span className="text-gray-800 font-medium">{module}</span>
+                              <span className="text-black font-medium">{module}</span>
                             </div>
                           ))}
                         </div>
@@ -238,7 +238,7 @@ const CoursesPage: React.FC = () => {
                         {course.features.map((feature, featureIndex) => (
                           <div key={featureIndex} className="flex items-start">
                             <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                            <span className="text-gray-700">{feature}</span>
+                            <span className="text-black">{feature}</span>
                           </div>
                         ))}
                       </div>
@@ -246,7 +246,7 @@ const CoursesPage: React.FC = () => {
                       <div className="border-t pt-6">
                         <div className="text-center mb-4">
                           <p className="text-2xl font-bold text-black">{course.price}</p>
-                          <p className="text-sm text-gray-600">Investimento</p>
+                          <p className="text-sm text-black">Investimento</p>
                         </div>
                         
                         <div className="space-y-3">
@@ -274,7 +274,7 @@ const CoursesPage: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
             Pronto para transformar sua carreira?
           </h2>
-          <p className="text-xl text-gray-800 mb-10">
+          <p className="text-xl text-black mb-10">
             Entre em contato conosco para mais informações sobre nossos cursos 
             e próximas turmas disponíveis. Nossa equipe está pronta para ajudar você!
           </p>
