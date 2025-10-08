@@ -103,9 +103,19 @@ const CoursesPage: React.FC = () => {
   return (
     <div className="pt-20 bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-yellow-400 to-yellow-500 py-20">
+      <section className="relative py-20 overflow-hidden">
+        {/* Background Image */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url("https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1")'
+          }}
+        ></div>
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-yellow-400 bg-opacity-80"></div>
+        
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center">
+          <div className="text-center relative z-10">
             <h1 className="text-4xl md:text-6xl font-bold text-black mb-6">
               beecursos
             </h1>
