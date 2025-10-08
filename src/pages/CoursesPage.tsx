@@ -108,7 +108,7 @@ const CoursesPage: React.FC = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url("COLE_SUA_URL_AQUI")'
+            backgroundImage: 'url(https://imgur.com/a/y81FgkW)'
           }}
         ></div>
         {/* Overlay */}
