@@ -157,17 +157,17 @@ const CoursesPage: React.FC = () => {
                       <h3 className="text-2xl md:text-3xl font-bold mb-2">
                         {course.title}
                       </h3>
-                      <p className="text-lg opacity-90 mb-4">{course.subtitle}</p>
+                      <p className="text-lg text-black opacity-90 mb-4">{course.subtitle}</p>
                       <div className="flex flex-wrap gap-4 text-sm">
-                        <div className="flex items-center bg-white bg-opacity-20 px-3 py-1 rounded-full">
+                        <div className="flex items-center bg-white bg-opacity-20 px-3 py-1 rounded-full text-black">
                           <Star className="w-4 h-4 mr-1" />
                           <span>{course.rating}</span>
                         </div>
-                        <div className="flex items-center bg-white bg-opacity-20 px-3 py-1 rounded-full">
+                        <div className="flex items-center bg-white bg-opacity-20 px-3 py-1 rounded-full text-black">
                           <Users className="w-4 h-4 mr-1" />
                           <span>{course.students}+ alunos</span>
                         </div>
-                        <div className="flex items-center bg-white bg-opacity-20 px-3 py-1 rounded-full">
+                        <div className="flex items-center bg-white bg-opacity-20 px-3 py-1 rounded-full text-black">
                           <MapPin className="w-4 h-4 mr-1" />
                           <span>{course.format}</span>
                         </div>
