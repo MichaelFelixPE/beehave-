@@ -109,7 +109,7 @@ const CoursesPage: React.FC = () => {
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             // 👇 AQUI: Troque esta URL pela sua imagem
-            backgroundImage: 'url(https://i.imgur.com/y81FgkW.jpg)'
+            backgroundImage: 'url(https://imgur.com/cA7pL4y)'
             // 👆 AQUI: Cole a nova URL entre os parênteses
           }}
         ></div>
