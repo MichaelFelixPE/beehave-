@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,15 +21,32 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Início', path: '#' },
-    { name: 'Serviços', path: '#services' },
+    { name: 'Início', path: '/' },
+    { name: 'Serviços', path: '/#services' },
     { name: 'Cursos', path: '/cursos' },
-    { name: 'Sobre', path: '#about' },
-    { name: 'Equipe', path: '#team' },
-    { name: 'Depoimentos', path: '#testimonials' },
-    { name: 'FAQ', path: '#faq' },
-    { name: 'Contato', path: '#contact' },
+    { name: 'Sobre', path: '/#about' },
+    { name: 'Equipe', path: '/#team' },
+    { name: 'Depoimentos', path: '/#testimonials' },
+    { name: 'FAQ', path: '/#faq' },
+    { name: 'Contato', path: '/#contact' },
   ];
+
+  const handleNavClick = (path: string) => {
+    if (path.startsWith('/#')) {
+      // Se estamos na página de cursos e clicamos em uma seção da home
+      if (location.pathname === '/cursos') {
+        window.location.href = path;
+      } else {
+        // Se já estamos na home, apenas rola para a seção
+        const sectionId = path.substring(2);
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }
+    setIsOpen(false);
+  };
 
   return (
     <nav
@@ -47,10 +65,14 @@ const Navbar: React.FC = () => {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-3">
             {navLinks.map((link) => (
-              link.path.startsWith('#') ? (
+              link.path.startsWith('/#') ? (
                 <a
                   key={link.name}
                   href={link.path}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavClick(link.path);
+                  }}
                   className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-sm font-medium font-bunday"
                 >
                   {link.name}
@@ -85,12 +107,15 @@ const Navbar: React.FC = () => {
         <div className="md:hidden bg-white px-2 pt-2 pb-4 shadow-lg">
           <div className="flex flex-col space-y-2">
             {navLinks.map((link) => (
-              link.path.startsWith('#') ? (
+              link.path.startsWith('/#') ? (
                 <a
                   key={link.name}
                   href={link.path}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavClick(link.path);
+                  }}
                   className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-base font-medium font-bunday"
-                  onClick={() => setIsOpen(false)}
                 >
                   {link.name}
                 </a>
