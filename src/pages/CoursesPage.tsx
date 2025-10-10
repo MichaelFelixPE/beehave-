@@ -117,7 +117,7 @@ const CoursesPage: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center relative z-10">
             <h1 className="text-4xl md:text-6xl font-bold text-black mb-6">
-              Beehave Cursos
+              beehave Cursos
             </h1>
             <div className="w-32 h-1 bg-black mx-auto mb-8"></div>
             <p className="text-xl md:text-2xl text-black max-w-4xl mx-auto mb-10 opacity-90">
