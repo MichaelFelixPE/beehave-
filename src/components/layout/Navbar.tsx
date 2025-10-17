@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
   const navLinks = [
     { name: 'Início', path: '/' },
     { name: 'Serviços', path: '/#services' },
-    { name: 'Cursos', path: '/cursos' },
+    { name: 'Beehave Cursos', path: '/cursos' },
     { name: 'Sobre', path: '/#about' },
     { name: 'BeeEquipe', path: '/#team' },
     { name: 'Depoimentos', path: '/#testimonials' },
