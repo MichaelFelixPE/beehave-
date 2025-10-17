@@ -22,7 +22,7 @@ const courses = [
       'Supervisão prática',
       'Certificado reconhecido',
       'Material didático completo',
-      'Suporte pós-curso'
+      'Suporte pós-curso',
     ],
     modules: [
       'Módulo 1: Introdução à ABA',
@@ -30,10 +30,11 @@ const courses = [
       'Módulo 3: Avaliação Funcional',
       'Módulo 4: Técnicas de Intervenção',
       'Módulo 5: Coleta de Dados',
-      'Módulo 6: Prática Supervisionada'
+      'Módulo 6: Prática Supervisionada',
     ],
-    image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    color: 'from-yellow-400 to-yellow-500'
+    image:
+      'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    color: 'from-yellow-400 to-yellow-500',
   },
   {
     id: 2,
@@ -54,7 +55,7 @@ const courses = [
       'Documentação e relatórios',
       'Certificação internacional',
       'Treinamento prático intensivo',
-      'Protocolo de segurança'
+      'Protocolo de segurança',
     ],
     modules: [
       'Módulo 1: Fundamentos do PCM',
@@ -62,10 +63,11 @@ const courses = [
       'Módulo 3: Técnicas de Desescalada',
       'Módulo 4: Intervenções Físicas',
       'Módulo 5: Documentação Legal',
-      'Módulo 6: Certificação Prática'
+      'Módulo 6: Certificação Prática',
     ],
-    image: 'https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    color: 'from-yellow-400 to-yellow-500'
+    image:
+      'https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    color: 'from-yellow-400 to-yellow-500',
   },
   {
     id: 3,
@@ -86,42 +88,44 @@ const courses = [
       'Renovação da certificação',
       'Materiais atualizados',
       'Networking profissional',
-      'Certificado válido por 2 anos'
+      'Certificado válido por 2 anos',
     ],
     modules: [
       'Módulo 1: Atualizações Normativas',
       'Módulo 2: Novas Técnicas',
       'Módulo 3: Revisão Prática',
-      'Módulo 4: Avaliação Final'
+      'Módulo 4: Avaliação Final',
     ],
-    image: 'https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-    color: 'from-yellow-400 to-yellow-500'
-  }
+    image:
+      'https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    color: 'from-yellow-400 to-yellow-500',
+  },
 ];
 
 const CoursesPage: React.FC = () => {
   return (
     <div className="pt-20 bg-gray-50">
-      {/* Hero Section */}
+      {/* hero section */}
       <section className="relative py-20 overflow-hidden">
-        {/* Background Image */}
-        <div 
+        {/* background image */}
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: 'url(https://imgur.com/3yMJ9XQ)'
+            backgroundImage: `url('https://i.etsystatic.com/38939223/r/il/cfd0a5/5827636191/il_fullxfull.5827636191_gbfr.jpg')`,
           }}
         ></div>
+
         {/* Overlay */}
         <div className="absolute inset-0 bg-yellow-400 bg-opacity-80"></div>
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center relative z-10">
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-black mb-6">
               beehave Cursos
             </h1>
             <div className="w-32 h-1 bg-black mx-auto mb-8"></div>
             <p className="text-xl md:text-2xl text-black max-w-4xl mx-auto mb-10 opacity-90">
-              Capacitação profissional em Análise do Comportamento Aplicada (ABA) e gerenciamento de crises, 
+              Capacitação profissional em Análise do Comportamento Aplicada (ABA) e gerenciamento de crises,
               com cursos reconhecidos e ministrados por especialistas qualificados.
             </p>
             <div className="flex flex-wrap justify-center gap-8 text-black">
@@ -150,15 +154,15 @@ const CoursesPage: React.FC = () => {
               Nossos Cursos Especializados
             </h2>
             <p className="text-xl text-black max-w-3xl mx-auto">
-              Oferecemos cursos especializados para profissionais que desejam se capacitar 
+              Oferecemos cursos especializados para profissionais que desejam se capacitar
               em ABA e gerenciamento de crises comportamentais.
             </p>
           </div>
 
           <div className="space-y-16">
-            {courses.map((course, index) => (
-              <div 
-                key={course.id} 
+            {courses.map((course) => (
+              <div
+                key={course.id}
                 className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300"
               >
                 <div className={`bg-gradient-to-r ${course.color} p-8 text-white`}>
@@ -184,8 +188,8 @@ const CoursesPage: React.FC = () => {
                       </div>
                     </div>
                     <div className="mt-6 lg:mt-0 lg:ml-8">
-                      <img 
-                        src={course.image} 
+                      <img
+                        src={course.image}
                         alt={course.title}
                         className="w-full lg:w-48 h-32 object-cover rounded-lg shadow-lg"
                       />
@@ -228,7 +232,10 @@ const CoursesPage: React.FC = () => {
                         </h4>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           {course.modules.map((module, moduleIndex) => (
-                            <div key={moduleIndex} className="flex items-center bg-yellow-50 p-3 rounded-lg">
+                            <div
+                              key={moduleIndex}
+                              className="flex items-center bg-yellow-50 p-3 rounded-lg"
+                            >
                               <div className="w-8 h-8 bg-yellow-400 text-black rounded-full flex items-center justify-center text-sm font-bold mr-3">
                                 {moduleIndex + 1}
                               </div>
@@ -258,7 +265,7 @@ const CoursesPage: React.FC = () => {
                           <p className="text-2xl font-bold text-black">{course.price}</p>
                           <p className="text-sm text-black">Investimento</p>
                         </div>
-                        
+
                         <div className="space-y-3">
                           <Button size="large" className="w-full">
                             <Calendar className="w-5 h-5 mr-2" />
@@ -285,7 +292,7 @@ const CoursesPage: React.FC = () => {
             Pronto para transformar sua carreira?
           </h2>
           <p className="text-xl text-black mb-10">
-            Entre em contato conosco para mais informações sobre nossos cursos 
+            Entre em contato conosco para mais informações sobre nossos cursos
             e próximas turmas disponíveis. Nossa equipe está pronta para ajudar você!
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
