@@ -1,229 +1,104 @@
-// src/components/sections/Team.tsx
-import React, { useState } from 'react';
+import React from 'react';
 
-type Member = {
-  name: string;
-  role: string;
-  category: string;
-  image: string;
-  description: string;
-};
-
-const teamMembers: Member[] = [
-  // DIRETORAS
+const teamHierarchy = [
   {
-    name: 'Ma. Jacqueline Iukisa',
-    role: 'Diretora de Finanças e RH',
-    category: 'Diretora',
-    image:
-      'https://images.pexels.com/photos/1181681/pexels-photo-1181681.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description:
-      'Analista do Comportamento Supervisora, Professora e Sócia-Diretora de Finanças e Recursos Humanos.',
-  },
-  {
-    name: 'Dra. Thais Guimarães',
-    role: 'Diretora de Marketing e Operações',
-    category: 'Diretora',
-    image:
-      'https://images.pexels.com/photos/1181424/pexels-photo-1181424.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description:
-      'Analista do Comportamento Supervisora, Professora e Sócia-Diretora de Operações e Marketing.',
-  },
-
-  // SUPERVISORES
-  {
-    name: 'Me. Luiz Felipe Alves',
-    role: 'Supervisor (CRP-02/20334)',
-    category: 'Supervisor',
-    image:
-      'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description:
-      'Analista do Comportamento Supervisor, Professor e Sócio. Atua com práticas baseadas em evidências em ABA.',
-  },
-  {
-    name: 'Me. Murilo da Cruz',
-    role: 'Supervisor (CRP-02/21135)',
-    category: 'Supervisor',
-    image:
-      'https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description:
-      'Especialista em ABA com foco em desenvolvimento de habilidades funcionais e sociais.',
-  },
-  {
-    name: 'Me. Rafael Alves',
-    role: 'Supervisor (CRP-02/26926)',
-    category: 'Supervisor',
-    image:
-      'https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description: 'Experiência em coordenação clínica e avaliação comportamental.',
-  },
-  {
-    name: 'Ma. Thamires Iukisa',
-    role: 'Supervisora (CFEP-19002082)',
-    category: 'Supervisor',
-    image:
-      'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description: 'Supervisora com experiência em ABA e desenvolvimento infantil.',
-  },
-
-  // COORDENADORES
-  {
-    name: 'Andrea Teixeira',
-    role: 'Coordenadora (CRP-02/25615)',
-    category: 'Coordenadora',
-    image:
-      'https://images.pexels.com/photos/3768146/pexels-photo-3768146.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description:
-      'Responsável pela coordenação de atendimentos e suporte técnico à equipe terapêutica.',
-  },
-  {
-    name: 'Erica Tamires',
-    role: 'Coordenadora (CRP-02/26411)',
-    category: 'Coordenadora',
-    image:
-      'https://images.pexels.com/photos/1181422/pexels-photo-1181422.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description: 'Coordena projetos clínicos com foco em análise do comportamento aplicada.',
-  },
-  {
-    name: 'Gabriel Barão',
-    role: 'Coordenador (CRP-02/30450)',
-    category: 'Coordenador',
-    image:
-      'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description: 'Coordena equipes multidisciplinares voltadas à aplicação de ABA.',
-  },
-  {
-    name: 'Jamille Mota',
-    role: 'Coordenadora (CRP-03/19674)',
-    category: 'Coordenadora',
-    image:
-      'https://images.pexels.com/photos/1181680/pexels-photo-1181680.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description:
-      'Coordenação com foco em processos terapêuticos e formação continuada.',
-  },
-  {
-    name: 'Joice Izabela',
-    role: 'Coordenadora (CRP-02/26606)',
-    category: 'Coordenadora',
-    image:
-      'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description:
-      'Coordenadora responsável por garantir a qualidade dos atendimentos ABA.',
-  },
-  {
-    name: 'Fernando Costa',
-    role: 'Coordenador (CRP-02/26753)',
-    category: 'Coordenador',
-    image:
-      'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description: 'Foco em treinamento de equipe e práticas comportamentais positivas.',
-  },
-  {
-    name: 'Joyce Ribeiro',
-    role: 'Coordenadora (CRP-02/26518)',
-    category: 'Coordenadora',
-    image:
-      'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description: 'Atua com desenvolvimento infantil e suporte familiar.',
-  },
-  {
-    name: 'Nayara Queiroz',
-    role: 'Coordenadora (CRP-02/28286)',
-    category: 'Coordenadora',
-    image:
-      'https://images.pexels.com/photos/1181415/pexels-photo-1181415.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description:
-      'Experiência em gestão de casos clínicos e supervisão terapêutica.',
-  },
-
-  // PSICOTERAPEUTAS
-  {
-    name: 'Aline Rodrigues',
-    role: 'Psicoterapeuta (CRP-02/23629)',
-    category: 'Psicoterapeuta',
-    image:
-      'https://images.pexels.com/photos/846015/pexels-photo-846015.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description: 'Atua com ABA voltada para crianças e adolescentes com autismo.',
-  },
-  {
-    name: 'Gutemberg dos Santos',
-    role: 'Psicoterapeuta (CRP-02/20367)',
-    category: 'Psicoterapeuta',
-    image:
-      'https://images.pexels.com/photos/3777948/pexels-photo-3777948.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description: 'Experiência em psicoterapia comportamental e habilidades sociais.',
-  },
-  {
-    name: 'Núbia Costa',
-    role: 'Psicoterapeuta (CRP-03/18294)',
-    category: 'Psicoterapeuta',
-    image:
-      'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description: 'Psicoterapeuta com experiência em desenvolvimento infantil e ABA.',
-  },
-  {
-    name: 'Renata Dantas',
-    role: 'Psicoterapeuta (CRP-02/30345)',
-    category: 'Psicoterapeuta',
-    image:
-      'https://images.pexels.com/photos/1181421/pexels-photo-1181421.jpeg?auto=compress&cs=tinysrgb&w=600',
-    description: 'Foco em terapia comportamental e treinamento de pais.',
+    name: 'MA. Jacqueline Iukisa',
+    role: 'Sócia-Diretora de Finanças e RH',
+    image: 'https://images.pexels.com/photos/5325840/pexels-photo-5325840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    level: 'A',
+    children: [
+      {
+        name: 'Dra. Thais Guimarães',
+        role: 'Sócia-Diretora de Operações e Marketing',
+        image: 'https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+        level: 'B',
+        children: [
+          {
+            name: 'Me. Luiz Felipe Alves',
+            role: 'Supervisor e Professor',
+            image: 'https://images.pexels.com/photos/5699516/pexels-photo-5699516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+            level: 'C',
+          },
+          {
+            name: 'David Chen',
+            role: 'Terapeuta Comportamental',
+            image: 'https://images.pexels.com/photos/5324973/pexels-photo-5324973.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+            level: 'C',
+          },
+        ],
+      },
+    ],
   },
 ];
 
-const Team: React.FC = () => {
-  const [selected, setSelected] = useState<Member | null>(null);
-
-  const grouped = teamMembers.reduce<Record<string, Member[]>>((acc, member) => {
-    if (!acc[member.category]) acc[member.category] = [];
-    acc[member.category].push(member);
-    return acc;
-  }, {});
-
+const HexNode = ({ member }) => {
   return (
-    <section className="py-16 bg-gray-50 text-center">
-      <h2 className="text-4xl font-bold text-black mb-10">Nossa Beequipe</h2>
+    <div className="relative flex flex-col items-center text-center">
+      {/* Hexágono */}
+      <div className="hexagon bg-white border-4 border-yellow-400 shadow-lg">
+        <img
+          src={member.image}
+          alt={member.name}
+          className="w-20 h-20 rounded-full object-cover"
+        />
+      </div>
 
-      {Object.keys(grouped).map((category) => (
-        <div key={category} className="mb-16">
-          <h3 className="text-2xl font-semibold text-yellow-600 mb-8">{category}s</h3>
-          <div className="flex flex-wrap justify-center gap-10">
-            {grouped[category].map((member, index) => (
-              <div
-                key={index}
-                className="hover-lift cursor-pointer"
-                onClick={() => setSelected(member)}
-              >
-                <div className="hexagon shadow-md border-4 border-yellow-300 hover:border-yellow-500 transition-all">
-                  <img src={member.image} alt={member.name} />
-                </div>
-                <h4 className="text-lg font-semibold mt-4">{member.name}</h4>
-                <p className="text-yellow-600">{member.role}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      ))}
+      {/* Texto */}
+      <h3 className="mt-3 font-semibold text-black">{member.name}</h3>
+      <p className="text-gray-600 text-sm max-w-[150px]">{member.role}</p>
 
-      {/* MODAL POPUP */}
-      {selected && (
-        <div className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50">
-          <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg max-w-lg relative text-center">
-            <button
-              onClick={() => setSelected(null)}
-              className="absolute top-2 right-3 text-gray-500 hover:text-black text-2xl"
-            >
-              &times;
-            </button>
-            <div className="hexagon mx-auto mb-4 w-36 h-40">
-              <img src={selected.image} alt={selected.name} />
+      {/* Conexões e filhos */}
+      {member.children && (
+        <div className="relative mt-12 flex justify-center gap-20">
+          {/* Linha vertical */}
+          <div className="absolute top-[-2.5rem] left-1/2 w-0.5 h-10 bg-gray-400 -translate-x-1/2"></div>
+
+          {member.children.map((child, i) => (
+            <div key={i} className="relative">
+              {/* Linha diagonal */}
+              <div className="absolute top-[-2.5rem] left-1/2 w-0.5 h-10 bg-gray-400 -translate-x-1/2"></div>
+              <HexNode member={child} />
             </div>
-            <h3 className="text-2xl font-bold">{selected.name}</h3>
-            <p className="text-yellow-600 mb-3">{selected.role}</p>
-            <p className="text-gray-700">{selected.description}</p>
-          </div>
+          ))}
         </div>
       )}
+    </div>
+  );
+};
+
+const Team = () => {
+  return (
+    <section id="team" className="py-20 bg-gray-50">
+      {/* Cabeçalho */}
+      <div className="text-center mb-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-black">Nossa Beequipe</h2>
+        <div className="w-24 h-1 bg-yellow-400 mx-auto my-4"></div>
+        <p className="max-w-2xl mx-auto text-gray-700">
+          Conheça nossa equipe organizada em uma estrutura inspirada em colmeias — 
+          representando conexão, cooperação e liderança.
+        </p>
+      </div>
+
+      {/* Árvore */}
+      <div className="flex justify-center">
+        {teamHierarchy.map((leader, index) => (
+          <HexNode key={index} member={leader} />
+        ))}
+      </div>
+
+      {/* Rodapé */}
+      <div className="mt-16 text-center">
+        <p className="text-gray-700 max-w-3xl mx-auto mb-8">
+          Nossa equipe participa de formações contínuas e mantém práticas baseadas em evidências,
+          garantindo o melhor acompanhamento para cada criança.
+        </p>
+        <a
+          href="#contact"
+          className="inline-block bg-black text-white hover:bg-gray-800 px-6 py-3 rounded-md font-medium transition-colors"
+        >
+          Agende uma Consulta com Nossa Equipe
+        </a>
+      </div>
     </section>
   );
 };
