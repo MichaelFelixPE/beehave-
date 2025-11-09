@@ -1,8 +1,18 @@
-const teamHierarchy = [
+import { Users } from 'lucide-react';
+
+interface TeamMember {
+  name: string;
+  role: string;
+  image: string;
+  level: string;
+  children?: TeamMember[];
+}
+
+const teamHierarchy: TeamMember[] = [
   {
     name: 'Ma. Jacqueline Iukisa',
     role: 'Diretora de Finanças e RH',
-    image: 'https://via.placeholder.com/150', // substitua pela imagem real
+    image: 'https://via.placeholder.com/150',
     level: 'A',
     children: [
       {
@@ -11,7 +21,6 @@ const teamHierarchy = [
         image: 'https://via.placeholder.com/150',
         level: 'B',
         children: [
-          // SUPERVISORES
           {
             name: 'Me. Luiz Felipe Alves',
             role: 'Supervisor (CRP-02/20334)',
@@ -48,8 +57,6 @@ const teamHierarchy = [
             image: 'https://via.placeholder.com/150',
             level: 'C',
           },
-
-          // COORDENADORES
           {
             name: 'Andrea Teixeira',
             role: 'Coordenadora (CRP-02/25615)',
@@ -98,8 +105,6 @@ const teamHierarchy = [
             image: 'https://via.placeholder.com/150',
             level: 'D',
           },
-
-          // PSICOTERAPEUTAS
           {
             name: 'Aline Rodrigues',
             role: 'Psicoterapeuta (CRP-02/23629)',
@@ -129,3 +134,52 @@ const teamHierarchy = [
     ],
   },
 ];
+
+const Team = () => {
+  const getAllMembers = (members: TeamMember[]): TeamMember[] => {
+    let allMembers: TeamMember[] = [];
+    members.forEach(member => {
+      allMembers.push(member);
+      if (member.children) {
+        allMembers = allMembers.concat(getAllMembers(member.children));
+      }
+    });
+    return allMembers;
+  };
+
+  const allTeamMembers = getAllMembers(teamHierarchy);
+
+  return (
+    <section id="team" className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <div className="flex justify-center mb-4">
+            <Users className="h-12 w-12 text-yellow-500" />
+          </div>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Nossa Equipe</h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Profissionais qualificados e comprometidos com a excelência
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {allTeamMembers.map((member, index) => (
+            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
+              <img
+                src={member.image}
+                alt={member.name}
+                className="w-full h-48 object-cover"
+              />
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h3>
+                <p className="text-gray-600">{member.role}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Team;
