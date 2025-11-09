@@ -23,109 +23,109 @@ const teamHierarchy: TeamMember[] = [
         children: [
           {
             name: 'Me. Luiz Felipe Alves',
-            role: 'Supervisor (CRP-02/20334)',
+            role: 'Supervisor',
             image: 'https://via.placeholder.com/150',
             level: 'C',
           },
           {
             name: 'Me. Murilo da Cruz',
-            role: 'Supervisor (CRP-02/21135)',
+            role: 'Supervisor',
             image: 'https://via.placeholder.com/150',
             level: 'C',
           },
           {
             name: 'Me. Rafael Alves',
-            role: 'Supervisor (CRP-02/26926)',
+            role: 'Supervisor',
             image: 'https://via.placeholder.com/150',
             level: 'C',
           },
           {
             name: 'Ma. Thamires Iukisa',
-            role: 'Supervisora (CFEP-19002082)',
+            role: 'Supervisora',
             image: 'https://via.placeholder.com/150',
             level: 'C',
           },
           {
             name: 'Dra. Thais Guimarães',
-            role: 'Supervisora (CRP-02/15644)',
+            role: 'Supervisora',
             image: 'https://via.placeholder.com/150',
             level: 'C',
           },
           {
             name: 'Ma. Jacqueline Iukisa',
-            role: 'Supervisora (CRP-02/17658)',
+            role: 'Supervisora',
             image: 'https://via.placeholder.com/150',
             level: 'C',
           },
           {
             name: 'Andrea Teixeira',
-            role: 'Coordenadora (CRP-02/25615)',
+            role: 'Coordenadora',
             image: 'https://via.placeholder.com/150',
             level: 'D',
           },
           {
             name: 'Erica Tamires',
-            role: 'Coordenadora (CRP-02/26411)',
+            role: 'Coordenadora',
             image: 'https://via.placeholder.com/150',
             level: 'D',
           },
           {
             name: 'Gabriel Barão',
-            role: 'Coordenador (CRP-02/30450)',
+            role: 'Coordenador',
             image: 'https://via.placeholder.com/150',
             level: 'D',
           },
           {
             name: 'Jamille Mota',
-            role: 'Coordenadora (CRP-03/19674)',
+            role: 'Coordenadora',
             image: 'https://via.placeholder.com/150',
             level: 'D',
           },
           {
             name: 'Joice Izabela',
-            role: 'Coordenadora (CRP-02/26606)',
+            role: 'Coordenadora',
             image: 'https://via.placeholder.com/150',
             level: 'D',
           },
           {
             name: 'Fernando Costa',
-            role: 'Coordenador (CRP-02/26753)',
+            role: 'Coordenador',
             image: 'https://via.placeholder.com/150',
             level: 'D',
           },
           {
             name: 'Joyce Ribeiro',
-            role: 'Coordenadora (CRP-02/26518)',
+            role: 'Coordenadora',
             image: 'https://via.placeholder.com/150',
             level: 'D',
           },
           {
             name: 'Nayara Queiroz',
-            role: 'Coordenadora (CRP-02/28286)',
+            role: 'Coordenadora',
             image: 'https://via.placeholder.com/150',
             level: 'D',
           },
           {
             name: 'Aline Rodrigues',
-            role: 'Psicoterapeuta (CRP-02/23629)',
+            role: 'Psicoterapeuta',
             image: 'https://via.placeholder.com/150',
             level: 'E',
           },
           {
             name: 'Gutemberg dos Santos',
-            role: 'Psicoterapeuta (CRP-02/20367)',
+            role: 'Psicoterapeuta',
             image: 'https://via.placeholder.com/150',
             level: 'E',
           },
           {
             name: 'Núbia Costa',
-            role: 'Psicoterapeuta (CRP-03/18294)',
+            role: 'Psicoterapeuta',
             image: 'https://via.placeholder.com/150',
             level: 'E',
           },
           {
             name: 'Renata Dantas',
-            role: 'Psicoterapeuta (CRP-02/30345)',
+            role: 'Psicoterapeuta',
             image: 'https://via.placeholder.com/150',
             level: 'E',
           },
@@ -135,47 +135,142 @@ const teamHierarchy: TeamMember[] = [
   },
 ];
 
-const Team = () => {
-  const getAllMembers = (members: TeamMember[]): TeamMember[] => {
-    let allMembers: TeamMember[] = [];
-    members.forEach(member => {
-      allMembers.push(member);
-      if (member.children) {
-        allMembers = allMembers.concat(getAllMembers(member.children));
-      }
-    });
-    return allMembers;
-  };
+const HexagonMember = ({ member }: { member: TeamMember }) => {
+  return (
+    <div className="relative group">
+      <div className="hexagon-wrapper">
+        <div className="hexagon bg-gradient-to-br from-yellow-400 to-amber-500 p-0.5">
+          <div className="hexagon-inner bg-white">
+            <img
+              src={member.image}
+              alt={member.name}
+              className="hexagon-image"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="text-center mt-2">
+        <h4 className="text-xs font-semibold text-gray-900">{member.name}</h4>
+        <p className="text-xs text-gray-600">{member.role}</p>
+      </div>
+    </div>
+  );
+};
 
-  const allTeamMembers = getAllMembers(teamHierarchy);
+const Team = () => {
+  const directors = teamHierarchy;
+  const subDirectors = directors[0]?.children || [];
+  const supervisors = subDirectors[0]?.children?.filter(m => m.level === 'C') || [];
+  const coordinators = subDirectors[0]?.children?.filter(m => m.level === 'D') || [];
+  const therapists = subDirectors[0]?.children?.filter(m => m.level === 'E') || [];
 
   return (
-    <section id="team" className="py-20 bg-gray-50">
+    <section id="team" className="py-20 bg-gradient-to-b from-gray-50 to-white overflow-x-auto">
+      <style>{`
+        .hexagon-wrapper {
+          width: 90px;
+          height: 90px;
+          margin: 0 auto;
+        }
+
+        .hexagon {
+          width: 100%;
+          height: 100%;
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          transition: transform 0.3s ease;
+        }
+
+        .hexagon:hover {
+          transform: scale(1.1);
+        }
+
+        .hexagon-inner {
+          width: 100%;
+          height: 100%;
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .hexagon-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .connector-line {
+          position: absolute;
+          background: linear-gradient(to bottom, #fbbf24, #f59e0b);
+          z-index: -1;
+        }
+      `}</style>
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <div className="flex justify-center mb-4">
             <Users className="h-12 w-12 text-yellow-500" />
           </div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Nossa Equipe</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Nossa Colmeia</h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Profissionais qualificados e comprometidos com a excelência
+            Estrutura organizacional da equipe Beehave
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {allTeamMembers.map((member, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow">
-              <img
-                src={member.image}
-                alt={member.name}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{member.name}</h3>
-                <p className="text-gray-600">{member.role}</p>
-              </div>
+        <div className="relative flex flex-col items-center space-y-8">
+          <div className="flex justify-center gap-12">
+            {directors.map((director, idx) => (
+              <HexagonMember key={idx} member={director} />
+            ))}
+          </div>
+
+          {subDirectors.length > 0 && (
+            <div className="flex justify-center gap-12">
+              {subDirectors.map((subDir, idx) => (
+                <HexagonMember key={idx} member={subDir} />
+              ))}
             </div>
-          ))}
+          )}
+
+          {supervisors.length > 0 && (
+            <>
+              <div className="text-center w-full">
+                <h3 className="text-lg font-bold text-gray-700 mb-4">Supervisores</h3>
+              </div>
+              <div className="flex justify-center gap-6 flex-wrap max-w-4xl">
+                {supervisors.map((supervisor, idx) => (
+                  <HexagonMember key={idx} member={supervisor} />
+                ))}
+              </div>
+            </>
+          )}
+
+          {coordinators.length > 0 && (
+            <>
+              <div className="text-center w-full">
+                <h3 className="text-lg font-bold text-gray-700 mb-4">Coordenadores</h3>
+              </div>
+              <div className="flex justify-center gap-6 flex-wrap max-w-5xl">
+                {coordinators.map((coordinator, idx) => (
+                  <HexagonMember key={idx} member={coordinator} />
+                ))}
+              </div>
+            </>
+          )}
+
+          {therapists.length > 0 && (
+            <>
+              <div className="text-center w-full">
+                <h3 className="text-lg font-bold text-gray-700 mb-4">Psicoterapeutas</h3>
+              </div>
+              <div className="flex justify-center gap-6 flex-wrap max-w-4xl">
+                {therapists.map((therapist, idx) => (
+                  <HexagonMember key={idx} member={therapist} />
+                ))}
+              </div>
+            </>
+          )}
         </div>
       </div>
     </section>
