@@ -120,7 +120,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Núbia Costa',
             role: 'Psicoterapeuta',
-            image: 'https://via.placeholder.com/150',
+            image: '/src/components/sections/dreamina-2025-11-11-7675-Edição profissional, retoque de pele, il....jpeg',
             level: 'E',
           },
           {
