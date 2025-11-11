@@ -15,7 +15,7 @@ const About: React.FC = () => {
     <section id="about" className="py-20 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Sobre a Beehave Psicologia</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Sobre a Beehave</h2>
           <div className="w-24 h-1 bg-yellow-400 mx-auto"></div>
         </div>
 
