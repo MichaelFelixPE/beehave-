@@ -189,18 +189,20 @@ const Team = () => {
           height: 100%;
           clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
           overflow: hidden;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          position: relative;
         }
 
         .hexagon-image {
-          width: 120%;
-          height: 120%;
+          width: 140%;
+          height: 140%;
           object-fit: cover;
-          object-position: center;
+          object-position: center center;
           image-rendering: -webkit-optimize-contrast;
           image-rendering: crisp-edges;
+          transform: translate(-50%, -50%);
+          position: absolute;
+          top: 50%;
+          left: 50%;
         }
 
         .connector-line {
