@@ -47,6 +47,7 @@ const courses = [
     price: 'Consulte valores',
     rating: 4.8,
     students: 85,
+    enrollLink: 'https://forms.gle/gM57dboC5otEoxn67',
     features: [
       'Identificação de sinais de crise',
       'Técnicas de desescalada',
@@ -267,10 +268,19 @@ const CoursesPage: React.FC = () => {
                         </div>
 
                         <div className="space-y-3">
-                          <Button size="large" className="w-full">
-                            <Calendar className="w-5 h-5 mr-2" />
-                            Inscrever-se Agora
-                          </Button>
+                          {course.enrollLink ? (
+                            <a href={course.enrollLink} target="_blank" rel="noopener noreferrer">
+                              <Button size="large" className="w-full">
+                                <Calendar className="w-5 h-5 mr-2" />
+                                Inscrever-se Agora
+                              </Button>
+                            </a>
+                          ) : (
+                            <Button size="large" className="w-full">
+                              <Calendar className="w-5 h-5 mr-2" />
+                              Inscrever-se Agora
+                            </Button>
+                          )}
                           <Button variant="outline" size="large" className="w-full">
                             Mais Informações
                           </Button>
