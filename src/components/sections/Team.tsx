@@ -204,8 +204,8 @@ const Team = () => {
         }
 
         .hexagon-image[src*="dreamina-2025-11-11-5372"] {
-          width: 85%;
-          height: 85%;
+          width: 100%;
+          height: 100%;
         }
 
         .connector-line {
