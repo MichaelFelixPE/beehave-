@@ -66,7 +66,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Erica Tamires',
             role: 'Coordenadora',
-            image: 'https://via.placeholder.com/150',
+            image: '/src/components/sections/dreamina-2025-11-11-1230-Edição profissional, retoque de pele, il....jpeg',
             level: 'D',
           },
           {
