@@ -60,7 +60,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Andrea Teixeira',
             role: 'Coordenadora',
-            image: 'https://via.placeholder.com/150',
+            image: '/src/components/sections/dreamina-2025-11-11-4660-Edição profissional, retoque de pele, il....jpeg',
             level: 'D',
           },
           {
