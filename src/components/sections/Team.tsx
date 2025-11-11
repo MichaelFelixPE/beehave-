@@ -203,6 +203,11 @@ const Team = () => {
           image-rendering: crisp-edges;
         }
 
+        .hexagon-image[src*="dreamina-2025-11-11-4660"] {
+          width: 102%;
+          height: 102%;
+        }
+
         .connector-line {
           position: absolute;
           background: linear-gradient(to bottom, #fbbf24, #f59e0b);
