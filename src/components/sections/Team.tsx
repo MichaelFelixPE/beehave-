@@ -114,7 +114,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Gutemberg dos Santos',
             role: 'Psicoterapeuta',
-            image: 'https://via.placeholder.com/150',
+            image: '/src/components/sections/Gutamberg.jpeg',
             level: 'E',
           },
           {
