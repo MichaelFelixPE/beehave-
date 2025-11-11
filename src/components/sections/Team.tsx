@@ -195,9 +195,12 @@ const Team = () => {
         }
 
         .hexagon-image {
-          width: 100%;
-          height: 100%;
+          width: 120%;
+          height: 120%;
           object-fit: cover;
+          object-position: center;
+          image-rendering: -webkit-optimize-contrast;
+          image-rendering: crisp-edges;
         }
 
         .connector-line {
