@@ -108,7 +108,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Aline Rodrigues',
             role: 'Psicoterapeuta',
-            image: 'https://via.placeholder.com/150',
+            image: '/src/components/sections/dreamina-2025-11-11-8569-Edição profissional, retoque de pele, il... copy.jpeg',
             level: 'E',
           },
           {
