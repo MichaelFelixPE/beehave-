@@ -72,7 +72,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Gabriel Barão',
             role: 'Coordenador',
-            image: 'https://via.placeholder.com/150',
+            image: '/src/components/sections/dreamina-2025-11-12-7433-Editar Imagem 1, substituir o fundo bran....jpeg',
             level: 'D',
           },
           {
