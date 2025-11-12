@@ -90,7 +90,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Fernando Costa',
             role: 'Coordenador',
-            image: '/team/fernando.png',
+            image: '/team/fernando.jpg',
             level: 'D',
           },
           {
