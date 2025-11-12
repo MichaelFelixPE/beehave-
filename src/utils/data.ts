@@ -91,7 +91,7 @@ export const teamMembers: TeamMember[] = [
     id: 3,
     name: 'Me. Luiz Felipe Alves',
     role: 'Analista do Comportamento Supervisor; Professor; Sócio',
-    image: 'https://images.pexels.com/photos/5699516/pexels-photo-5699516.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://i.imgur.com/dz1uFyx.jpeg',
     bio: 'Luiz Felipe é Analista do Comportamento Supervisor com vasta experiência em docência e intervenções baseadas em ABA.',
     email: 'empresabeehave@gmail.com',
   },
