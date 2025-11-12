@@ -208,6 +208,11 @@ const Team = () => {
           height: 100%;
         }
 
+        .hexagon-image[src*="Generated_Image_12wpd912wpd912wp"] {
+          width: 110%;
+          height: 110%;
+        }
+
         .connector-line {
           position: absolute;
           background: linear-gradient(to bottom, #fbbf24, #f59e0b);
