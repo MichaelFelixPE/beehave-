@@ -83,7 +83,7 @@ export const teamMembers: TeamMember[] = [
     id: 2,
     name: 'Dra. Thais Guimarães',
     role: 'Analista do Comportamento Supervisora; Professora; e Sócia-Diretora de Operações e Marketing',
-    image: 'https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://i.imgur.com/Vu9B015.jpeg',
     bio: 'Thais é especialista em Análise do Comportamento e coordena as operações e estratégias de marketing da empresa.',
     email: 'empresabeehave@gmail.com',
   },
