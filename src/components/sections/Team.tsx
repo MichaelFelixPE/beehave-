@@ -12,121 +12,121 @@ const teamHierarchy: TeamMember[] = [
   {
     name: 'Ma. Jacqueline Iukisa',
     role: 'Diretora de Finanças e RH',
-    image: '/team/Image_g6kv6tg6kv6tg6kv.png',
+    image: '/team/jacqueline.png',
     level: 'A',
     children: [
       {
         name: 'Dra. Thais Guimarães',
         role: 'Diretora de Marketing e Operações',
-        image: '/team/Superv. Thais02.JPG',
+        image: '/team/thais.jpg',
         level: 'B',
         children: [
           {
             name: 'Me. Luiz Felipe Alves',
             role: 'Supervisor',
-            image: '/team/Generated_Image_w33oqgw33oqgw33o.png',
+            image: '/team/luiz.png',
             level: 'C',
           },
           {
             name: 'Me. Murilo da Cruz',
             role: 'Supervisor',
-            image: '/team/Generated_Image_rrp8pgrrp8pgrrp8.png',
+            image: '/team/murilo.png',
             level: 'C',
           },
           {
             name: 'Me. Rafael Alves',
             role: 'Supervisor',
-            image: '/team/Superv. Rafael02.JPG',
+            image: '/team/rafael.jpg',
             level: 'C',
           },
           {
             name: 'Ma. Thamires Iukisa',
             role: 'Supervisora',
-            image: '/team/Image_wmx8phwmx8phwmx8.png',
+            image: '/team/thamires.png',
             level: 'C',
           },
           {
             name: 'Dra. Thais Guimarães',
             role: 'Supervisora',
-            image: '/team/Superv. Thais02.JPG',
+            image: '/team/thais.jpg',
             level: 'C',
           },
           {
             name: 'Ma. Jacqueline Iukisa',
             role: 'Supervisora',
-            image: '/team/Image_g6kv6tg6kv6tg6kv.png',
+            image: '/team/jacqueline.png',
             level: 'C',
           },
           {
             name: 'Andrea Teixeira',
             role: 'Coordenadora',
-            image: '/team/dreamina-2025-11-11-5372-Edição profissional, retoque de pele, il... copy.jpeg',
+            image: '/team/andrea.jpeg',
             level: 'D',
           },
           {
             name: 'Erica Tamires',
             role: 'Coordenadora',
-            image: '/team/dreamina-2025-11-11-1230-Edição profissional, retoque de pele, il....jpeg',
+            image: '/team/erica.jpeg',
             level: 'D',
           },
           {
             name: 'Gabriel Barão',
             role: 'Coordenador',
-            image: '/team/dreamina-2025-11-12-7433-Editar Imagem 1, substituir o fundo bran....jpeg',
+            image: '/team/gabriel.jpeg',
             level: 'D',
           },
           {
             name: 'Jamille Mota',
             role: 'Coordenadora',
-            image: '/team/dreamina-2025-11-12-2709-Editar Imagem 1, substituir o fundo bran....jpeg',
+            image: '/team/jamille.jpeg',
             level: 'D',
           },
           {
             name: 'Joice Izabela',
             role: 'Coordenadora',
-            image: '/team/dreamina-2025-11-12-2952-Editar Imagem 1, ajustar as cores para u....jpeg',
+            image: '/team/joice.jpeg',
             level: 'D',
           },
           {
             name: 'Fernando Costa',
             role: 'Coordenador',
-            image: '/team/Gemini_Generated_Image_12wpd912wpd912wp.png',
+            image: '/team/fernando.png',
             level: 'D',
           },
           {
             name: 'Joyce Ribeiro',
             role: 'Coordenadora',
-            image: '/team/Generated_Image_12wpd912wpd912wp.png',
+            image: '/team/joyce.png',
             level: 'D',
           },
           {
             name: 'Nayara Queiroz',
             role: 'Coordenadora',
-            image: '/team/Generated_Image_740mr2740mr2740m.png',
+            image: '/team/nayara.png',
             level: 'D',
           },
           {
             name: 'Aline Rodrigues',
             role: 'Psicoterapeuta',
-            image: '/team/dreamina-2025-11-11-8569-Edição profissional, retoque de pele, il... copy.jpeg',
+            image: '/team/aline.jpeg',
             level: 'E',
           },
           {
             name: 'Gutemberg dos Santos',
             role: 'Psicoterapeuta',
-            image: '/team/Gutamberg.jpeg',
+            image: '/team/gutemberg.jpeg',
             level: 'E',
           },
           {
             name: 'Núbia Costa',
             role: 'Psicoterapeuta',
-            image: '/team/dreamina-2025-11-11-7675-Edição profissional, retoque de pele, il....jpeg',
+            image: '/team/nubia.jpeg',
             level: 'E',
           },
           {
             name: 'Renata Dantas',
             role: 'Psicoterapeuta',
-            image: '/team/Renata-foto-up.jpeg',
+            image: '/team/renata.jpeg',
             level: 'E',
           },
         ],
@@ -203,12 +203,12 @@ const Team = () => {
           image-rendering: crisp-edges;
         }
 
-        .hexagon-image[src*="dreamina-2025-11-11-5372"] {
+        .hexagon-image[src*="andrea"] {
           width: 100%;
           height: 100%;
         }
 
-        .hexagon-image[src*="Gemini_Generated_Image_12wpd912wpd912wp"] {
+        .hexagon-image[src*="fernando"] {
           width: 110%;
           height: 110%;
         }
