@@ -42,7 +42,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Ma. Thamires Iukisa',
             role: 'Supervisora',
-            image: 'https://via.placeholder.com/150',
+            image: '/src/components/sections/Image_wmx8phwmx8phwmx8.png',
             level: 'C',
           },
           {
