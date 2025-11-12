@@ -120,7 +120,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Núbia Costa',
             role: 'Psicoterapeuta',
-            image: '/team/nubia.jpg',
+            image: 'https://i.imgur.com/adggXBn.jpeg',
             level: 'E',
           },
           {
