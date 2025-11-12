@@ -90,7 +90,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Fernando Costa',
             role: 'Coordenador',
-            image: 'https://via.placeholder.com/150',
+            image: '/src/components/sections/Generated_Image_12wpd912wpd912wp.png',
             level: 'D',
           },
           {
