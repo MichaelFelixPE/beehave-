@@ -66,7 +66,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Erica Tamires',
             role: 'Coordenadora',
-            image: '/team/erica.jpg',
+            image: 'https://i.imgur.com/p8KNHwi.jpeg',
             level: 'D',
           },
           {
