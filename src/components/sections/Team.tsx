@@ -96,7 +96,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Joyce Ribeiro',
             role: 'Coordenadora',
-            image: 'https://via.placeholder.com/150',
+            image: '/src/components/sections/Gemini_Generated_Image_vrol95vrol95vrol.png',
             level: 'D',
           },
           {
