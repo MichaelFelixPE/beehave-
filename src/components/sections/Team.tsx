@@ -18,7 +18,7 @@ const teamHierarchy: TeamMember[] = [
       {
         name: 'Dra. Thais Guimarães',
         role: 'Diretora de Marketing e Operações',
-        image: '/team/thais.jpg',
+        image: 'https://i.imgur.com/Vu9B015.jpeg',
         level: 'B',
         children: [
           {
@@ -48,7 +48,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Dra. Thais Guimarães',
             role: 'Supervisora',
-            image: '/team/thais.jpg',
+            image: 'https://i.imgur.com/Vu9B015.jpeg',
             level: 'C',
           },
           {
