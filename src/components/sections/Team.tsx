@@ -102,7 +102,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Nayara Queiroz',
             role: 'Coordenadora',
-            image: 'https://via.placeholder.com/150',
+            image: '/src/components/sections/Generated_Image_740mr2740mr2740m.png',
             level: 'D',
           },
           {
