@@ -84,7 +84,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Joice Izabela',
             role: 'Coordenadora',
-            image: 'https://via.placeholder.com/150',
+            image: '/src/components/sections/dreamina-2025-11-12-2952-Editar Imagem 1, ajustar as cores para u....jpeg',
             level: 'D',
           },
           {
