@@ -12,7 +12,7 @@ const teamHierarchy: TeamMember[] = [
   {
     name: 'Ma. Jacqueline Iukisa',
     role: 'Diretora de Finanças e RH',
-    image: 'https://imgur.com/WTK7fkF',
+    image: 'https://i.imgur.com/WTK7fkF.jpeg',
     level: 'A',
     children: [
       {
@@ -54,7 +54,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Ma. Jacqueline Iukisa',
             role: 'Supervisora',
-            image: '/team/jacqueline.jpg',
+            image: 'https://i.imgur.com/WTK7fkF.jpeg',
             level: 'C',
           },
           {

@@ -75,7 +75,7 @@ export const teamMembers: TeamMember[] = [
     id: 1,
     name: 'Ma. Jacqueline Iukisa',
     role: 'Analista do Comportamento Supervisora; Professora; e Sócia-Diretora de Finanças e Recursos Humanos',
-    image: 'https://images.pexels.com/photos/5325840/pexels-photo-5325840.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://i.imgur.com/WTK7fkF.jpeg',
     bio: 'Jacqueline tem ampla experiência em Análise do Comportamento e lidera as áreas de finanças e recursos humanos da Beehave.',
     email: 'empresabeehave@gmail.com',
   },
