@@ -149,9 +149,9 @@ const HexagonMember = ({ member }: { member: TeamMember }) => {
           </div>
         </div>
       </div>
-      <div className="text-center mt-2">
-        <h4 className="text-xs font-semibold text-gray-900">{member.name}</h4>
-        <p className="text-xs text-gray-600">{member.role}</p>
+      <div className="text-center mt-3">
+        <h4 className="text-sm font-semibold text-gray-900">{member.name}</h4>
+        <p className="text-sm text-gray-600">{member.role}</p>
       </div>
     </div>
   );
@@ -168,8 +168,8 @@ const Team = () => {
     <section id="team" className="py-20 bg-gradient-to-b from-gray-50 to-white overflow-x-auto">
       <style>{`
         .hexagon-wrapper {
-          width: 90px;
-          height: 90px;
+          width: 120px;
+          height: 120px;
           margin: 0 auto;
         }
 
