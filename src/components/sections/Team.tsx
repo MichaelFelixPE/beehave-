@@ -90,7 +90,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Fernando Costa',
             role: 'Coordenador',
-            image: '/src/components/sections/Generated_Image_12wpd912wpd912wp.png',
+            image: '/src/components/sections/Gemini_Generated_Image_12wpd912wpd912wp.png',
             level: 'D',
           },
           {
@@ -208,7 +208,7 @@ const Team = () => {
           height: 100%;
         }
 
-        .hexagon-image[src*="Generated_Image_12wpd912wpd912wp"] {
+        .hexagon-image[src*="Gemini_Generated_Image_12wpd912wpd912wp"] {
           width: 110%;
           height: 110%;
         }
