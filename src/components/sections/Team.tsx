@@ -232,19 +232,14 @@ const Team = () => {
         </div>
 
         <div className="relative flex flex-col items-center space-y-8">
-          <div className="flex justify-center gap-12">
+          <div className="flex justify-center gap-12 mb-8">
             {directors.map((director, idx) => (
               <HexagonMember key={idx} member={director} />
             ))}
+            {subDirectors.length > 0 && subDirectors.map((subDir, idx) => (
+              <HexagonMember key={idx} member={subDir} />
+            ))}
           </div>
-
-          {subDirectors.length > 0 && (
-            <div className="flex justify-center gap-12">
-              {subDirectors.map((subDir, idx) => (
-                <HexagonMember key={idx} member={subDir} />
-              ))}
-            </div>
-          )}
 
           {supervisors.length > 0 && (
             <>
