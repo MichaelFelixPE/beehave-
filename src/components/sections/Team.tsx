@@ -45,108 +45,222 @@ const teamHierarchy: TeamMember[] = [
             role: 'Supervisor',
             image: 'https://i.imgur.com/dz1uFyx.jpeg',
             level: 'C',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Mestrado em Psicologia',
+              'Especialização em Análise do Comportamento',
+              'Graduação em Psicologia'
+            ],
+            bio: 'Supervisor com experiência em análise comportamental aplicada.',
           },
           {
             name: 'Me. Murilo da Cruz',
             role: 'Supervisor',
             image: 'https://i.imgur.com/kExt69r.jpeg',
             level: 'C',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Mestrado em Psicologia',
+              'Especialização em Terapia Cognitivo-Comportamental',
+              'Graduação em Psicologia'
+            ],
+            bio: 'Supervisor especializado em intervenções cognitivo-comportamentais.',
           },
           {
             name: 'Me. Rafael Alves',
             role: 'Supervisor',
             image: 'https://i.imgur.com/Xu7oJx7.jpeg',
             level: 'C',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Mestrado em Psicologia',
+              'Especialização em Psicologia Clínica',
+              'Graduação em Psicologia'
+            ],
+            bio: 'Supervisor com foco em atendimento clínico e supervisão de casos.',
           },
           {
             name: 'Ma. Thamires Iukisa',
             role: 'Supervisora',
             image: 'https://i.imgur.com/NdpFqu4.jpeg',
             level: 'C',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Mestrado em Psicologia',
+              'Especialização em Análise do Comportamento',
+              'Graduação em Psicologia'
+            ],
+            bio: 'Supervisora com experiência em análise comportamental e supervisão clínica.',
           },
           {
             name: 'Dra. Thais Guimarães',
             role: 'Supervisora',
             image: 'https://i.imgur.com/Vu9B015.jpeg',
             level: 'C',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Doutorado em Psicologia',
+              'Mestrado em Psicologia Clínica',
+              'Graduação em Psicologia'
+            ],
+            bio: 'Especialista em marketing e operações clínicas.',
           },
           {
             name: 'Ma. Jacqueline Iukisa',
             role: 'Supervisora',
             image: 'https://i.imgur.com/WTK7fkF.jpeg',
             level: 'C',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Mestrado em Psicologia',
+              'Especialização em Gestão de Pessoas',
+              'Graduação em Psicologia'
+            ],
+            bio: 'Profissional com ampla experiência em gestão de recursos humanos e finanças.',
           },
           {
             name: 'Andrea Teixeira',
             role: 'Coordenadora',
             image: 'https://i.imgur.com/eT15gxN.jpeg',
             level: 'D',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Especialização em Psicologia Clínica',
+              'Graduação em Psicologia'
+            ],
+            bio: 'Coordenadora com foco em gestão de equipes e atendimento clínico.',
           },
           {
             name: 'Erica Tamires',
             role: 'Coordenadora',
             image: 'https://i.imgur.com/p8KNHwi.jpeg',
             level: 'D',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Especialização em Terapia Cognitivo-Comportamental',
+              'Graduação em Psicologia'
+            ],
+            bio: 'Coordenadora especializada em processos terapêuticos e gestão de casos.',
           },
           {
             name: 'Gabriel Barão',
             role: 'Coordenador',
             image: 'https://i.imgur.com/FELQnv7.jpeg',
             level: 'D',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Especialização em Análise do Comportamento',
+              'Graduação em Psicologia'
+            ],
+            bio: 'Coordenador com experiência em análise comportamental e coordenação de equipes.',
           },
           {
             name: 'Jamille Mota',
             role: 'Coordenadora',
             image: 'https://i.imgur.com/e13IKtU.jpeg',
             level: 'D',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Especialização em Psicologia Organizacional',
+              'Graduação em Psicologia'
+            ],
+            bio: 'Coordenadora com foco em processos organizacionais e desenvolvimento de equipes.',
           },
           {
             name: 'Joice Izabela',
             role: 'Coordenadora',
             image: 'https://i.imgur.com/WMrJii0.jpeg',
             level: 'D',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Especialização em Psicologia Clínica',
+              'Graduação em Psicologia'
+            ],
+            bio: 'Coordenadora especializada em atendimento clínico e supervisão de casos.',
           },
           {
             name: 'Fernando Costa',
             role: 'Coordenador',
             image: 'https://i.imgur.com/7ZeVyrD.jpeg',
             level: 'D',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Especialização em Análise do Comportamento',
+              'Graduação em Psicologia'
+            ],
+            bio: 'Coordenador com experiência em análise comportamental aplicada.',
           },
           {
             name: 'Joyce Ribeiro',
             role: 'Coordenadora',
             image: 'https://i.imgur.com/1TxQF0m.jpeg',
             level: 'D',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Especialização em Terapia Cognitivo-Comportamental',
+              'Graduação em Psicologia'
+            ],
+            bio: 'Coordenadora com foco em intervenções cognitivo-comportamentais.',
           },
           {
             name: 'Nayara Queiroz',
             role: 'Coordenadora',
             image: 'https://i.imgur.com/AzpmCik.jpeg',
             level: 'D',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Especialização em Psicologia Clínica',
+              'Graduação em Psicologia'
+            ],
+            bio: 'Coordenadora especializada em processos clínicos e gestão de equipes.',
           },
           {
             name: 'Aline Rodrigues',
             role: 'Psicoterapeuta',
             image: 'https://i.imgur.com/vyQlmGB.jpeg',
             level: 'E',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Graduação em Psicologia',
+              'Formação em Terapia Cognitivo-Comportamental'
+            ],
+            bio: 'Psicoterapeuta dedicada ao atendimento clínico individual.',
           },
           {
             name: 'Gutemberg dos Santos',
             role: 'Psicoterapeuta',
             image: 'https://i.imgur.com/w3IO4mA.jpeg',
             level: 'E',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Graduação em Psicologia',
+              'Formação em Análise do Comportamento'
+            ],
+            bio: 'Psicoterapeuta com foco em análise comportamental aplicada.',
           },
           {
             name: 'Núbia Costa',
             role: 'Psicoterapeuta',
             image: 'https://i.imgur.com/adggXBn.jpeg',
             level: 'E',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Graduação em Psicologia',
+              'Formação em Terapia Cognitivo-Comportamental'
+            ],
+            bio: 'Psicoterapeuta especializada em atendimento clínico individual e em grupo.',
           },
           {
             name: 'Renata Dantas',
             role: 'Psicoterapeuta',
             image: 'https://i.imgur.com/BhrH4CK.jpeg',
             level: 'E',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Graduação em Psicologia',
+              'Formação em Psicologia Clínica'
+            ],
+            bio: 'Psicoterapeuta com experiência em atendimento clínico e acolhimento.',
           },
         ],
       },
