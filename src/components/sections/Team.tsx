@@ -278,6 +278,13 @@ const HexagonMember = ({ member, onClick }: { member: TeamMember; onClick: () =>
               src={member.image}
               alt={member.name}
               className="hexagon-image"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.onerror = null;
+                target.src = 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=' + encodeURIComponent(member.name.split(' ')[0]);
+              }}
+              loading="lazy"
+              crossOrigin="anonymous"
             />
           </div>
         </div>
@@ -300,6 +307,12 @@ const MemberModal = ({ member, onClose }: { member: TeamMember; onClose: () => v
               src={member.image}
               alt={member.name}
               className="w-full h-full object-cover object-center"
+              onError={(e) => {
+                const target = e.target as HTMLImageElement;
+                target.onerror = null;
+                target.src = 'https://via.placeholder.com/400x400/FCD34D/1F2937?text=' + encodeURIComponent(member.name.split(' ')[0]);
+              }}
+              crossOrigin="anonymous"
             />
           </div>
 
