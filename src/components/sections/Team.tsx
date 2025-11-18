@@ -425,7 +425,6 @@ const Team = () => {
           </div>
           <h2 className="text-4xl font-bold text-gray-900 mb-4">Nossa BeeEquipe </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Estrutura organizacional da equipe Beehave
           </p>
         </div>
 
