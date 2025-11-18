@@ -119,8 +119,8 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Profissional com ampla experiência em gestão de recursos humanos e finanças.',
           },
           {
-            name: 'Alex ',
-            role: 'Supervisora',
+            name: 'Álex Rosas',
+            role: 'Supervisor',
             image: 'https://i.imgur.com/57Xr5pn.jpeg',
             level: 'C',
             crm: 'CRP 00/00000',
