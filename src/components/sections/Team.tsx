@@ -30,7 +30,7 @@ const teamHierarchy: TeamMember[] = [
       {
         name: 'Dra. Thais Guimarães',
         role: 'Diretora de Marketing e Operações',
-        image: 'https://imgur.com/fN975T0',
+        image: 'https://i.imgur.com/fN975T0.jpeg',
         level: 'B',
         crm: 'CRP 00/00000',
         formations: [
@@ -95,7 +95,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Dra. Thais Guimarães',
             role: 'Supervisora',
-            image: 'https://i.imgur.com/Vu9B015.jpeg',
+            image: 'https://i.imgur.com/fN975T0.jpeg',
             level: 'C',
             crm: 'CRP 00/00000',
             formations: [
