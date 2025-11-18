@@ -145,7 +145,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Gabriel Barão',
             role: 'Coordenador',
-            image: 'https://i.imgur.com/FELQnv7.jpeg',
+            image: 'https://i.imgur.com/S2TGn6d.jpeg',
             level: 'D',
             crm: 'CRP 00/00000',
             formations: [
