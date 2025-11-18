@@ -430,6 +430,9 @@ const Team = () => {
         </div>
 
         <div className="relative flex flex-col items-center space-y-8">
+          <div className="text-center w-full">
+            <h3 className="text-lg font-bold text-gray-700 mb-4">Diretorias</h3>
+          </div>
           <div className="flex justify-center gap-12 mb-8">
             {directors.map((director, idx) => (
               <HexagonMember key={idx} member={director} onClick={() => setSelectedMember(director)} />
