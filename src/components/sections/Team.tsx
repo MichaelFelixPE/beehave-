@@ -119,6 +119,18 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Profissional com ampla experiência em gestão de recursos humanos e finanças.',
           },
           {
+            name: 'Erica Tamires',
+            role: 'Supervisora',
+            image: 'https://i.imgur.com/57Xr5pn.jpeg',
+            level: 'C',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Especialização em Terapia Cognitivo-Comportamental',
+              'Graduação em Psicologia'
+            ],
+            bio: 'Supervisora especializada em processos terapêuticos e gestão de casos.',
+          },
+          {
             name: 'Andrea Teixeira',
             role: 'Coordenadora',
             image: 'https://i.imgur.com/bPV6yn9.jpeg',
