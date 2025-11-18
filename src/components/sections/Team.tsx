@@ -423,7 +423,7 @@ const Team = () => {
           <div className="flex justify-center mb-4">
             <Users className="h-12 w-12 text-yellow-500" />
           </div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Nossa Colmeia</h2>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">Nossa BeeEquipe </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Estrutura organizacional da equipe Beehave
           </p>
