@@ -143,7 +143,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Coordenadora com foco em gestão de equipes e atendimento clínico.',
           },
           {
-            name: 'Erica Tamires',
+            name: 'Alex ',
             role: 'Coordenadora',
             image: 'https://i.imgur.com/EGe56gz.jpeg',
             level: 'D',
