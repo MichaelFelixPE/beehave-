@@ -56,7 +56,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Me. Murilo da Cruz',
             role: 'Supervisor',
-            image: 'https://i.imgur.com/kExt69r.jpeg',
+            image: 'https://i.imgur.com/DJR131G.jpeg',
             level: 'C',
             crm: 'CRP 00/00000',
             formations: [
