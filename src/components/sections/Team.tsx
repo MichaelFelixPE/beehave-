@@ -82,7 +82,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Ma. Thamires Iukisa',
             role: 'Supervisora',
-            image: 'https://i.imgur.com/NdpFqu4.jpeg',
+            image: 'https://i.imgur.com/8082mo0.jpeg',
             level: 'C',
             crm: 'CRP 00/00000',
             formations: [
