@@ -442,7 +442,7 @@ const Team = () => {
           {supervisors.length > 0 && (
             <>
               <div className="text-center w-full">
-                <h3 className="text-lg font-bold text-gray-700 mb-4">Supervisores</h3>
+                <h3 className="text-lg font-bold text-gray-700 mb-4">Analista do Comportamento Supervisoras(es)</h3>
               </div>
               <div className="flex justify-center gap-6 flex-wrap max-w-4xl">
                 {supervisors.map((supervisor, idx) => (
