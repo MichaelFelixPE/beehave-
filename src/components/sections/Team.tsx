@@ -17,7 +17,7 @@ const teamHierarchy: TeamMember[] = [
   {
     name: 'Ma. Jacqueline Iukisa',
     role: 'Diretora de Finanças e RH',
-    image: 'https://i.imgur.com/WTK7fkF.jpeg',
+    image: 'https://imgur.com/ZEhbVZI',
     level: 'A',
     crm: 'CRP 00/00000',
     formations: [
@@ -30,7 +30,7 @@ const teamHierarchy: TeamMember[] = [
       {
         name: 'Dra. Thais Guimarães',
         role: 'Diretora de Marketing e Operações',
-        image: 'https://i.imgur.com/Vu9B015.jpeg',
+        image: 'https://imgur.com/fN975T0',
         level: 'B',
         crm: 'CRP 00/00000',
         formations: [
@@ -43,7 +43,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Me. Luiz Felipe Alves',
             role: 'Supervisor',
-            image: 'https://i.imgur.com/dz1uFyx.jpeg',
+            image: 'https://imgur.com/BU6tqCO',
             level: 'C',
             crm: 'CRP 00/00000',
             formations: [
