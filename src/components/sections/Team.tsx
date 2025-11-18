@@ -119,7 +119,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Profissional com ampla experiência em gestão de recursos humanos e finanças.',
           },
           {
-            name: 'Erica Tamires',
+            name: 'Alex ',
             role: 'Supervisora',
             image: 'https://i.imgur.com/57Xr5pn.jpeg',
             level: 'C',
@@ -143,7 +143,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Coordenadora com foco em gestão de equipes e atendimento clínico.',
           },
           {
-            name: 'Alex ',
+            name: 'Erica Tamires',
             role: 'Coordenadora',
             image: 'https://i.imgur.com/EGe56gz.jpeg',
             level: 'D',
