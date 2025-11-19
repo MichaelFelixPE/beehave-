@@ -65,16 +65,10 @@ const Services: React.FC = () => {
         </div>
 
         <div className="mt-12 text-center">
-          <p className="mb-6 text-gray-700 max-w-3xl mx-auto">
-            Nossa abordagem é individualizada para atender às necessidades específicas de cada criança, 
+          <p className="text-gray-700 max-w-3xl mx-auto">
+            Nossa abordagem é individualizada para atender às necessidades específicas de cada criança,
             focando no desenvolvimento de pontos fortes enquanto abordamos os desafios.
           </p>
-          <a 
-            href="#contact" 
-            className="inline-flex items-center text-black bg-yellow-400 hover:bg-yellow-500 px-6 py-3 rounded-md font-medium transition-colors"
-          >
-            Agende uma Avaliação Inicial
-          </a>
         </div>
       </div>
     </section>
