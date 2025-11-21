@@ -24,7 +24,6 @@ const teamHierarchy: TeamMember[] = [
       'Mestrado em Psicologia',
       'Especialização em Gestão de Pessoas',
       'Graduação em Psicologia'
-      'graduação'
     ],
     bio: 'Profissional com ampla experiência em gestão de recursos humanos e finanças.',
     children: [
