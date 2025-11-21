@@ -440,6 +440,11 @@ const Team = () => {
           height: 110%;
         }
 
+        .hexagon-image[src*="BU6tqCO"] {
+          width: 112%;
+          height: 112%;
+        }
+
         .connector-line {
           position: absolute;
           background: linear-gradient(to bottom, #fbbf24, #f59e0b);
