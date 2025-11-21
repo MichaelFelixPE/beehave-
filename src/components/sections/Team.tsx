@@ -244,7 +244,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Aline Rodrigues',
             role: 'Psicoterapeuta',
-            image: 'https://i.imgur.com/vyQlmGB.jpeg',
+            image: 'https://i.imgur.com/vrqMI2m.jpeg',
             level: 'E',
             crm: 'CRP-02/23629',
             formations: [
