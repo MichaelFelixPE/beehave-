@@ -279,10 +279,11 @@ const teamHierarchy: TeamMember[] = [
             level: 'E',
             crm: 'CRP-02/30345',
             formations: [
-              'Graduação em Psicologia',
-              'Formação em Psicologia Clínica'
+              'Graduação em Psicologia pela Faculdade Uninassau',
+              'Especialização em Intervenção ABA aplicada ao Transtorno do Espectro Autista (TEA)',
+              'Formação em Terapias Contextuais'
             ],
-            bio: 'Psicoterapeuta com experiência em atendimento clínico e acolhimento.',
+            bio: 'Sou Renata Dantas, Psicóloga formada pela Faculdade Uninassau, com atuação voltada para o público infantil. Tenho especialização em Intervenção ABA aplicada ao Transtorno do Espectro Autista (TEA) e formação em Terapias Contextuais. Minha escolha pela área infantil, especialmente no acompanhamento de crianças com TEA, foi motivada por uma experiência pessoal que me permitiu vivenciar, de perto, os impactos positivos da intervenção precoce no desenvolvimento infantil. Minha atuação é fundamentada na Análise do Comportamento, uma abordagem científica que busca compreender e promover mudanças significativas no comportamento por meio de intervenções individualizadas, planejadas de forma ética e cuidadosa, sempre com o objetivo de melhorar a qualidade de vida do indivíduo. No trabalho com crianças, especialmente aquelas com desenvolvimento atípico, o lúdico é utilizado como ferramenta central para a construção do vínculo, além da aplicação de estratégias que respeitam o tempo, as necessidades e o contexto de cada uma, favorecendo a aquisição de habilidades sociais, cognitivas, comunicativas e emocionais. Acredito em uma prática que une conhecimento técnico e acolhimento, criando um espaço seguro para que cada criança possa se desenvolver com confiança, autonomia e respeitando sua singularidade.',
           },
         ],
       },
