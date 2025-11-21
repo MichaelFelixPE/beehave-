@@ -14,6 +14,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 900 !important;
 }
 
+/* Apply Bunday font to elements with font-bunday class */
+.font-bunday {
+  font-family: 'Bunday Clean Heavy UP', sans-serif !important;
+  font-weight: 900 !important;
+}
+
 /* Apply Arial to all other text elements */
 p, span, div, li, a, button, input, textarea, select, label {
   font-family: Arial, sans-serif;
