@@ -260,10 +260,10 @@ const teamHierarchy: TeamMember[] = [
             level: 'E',
             crm: 'CRP-02/20367',
             formations: [
-              'Graduação em Psicologia',
-              'Formação em Análise do Comportamento'
+              'Graduação em Psicologia pela Universidade Federal do Vale do São Francisco',
+              'Pós-graduando em ABA (Análise do Comportamento Aplicada) pela Facuminas'
             ],
-            bio: 'Psicoterapeuta com foco em análise comportamental aplicada.',
+            bio: 'Sou Gutemberg Santos, Psicólogo formado pela Universidade Federal do Vale do São Francisco, com atuação voltada para o público infanto juvenil. Sou pós-graduando em ABA (Análise do Comportamento Aplicada) pela Facuminas. Trabalho desde de 2022 com crianças e adolescentes típicos e atípicos; dentro deste contexto, priorizo as intervenções que utilizam o lúdico enquanto recurso terapêutico, tornando as sessões de terapia mais aprazíveis para que os objetivos terapêuticos sejam alcançados de maneira menos aversiva e que possam sobretudo trazer bem estar à criança ou adolescente. Meu trabalho também envolve instigar a família a participar mais ativamente do processo de alcance dos objetivos terapêuticos a partir de orientações parentais. Vale ressaltar que o acolhimento às famílias e o respeito ao perfil de cada criança são de extrema importância nesse processo, visto que cada um é um sujeito dotado de características diferentes e isso deve ser base para a intervenção de maneira individualizada.',
           },
           {
             name: 'Núbia Costa',
