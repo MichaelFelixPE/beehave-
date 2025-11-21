@@ -130,17 +130,17 @@ const CoursesPage: React.FC = () => {
               com cursos reconhecidos e ministrados por especialistas qualificados.
             </p>
             <div className="flex flex-wrap justify-center gap-8 text-black">
-              <div className="flex items-center bg-white bg-opacity-20 px-6 py-3 rounded-full">
+              <div className="flex items-center bg-black bg-opacity-10 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
                 <Award className="w-6 h-6 mr-3" />
-                <span className="font-medium">Certificação Reconhecida</span>
+                <span className="font-semibold">Certificação Reconhecida</span>
               </div>
-              <div className="flex items-center bg-white bg-opacity-20 px-6 py-3 rounded-full">
+              <div className="flex items-center bg-black bg-opacity-10 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
                 <Users className="w-6 h-6 mr-3" />
-                <span className="font-medium">Instrutores Qualificados</span>
+                <span className="font-semibold">Instrutores Qualificados</span>
               </div>
-              <div className="flex items-center bg-white bg-opacity-20 px-6 py-3 rounded-full">
+              <div className="flex items-center bg-black bg-opacity-10 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
                 <BookOpen className="w-6 h-6 mr-3" />
-                <span className="font-medium">Material Atualizado</span>
+                <span className="font-semibold">Material Atualizado</span>
               </div>
             </div>
           </div>
