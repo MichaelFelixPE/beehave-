@@ -83,11 +83,16 @@ const teamHierarchy: TeamMember[] = [
             level: 'C',
             crm: 'CRP-02/26926',
             formations: [
-              'Mestrado em Psicologia',
-              'Especialização em Psicologia Clínica',
-              'Graduação em Psicologia'
+              'Mestrado em Processos Cognitivos e Comportamentais pela Universidade Federal do Vale do São Francisco (UNIVASF)',
+              'Graduação em Psicologia pela UNIVASF',
+              'Especialista em Análise do Comportamento Aplicada (ABA)',
+              'Especialista em ABA para Autismo e Deficiência Intelectual',
+              'Formação em manejo de crises agressivas',
+              'Formação em comunicação alternativa',
+              'Membro do grupo de pesquisa Comportamento, Cooperação e Cultura (3C) da UNIVASF',
+              'Membro do Laboratório de Comportamento Social e Seleção Cultural (LACS) da UFPA'
             ],
-            bio: 'Supervisor com foco em atendimento clínico e supervisão de casos.',
+            bio: 'Rafael Alves Rodrigues é mestre em Processos Cognitivos e Comportamentais pela Universidade Federal do Vale do São Francisco (UNIVASF), onde também se formou em Psicologia. É especialista em Análise do Comportamento Aplicada (ABA) e em ABA para Autismo e Deficiência Intelectual. Membro do grupo de pesquisa Comportamento, Cooperação e Cultura (3C) da UNIVASF e do Laboratório de Comportamento Social e Seleção Cultural (LACS) da UFPA. Além disso, possui formações em áreas como manejo de crises agressivas e comunicação alternativa. Atualmente, atua como supervisor parceiro da Beehave Soluções Comportamentais.',
           },
           {
             name: 'Ma. Thamires Iukisa',
