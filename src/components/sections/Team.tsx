@@ -436,8 +436,8 @@ const Team = () => {
         }
 
         .hexagon-image[src*="fernando"] {
-          width: 110%;
-          height: 110%;
+          width: 104%;
+          height: 104%;
         }
 
         .hexagon-image[src*="BU6tqCO"] {
