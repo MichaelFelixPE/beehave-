@@ -19,7 +19,7 @@ const teamHierarchy: TeamMember[] = [
     role: 'Diretora de Finanças e RH',
     image: 'https://i.imgur.com/ZEhbVZI.jpeg',
     level: 'A',
-    crm: 'CRP 00/00000',
+    crm: 'CRP-02/17658',
     formations: [
       'Mestrado em Psicologia',
       'Especialização em Gestão de Pessoas',
@@ -32,7 +32,7 @@ const teamHierarchy: TeamMember[] = [
         role: 'Diretora de Marketing e Operações',
         image: 'https://i.imgur.com/fN975T0.jpeg',
         level: 'B',
-        crm: 'CRP 00/00000',
+        crm: 'CRP-02/15644',
         formations: [
           'Doutorado em Psicologia',
           'Mestrado em Psicologia Clínica',
@@ -45,7 +45,7 @@ const teamHierarchy: TeamMember[] = [
             role: 'Supervisor',
             image: 'https://i.imgur.com/BU6tqCO.jpeg',
             level: 'C',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-02/20334',
             formations: [
               'Mestrado em Psicologia',
               'Especialização em Análise do Comportamento',
@@ -58,7 +58,7 @@ const teamHierarchy: TeamMember[] = [
             role: 'Supervisor',
             image: 'https://i.imgur.com/DJR131G.jpeg',
             level: 'C',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-02/21135',
             formations: [
               'Mestrado em Psicologia',
               'Especialização em Terapia Cognitivo-Comportamental',
@@ -71,7 +71,7 @@ const teamHierarchy: TeamMember[] = [
             role: 'Supervisor',
             image: 'https://i.imgur.com/Qz9WLJ6.jpeg',
             level: 'C',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-02/26926',
             formations: [
               'Mestrado em Psicologia',
               'Especialização em Psicologia Clínica',
@@ -84,7 +84,7 @@ const teamHierarchy: TeamMember[] = [
             role: 'Supervisora',
             image: 'https://i.imgur.com/8082mo0.jpeg',
             level: 'C',
-            crm: 'CRP 00/00000',
+            crm: 'CFEP-19002082',
             formations: [
               'Mestrado em Psicologia',
               'Especialização em Análise do Comportamento',
@@ -97,7 +97,7 @@ const teamHierarchy: TeamMember[] = [
             role: 'Supervisora',
             image: 'https://i.imgur.com/fN975T0.jpeg',
             level: 'C',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-02/15644',
             formations: [
               'Doutorado em Psicologia',
               'Mestrado em Psicologia Clínica',
@@ -110,7 +110,7 @@ const teamHierarchy: TeamMember[] = [
             role: 'Supervisora',
             image: 'https://i.imgur.com/ZEhbVZI.jpeg',
             level: 'C',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-02/17658',
             formations: [
               'Mestrado em Psicologia',
               'Especialização em Gestão de Pessoas',
@@ -123,7 +123,7 @@ const teamHierarchy: TeamMember[] = [
             role: 'Supervisor',
             image: 'https://i.imgur.com/57Xr5pn.jpeg',
             level: 'C',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-02/26874',
             formations: [
               'Especialização em Terapia Cognitivo-Comportamental',
               'Graduação em Psicologia'
@@ -135,7 +135,7 @@ const teamHierarchy: TeamMember[] = [
             role: 'Coordenadora',
             image: 'https://i.imgur.com/bPV6yn9.jpeg',
             level: 'D',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-02/25615',
             formations: [
               'Especialização em Psicologia Clínica',
               'Graduação em Psicologia'
@@ -147,7 +147,7 @@ const teamHierarchy: TeamMember[] = [
             role: 'Coordenadora',
             image: 'https://i.imgur.com/EGe56gz.jpeg',
             level: 'D',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-02/264110',
             formations: [
               'Especialização em Terapia Cognitivo-Comportamental',
               'Graduação em Psicologia'
@@ -159,7 +159,7 @@ const teamHierarchy: TeamMember[] = [
             role: 'Coordenador',
             image: 'https://i.imgur.com/S2TGn6d.jpeg',
             level: 'D',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-02/30450',
             formations: [
               'Especialização em Análise do Comportamento',
               'Graduação em Psicologia'
@@ -171,7 +171,7 @@ const teamHierarchy: TeamMember[] = [
             role: 'Coordenadora',
             image: 'https://i.imgur.com/RltbllC.jpeg',
             level: 'D',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-03/19674',
             formations: [
               'Especialização em Psicologia Organizacional',
               'Graduação em Psicologia'
@@ -183,7 +183,7 @@ const teamHierarchy: TeamMember[] = [
             role: 'Coordenadora',
             image: 'https://i.imgur.com/5kDExFR.jpeg',
             level: 'D',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-02/26606',
             formations: [
               'Especialização em Psicologia Clínica',
               'Graduação em Psicologia'
@@ -207,7 +207,7 @@ const teamHierarchy: TeamMember[] = [
             role: 'Coordenadora',
             image: 'https://i.imgur.com/veAEOsy.jpeg',
             level: 'D',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-02/26518',
             formations: [
               'Especialização em Terapia Cognitivo-Comportamental',
               'Graduação em Psicologia'
@@ -219,7 +219,7 @@ const teamHierarchy: TeamMember[] = [
             role: 'Coordenadora',
             image: 'https://i.imgur.com/W6FVLyd.jpeg',
             level: 'D',
-            crm: 'CRP 00/00000',
+            crm: 'CRP 02/28286',
             formations: [
               'Especialização em Psicologia Clínica',
               'Graduação em Psicologia'
@@ -231,7 +231,7 @@ const teamHierarchy: TeamMember[] = [
             role: 'Psicoterapeuta',
             image: 'https://i.imgur.com/vyQlmGB.jpeg',
             level: 'E',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-02/23629',
             formations: [
               'Graduação em Psicologia',
               'Formação em Terapia Cognitivo-Comportamental'
@@ -243,7 +243,7 @@ const teamHierarchy: TeamMember[] = [
             role: 'Psicoterapeuta',
             image: 'https://i.imgur.com/w3IO4mA.jpeg',
             level: 'E',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-02/20367',
             formations: [
               'Graduação em Psicologia',
               'Formação em Análise do Comportamento'
@@ -255,7 +255,7 @@ const teamHierarchy: TeamMember[] = [
             role: 'Psicoterapeuta',
             image: 'https://i.imgur.com/adggXBn.jpeg',
             level: 'E',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-03/18294',
             formations: [
               'Graduação em Psicologia',
               'Formação em Terapia Cognitivo-Comportamental'
@@ -267,7 +267,7 @@ const teamHierarchy: TeamMember[] = [
             role: 'Psicoterapeuta',
             image: 'https://i.imgur.com/BhrH4CK.jpeg',
             level: 'E',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-02/30345',
             formations: [
               'Graduação em Psicologia',
               'Formação em Psicologia Clínica'
