@@ -21,7 +21,26 @@ const teamHierarchy: TeamMember[] = [
     level: 'A',
     crm: 'CRP-02/17658',
     formations: [
-      'Mestrado em Psicologia',
+      'Certificação internacional QBA (sigla do inglês, Analista do Comportamento Qualificada) (em andamento).
+
+Certificação internacional de Instrutora PCM (sigla do inglês, Sistema Profissional de Gerenciamento de Crises).
+
+Doutora e Mestra em Teoria e Pesquisa do Comportamento pela Universidade Federal do Pará (UFPA).
+
+Doutorado com Estágio na Universidade Metropolitana de Oslo (Oslo Metropolitan University) em Oslo-Noruega.
+
+Bacharel em Psicologia pela Universidade Federal do Vale do São Francisco (Univasf).
+
+Sócia e Diretora de Operações da Beehave: Soluções comportamentais.
+
+Atua como Pesquisadora, Docente e Analista do Comportamento Supervisora nas áreas de desenvolvimento atípico/TEA, escolar e de práticas culturais de cooperação.
+
+Possui publicações nacionais e internacionais sobre comportamento social, seleção cultural, controle aversivo e autocontrole ético.
+
+Presta serviços em ABA de: Supervisão técnica para Coordenadora(dor) e Supervisora(sor) de intervenção em ABA ao  desenvolvimento atípico; elaboração e adaptação de protocolos, currículos e materiais individualizados. Supervisão técnica para candidatas(os) à IBA (sigla do inglês, Analista do Comportamento Internacional).
+
+Algumas formações: Instrutora PCM; Capacitação para Supervisão de Intervenção Comportamental em Análise do Comportamento Aplicada (ABA); Produção de materiais e currículos adaptados no contexto de inclusão escolar; Avaliação transdisciplinar em Análise do Comportamento Aplicada ao autismo, foco VB-MAPP; Introdução ao ABLLS (Assessment of basic language and learning skills); Sistema de Comunicação por Troca de Figuras (Pecs); Seletividade alimentar e intervenção baseada em ABA.
+Currículo Lattes:  http://lattes.cnpq.br/4041324592265957',
       'Especialização em Gestão de Pessoas',
       'Graduação em Psicologia'
     ],
