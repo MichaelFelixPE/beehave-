@@ -272,10 +272,11 @@ const teamHierarchy: TeamMember[] = [
             level: 'E',
             crm: 'CRP-03/18294',
             formations: [
-              'Graduação em Psicologia',
-              'Formação em Terapia Cognitivo-Comportamental'
+              'Bacharelado em Psicologia pela Univasf (2015)',
+              'Pós-graduanda em Psicopedagogia pela UPE',
+              'Pós-graduação em Intervenção ABA para Autismo e Deficiência Intelectual pelo CBI of Miami'
             ],
-            bio: 'Psicoterapeuta especializada em atendimento clínico individual e em grupo.',
+            bio: 'Sou Núbia de Sousa, tenho Bacharelado em Psicologia pela Univasf, 2015; Pós-graduanda em Psicopedagogia pela UPE; Pós-graduação em Intervenção ABA para Autismo e Deficiência Intelectual pelo CBI of Miami. Tive experiência como Aplicadora entre 2019 e 2021; e Analista do Comportamento Coordenadora entre 2022 e 2024.',
           },
           {
             name: 'Renata Dantas',
