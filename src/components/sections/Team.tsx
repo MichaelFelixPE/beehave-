@@ -256,7 +256,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Gutemberg dos Santos',
             role: 'Psicoterapeuta',
-            image: 'https://i.imgur.com/w3IO4mA.jpeg',
+            image: 'https://i.imgur.com/luGPgKa.jpeg',
             level: 'E',
             crm: 'CRP-02/20367',
             formations: [
