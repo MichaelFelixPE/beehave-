@@ -268,7 +268,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Núbia Costa',
             role: 'Psicoterapeuta',
-            image: 'https://i.imgur.com/adggXBn.jpeg',
+            image: 'https://i.imgur.com/nD3QWnm.jpeg',
             level: 'E',
             crm: 'CRP-03/18294',
             formations: [
@@ -281,7 +281,7 @@ const teamHierarchy: TeamMember[] = [
           {
             name: 'Renata Dantas',
             role: 'Psicoterapeuta',
-            image: 'https://i.imgur.com/BhrH4CK.jpeg',
+            image: 'https://i.imgur.com/TGufhH3.jpeg',
             level: 'E',
             crm: 'CRP-02/30345',
             formations: [
