@@ -16,7 +16,7 @@ interface TeamMember {
 const teamHierarchy: TeamMember[] = [
   {
     name: 'Ma. Jacqueline Iukisa',
-    role: 'Diretora de Finanças e RH',
+    role: 'Sócia | Diretora de Finanças e RH',
     image: 'https://i.imgur.com/ZEhbVZI.jpeg',
     level: 'A',
     crm: 'CRP-02/17658',
@@ -29,7 +29,7 @@ const teamHierarchy: TeamMember[] = [
     children: [
       {
         name: 'Dra. Thais Guimarães',
-        role: 'Diretora de Marketing e Operações',
+        role: 'Sócia | Diretora de Marketing e Operações',
         image: 'https://i.imgur.com/fN975T0.jpeg',
         level: 'B',
         crm: 'CRP-02/15644',
@@ -52,7 +52,7 @@ const teamHierarchy: TeamMember[] = [
         children: [
           {
             name: 'Me. Luiz Felipe Alves',
-            role: 'Supervisor',
+            role: 'Sócio | Supervisor',
             image: 'https://i.imgur.com/BU6tqCO.jpeg',
             level: 'C',
             crm: 'CRP-02/20334',
