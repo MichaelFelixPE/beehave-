@@ -291,6 +291,61 @@ const teamHierarchy: TeamMember[] = [
             ],
             bio: 'Sou Renata Dantas, Psicóloga formada pela Faculdade Uninassau, com atuação voltada para o público infantil. Tenho especialização em Intervenção ABA aplicada ao Transtorno do Espectro Autista (TEA) e formação em Terapias Contextuais. Minha escolha pela área infantil, especialmente no acompanhamento de crianças com TEA, foi motivada por uma experiência pessoal que me permitiu vivenciar, de perto, os impactos positivos da intervenção precoce no desenvolvimento infantil. Minha atuação é fundamentada na Análise do Comportamento, uma abordagem científica que busca compreender e promover mudanças significativas no comportamento por meio de intervenções individualizadas, planejadas de forma ética e cuidadosa, sempre com o objetivo de melhorar a qualidade de vida do indivíduo. No trabalho com crianças, especialmente aquelas com desenvolvimento atípico, o lúdico é utilizado como ferramenta central para a construção do vínculo, além da aplicação de estratégias que respeitam o tempo, as necessidades e o contexto de cada uma, favorecendo a aquisição de habilidades sociais, cognitivas, comunicativas e emocionais. Acredito em uma prática que une conhecimento técnico e acolhimento, criando um espaço seguro para que cada criança possa se desenvolver com confiança, autonomia e respeitando sua singularidade.',
           },
+          {
+            name: 'Adson Raul',
+            role: 'Equipe de Avaliação',
+            image: 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=AR',
+            level: 'E-EVAL',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Graduação em Psicologia'
+            ],
+            bio: 'Membro da equipe de avaliação especializado em análise comportamental.',
+          },
+          {
+            name: 'Brenda Souza',
+            role: 'Equipe de Avaliação',
+            image: 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=BS',
+            level: 'E-EVAL',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Graduação em Psicologia'
+            ],
+            bio: 'Membro da equipe de avaliação especializado em análise comportamental.',
+          },
+          {
+            name: 'Luégina Sena',
+            role: 'Equipe de Avaliação',
+            image: 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=LS',
+            level: 'E-EVAL',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Graduação em Psicologia'
+            ],
+            bio: 'Membro da equipe de avaliação especializado em análise comportamental.',
+          },
+          {
+            name: 'Patrícia Matos',
+            role: 'Equipe de Avaliação',
+            image: 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=PM',
+            level: 'E-EVAL',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Graduação em Psicologia'
+            ],
+            bio: 'Membro da equipe de avaliação especializado em análise comportamental.',
+          },
+          {
+            name: 'Waleska Oliveira',
+            role: 'Equipe de Avaliação',
+            image: 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=WO',
+            level: 'E-EVAL',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Graduação em Psicologia'
+            ],
+            bio: 'Membro da equipe de avaliação especializado em análise comportamental.',
+          },
         ],
       },
     ],
@@ -382,6 +437,7 @@ const Team = () => {
   const subDirectors = directors[0]?.children || [];
   const supervisors = subDirectors[0]?.children?.filter(m => m.level === 'C') || [];
   const coordinators = subDirectors[0]?.children?.filter(m => m.level === 'D') || [];
+  const evaluationTeam = subDirectors[0]?.children?.filter(m => m.level === 'E-EVAL') || [];
   const therapists = subDirectors[0]?.children?.filter(m => m.level === 'E') || [];
 
   return (
@@ -496,6 +552,19 @@ const Team = () => {
               <div className="flex justify-center gap-6 flex-wrap max-w-5xl">
                 {coordinators.map((coordinator, idx) => (
                   <HexagonMember key={idx} member={coordinator} onClick={() => setSelectedMember(coordinator)} />
+                ))}
+              </div>
+            </>
+          )}
+
+          {evaluationTeam.length > 0 && (
+            <>
+              <div className="text-center w-full">
+                <h3 className="text-lg font-bold text-gray-700 mb-4">Equipe de Avaliação</h3>
+              </div>
+              <div className="flex justify-center gap-6 flex-wrap max-w-5xl">
+                {evaluationTeam.map((member, idx) => (
+                  <HexagonMember key={idx} member={member} onClick={() => setSelectedMember(member)} />
                 ))}
               </div>
             </>
