@@ -45,8 +45,8 @@
 4. **Regulação Emocional**
    - "Orientação no reconhecimento, compreensão e gerenciamento eficaz das emoções através de abordagens terapêuticas baseadas em evidências."
 
-5. **Orientação para Pais**
-   - "Capacitação dos pais com estratégias, técnicas e compreensão para apoiar o desenvolvimento e bem-estar de seus filhos."
+5. **Orientação Parental**
+   - "Atendimentos realizados com mãe, pai, e/ou outras(os) Cuidadoras(es) para auxiliá-las(os) a compreender os comportamentos de sua filha ou de seu filho. Durante a Orientação, ofertamos suporte para encaminhar estratégias comportamentais para melhorar a comunicação, manejar comportamentos desafiadores, gerenciar conflitos e fortalecer vínculos familiares, promovendo, assim, um ambiente familiar saudável. Se necessário, poderá ocorrer Treino parental, no qual, por meio de prática, basicamente, ensinaremos as estratégias para manejar comportamentos."
 
 6. **Avaliação Comportamental**
    - "Avaliação individualizada, que, por meio de Protocolos de Avaliação publicados, a nossa Equipe de Avaliação identificará os déficits e excessos comportamentais do Aprendente, a fim de auxiliar na produção efetiva e científica de uma Plano de Ensino Individualizado (PEI). A depender da necessidade da(o) Aprendente, junto a sua família, essa Avaliação pode ser abrangente, quando avalia diferentes áreas de habilidades (ex: comunicação, social, motoras, acadêmicas); ou focal, quando uma área de habilidades é escolhida para avaliar."
