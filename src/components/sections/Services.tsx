@@ -67,8 +67,7 @@ const Services: React.FC = () => {
 
         <div className="mt-12 text-center">
           <p className="text-gray-700 max-w-3xl mx-auto">
-            Nossa abordagem é individualizada para atender às necessidades específicas de cada criança,
-            focando no desenvolvimento de pontos fortes enquanto abordamos os desafios.
+            Utilizamos esse termo para nos referir a pessoa que atenderemos, com desenvolvimento atípico ou típico. Essa pessoa é Aprendente por ser uma(um) Agente ativo em sua história individual e social, em processo contínuo de aprendizagem.
           </p>
         </div>
       </div>
