@@ -8,8 +8,8 @@ const serviceItems = [
     icon: Brain,
   },
   {
-    title: 'Terapia de Integração Sensorial',
-    description: 'Técnicas especializadas para ajudar crianças a processar informações sensoriais e desenvolver respostas apropriadas a estímulos sensoriais.',
+    title: 'Avaliação Comportamental',
+    description: 'Avaliação individualizada, que, por meio de Protocolos de Avaliação publicados, a nossa Equipe de Avaliação identificará os déficits e excessos comportamentais do Aprendente, a fim de auxiliar na produção efetiva e científica de uma Plano de Ensino Individualizado (PEI). A depender da necessidade da(o) Aprendente, junto a sua família, essa Avaliação pode ser abrangente, quando avalia diferentes áreas de habilidades (ex: comunicação, social, motoras, acadêmicas); ou focal, quando uma área de habilidades é escolhida para avaliar.',
     icon: Puzzle,
   },
   {
