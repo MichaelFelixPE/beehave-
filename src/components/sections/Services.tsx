@@ -39,7 +39,7 @@ const Services: React.FC = () => {
     <section id="services" className="py-16 bg-gradient-to-b from-yellow-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-black">Nossa BeeEquipe Especialistaspecializados</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-black">Nossos Serviços Especializados</h2>
           <div className="w-24 h-1 bg-yellow-400 mx-auto my-4"></div>
           <p className="max-w-2xl mx-auto text-gray-700">
             Oferecemos uma variedade de abordagens terapêuticas baseadas em evidências, adaptadas às necessidades únicas de cada criança.
