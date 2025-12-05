@@ -29,7 +29,7 @@ const serviceItems = [
   },
   {
     title: 'Avaliação Comportamental',
-    description: 'Avaliação comportamental é um processo que analisa os padrões de comportamento de um indivíduo em diferentes contextos, especialmente no ambiente de trabalho.',
+    description: 'Avaliação individualizada, que, por meio de Protocolos de Avaliação publicados, a nossa Equipe de Avaliação identificará os déficits e excessos comportamentais do Aprendente, a fim de auxiliar na produção efetiva e científica de uma Plano de Ensino Individualizado (PEI). A depender da necessidade da(o) Aprendente, junto a sua família, essa Avaliação pode ser abrangente, quando avalia diferentes áreas de habilidades (ex: comunicação, social, motoras, acadêmicas); ou focal, quando uma área de habilidades é escolhida para avaliar.',
     icon: MessageSquare,
   },
 ];
@@ -39,7 +39,9 @@ const Services: React.FC = () => {
     <section id="services" className="py-16 bg-gradient-to-b from-yellow-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-black">Nossos Serviços Especializados</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-black">Nos25+
+
+Especialistaspecializados</h2>
           <div className="w-24 h-1 bg-yellow-400 mx-auto my-4"></div>
           <p className="max-w-2xl mx-auto text-gray-700">
             Oferecemos uma variedade de abordagens terapêuticas baseadas em evidências, adaptadas às necessidades únicas de cada criança.
