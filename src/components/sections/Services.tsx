@@ -13,8 +13,8 @@ const serviceItems = [
     icon: Puzzle,
   },
   {
-    title: 'Desenvolvimento de Habilidades Sociais',
-    description: 'Programas estruturados para aprimorar a interação social, comunicação e habilidades de construção de relacionamentos em grupos e individualmente.',
+    title: 'Intervenção Comportamental',
+    description: 'Intervenção baseada nos resultados da Avaliação comportamental, totalmente individualizada. Nossas(os) Analistas do Comportamentos Supervisores(as), baseadas(os) em evidências científicas, elaboram Programas de Ensino para alcançar os objetivos do PEI. Tais Programas são aplicados por nossas(os) Aplicadoras(es) treinados e acompanhadas(os) por nossas(os) Analistas do Comportamentos Coordenadoras(es). Assim, configura-se o nosso modelo de Equipe ABA, em que três ou mais Agentes de Ensino trabalham em prol da(o) Aprendente, junto à sua família.',
     icon: Users,
   },
   {
