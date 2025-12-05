@@ -18,8 +18,8 @@ const serviceItems = [
     icon: Users,
   },
   {
-    title: 'Regulação Emocional',
-    description: 'Orientação no reconhecimento, compreensão e gerenciamento eficaz das emoções através de abordagens terapêuticas baseadas em evidências.',
+    title: 'Psicoterapia',
+    description: 'Sessões, baseadas(os) na Ciência da Análise do Comportamento, realizadas por nossas(os) Psicólogas(os), que atendem Aprendentes (pessoas com desenvolvimento atípico ou típico) de diversas idades. Esse acompanhamento psicoterapêutico visa promover autoconhecimento, regulação emocional, repertórios comportamentais mais flexíveis, aumentando o bem-estar da(o) Aprendente.',
     icon: Heart,
   },
   {
