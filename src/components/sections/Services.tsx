@@ -23,8 +23,8 @@ const serviceItems = [
     icon: Heart,
   },
   {
-    title: 'Orientação para Pais',
-    description: 'Capacitação dos pais com estratégias, técnicas e compreensão para apoiar o desenvolvimento e bem-estar de seus filhos.',
+    title: 'Orientação Parental',
+    description: 'Atendimentos realizados com mãe, pai, e/ou outras(os) Cuidadoras(es) para auxiliá-las(os) a compreender os comportamentos de sua filha ou de seu filho. Durante a Orientação, ofertamos suporte para encaminhar estratégias comportamentais para melhorar a comunicação, manejar comportamentos desafiadores, gerenciar conflitos e fortalecer vínculos familiares, promovendo, assim, um ambiente familiar saudável. Se necessário, poderá ocorrer Treino parental, no qual, por meio de prática, basicamente, ensinaremos as estratégias para manejar comportamentos.',
     icon: Lightbulb,
   },
   {
