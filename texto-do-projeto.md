@@ -49,7 +49,7 @@
    - "Capacitação dos pais com estratégias, técnicas e compreensão para apoiar o desenvolvimento e bem-estar de seus filhos."
 
 6. **Avaliação Comportamental**
-   - "Avaliação comportamental é um processo que analisa os padrões de comportamento de um indivíduo em diferentes contextos, especialmente no ambiente de trabalho."
+   - "Avaliação individualizada, que, por meio de Protocolos de Avaliação publicados, a nossa Equipe de Avaliação identificará os déficits e excessos comportamentais do Aprendente, a fim de auxiliar na produção efetiva e científica de uma Plano de Ensino Individualizado (PEI). A depender da necessidade da(o) Aprendente, junto a sua família, essa Avaliação pode ser abrangente, quando avalia diferentes áreas de habilidades (ex: comunicação, social, motoras, acadêmicas); ou focal, quando uma área de habilidades é escolhida para avaliar."
 
 - **Texto final**: "Nossa abordagem é individualizada para atender às necessidades específicas de cada criança, focando no desenvolvimento de pontos fortes enquanto abordamos os desafios."
 - **Botão CTA**: "Agende uma Avaliação Inicial"
