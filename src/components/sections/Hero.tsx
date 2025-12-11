@@ -16,9 +16,8 @@ const Hero: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
-              Especialistas em 
               <span className="text-yellow-500"> ABA </span> 
-              aplicado ao TEA
+              em suas diferentes áreas de aplicação
             </h1>
             
             <p className="mt-6 text-lg text-gray-700 max-w-2xl mx-auto lg:mx-0">
