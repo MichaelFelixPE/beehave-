@@ -77,7 +77,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Me. Rafael Alves',
-            role: 'Supervisor',
             image: 'https://i.imgur.com/Qz9WLJ6.jpeg',
             level: 'C',
             crm: 'CRP-02/26926',
