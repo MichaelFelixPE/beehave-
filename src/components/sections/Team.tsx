@@ -141,7 +141,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Andrea Teixeira',
-            role: 'Coordenadora',
             image: 'https://i.imgur.com/bPV6yn9.jpeg',
             level: 'D',
             crm: 'CRP-02/25615',
@@ -153,7 +152,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Erica Tamires',
-            role: 'Coordenadora',
             image: 'https://i.imgur.com/EGe56gz.jpeg',
             level: 'D',
             crm: 'CRP-02/264110',
@@ -165,7 +163,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Gabriel Barão',
-            role: 'Coordenador',
             image: 'https://i.imgur.com/S2TGn6d.jpeg',
             level: 'D',
             crm: 'CRP-02/30450',
@@ -177,7 +174,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Jamille Mota',
-            role: 'Coordenadora',
             image: 'https://i.imgur.com/RltbllC.jpeg',
             level: 'D',
             crm: 'CRP-03/19674',
@@ -189,7 +185,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Joice Izabela',
-            role: 'Coordenadora',
             image: 'https://i.imgur.com/5kDExFR.jpeg',
             level: 'D',
             crm: 'CRP-02/26606',
@@ -201,7 +196,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Fernando Costa',
-            role: 'Coordenador',
             image: 'https://i.imgur.com/JsbcOvA.jpeg',
             level: 'D',
             crm: 'CRP 00/00000',
@@ -213,7 +207,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Joyce Ribeiro',
-            role: 'Coordenadora',
             image: 'https://i.imgur.com/veAEOsy.jpeg',
             level: 'D',
             crm: 'CRP-02/26518',
@@ -225,7 +218,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Nayara Queiroz',
-            role: 'Coordenadora',
             image: 'https://i.imgur.com/W6FVLyd.jpeg',
             level: 'D',
             crm: 'CRP 02/28286',
@@ -237,7 +229,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Aline Rodrigues',
-            role: 'Psicoterapeuta',
             image: 'https://i.imgur.com/vrqMI2m.jpeg',
             level: 'E',
             crm: 'CRP-02/23629',
@@ -249,7 +240,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Gutemberg dos Santos',
-            role: 'Psicoterapeuta',
             image: 'https://i.imgur.com/luGPgKa.jpeg',
             level: 'E',
             crm: 'CRP-02/20367',
@@ -261,7 +251,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Núbia Costa',
-            role: 'Psicoterapeuta',
             image: 'https://i.imgur.com/nD3QWnm.jpeg',
             level: 'E',
             crm: 'CRP-03/18294',
@@ -274,7 +263,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Renata Dantas',
-            role: 'Psicoterapeuta',
             image: 'https://i.imgur.com/TGufhH3.jpeg',
             level: 'E',
             crm: 'CRP-02/30345',
@@ -287,7 +275,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Adson Raul',
-            role: 'Equipe de Avaliação',
             image: 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=AR',
             level: 'E-EVAL',
             crm: 'CRP 00/00000',
@@ -298,7 +285,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Brenda Souza',
-            role: 'Equipe de Avaliação',
             image: 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=BS',
             level: 'E-EVAL',
             crm: 'CRP 00/00000',
@@ -309,7 +295,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Luégina Sena',
-            role: 'Equipe de Avaliação',
             image: 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=LS',
             level: 'E-EVAL',
             crm: 'CRP 00/00000',
@@ -320,7 +305,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Patrícia Matos',
-            role: 'Equipe de Avaliação',
             image: 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=PM',
             level: 'E-EVAL',
             crm: 'CRP 00/00000',
@@ -331,7 +315,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Waleska Oliveira',
-            role: 'Equipe de Avaliação',
             image: 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=WO',
             level: 'E-EVAL',
             crm: 'CRP 00/00000',
