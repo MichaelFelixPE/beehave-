@@ -52,7 +52,7 @@ const teamHierarchy: TeamMember[] = [
         children: [
           {
             name: 'Me. Luiz Felipe Alves',
-            role: 'Sócio',
+            role: 'Sócio|',
             image: 'https://i.imgur.com/BU6tqCO.jpeg',
             level: 'C',
             crm: 'CRP-02/20334',
