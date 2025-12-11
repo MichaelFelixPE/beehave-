@@ -118,7 +118,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Ma. Jacqueline Iukisa',
-            role: 'Supervisora',
             image: 'https://i.imgur.com/ZEhbVZI.jpeg',
             level: 'C',
             crm: 'CRP-02/17658',
