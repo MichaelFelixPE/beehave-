@@ -106,7 +106,6 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Dra. Thais Guimarães',
-            role: 'Supervisora',
             image: 'https://i.imgur.com/fN975T0.jpeg',
             level: 'C',
             crm: 'CRP-02/15644',
