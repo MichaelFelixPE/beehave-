@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
           <div className="text-center lg:text-left">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black leading-tight">
               ABA em suas diferentes
-              <span className="text-yellow-500"> áreas</span> 
+              <span className="text-yellow-500"> áreas </span> 
               de aplicação
             </h1>
             
