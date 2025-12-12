@@ -1,12 +1,7 @@
 import React from 'react';
-import { Brain, Heart, Users, Lightbulb, MessageSquare, Puzzle } from 'lucide-react';
+import { Heart, Users, Lightbulb, Puzzle } from 'lucide-react';
 
 const serviceItems = [
-  {
-    title: 'Avaliação Cognitiva',
-    description: 'Avaliação abrangente para compreender pontos fortes e desafios cognitivos, fornecendo base para planos terapêuticos personalizados.',
-    icon: Brain,
-  },
   {
     title: 'Avaliação Comportamental',
     description: 'Avaliação individualizada, que, por meio de Protocolos de Avaliação publicados, a nossa Equipe de Avaliação identificará os déficits e excessos comportamentais do Aprendente, a fim de auxiliar na produção efetiva e científica de uma Plano de Ensino Individualizado (PEI). A depender da necessidade da(o) Aprendente, junto a sua família, essa Avaliação pode ser abrangente, quando avalia diferentes áreas de habilidades (ex: comunicação, social, motoras, acadêmicas); ou focal, quando uma área de habilidades é escolhida para avaliar.',
@@ -27,11 +22,6 @@ const serviceItems = [
     description: 'Atendimentos realizados com mãe, pai, e/ou outras(os) Cuidadoras(es) para auxiliá-las(os) a compreender os comportamentos de sua filha ou de seu filho. Durante a Orientação, ofertamos suporte para encaminhar estratégias comportamentais para melhorar a comunicação, manejar comportamentos desafiadores, gerenciar conflitos e fortalecer vínculos familiares, promovendo, assim, um ambiente familiar saudável. Se necessário, poderá ocorrer Treino parental, no qual, por meio de prática, basicamente, ensinaremos as estratégias para manejar comportamentos.',
     icon: Lightbulb,
   },
-  {
-    title: 'Avaliação Comportamental',
-    description: 'Avaliação individualizada, que, por meio de Protocolos de Avaliação publicados, a nossa Equipe de Avaliação identificará os déficits e excessos comportamentais do Aprendente, a fim de auxiliar na produção efetiva e científica de uma Plano de Ensino Individualizado (PEI). A depender da necessidade da(o) Aprendente, junto a sua família, essa Avaliação pode ser abrangente, quando avalia diferentes áreas de habilidades (ex: comunicação, social, motoras, acadêmicas); ou focal, quando uma área de habilidades é escolhida para avaliar.',
-    icon: MessageSquare,
-  },
 ];
 
 const Services: React.FC = () => {
@@ -47,7 +37,7 @@ const Services: React.FC = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {serviceItems.map((service, index) => {
             const IconComponent = service.icon;
             return (
