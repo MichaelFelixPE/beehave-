@@ -45,7 +45,7 @@ const About: React.FC = () => {
                 Por que "Beehave"?
               </h3>
               <p className="text-gray-700 leading-relaxed mb-4">
-                BeehaVe é um trocadilho a partir da junção de duas palavras da língua inglesa: <strong>Bee</strong> (Abelha) e <strong>Behave</strong> (comportar-se). A junção das duas não foi ao acaso. Temos como pilar da nossa empresa os conceitos de pioneirismo, trabalho em equipe, tecnologia e eficiência.
+                Beehave é um trocadilho a partir da junção de duas palavras da língua inglesa: <strong>Bee</strong> (Abelha) e <strong>Behave</strong> (comportar-se). A junção das duas não foi ao acaso. Temos como pilar da nossa empresa os conceitos de pioneirismo, trabalho em equipe, tecnologia e eficiência.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 As abelhas trabalham em um sistema de hierarquia de forma organizada, em que o papel de cada uma na Colmeia é de extrema importância. Conhecidas por trabalharem de forma cooperativa e serem muito eficientes no que fazem, a escolha desse inseto foi a combinação perfeita para como a nossa equipe se organiza.
