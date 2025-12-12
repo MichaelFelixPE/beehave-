@@ -140,7 +140,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Supervisora especializada em processos terapêuticos e gestão de casos.',
           },
           {
-            name: 'Andrea Teixeira',
+            name: ' Esp. Andrea Teixeira',
             image: 'https://i.imgur.com/bPV6yn9.jpeg',
             level: 'D',
             crm: 'CRP-02/25615',
@@ -151,7 +151,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Coordenadora com foco em gestão de equipes e atendimento clínico.',
           },
           {
-            name: 'Erica Tamires',
+            name: ' Esp. Erica Tamires',
             image: 'https://i.imgur.com/EGe56gz.jpeg',
             level: 'D',
             crm: 'CRP-02/264110',
@@ -162,7 +162,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Coordenadora especializada em processos terapêuticos e gestão de casos.',
           },
           {
-            name: 'Gabriel Barão',
+            name: ' Esp. Gabriel Barão',
             image: 'https://i.imgur.com/S2TGn6d.jpeg',
             level: 'D',
             crm: 'CRP-02/30450',
@@ -173,7 +173,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Coordenador com experiência em análise comportamental e coordenação de equipes.',
           },
           {
-            name: 'Jamille Mota',
+            name: ' Esp. Jamille Mota',
             image: 'https://i.imgur.com/RltbllC.jpeg',
             level: 'D',
             crm: 'CRP-03/19674',
@@ -184,7 +184,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Coordenadora com foco em processos organizacionais e desenvolvimento de equipes.',
           },
           {
-            name: 'Joice Izabela',
+            name: ' Esp. Joice Izabela',
             image: 'https://i.imgur.com/5kDExFR.jpeg',
             level: 'D',
             crm: 'CRP-02/26606',
@@ -195,7 +195,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Coordenadora especializada em atendimento clínico e supervisão de casos.',
           },
           {
-            name: 'Fernando Costa',
+            name: ' Esp. Fernando Costa',
             image: 'https://i.imgur.com/JsbcOvA.jpeg',
             level: 'D',
             crm: 'CRP 00/00000',
@@ -206,7 +206,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Coordenador com experiência em análise comportamental aplicada.',
           },
           {
-            name: 'Joyce Ribeiro',
+            name: ' Esp. Joyce Ribeiro',
             image: 'https://i.imgur.com/veAEOsy.jpeg',
             level: 'D',
             crm: 'CRP-02/26518',
@@ -217,7 +217,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Coordenadora com foco em intervenções cognitivo-comportamentais.',
           },
           {
-            name: 'Nayara Queiroz',
+            name: ' Esp. Nayara Queiroz',
             image: 'https://i.imgur.com/W6FVLyd.jpeg',
             level: 'D',
             crm: 'CRP 02/28286',
