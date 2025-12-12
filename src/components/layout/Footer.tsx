@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
           <div className="col-span-1">
             <h3 className="text-lg font-semibold mb-4 text-yellow-400">Links Rápidos</h3>
             <ul className="space-y-2">
-              <li><a href="#services" className="text-gray-300 hover:text-yellow-400 transition-colors">Nossos Serviços</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-yellow-400 transition-colors">Beehave Serviços</a></li>
               <li><a href="#about" className="text-gray-300 hover:text-yellow-400 transition-colors">Sobre Nós</a></li>
               <li><a href="#team" className="text-gray-300 hover:text-yellow-400 transition-colors">Nossa Equipe</a></li>
               <li><a href="#faq" className="text-gray-300 hover:text-yellow-400 transition-colors">Perguntas Frequentes</a></li>
