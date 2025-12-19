@@ -140,6 +140,16 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Supervisora especializada em processos terapêuticos e gestão de casos.',
           },
           {
+            name: 'Joiria',
+            image: 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=JR',
+            level: 'C',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Graduação em Psicologia'
+            ],
+            bio: 'Analista do Comportamento Supervisora.',
+          },
+          {
             name: ' Esp. Andrea Teixeira',
             image: 'https://i.imgur.com/bPV6yn9.jpeg',
             level: 'D',
@@ -226,6 +236,16 @@ const teamHierarchy: TeamMember[] = [
               'Graduação em Psicologia'
             ],
             bio: 'Coordenadora especializada em processos clínicos e gestão de equipes.',
+          },
+          {
+            name: 'Carlane',
+            image: 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=CA',
+            level: 'D',
+            crm: 'CRP 00/00000',
+            formations: [
+              'Graduação em Psicologia'
+            ],
+            bio: 'Analista do Comportamentos Coordenadora.',
           },
           {
             name: 'Aline Rodrigues',
