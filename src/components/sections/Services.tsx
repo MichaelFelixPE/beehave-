@@ -60,7 +60,7 @@ const Services: React.FC = () => {
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
                 <div className="flex items-center justify-center h-10 w-10 rounded-full bg-yellow-500">
-                  <span className="text-white font-bold text-lg">*</span>
+                  <span className="text-white font-bold text-lg">i</span>
                 </div>
               </div>
               <div className="flex-1">
