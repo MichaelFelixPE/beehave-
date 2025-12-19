@@ -87,8 +87,8 @@ const Contact: React.FC = () => {
                 <div>
                   <h4 className="text-lg font-medium text-black">Nosso Endereço</h4>
                   <p className="text-gray-700 mt-1">
-                    Rua Bahia, N808, Vila Moco<br />
-                    Petrolina-PE, CEP 56306430
+                    Rua Bahia, N 808, Vila Mocó<br />
+                    Petrolina-PE, CEP 56.306-430
                   </p>
                 </div>
               </div>
