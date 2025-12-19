@@ -33,8 +33,25 @@ const Services: React.FC = () => {
           <div className="w-24 h-1 bg-yellow-400 mx-auto my-4"></div>
           <p className="max-w-2xl mx-auto text-gray-700">
             Ofertamos uma variedade de serviços em ABA para Aprendentes* e suas família, Profissionais da Saúde e da Educação, Clínicas e Escolas.
-            
           </p>
+        </div>
+
+        <div className="mb-12">
+          <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-500 p-8 rounded-lg shadow-md max-w-4xl mx-auto">
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0">
+                <div className="flex items-center justify-center h-10 w-10 rounded-full bg-yellow-500">
+                  <span className="text-white font-bold text-lg">i</span>
+                </div>
+              </div>
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold text-yellow-900 mb-2">O que significa Aprendente?</h3>
+                <p className="text-gray-700 leading-relaxed">
+                  Utilizamos esse termo para nos referir à pessoa que atenderemos, com desenvolvimento atípico ou típico. Essa pessoa é <span className="font-semibold text-yellow-700">Aprendente</span> por ser uma(um) <span className="font-semibold text-yellow-700">Agente ativo</span> em sua história individual e social, em <span className="font-semibold text-yellow-700">processo contínuo de aprendizagem</span>.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -55,23 +72,6 @@ const Services: React.FC = () => {
           })}
         </div>
 
-        <div className="mt-12">
-          <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-500 p-8 rounded-lg shadow-md max-w-4xl mx-auto">
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0">
-                <div className="flex items-center justify-center h-10 w-10 rounded-full bg-yellow-500">
-                  <span className="text-white font-bold text-lg">i</span>
-                </div>
-              </div>
-              <div className="flex-1">
-                <h3 className="text-lg font-semibold text-yellow-900 mb-2">O que significa Aprendente?</h3>
-                <p className="text-gray-700 leading-relaxed">
-                  Utilizamos esse termo para nos referir à pessoa que atenderemos, com desenvolvimento atípico ou típico. Essa pessoa é <span className="font-semibold text-yellow-700">Aprendente</span> por ser uma(um) <span className="font-semibold text-yellow-700">Agente ativo</span> em sua história individual e social, em <span className="font-semibold text-yellow-700">processo contínuo de aprendizagem</span>.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
