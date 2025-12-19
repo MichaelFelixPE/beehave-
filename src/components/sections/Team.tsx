@@ -494,8 +494,8 @@ const Team = () => {
         }
 
         .hexagon-image[src*="BU6tqCO"] {
-          width: 100%;
-          height: 100%;
+          width: 112%;
+          height: 112%;
         }
 
         .connector-line {
