@@ -238,7 +238,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Coordenadora especializada em processos clínicos e gestão de equipes.',
           },
           {
-            name: 'Carlane Machado',
+            name: 'Esp. Carlane Machado',
             image: 'https://i.imgur.com/9ekDBk6.jpg',
             level: 'D',
             crm: 'CRP 00/00000',
