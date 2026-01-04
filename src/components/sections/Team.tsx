@@ -141,7 +141,7 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Joiria',
-            image: 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=JR',
+            image: 'https://imgur.com/zJGPMaX.jpg',
             level: 'C',
             crm: 'CRP 00/00000',
             formations: [
@@ -239,7 +239,7 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Carlane',
-            image: 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=CA',
+            image: 'https://imgur.com/9ekDBk6.jpg',
             level: 'D',
             crm: 'CRP 00/00000',
             formations: [
