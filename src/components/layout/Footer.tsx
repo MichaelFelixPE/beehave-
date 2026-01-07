@@ -30,20 +30,29 @@ const Footer: React.FC = () => {
           {/* Informações de Contato */}
           <div className="col-span-1">
             <h3 className="text-lg font-semibold mb-4 text-yellow-400">Contate-nos</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <MapPin size={20} className="mr-2 text-yellow-400 flex-shrink-0 mt-1" />
-                <span className="text-gray-300">Rua Bahia, N 808, Vila Moco <br />Petrolina-PE, CEP 56.306-430</span>
-              </li>
-              <li className="flex items-center">
-                <Phone size={20} className="mr-2 text-yellow-400 flex-shrink-0" />
-                <a href="tel:+55111234567" className="text-gray-300 hover:text-yellow-400 transition-colors"> 87 98828-7826 </a>
-              </li>
-              <li className="flex items-center">
-                <Mail size={20} className="mr-2 text-yellow-400 flex-shrink-0" />
-                <span className="text-gray-300">empresabeehave@gmail.com</span>
-              </li>
-            </ul>
+            <div className="space-y-3">
+              <div className="bg-gray-900 rounded p-3 flex items-start">
+                <MapPin size={20} className="mr-3 text-yellow-400 flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-yellow-400 text-sm mb-1">Endereço</p>
+                  <p className="text-sm text-gray-300">Rua Bahia, N 808, Vila Moco<br />Petrolina-PE, CEP 56.306-430</p>
+                </div>
+              </div>
+              <div className="bg-gray-900 rounded p-3 flex items-center">
+                <Phone size={20} className="mr-3 text-yellow-400 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold text-yellow-400 text-sm mb-1">Telefone</p>
+                  <a href="tel:+5587988287826" className="text-sm text-gray-300 hover:text-yellow-400 transition-colors">87 98828-7826</a>
+                </div>
+              </div>
+              <div className="bg-gray-900 rounded p-3 flex items-center">
+                <Mail size={20} className="mr-3 text-yellow-400 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold text-yellow-400 text-sm mb-1">Email</p>
+                  <p className="text-sm text-gray-300">empresabeehave@gmail.com</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Horário de Funcionamento */}
