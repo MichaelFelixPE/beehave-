@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
                 <div className="flex items-center justify-center">
                   <MapPin className="w-5 h-5 text-yellow-500 mr-2" />
                   <span className="text-gray-700 font-medium">
-                    Rua Bahia, N808, Vila Mocó - Petrolina-PE, CEP 56.306-430
+                    Rua Bahia, N 808, Vila Mocó - Petrolina-PE, CEP 56.306-430
                   </span>
                 </div>
               </div>
