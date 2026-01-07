@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
             <ul className="space-y-2">
               <li><a href="#services" className="text-gray-300 hover:text-yellow-400 transition-colors">Beehave Serviços</a></li>
               <li><a href="#about" className="text-gray-300 hover:text-yellow-400 transition-colors">Sobre Nós</a></li>
-              <li><a href="#team" className="text-gray-300 hover:text-yellow-400 transition-colors">Nossa Equipe</a></li>
+              <li><a href="#team" className="text-gray-300 hover:text-yellow-400 transition-colors">Nossa BeeEquipe</a></li>
               <li><a href="#faq" className="text-gray-300 hover:text-yellow-400 transition-colors">Perguntas Frequentes</a></li>
               <li><a href="#contact" className="text-gray-300 hover:text-yellow-400 transition-colors">Contato</a></li>
             </ul>
