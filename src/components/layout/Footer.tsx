@@ -49,20 +49,22 @@ const Footer: React.FC = () => {
           {/* Horário de Funcionamento */}
           <div className="col-span-1">
             <h3 className="text-lg font-semibold mb-4 text-yellow-400">Horários</h3>
-            <ul className="space-y-2">
-              <li className="flex justify-between text-gray-300">
-                <span>Segunda - Sexta:</span>
-                <span>8:00-12:00 e 14:00-18:00</span>
-              </li>
-              <li className="flex justify-between text-gray-300">
-                <span>Sábado:</span>
-                <span>Fechado</span>
-              </li>
-              <li className="flex justify-between text-gray-300">
-                <span>Domingo:</span>
-                <span>Fechado</span>
-              </li>
-            </ul>
+            <div className="space-y-3">
+              <div className="bg-gray-900 rounded p-3">
+                <p className="font-semibold text-yellow-400 mb-2">Segunda - Sexta</p>
+                <p className="text-sm text-gray-300">8:00 - 12:00</p>
+                <p className="text-sm text-gray-300">14:00 - 18:00</p>
+              </div>
+              <div className="bg-gray-900 rounded p-3">
+                <p className="font-semibold text-gray-400 mb-1">Sábado</p>
+                <p className="text-sm text-gray-400">Fechado</p>
+              </div>
+              <div className="bg-gray-900 rounded p-3">
+                <p className="font-semibold text-gray-400 mb-1">Domingo</p>
+                <p className="text-sm text-gray-400">Fechado</p>
+              </div>
+              <p className="text-xs text-gray-500 italic pt-2">*Fechado de 12:00 às 14:00 para almoço</p>
+            </div>
 
             {/* Redes Sociais */}
             <div className="mt-6">
