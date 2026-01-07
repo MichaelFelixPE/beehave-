@@ -140,7 +140,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Supervisora especializada em processos terapêuticos e gestão de casos.',
           },
           {
-            name: 'Joiria Cerqueira',
+            name: 'Me. Joiria Cerqueira',
             image: 'https://i.imgur.com/zJGPMaX.jpg',
             level: 'C',
             crm: 'CRP 00/00000',
