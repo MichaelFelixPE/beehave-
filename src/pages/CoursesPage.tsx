@@ -105,7 +105,7 @@ const courses = [
 
 const CoursesPage: React.FC = () => {
   return (
-    <div className="pt-20 bg-gray-50">
+    <div className="pt-20 bg-white">
       {/* hero section */}
       <section className="relative py-20 overflow-hidden">
         {/* background image */}
@@ -210,17 +210,17 @@ const CoursesPage: React.FC = () => {
                       </div>
 
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div className="bg-gray-50 p-4 rounded-lg text-center">
+                        <div className="bg-white border border-gray-200 p-4 rounded-lg text-center">
                           <Clock className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
                           <p className="font-semibold text-black">{course.duration}</p>
                           <p className="text-sm text-black">Duração</p>
                         </div>
-                        <div className="bg-gray-50 p-4 rounded-lg text-center">
+                        <div className="bg-white border border-gray-200 p-4 rounded-lg text-center">
                           <BookOpen className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
                           <p className="font-semibold text-black">{course.format}</p>
                           <p className="text-sm text-gray-600">Formato</p>
                         </div>
-                        <div className="bg-gray-50 p-4 rounded-lg text-center">
+                        <div className="bg-white border border-gray-200 p-4 rounded-lg text-center">
                           <Users className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
                           <p className="font-semibold text-black">{course.level}</p>
                           <p className="text-sm text-gray-600">Nível</p>
@@ -235,7 +235,7 @@ const CoursesPage: React.FC = () => {
                           {course.modules.map((module, moduleIndex) => (
                             <div
                               key={moduleIndex}
-                              className="flex items-center bg-yellow-50 p-3 rounded-lg"
+                              className="flex items-center bg-white border border-yellow-200 p-3 rounded-lg"
                             >
                               <div className="w-8 h-8 bg-yellow-400 text-black rounded-full flex items-center justify-center text-sm font-bold mr-3">
                                 {moduleIndex + 1}
@@ -248,7 +248,7 @@ const CoursesPage: React.FC = () => {
                     </div>
 
                     {/* Sidebar com Benefícios */}
-                    <div className="bg-gray-50 p-6 rounded-xl">
+                    <div className="bg-white border border-gray-200 p-6 rounded-xl">
                       <h4 className="text-xl font-semibold text-black mb-4">
                         O que você vai receber:
                       </h4>
