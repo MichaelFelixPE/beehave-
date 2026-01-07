@@ -94,8 +94,7 @@ const Testimonials: React.FC = () => {
 
         <div className="mt-20 text-center">
           <p className="text-gray-700 max-w-2xl mx-auto">
-            Estamos comprometidos em fazer uma diferença positiva na vida das crianças com autismo e suas famílias. 
-            O sucesso do seu filho é o nosso sucesso.
+            Queremos fazer a diferença na vida das pessoas por meio da ABA com Afeto, Ciência e Ética!
           </p>
         </div>
       </div>
