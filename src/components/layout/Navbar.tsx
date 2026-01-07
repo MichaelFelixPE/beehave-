@@ -32,7 +32,9 @@ const Navbar: React.FC = () => {
   ];
 
   const handleNavClick = (path: string) => {
-    if (path.startsWith('/#')) {
+    if (path === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (path.startsWith('/#')) {
       // Se estamos na página de cursos e clicamos em uma seção da home
       if (location.pathname === '/cursos') {
         window.location.href = path;
@@ -65,7 +67,7 @@ const Navbar: React.FC = () => {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-3">
             {navLinks.map((link) => (
-              link.path.startsWith('/#') ? (
+              link.path.startsWith('/#') || link.path === '/' ? (
                 <a
                   key={link.name}
                   href={link.path}
@@ -107,7 +109,7 @@ const Navbar: React.FC = () => {
         <div className="md:hidden bg-white px-2 pt-2 pb-4 shadow-lg">
           <div className="flex flex-col space-y-2">
             {navLinks.map((link) => (
-              link.path.startsWith('/#') ? (
+              link.path.startsWith('/#') || link.path === '/' ? (
                 <a
                   key={link.name}
                   href={link.path}
