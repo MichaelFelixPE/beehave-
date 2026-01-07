@@ -46,7 +46,7 @@ const Testimonials: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-black">Depoimentos de Clientes</h2>
           <div className="w-24 h-1 bg-yellow-400 mx-auto my-4"></div>
           <p className="max-w-2xl mx-auto text-gray-700">
-            Ouça o que as famílias têm a dizer sobre as mudanças positivas através dos nossos serviços.
+            Veja o que nossas e nossos Clientes têm a dizer sobre a experiência delas(es) em nossos Serviços!
           </p>
         </div>
 
