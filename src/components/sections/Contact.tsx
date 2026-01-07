@@ -41,7 +41,7 @@ const Contact: React.FC = () => {
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-black">Entre em contato para saber mais sobre os nossos Serviços em ABA!</h2>
+          <h2 className="text-3xl md:text-4xl font-bold text-black">Entre em Contato</h2>
           <div className="w-24 h-1 bg-yellow-400 mx-auto my-4"></div>
           <p className="max-w-2xl mx-auto text-gray-700">
             Entre em contato para saber mais sobre os nossos Serviços em ABA!
