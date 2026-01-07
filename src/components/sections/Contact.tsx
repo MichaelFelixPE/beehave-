@@ -44,7 +44,7 @@ const Contact: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-black">Entre em Contato</h2>
           <div className="w-24 h-1 bg-yellow-400 mx-auto my-4"></div>
           <p className="max-w-2xl mx-auto text-gray-700">
-            Entre em contato para agendar uma consulta ou saber mais sobre nossos serviços.
+            Entre em contato para saber mais sobre os nossos Serviços em ABA!
           </p>
         </div>
 
