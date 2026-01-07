@@ -71,7 +71,7 @@ const FAQ: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-black">Perguntas Frequentes</h2>
           <div className="w-24 h-1 bg-yellow-400 mx-auto my-4"></div>
           <p className="max-w-2xl mx-auto text-gray-700">
-            Encontre respostas para as perguntas mais comuns sobre nossos serviços e abordagem.
+            Encontre respostas para as perguntas frequentes sobre os nossos Serviços em ABA!
           </p>
         </div>
 
