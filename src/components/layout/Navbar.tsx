@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
     { name: 'Sobre', path: '/#about' },
     { name: 'Beehave Serviços', path: '/#services' },
     { name: 'Beehave Cursos', path: '/cursos' },
-    { name: 'Beehave Equipe', path: '/#team' },
+    { name: 'BeeEquipe', path: '/#team' },
     { name: 'Depoimentos', path: '/#testimonials' },
     { name: 'FAQ', path: '/#faq' },
     { name: 'Contato', path: '/#contact' },
