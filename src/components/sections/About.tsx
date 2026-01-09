@@ -1,14 +1,11 @@
 import React from 'react';
-import { CheckCircle } from 'lucide-react';
+import { CheckCircle, Target, Eye, Heart } from 'lucide-react';
 
 const About: React.FC = () => {
   const values = [
-    'Abordagem centrada na criança',
-    'Respeito à neurodiversidade e diferenças individuais',
-    'Técnicas terapêuticas baseadas em evidências',
-    'Envolvimento e educação familiar',
-    'Desenvolvimento profissional contínuo',
-    'Cuidado colaborativo com escolas e outros profissionais'
+    'Transparência',
+    'Cooperação',
+    'Ética e qualidade'
   ];
 
   return (
@@ -54,16 +51,45 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        <div className="bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl shadow-xl p-8 md:p-12">
-          <h3 className="text-2xl md:text-3xl font-bold mb-8 text-gray-900 text-center">Nossos Valores Fundamentais</h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {values.map((value, index) => (
-              <div key={index} className="flex items-start bg-white rounded-lg p-4 shadow-md hover:shadow-lg transition-shadow">
-                <CheckCircle className="flex-shrink-0 w-6 h-6 text-yellow-500 mr-3 mt-0.5" />
-                <span className="text-gray-800 font-medium">{value}</span>
+        <div className="mt-20">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow border-t-4 border-blue-500">
+              <div className="flex items-center justify-center w-16 h-16 bg-blue-500 rounded-full mb-6">
+                <Target className="w-8 h-8 text-white" />
               </div>
-            ))}
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Missão</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Prestar serviços éticos baseados em evidências científicas para melhoria da qualidade de vida de nossas(os) Aprendentes, clientes e Parceiras(os).
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-green-50 to-green-100 rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow border-t-4 border-green-500">
+              <div className="flex items-center justify-center w-16 h-16 bg-green-500 rounded-full mb-6">
+                <Eye className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Visão</h3>
+              <p className="text-gray-700 leading-relaxed">
+                Ser referência na produção de conhecimento e de serviço em Análise do Comportamento.
+              </p>
+            </div>
+
+            <div className="bg-gradient-to-br from-yellow-50 to-amber-100 rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow border-t-4 border-yellow-500">
+              <div className="flex items-center justify-center w-16 h-16 bg-yellow-500 rounded-full mb-6">
+                <Heart className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Valores</h3>
+              <ul className="space-y-3">
+                {values.map((value, index) => (
+                  <li key={index} className="flex items-start">
+                    <CheckCircle className="flex-shrink-0 w-5 h-5 text-yellow-600 mr-3 mt-0.5" />
+                    <span className="text-gray-700 font-medium">{value}</span>
+                  </li>
+                ))}
+              </ul>
+              <p className="text-sm text-gray-600 mt-4 pt-4 border-t border-yellow-300">
+                na região do Vale do São Francisco, cidades circunvizinhas e em outros Estados, seguindo os princípios de uma Ciência do Comportamento.
+              </p>
+            </div>
           </div>
         </div>
       </div>
