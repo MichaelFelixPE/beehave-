@@ -155,10 +155,12 @@ const teamHierarchy: TeamMember[] = [
             level: 'D',
             crm: 'CRP-02/25615',
             formations: [
-              'Especialização em Psicologia Clínica',
-              'Graduação em Psicologia'
+              'Graduação em Psicologia (FACESF)',
+              'Pós-graduação em Neuropsicologia',
+              'Pós-graduação em Análise do Comportamento Aplicada (ABA) ao TEA',
+              'Formação em Análise do Comportamento Clínica (FAT)'
             ],
-            bio: 'Coordenadora com foco em gestão de equipes e atendimento clínico.',
+            bio: 'Sou Andrea Teixeira, psicóloga formada pela FACESF, com uma trajetória de 4 anos dedicada à intervenção ABA. Minha prática clínica é fundamentada em uma formação sólida: sou pós-graduada em Neuropsicologia e em ABA aplicada ao TEA, além de possuir formação em Análise do Comportamento Clínica pela FAT.',
           },
           {
             name: ' Esp. Erica Tamires',
@@ -208,12 +210,12 @@ const teamHierarchy: TeamMember[] = [
             name: ' Esp. Fernando Costa',
             image: 'https://i.imgur.com/JsbcOvA.jpeg',
             level: 'D',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-02/26753',
             formations: [
-              'Especialização em Análise do Comportamento',
-              'Graduação em Psicologia'
+              'Graduação em Psicologia (Faculdade FTC)',
+              'Especialização em Análise do Comportamento Aplicada (ABA)'
             ],
-            bio: 'Coordenador com experiência em análise comportamental aplicada.',
+            bio: 'Sou Fernando Costa, psicólogo formado pela Faculdade FTC e coordenador ABA, com atuação voltada ao Transtorno do Espectro Autista (TEA) nível 3 de suporte. Sou especializado em ABA aplicada ao TEA e atuo há mais de 6 anos na área, tendo iniciado minha trajetória ainda na graduação, como estagiário desde o 4º período. Minha escolha pelo público nível 3 de suporte não é apenas profissional, mas também pessoal: sou irmão de uma pessoa com TEA nível 3 e conheço de perto as dificuldades, a escassez de profissionais e a falta de acolhimento que muitas famílias enfrentam. Minha prática é fundamentada na Análise do Comportamento, com foco no desenvolvimento individualizado, na promoção de saúde, qualidade de vida e esperança para cada família acolhida. Acredito em uma intervenção que una o técnico ao lúdico, valorizando a diversão, o vínculo e o bem-estar dos aprendentes. Também compreendo a importância da saúde física aliada à saúde mental, buscando rotinas saudáveis que favoreçam o desenvolvimento global. Escolhi me especializar e atuar prioritariamente com o nível 3 de suporte por reconhecer a urgência e a carência de atendimento qualificado para esse público. Por isso, acolho com responsabilidade e compromisso cada demanda que chega até mim. Você não precisa enfrentar isso sozinho.',
           },
           {
             name: ' Esp. Joyce Ribeiro',
@@ -221,10 +223,11 @@ const teamHierarchy: TeamMember[] = [
             level: 'D',
             crm: 'CRP-02/26518',
             formations: [
-              'Especialização em Terapia Cognitivo-Comportamental',
-              'Graduação em Psicologia'
+              'Graduação em Psicologia',
+              'Pós-graduação em Análise do Comportamento Aplicada (ABA)',
+              'Pós-graduação em andamento em ABA com foco em TEA e DI'
             ],
-            bio: 'Coordenadora com foco em intervenções cognitivo-comportamentais.',
+            bio: 'Me chamo Joyce Maria da Silva Ribeiro, e sou psicóloga pós-graduada em Análise do Comportamento Aplicada (ABA) e atualmente pós-graduanda em ABA com foco em TEA (Transtorno do Espectro Autista) e DI (Deficiência Intelectual). Atuei na psicoterapia de crianças atípicas, com intervenções baseadas na Análise do Comportamento, e atualmente exerço a função de coordenadora em ABA pela Beehave.',
           },
           {
             name: ' Esp. Nayara Queiroz',
