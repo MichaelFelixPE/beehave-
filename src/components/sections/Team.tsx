@@ -298,7 +298,7 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Adson Raul',
-            image: 'https://imgur.com/Cc4mOuy.jpeg',
+            image: 'https://imgur.com/Cc4mOuy',
             level: 'E-EVAL',
             crm: 'CRP 00/00000',
             formations: [
