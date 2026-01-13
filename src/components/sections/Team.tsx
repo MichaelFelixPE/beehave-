@@ -318,7 +318,7 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Luégina Sena',
-            image: 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=LS',
+            image: 'https://i.imgur.com/4RpCe4h.jpeg',
             level: 'E-EVAL',
             crm: 'CRP 00/00000',
             formations: [
