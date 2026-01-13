@@ -328,7 +328,7 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Patrícia Matos',
-            image: 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=PM',
+            image: 'https://i.imgur.com/TxZAhzt.jpeg',
             level: 'E-EVAL',
             crm: 'CRP 00/00000',
             formations: [
