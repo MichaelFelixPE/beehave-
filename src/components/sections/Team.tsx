@@ -338,7 +338,7 @@ const teamHierarchy: TeamMember[] = [
           },
           {
             name: 'Waleska Oliveira',
-            image: 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=WO',
+            image: 'https://i.imgur.com/sT3ZMfi.jpeg',
             level: 'E-EVAL',
             crm: 'CRP 00/00000',
             formations: [
