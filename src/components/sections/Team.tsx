@@ -303,7 +303,7 @@ const teamHierarchy: TeamMember[] = [
             name: 'Adson Raul',
             image: 'https://i.imgur.com/Cc4mOuy.jpeg',
             level: 'E-EVAL',
-            crm: 'CRP 00/00000',
+            crm: '',
             formations: [
               'Graduação em Psicologia (UNINASSAU)',
               'Pós-graduação em andamento em Análise do Comportamento Aplicada ao TEA',
