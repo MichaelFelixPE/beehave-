@@ -201,8 +201,9 @@ const teamHierarchy: TeamMember[] = [
             level: 'D',
             crm: 'CRP-02/26606',
             formations: [
-              'Especialização em Psicologia Clínica',
+              'Graduação em Psicologia (Universidade Federal do Vale do São Francisco – UNIVASF)',
               'Graduação em Psicologia'
+              'Especialização em Psicologia Clínica',
             ],
             bio: 'Coordenadora especializada em atendimento clínico e supervisão de casos.',
           },
