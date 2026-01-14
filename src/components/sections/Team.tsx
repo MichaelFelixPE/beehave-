@@ -143,7 +143,7 @@ const teamHierarchy: TeamMember[] = [
             name: 'Ma. Joiria Cerqueira',
             image: 'https://i.imgur.com/zJGPMaX.jpg',
             level: 'C',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-03/15556',
             formations: [
               'Graduação em Psicologia'
             ],
