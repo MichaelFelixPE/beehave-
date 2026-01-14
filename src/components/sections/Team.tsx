@@ -307,7 +307,7 @@ const teamHierarchy: TeamMember[] = [
             formations: [
               'Graduação em Psicologia'
             ],
-            bio: 'Membro da equipe de avaliação especializado em análise comportamental.',
+            bio: 'Meu nome é Abdiel Oliveira Ferreira, sou Psicólogo formado pela UNINASSAU, pós-graduando em Análise do Comportamento Aplicada ao TEA, aplicador ABA com mais de 3 anos de experiência e vivência em avaliação comportamental.',
           },
           {
             name: 'Brenda Souza',
