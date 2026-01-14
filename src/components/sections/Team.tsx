@@ -344,7 +344,7 @@ const teamHierarchy: TeamMember[] = [
             name: 'Waleska Oliveira',
             image: 'https://i.imgur.com/sT3ZMfi.jpeg',
             level: 'E-EVAL',
-            crm: 'CRP 00/00000',
+            crm: '',
             formations: [
               'ABA e Autismo (Beehave)',
               'VB-MAPP Descomplicado (Beehave)',
