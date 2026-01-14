@@ -334,7 +334,7 @@ const teamHierarchy: TeamMember[] = [
             name: 'Patrícia Matos',
             image: 'https://i.imgur.com/TxZAhzt.jpeg',
             level: 'E-EVAL',
-            crm: 'CRP 00/00000',
+            crm: '',
             formations: [
               'Graduação em Psicologia'
             ],
