@@ -324,7 +324,7 @@ const teamHierarchy: TeamMember[] = [
             name: 'Luégina Sena',
             image: 'https://i.imgur.com/4RpCe4h.jpeg',
             level: 'E-EVAL',
-            crm: 'CRP 00/00000',
+            crm: '',
             formations: [
               'Graduação em Psicologia'
             ],
