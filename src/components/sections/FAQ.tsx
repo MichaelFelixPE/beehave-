@@ -39,8 +39,8 @@ const FAQ: React.FC = () => {
 
   const faqItems = [
     {
-      question: "Quais faixas etárias vocês atendem?",
-      answer: "Atendemos crianças e adolescentes de 2 a 18 anos. Nossas abordagens terapêuticas são adaptadas para serem apropriadas ao desenvolvimento de cada faixa etária."
+      question: "O que é a terapia ABA?",
+      answer: "A terapia ABA (Applied Behavior Analysis ou Análise do Comportamento Aplicada) é uma abordagem terapêutica baseada na ciência do comportamento. Ela utiliza princípios da psicologia comportamental para ensinar habilidades e reduzir comportamentos que dificultam o desenvolvimento. É conhecida especialmente na intervenção de pessoas com TEA, mas também pode ser usada em outros contextos, como organizacional, terapia com adultos, etc."
     },
     {
       question: "Vocês aceitam convênio?",
