@@ -314,7 +314,7 @@ const teamHierarchy: TeamMember[] = [
             name: 'Brenda Souza',
             image: 'https://i.imgur.com/DcKJBzc.jpeg',
             level: 'E-EVAL',
-            crm: 'CRP 00/00000',
+            crm: '',
             formations: [
               'Graduação em Psicologia'
             ],
