@@ -203,7 +203,7 @@ const teamHierarchy: TeamMember[] = [
             formations: [
               'Graduação em Psicologia (Universidade Federal do Vale do São Francisco – UNIVASF)',
               'Especialização em Análise do Comportamento Aplicada (ABA) para TEA e Deficiência Intelectual (CBI of Miami)'
-              'Especialização em Psicologia Clínica',
+              'Formação em Gerenciamento Profissional de Crises – Praticante Nível 2',
             ],
             bio: 'Coordenadora especializada em atendimento clínico e supervisão de casos.',
           },
