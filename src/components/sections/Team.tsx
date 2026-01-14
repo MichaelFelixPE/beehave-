@@ -285,7 +285,7 @@ const teamHierarchy: TeamMember[] = [
               'Pós-graduanda em Psicopedagogia pela UPE',
               'Pós-graduação em Intervenção ABA para Autismo e Deficiência Intelectual pelo CBI of Miami'
             ],
-            bio: 'Sou Núbia de Sousa, tenho Bacharelado em Psicologia pela Univasf, 2015; Pós-graduanda em Psicopedagogia pela UPE; Pós-graduação em Intervenção ABA para Autismo e Deficiência Intelectual pelo CBI of Miami. Tive experiência como Aplicadora entre 2019 e 2021; e Analista do Comportamento Coordenadora entre 2022 e 2024.',
+            bio: 'Sou Núbia de Sousa, tenho Bacharelado em Psicologia pela Univasf, em 2015; Pós-graduação em Intervenção ABA para Autismo e Deficiência  Intelectual  pelo  CBI of Miami; e sou Pós-graduanda em Psicopedagogia pela  UPE.Tive experiência como Aplicadora entre 2019 e 2021; e Analista do Comportamento Coordenadora entre 2022 e 2024.Atualmente, sou Psicóloga pela Beehave.',
           },
           {
             name: 'Renata Dantas',
