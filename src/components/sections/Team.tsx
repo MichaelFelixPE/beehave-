@@ -346,9 +346,11 @@ const teamHierarchy: TeamMember[] = [
             level: 'E-EVAL',
             crm: 'CRP 00/00000',
             formations: [
-              'Graduação em Psicologia'
+              'ABA e Autismo (Beehave)',
+              'VB-MAPP Descomplicado (Beehave)',
+              'Workshop de Inovação Terapêutica com IA aplicada à ABA (Regina Bergamo Academy)'
             ],
-            bio: 'Membro da equipe de avaliação especializado em análise comportamental.',
+            bio: 'Sou Waleska Oliveira, estudante de Fonoaudiologia e atuo como aplicadora ABA há mais de 2 anos. Minha atuação é voltada ao Transtorno do Espectro Autista (TEA).',
           },
         ],
       },
