@@ -147,7 +147,7 @@ const teamHierarchy: TeamMember[] = [
             formations: [
               'Graduação em Psicologia'
             ],
-            bio: 'Analista do Comportamento Supervisora.',
+            bio: 'Sou graduada em Psicologia, na Universidade Federal do Vale do São Francisco (UNIVASF), em 2015. Pós-graduada em Análise do Comportamento Aplicada ao Transtorno do Espectro do Autismo, no Instituto de Educação e Pesquisa em Saúde e Inclusão Social, em 2020. Mestre em Psicologia (UNIVASF), em 2023. Atuo como Psicóloga (CRP 03/15556) supervisora no Instituto Tacto - Instituto de Intervenções e estudos do comportamento.',
           },
           {
             name: ' Esp. Andrea Teixeira',
