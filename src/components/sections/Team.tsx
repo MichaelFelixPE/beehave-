@@ -90,7 +90,7 @@ const teamHierarchy: TeamMember[] = [
               'Membro do grupo de pesquisa Comportamento, Cooperação e Cultura (3C) da UNIVASF',
               'Membro do Laboratório de Comportamento Social e Seleção Cultural (LACS) da UFPA'
             ],
-            bio: 'Rafael Alves Rodrigues é mestre em Processos Cognitivos e Comportamentais pela Universidade Federal do Vale do São Francisco (UNIVASF), onde também se formou em Psicologia. É especialista em Análise do Comportamento Aplicada (ABA) e em ABA para Autismo e Deficiência Intelectual. Membro do grupo de pesquisa Comportamento, Cooperação e Cultura (3C) da UNIVASF e do Laboratório de Comportamento Social e Seleção Cultural (LACS) da UFPA. Além disso, possui formações em áreas como manejo de crises agressivas e comunicação alternativa. Atualmente, atua como supervisor parceiro da Beehave Soluções Comportamentais.',
+            bio: 'Sou Rafael Alves Rodrigues, mestre em Processos Cognitivos e Comportamentais pela Universidade Federal do Vale do São Francisco (UNIVASF), onde também me formei em Psicologia.Além disso, sou especialista em Análise do Comportamento Aplicada (ABA) e em ABA para Autismo e Deficiência Intelectual; membro do grupo de pesquisa Comportamento, Cooperação e Cultura (3C) da UNIVASF e do Laboratório de Comportamento Social e Seleção Cultural (LACS) da UFPA.Também possuo formações em áreas como manejo de crises agressivas e comunicação alternativa, e atualmente, atuo como supervisor parceiro da Beehave Soluções Comportamentais.',
           },
           {
             name: 'Ma. Thamires Iukisa',
