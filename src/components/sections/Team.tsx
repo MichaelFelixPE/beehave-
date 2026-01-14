@@ -305,7 +305,7 @@ const teamHierarchy: TeamMember[] = [
             level: 'E-EVAL',
             crm: 'CRP 00/00000',
             formations: [
-              'Graduação em Psicologia (UNINASSAU)'
+              'Graduação em Psicologia (UNINASSAU)',
               'Pós-graduação em andamento em Análise do Comportamento Aplicada ao TEA',
             ],
             bio: 'Meu nome é Abdiel Oliveira Ferreira, sou Psicólogo formado pela UNINASSAU, pós-graduando em Análise do Comportamento Aplicada ao TEA, aplicador ABA com mais de 3 anos de experiência e vivência em avaliação comportamental.',
