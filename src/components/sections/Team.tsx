@@ -205,7 +205,7 @@ const teamHierarchy: TeamMember[] = [
               'Especialização em Análise do Comportamento Aplicada (ABA) para TEA e Deficiência Intelectual (CBI of Miami)',
               'Formação em Gerenciamento Profissional de Crises – Praticante Nível 2',
             ],
-            bio: 'Coordenadora especializada em atendimento clínico e supervisão de casos.',
+            bio: 'Meu nome é Joice Izabela, sou psicóloga formada pela Universidade Federal do Vale do São Francisco (UNIVASF). Sou especialista em Análise do Comportamento Aplicada (ABA) para o Transtorno do Espectro Autista (TEA) e Deficiência Intelectual, com formação pela CBI of Miami. Atuo como Coordenadora em ABA há mais de três anos na Beehave Soluções Comportamentais, onde desenvolvo, acompanho e oriento intervenções individualizadas. Tenho um carinho especial por trabalhar com o público infantil, buscando promover o desenvolvimento de habilidades de forma respeitosa e significativa. Minha prática profissional é baseada em evidências científicas, conduzida de maneira humanizada e ética, sempre priorizando o bem-estar da criança, o envolvimento da família e o manejo seguro das intervenções. Também sou Praticante Nível 2 em Gerenciamento Profissional de Crises, o que contribui para uma atuação responsável e qualificada em diferentes contextos.',
           },
           {
             name: ' Esp. Fernando Costa',
