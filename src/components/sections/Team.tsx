@@ -99,7 +99,7 @@ const teamHierarchy: TeamMember[] = [
             crm: 'CFEP-19002082',
             formations: [
               'Mestrado em Psicologia',
-              'Especialização em Análise do Comportamento', 
+              'Especialização em Análise do Comportamento',
               'Graduação em Psicologia'
             ],
             bio: 'Supervisora com experiência em análise comportamental e supervisão clínica.',
