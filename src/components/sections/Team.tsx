@@ -578,19 +578,6 @@ const Team = () => {
             </>
           )}
 
-          {evaluationTeam.length > 0 && (
-            <>
-              <div className="text-center w-full">
-                <h3 className="text-lg font-bold text-gray-700 mb-4">Equipe de Avaliação</h3>
-              </div>
-              <div className="flex justify-center gap-6 flex-wrap max-w-5xl">
-                {evaluationTeam.map((member, idx) => (
-                  <HexagonMember key={idx} member={member} onClick={() => setSelectedMember(member)} />
-                ))}
-              </div>
-            </>
-          )}
-
           {therapists.length > 0 && (
             <>
               <div className="text-center w-full">
@@ -599,6 +586,19 @@ const Team = () => {
               <div className="flex justify-center gap-6 flex-wrap max-w-4xl">
                 {therapists.map((therapist, idx) => (
                   <HexagonMember key={idx} member={therapist} onClick={() => setSelectedMember(therapist)} />
+                ))}
+              </div>
+            </>
+          )}
+
+          {evaluationTeam.length > 0 && (
+            <>
+              <div className="text-center w-full">
+                <h3 className="text-lg font-bold text-gray-700 mb-4">Equipe de Avaliação</h3>
+              </div>
+              <div className="flex justify-center gap-6 flex-wrap max-w-5xl">
+                {evaluationTeam.map((member, idx) => (
+                  <HexagonMember key={idx} member={member} onClick={() => setSelectedMember(member)} />
                 ))}
               </div>
             </>
