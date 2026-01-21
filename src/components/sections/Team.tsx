@@ -102,7 +102,7 @@ const teamHierarchy: TeamMember[] = [
               'Especialização em Análise do Comportamento',
               'Graduação em Psicologia'
             ],
-            bio: 'Supervisora com experiência em análise comportamental e supervisão clínica.',
+            bio: 'Olá! Me chamo Thamires Iukisa e sou Historiadora pela Universidade de Pernambuco, com Pós-graduação em Intervenção ABA para Autismo e Deficiência Intelectual pelo CBI of Miami e Mestrado em Psicologia pela Univasf.Trabalho com Análise do Comportamento há 8 anos, iniciando a carreira primeiramente como Aplicadora ABA, logo depois como Coordenadora, e atualmente sou Supervisora em ABA na Beehave.',
           },
           {
             name: 'Dra. Thais Guimarães',
