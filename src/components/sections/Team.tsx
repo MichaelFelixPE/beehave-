@@ -340,9 +340,15 @@ const teamHierarchy: TeamMember[] = [
             level: 'E-EVAL',
             crm: '',
             formations: [
-              'Graduação em Psicologia'
+              'ABA na escola',
+              'ABA na prática - guia prático para a Construção de Programas ABA e coleta de dados',
+              'Protocolo de avaliação VB-MAPP',
+              'Leitura e análise de gráficos em ABA',
+              'Brincar para variar',
+              'Entendendo o comportamento',
+              'GCurso prático de operacionalização e registro de comportamentos',
             ],
-            bio: 'Membro da equipe de avaliação especializado em análise comportamental.',
+            bio: 'Olá, me chamo Patrícia Matos Oliveira, e sou graduada em Serviço Social pela Universidade Federal da Bahia (UFBA), Pós-graduada em Intervenção ABA e Deficiência Intelectual pela CBI of Miami, e tenho formação como Aplicadora ABA pela Beehave.',
           },
           {
             name: 'Waleska Oliveira',
