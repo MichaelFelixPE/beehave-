@@ -137,7 +137,7 @@ const teamHierarchy: TeamMember[] = [
               'Especialização em Terapia Cognitivo-Comportamental',
               'Graduação em Psicologia'
             ],
-            bio: 'Supervisora especializada em processos terapêuticos e gestão de casos.',
+            bio: 'Me chamo Álex Jonatas dos Santos Rosas, sou Psicólogo formado na Univasf, mestre em Psicologia e especialista em Análise do Comportamento Aplicada (ABA). Atuo como supervisor de intervenção ABA na Beehave, conduzindo planejamento e acompanhamento técnico de programas de intervenção.',
           },
           {
             name: 'Ma. Joiria Cerqueira',
