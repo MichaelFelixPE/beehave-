@@ -122,11 +122,11 @@ const teamHierarchy: TeamMember[] = [
             level: 'C',
             crm: 'CRP-02/17658',
             formations: [
-              'Mestrado em Psicologia',
-              'Especialização em Gestão de Pessoas',
-              'Graduação em Psicologia'
+              'Graduação em Psicologia (UNIVASF)',
+              'Graduação em Língua Inglesa (UPE)',
+              'Mestrado em Teoria e Pesquisa do Comportamento (UFPA)'
             ],
-            bio: 'Profissional com ampla experiência em gestão de recursos humanos e finanças.',
+            bio: 'Olá! Me chamo Jacqueline Iukisa. Sou formada em Psicologia pela Univasf e em Língua Inglesa pela UPE. Tenho mestrado em Teoria e Pesquisa do Comportamento pela UFPA, e atuo na área de desenvolvimento atípico há mais de 13 anos. Enquanto professora de formação, minha paixão é a educação. E é através do ensino que baseio meu trabalho. Desde o lecionar, até o planejamento de ensino de habilidades para pessoas com desenvolvimento atípico através do meu trabalho de Supervisora em ABA. Atualmente desenvolvo meu trabalho dentro da Beehave, a qual idealizei e sou uma das sócias-fundadoras.',
           },
           {
             name: 'Me. Álex Rosas',
