@@ -259,8 +259,9 @@ const teamHierarchy: TeamMember[] = [
             level: 'E',
             crm: 'CRP-02/23629',
             formations: [
-              'Graduação em Psicologia',
-              'Formação em Terapia Cognitivo-Comportamental'
+              'Graduação em Psicologia (Faculdade Uninassau João Pessoa)',
+              'Especialização em Intervenção ABA aplicada ao Transtorno do Espectro Autista (TEA)',
+              'Formação em Aplicação ABA'
             ],
             bio: 'Sou Aline Rodrigues, Psicóloga formada pela Faculdade Uninassau João Pessoa, com atuação voltada para o público infantil. Tenho especialização em Intervenção ABA aplicada ao Transtorno do Espectro Autista (TEA)  e Aplicação ABA . Tenho experiência como aplicadora ABA (contexto escolar e casa) e em psicoterapia. Minha escolha pela área infantil se baseou nas minhas experiências, olhar e paixão pela infância e como ela acontece. E ao longo da graduação fui caminhando para me aprimorar no desenvolvimento De crianças atípicas.Minha atuação é baseada na Análise do Comportamento, uma ciência que busca compreender as interações entre o indivíduo e o ambiente, promovendo mudanças significativas por meio de intervenções individualizadas e sempre pautadas na ética e no respeito.Nos atendimentos infantis, especialmente com crianças em desenvolvimento atípico, o lúdico é utilizado como ferramenta central para a formação do vínculo terapêutico e para a implementação de estratégias personalizadas, respeitando o ritmo individual de cada criança.',
           },
