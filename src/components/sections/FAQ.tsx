@@ -51,8 +51,8 @@ const FAQ: React.FC = () => {
       answer: "Depende! A família é parte essencial do processo de intervenção, mas a participação na sessão dependerá dos objetivos elaborados para o Aprendente. Além das sessões, as manutenções e generalização de habilidades são importantes para que a criança consiga colocar em prática o que aprendeu na sessão, e nessa etapa a participação da família é fundamental."
     },
     {
-      question: "Qual é a abordagem de vocês para terapia autista?",
-      answer: "Utilizamos abordagens baseadas em evidências, incluindo Terapia Cognitivo-Comportamental (TCC), Análise do Comportamento Aplicada (ABA) e técnicas de integração sensorial. Nossa abordagem é sempre personalizada para os pontos fortes, desafios e interesses únicos de cada criança."
+      question: "A Beehave faz acompanhamento escolar?",
+      answer: "Sim! O Aplicador faz acompanhamento no ambiente escolar. Mas é importante entender as diferenças dos profissionais: o aplicador tem função de mediar relações do Aprendente, auxiliar na comunicação. A depender do repertório da criança, pode haver objetivos acadêmicos. Mas a escola deve cumprir com as funções pedagógicas do ensino da criança. "
     },
     {
       question: "Como os pais participam do processo terapêutico?",
