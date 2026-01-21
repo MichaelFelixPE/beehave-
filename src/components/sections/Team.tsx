@@ -234,7 +234,7 @@ const teamHierarchy: TeamMember[] = [
               'Pós-graduação em Análise do Comportamento Aplicada (ABA)',
               'Pós-graduação em andamento em ABA com foco em TEA e DI'
             ],
-            bio: 'Me chamo Joyce Maria da Silva Ribeiro, e sou psicóloga pós-graduada em Análise do Comportamento Aplicada (ABA) e atualmente pós-graduanda em ABA com foco em TEA (Transtorno do Espectro Autista) e DI (Deficiência Intelectual). Atuei na psicoterapia de crianças atípicas, com intervenções baseadas na Análise do Comportamento, e atualmente exerço a função de coordenadora em ABA pela Beehave.',
+            bio: 'Me chamo Joyce Maria da Silva Ribeiro, sou Psicóloga, pós-graduada em Análise do Comportamento Aplicada (ABA) e atualmente pós-graduanda em ABA com foco em TEA e DI. Tenho experiência na psicoterapia de crianças atípicas, atuando com intervenções baseadas na Análise do Comportamento. Hoje, sou Coordenadora em ABA na Beehave Soluções Comportamentais e será um prazer acompanhar você por aqui.',
           },
           {
             name: ' Esp. Nayara Queiroz',
