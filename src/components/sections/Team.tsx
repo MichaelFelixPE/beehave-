@@ -331,7 +331,10 @@ const teamHierarchy: TeamMember[] = [
             level: 'E-EVAL',
             crm: '',
             formations: [
-              'Graduação em Psicologia'
+              'Curso de Sistema de Comunicação por troca de Figuras (PECS), nível 1',
+              'Curso de Aplicadora ABA, pela Beehave',
+              'Aprimoramento interno do Modelo de Serviços da Beehave em Análise do Comportamento Aplicada ABA para pessoas com desenvolvimento atípico/TEA',
+              'Curso VB-MAPP'
             ],
             bio: 'Sou Luégina de Sena Dias, tenho graduação em Pedagogia pela Universidade do Estado da Bahia ( UNEB); Pós - graduada em Intervenção em ABA e Deficiência Intelectual pela CBI of Maiami; Pós-Graduanda em Psipedagoga Institucional e Clínica pela FAVENI. Atuo como aplicadora ABA (escola e casa) há quase 4 anos, atualmente, estou no ambiente escolar. Atuo também como Aplicadora da Equipe de Avaliação da Beehave, em que coleto dados por meio de Protocolos de Avaliação baseados em ABA. Atuo com ética e comprometimento, buscando sempre me atualizar para que meu Aprendente consiga adquirir todas habilidades para a sua maior qualidade de visa.',
           },
