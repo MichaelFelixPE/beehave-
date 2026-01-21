@@ -185,7 +185,7 @@ const teamHierarchy: TeamMember[] = [
               'Especialização em Análise do Comportamento',
               'Graduação em Psicologia'
             ],
-            bio: 'Coordenador com experiência em análise comportamental e coordenação de equipes.',
+            bio: 'Sou Gabriel Barão, sou psicólogo formado pela Univasf; Pós-graduando em Intervenção ABA para Autismo e Deficiência Intelectual pelo CBI of Miami; sou P1 em Gerenciamento Profissional de Crises (PCM; do inglês Professional Crisis Management ); tenho cursos em protocolos de avaliação comportamental, como VB-MAPP, ABLLS-R e AFLLS.Tive experiência como Aplicador entre 2022 e 2025. Atualmente, sou Analista do Comportamento Coordenador pela Beehave.',
           },
           {
             name: ' Esp. Jamille Mota',
