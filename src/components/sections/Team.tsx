@@ -134,8 +134,9 @@ const teamHierarchy: TeamMember[] = [
             level: 'C',
             crm: 'CRP-02/26874',
             formations: [
-              'Especialização em Terapia Cognitivo-Comportamental',
-              'Graduação em Psicologia'
+              'Graduação em Psicologia (UNIVASF)',
+              'Mestrado em Psicologia',
+              'Especialização em Análise do Comportamento Aplicada (ABA)'
             ],
             bio: 'Me chamo Álex Jonatas dos Santos Rosas, sou Psicólogo formado na Univasf, mestre em Psicologia e especialista em Análise do Comportamento Aplicada (ABA). Atuo como supervisor de intervenção ABA na Beehave, conduzindo planejamento e acompanhamento técnico de programas de intervenção.',
           },
