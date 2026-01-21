@@ -47,8 +47,8 @@ const FAQ: React.FC = () => {
       answer: "Segundo a Organização Mundial de Saúde (OMS), a intervenção ABA é a que possui melhores resultados apra crianças com desenvolvimento atípico/Transtorno do Espectro Autista (TEA)."
     },
     {
-      question: "Qual a duração das sessões de terapia?",
-      answer: "As sessões individuais geralmente duram 45-50 minutos. Avaliações e diagnósticos iniciais podem levar mais tempo, geralmente 1-2 horas, dependendo da complexidade das necessidades."
+      question: "A família participa das sessões?",
+      answer: "Depende! A família é parte essencial do processo de intervenção, mas a participação na sessão dependerá dos objetivos elaborados para o Aprendente. Além das sessões, as manutenções e generalização de habilidades são importantes para que a criança consiga colocar em prática o que aprendeu na sessão, e nessa etapa a participação da família é fundamental."
     },
     {
       question: "Qual é a abordagem de vocês para terapia autista?",
