@@ -55,12 +55,12 @@ const FAQ: React.FC = () => {
       answer: "Sim! O Aplicador faz acompanhamento no ambiente escolar. Mas é importante entender as diferenças dos profissionais: o aplicador tem função de mediar relações do Aprendente, auxiliar na comunicação. A depender do repertório da criança, pode haver objetivos acadêmicos. Mas a escola deve cumprir com as funções pedagógicas do ensino da criança. "
     },
     {
-      question: "Como os pais participam do processo terapêutico?",
-      answer: "Acreditamos fortemente no envolvimento familiar. Os pais recebem atualizações regulares, participam de sessões familiares e aprendem estratégias para apoiar o desenvolvimento de seus filhos em casa. Também oferecemos sessões de orientação e educação para pais."
+      question: "A partir de qual idade minha filha ou meu filho pode começar?",
+      answer: "Não há idade mínima para iniciar atendimento baseado em ABA. Os profissionais irão fazer as adaptações encessárias para proporcionar o melhor atendimento para crianças de qualquer idade."
     },
     {
-      question: "Como saber se meu filho precisa de uma avaliação?",
-      answer: "Se você notou dificuldades persistentes com interação social, comunicação, comportamento ou processamento sensorial que impactam o funcionamento diário, uma avaliação pode ser útil. Oferecemos consultas telefônicas gratuitas de 15 minutos para discutir suas preocupações e determinar se uma avaliação seria benéfica."
+      question: "Vocês aceitam planos de saúde?",
+      answer: "Infelizmente não, os atendimentos são particulares. Caso você tenha um plano de saúde, você pode solicitar atendimento na sua operadora de saúde e pedir encaminhamento para a Beehave, mas a decisão final cabe à operadora de saúde."
     }
   ];
 
