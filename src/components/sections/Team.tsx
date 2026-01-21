@@ -333,7 +333,7 @@ const teamHierarchy: TeamMember[] = [
             formations: [
               'Graduação em Psicologia'
             ],
-            bio: 'Membro da equipe de avaliação especializado em análise comportamental.',
+            bio: 'Sou Luégina de Sena Dias, tenho graduação em Pedagogia pela Universidade do Estado da Bahia ( UNEB); Pós - graduada em Intervenção em ABA e Deficiência Intelectual pela CBI of Maiami; Pós-Graduanda em Psipedagoga Institucional e Clínica pela FAVENI. Atuo como aplicadora ABA (escola e casa) há quase 4 anos, atualmente, estou no ambiente escolar. Atuo também como Aplicadora da Equipe de Avaliação da Beehave, em que coleto dados por meio de Protocolos de Avaliação baseados em ABA. Atuo com ética e comprometimento, buscando sempre me atualizar para que meu Aprendente consiga adquirir todas habilidades para a sua maior qualidade de visa.',
           },
           {
             name: 'Patrícia Matos',
