@@ -182,8 +182,10 @@ const teamHierarchy: TeamMember[] = [
             level: 'D',
             crm: 'CRP-02/30450',
             formations: [
-              'Especialização em Análise do Comportamento',
-              'Graduação em Psicologia'
+              'Graduação em Psicologia (UNIVASF)',
+              'Pós-graduação em andamento em Intervenção ABA para Autismo e Deficiência Intelectual (CBI of Miami)',
+              'Formação em Gerenciamento Profissional de Crises – PCM (P1)',
+              'Cursos em Protocolos de Avaliação Comportamental(VB-MAPP) (ABLLS-R) (AFLLS)'
             ],
             bio: 'Sou Gabriel Barão, sou psicólogo formado pela Univasf; Pós-graduando em Intervenção ABA para Autismo e Deficiência Intelectual pelo CBI of Miami; sou P1 em Gerenciamento Profissional de Crises (PCM; do inglês Professional Crisis Management ); tenho cursos em protocolos de avaliação comportamental, como VB-MAPP, ABLLS-R e AFLLS.Tive experiência como Aplicador entre 2022 e 2025. Atualmente, sou Analista do Comportamento Coordenador pela Beehave.',
           },
