@@ -18,8 +18,8 @@ const testimonials = [
     rating: 5
   },
   {
-    quote: "A Dra. Johnson e sua equipe vão além. Eles não apenas trabalham com minha filha, mas dedicam tempo para educar e apoiar toda a nossa família. Vimos um progresso notável.",
-    author: "Mãe da Lily, 7 anos",
+    quote: "Hoje nesse depoimento, começo falando, por quê indicar a Beehave? É minha gente, a nossa experiência na Beehave vem de alguns anos. Experiência essa que obtivemos resultados excelentes no desenvolvimento da minha criança. Hoje agradeço a essa equipe por tamanha dedicação e compromisso que tem em fazer o melhor para nossas crianças. Carinho, acolhimento, amor pela profissão, é um dos poucos elogios a fazer a esses profissionais. Gratidão a todos por tanta dedicação.Relato de uma mãe feliz e realizada",
+    author: "Cliente: Laura Monteiro",
     rating: 5
   }
 ];
