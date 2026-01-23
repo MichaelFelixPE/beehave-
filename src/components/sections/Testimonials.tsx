@@ -18,8 +18,8 @@ const testimonials = [
     rating: 5
   },
    {
-    quote: "Venho aqui com muita satisfação em nome da nossa família e em especial do nosso querido e amado filho, paciente da  Clínica Beehave, descrever com carinho o belíssimo trabalho que vem desenvolvendo.Chegamos até a Beehave pelas excelentes indicações de outras famílias. E realmente a Clínica superou todas as nossas expectativas.A Equipe de Supervisão, Coordenação e Ats - Atendentes terapêuticos, estão desenvolvendo um brilhante trabalho de acompanhamento com nosso filho, e as evoluções são notoriamente visíveis no dia a dia. Como também a atenção, o carinho, o cuidado, a comunicação e disponibilidade da equipe nos deixam muito felizes e seguros. A equipe Beehave do meu filho é Muuuuito Top, só temos a agradecer a todos os profissionais que fizeram e fazem parte dessa nossa caminhada!!!Parabéns Beehave,  com vocês o trabalho realmente acontece!!! 🥰❤️👏🏻👏🏻👏🏻 😉🐝Mamãe Juliana, Papai William e toda família",
-    author: "Cliente: Juliana",
+    quote: "Venho aqui com muita satisfação em nome da nossa família e em especial do nosso querido e amado filho, paciente da  Clínica Beehave, descrever com carinho o belíssimo trabalho que vem desenvolvendo.Chegamos até a Beehave pelas excelentes indicações de outras famílias. E realmente a Clínica superou todas as nossas expectativas.A Equipe de Supervisão, Coordenação e Ats - Atendentes terapêuticos, estão desenvolvendo um brilhante trabalho de acompanhamento com nosso filho, e as evoluções são notoriamente visíveis no dia a dia. Como também a atenção, o carinho, o cuidado, a comunicação e disponibilidade da equipe nos deixam muito felizes e seguros. A equipe Beehave do meu filho é Muuuuito Top, só temos a agradecer a todos os profissionais que fizeram e fazem parte dessa nossa caminhada!!!Parabéns Beehave,  com vocês o trabalho realmente acontece!!! 🥰❤️👏🏻👏🏻👏🏻 😉🐝 Mamãe Juliana, Papai William e toda família",
+    author: "Cliente: Mamãe Juliana, Papai William e toda família"",
     rating: 5
   },
   {
