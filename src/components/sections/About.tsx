@@ -21,7 +21,7 @@ const About: React.FC = () => {
             <div className="absolute -inset-4 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-2xl opacity-20 group-hover:opacity-30 transition-opacity blur-xl"></div>
             <div className="relative">
               <img
-                src="https://i.imgur.com/shWLLoV"
+                src="https://unex.edu.br/wp-content/uploads/2024/05/close-up-child-enjoying-didactic-game-1-1024x683.jpg" 
                 alt="Psicólogo trabalhando com criança"
                 className="rounded-2xl shadow-2xl w-full h-auto object-cover"
               />
