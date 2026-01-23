@@ -8,7 +8,7 @@ const testimonials = [
     rating: 5
   },
   {
-    quote: "Bom dia!A Beehave para nossa família é um divisor de águasNosso filho tem se desenvolvido cada vez mais graças ao trabalho multidisciplinar entre escola, terapeutas e o acompanhamento da equipe Beehave.Uma equipe preparada, responsável, humana e que de fato conhece o meu filho. Dessa forma trabalha o que ele precisa desenvolver para alcançar sua autonomia.Vcs são um presente de Deus para nós. 
+    quote: "Bom dia! A Beehave para nossa família é um divisor de águas Nosso filho tem se desenvolvido cada vez mais graças ao trabalho multidisciplinar entre escola, terapeutas e o acompanhamento da equipe Beehave. Uma equipe preparada, responsável, humana e que de fato conhece o meu filho. Dessa forma trabalha o que ele precisa desenvolver para alcançar sua autonomia. Vcs são um presente de Deus para nós. 
 
 Muito obrigada",
     author: "Cliente: Kelly Gadelha de Castro",
