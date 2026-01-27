@@ -27,11 +27,7 @@ const testimonials = [
     author: "Cliente: Laura Monteiro",
     rating: 5
   }
-    {
-    quote: "Hoje nesse depoimento, começo falando, por quê indicar a Beehave? É minha gente, a nossa experiência na Beehave vem de alguns anos. Experiência essa que obtivemos resultados excelentes no desenvolvimento da minha criança. Hoje agradeço a essa equipe por tamanha dedicação e compromisso que tem em fazer o melhor para nossas crianças. Carinho, acolhimento, amor pela profissão, é um dos poucos elogios a fazer a esses profissionais. Gratidão a todos por tanta dedicação.Relato de uma mãe feliz e realizada",
-    author: "Cliente: Laura Monteiro",
-    rating: 5
-  }
+   
 ];
 
 const Testimonials: React.FC = () => {
