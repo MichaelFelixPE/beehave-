@@ -65,11 +65,11 @@ const teamHierarchy: TeamMember[] = [
             level: 'C',
             crm: 'CRP-02/21135',
             formations: [
+              'Graduação em Psicologia',
               'Mestrado em Psicologia',
-              'Especialização em Terapia Cognitivo-Comportamental',
-              'Graduação em Psicologia'
+              'Especialização em Terapia Cognitivo-Comportamental'
             ],
-            bio: 'Supervisor especializado em intervenções cognitivo-comportamentais.',
+            bio: 'Olá! Eu sou Murilo da Cruz Santos. Sou bacharel e Mestre em Psicologia pela Universidade Federal do Vale do São Francisco (Univasf), onde fundei a Liga Acadêmica de Análise do Comportamento (LIAAC) e sigo contribuindo com o Grupo de Pesquisa Conceitual Básica e Aplicada em Análise do Comportamento (GPAC). Atuei como professor em cursos de graduação (Univasf e FACESP), lecionando disciplinas fundamentais como Análise do Comportamento e Prática Analítico-Comportamental. Atuo também como docente em cursos de pós-graduação e formação de aplicadores, focando nas áreas de Medidas, Observação e Registro de Comportamento. Desde 2022, sou Supervisor ABA, somando-se à experiência de 3 anos como aplicador. Meu trabalho é focado no acompanhamento de aprendentes de diversas idades, garantindo que cada intervenção seja personalizada, ética e tecnicamente sólida para promover autonomia e qualidade de vida.',
           },
           {
             name: 'Me. Rafael Alves',
