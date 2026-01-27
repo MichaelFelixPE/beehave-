@@ -258,7 +258,7 @@ const teamHierarchy: TeamMember[] = [
             crm: 'CRP 00/00000',
             formations: [
               'Graduação em Psicologia',
-              'Graduação em Psicologia',
+              'Pós-graduação em Análise do Comportamento Aplicada (ABA)',
               'Graduação em Psicologia',
               'Graduação em Psicologia'
               
