@@ -7,6 +7,11 @@ const testimonials = [
     author: "Cliente: Edisônia",
     rating: 5
   },
+   {
+    quote: "Olá, equipe Beehave! 🐝🌟 Quero expressar minha gratidão pelo cuidado excepcional que vocês têm com o Aprendente L.. A dedicação e carinho de vocês fazem toda a diferença na vida dele! A equipe ABA, liderada pelo supervisor Rafael e pela coordenadora Joyce, é simplesmente incrível. Eles são profissionais exemplares, carinhosos e atenciosos. A mesma gratidão vale para o psicólogo Gutemberg, que faz um trabalho maravilhoso, lúdico, dedicado, e sempre com muita paciência e carinho. E não posso deixar de mencionar a Zel, a recepcionista, que é uma pessoa lindaaa, amorosa e dedicada. Ela é demaissssss! Muito obrigado por tudo! Adoro como vocês ajudam o APRENDENTE L. a se desenvolver de forma incrível, sempre com muita paciência e profissionalismo. É incrível ver o progresso dele! Da nossa família MÃE , Edisonia PAPAI , Jeanderson Sua irmã , Bia ♥️😍✨🙏🏻 ",
+    author: "Cliente: Edisônia",
+    rating: 5
+  },
   {
     quote: "Bom dia! A Beehave para nossa família é um divisor de águas Nosso filho tem se desenvolvido cada vez mais graças ao trabalho multidisciplinar entre escola, terapeutas e o acompanhamento da equipe Beehave. Uma equipe preparada, responsável, humana e que de fato conhece o meu filho. Dessa forma trabalha o que ele precisa desenvolver para alcançar sua autonomia. Vcs são um presente de Deus para nós. Muito obrigada",
     author: "Cliente: Kelly Gadelha de Castro",
