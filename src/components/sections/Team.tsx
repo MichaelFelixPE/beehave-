@@ -325,6 +325,8 @@ const teamHierarchy: TeamMember[] = [
             level: 'E-EVAL',
             crm: '',
             formations: [
+              'Graduação em Psicologia',
+              'Graduação em Psicologia',
               'Graduação em Psicologia'
             ],
             bio: 'Me chamo Brenda Souza, sou Bacharela em Psicologia pela UNINASSAU-PETROLINA (2025.2). Cofundadora da Liga Acadêmica de Análise do Comportamento (LAAC). Possuo formação em Análise do Comportamento Aplicada (ABA) pelo Instituto Fratelli e curso de Aplicadora ABA voltado ao desenvolvimento atípico/TEA pela Beehave Soluções Comportamentais. Com experiência na atuação como aplicadora ABA entre 2023 a 2025, e coleta de dados/aplicação de avaliações por meio dos protocolos VB-MAPP e ABLLS, tendo integrado a equipe de avaliação da Beehave no ano de 2025.',
