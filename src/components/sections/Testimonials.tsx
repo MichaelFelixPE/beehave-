@@ -27,6 +27,7 @@ const testimonials = [
     author: "Cliente: Laura Monteiro",
     rating: 5
   }
+  
 ];
 
 const Testimonials: React.FC = () => {
