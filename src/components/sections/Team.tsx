@@ -327,7 +327,7 @@ const teamHierarchy: TeamMember[] = [
             formations: [
               'Graduação em Psicologia'
             ],
-            bio: 'Membro da equipe de avaliação especializado em análise comportamental.',
+            bio: 'Me chamo Brenda Souza, sou Bacharela em Psicologia pela UNINASSAU-PETROLINA (2025.2). Cofundadora da Liga Acadêmica de Análise do Comportamento (LAAC). Possuo formação em Análise do Comportamento Aplicada (ABA) pelo Instituto Fratelli e curso de Aplicadora ABA voltado ao desenvolvimento atípico/TEA pela Beehave Soluções Comportamentais. Com experiência na atuação como aplicadora ABA entre 2023 a 2025, e coleta de dados/aplicação de avaliações por meio dos protocolos VB-MAPP e ABLLS, tendo integrado a equipe de avaliação da Beehave no ano de 2025.',
           },
           {
             name: 'Luégina Sena',
