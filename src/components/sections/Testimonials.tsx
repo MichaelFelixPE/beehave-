@@ -9,14 +9,20 @@ const testimonials = [
   },
   
    {
-    quote: "Olá, equipe Beehave! 🐝🌟 Quero expressar minha gratidão pelo cuidado excepcional que vocês têm com o Aprendente L.. A dedicação e carinho de vocês fazem toda a diferença na vida dele! A equipe ABA, liderada pelo supervisor Rafael e pela coordenadora Joyce, é simplesmente incrível. Eles são profissionais exemplares, carinhosos e atenciosos. A mesma gratidão vale para o psicólogo Gutemberg, que faz um trabalho maravilhoso, lúdico, dedicado, e sempre com muita paciência e carinho. E não posso deixar de mencionar a Zel, a recepcionista, que é uma pessoa lindaaa, amorosa e dedicada. Ela é demaissssss! Muito obrigado por tudo! Adoro como vocês ajudam o APRENDENTE L. a se desenvolver de forma incrível, sempre com muita paciência e profissionalismo. É incrível ver o progresso dele! Da nossa família MÃE , Edisonia PAPAI , Jeanderson Sua irmã , Bia ♥️😍✨🙏🏻 ",
-    author: "Cliente: Edisônia",
+    quote: "Gratidão, palavra que define toda caminhada cm a família Beehave, pelo carinho, profissionalismo e dedicação nessa caminhada árdua, só quem tem filho(a) atípica sabe o quanto é desafiador mas a evolução desenvolvida nos faz entender que existe um Deus maravilhoso e profissionais excelentes em nossa jornada. Obrigado 🙏🏾 ",
+    author: "Cliente: José Pires",
     rating: 5
   },
   
    {
-    quote: "Olá, equipe Beehave! 🐝🌟 Quero expressar minha gratidão pelo cuidado excepcional que vocês têm com o Aprendente L.. A dedicação e carinho de vocês fazem toda a diferença na vida dele! A equipe ABA, liderada pelo supervisor Rafael e pela coordenadora Joyce, é simplesmente incrível. Eles são profissionais exemplares, carinhosos e atenciosos. A mesma gratidão vale para o psicólogo Gutemberg, que faz um trabalho maravilhoso, lúdico, dedicado, e sempre com muita paciência e carinho. E não posso deixar de mencionar a Zel, a recepcionista, que é uma pessoa lindaaa, amorosa e dedicada. Ela é demaissssss! Muito obrigado por tudo! Adoro como vocês ajudam o APRENDENTE L. a se desenvolver de forma incrível, sempre com muita paciência e profissionalismo. É incrível ver o progresso dele! Da nossa família MÃE , Edisonia PAPAI , Jeanderson Sua irmã , Bia ♥️😍✨🙏🏻 ",
-    author: "Cliente: Edisônia",
+    quote: "Eu sou Josineide, mãe de um aprendente de suporte nível 3, não verbal. Ele faz terapia na clínica beehave que desenvolve um papel fundamental em  intervenção comportamental ABA. A clínica beehave faz um  excelente trabalho de qualidade nos atendimentos prestados. Tem uma equipe de profissionais preparados e capacitados, dentro da ética e comprometimento com a aprendizagem da criança, seguindo todos os critérios adotados , utilizando de várias técnicas na intervenção comportamental ABA, respeitando os limites do aprendente.. São muitos os desafios a serem trabalhados no dia a dia e será superado com esforço, carinho e dedicação, para que ele sinta bem, tanto no fisico , psicológico, emocional e social.Acredito muito na ciência, e que todo trabalho desenvolvido para melhorar o bem estar de cada ser humano é bem vindo, e a Beehave faz parte dessa transformação na vida cada um deles!",
+    author: "Cliente: Josineide",
+    rating: 5
+  },
+  
+   {
+    quote: "A experiência com a Beehave tem sido positiva e pautada na confiança, sobretudo na atuação do coordenador Fernando, que se destaca pela clareza, responsabilidade e pela preocupação com a segurança tanto do paciente quanto da nossa família. O caso trata-se de um paciente em fase quase adulta, com o Transtorno do Espectro Autistas (TEA) nível de suporte  3, o que representa um grande desafio terapêutico, especialmente diante de um histórico complexo. Ainda assim, a clínica acolheu esse desafio. Deus seja louvado por isso! Deus é Bom. Salmo 136:1. Amém Senhor e Salvador Jesus Cristo.",
+    author: "Cliente: Adriana",
     rating: 5
   },
   
