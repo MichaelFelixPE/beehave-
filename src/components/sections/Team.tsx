@@ -255,7 +255,7 @@ const teamHierarchy: TeamMember[] = [
             name: 'Esp. Carlane Machado',
             image: 'https://i.imgur.com/9ekDBk6.jpg',
             level: 'D',
-            crm: 'CRP 00/00000',
+            crm: 'CRP-03/29529',
             formations: [
               'Graduação em Psicologia',
               'Pós-graduação em Análise do Comportamento Aplicada (ABA)',
