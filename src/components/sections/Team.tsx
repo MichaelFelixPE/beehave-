@@ -259,7 +259,7 @@ const teamHierarchy: TeamMember[] = [
             formations: [
               'Graduação em Psicologia',
               'Pós-graduação em Análise do Comportamento Aplicada (ABA)',
-              'Graduação em Psicologia',
+              'Pós-graduação em andamento em Neuropsicologia com ênfase em avaliações',
               'Graduação em Psicologia'
               
             ],
