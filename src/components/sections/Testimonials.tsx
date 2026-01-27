@@ -7,26 +7,37 @@ const testimonials = [
     author: "Cliente: Edisônia",
     rating: 5
   },
+  
    {
     quote: "Olá, equipe Beehave! 🐝🌟 Quero expressar minha gratidão pelo cuidado excepcional que vocês têm com o Aprendente L.. A dedicação e carinho de vocês fazem toda a diferença na vida dele! A equipe ABA, liderada pelo supervisor Rafael e pela coordenadora Joyce, é simplesmente incrível. Eles são profissionais exemplares, carinhosos e atenciosos. A mesma gratidão vale para o psicólogo Gutemberg, que faz um trabalho maravilhoso, lúdico, dedicado, e sempre com muita paciência e carinho. E não posso deixar de mencionar a Zel, a recepcionista, que é uma pessoa lindaaa, amorosa e dedicada. Ela é demaissssss! Muito obrigado por tudo! Adoro como vocês ajudam o APRENDENTE L. a se desenvolver de forma incrível, sempre com muita paciência e profissionalismo. É incrível ver o progresso dele! Da nossa família MÃE , Edisonia PAPAI , Jeanderson Sua irmã , Bia ♥️😍✨🙏🏻 ",
     author: "Cliente: Edisônia",
     rating: 5
   },
+  
+   {
+    quote: "Olá, equipe Beehave! 🐝🌟 Quero expressar minha gratidão pelo cuidado excepcional que vocês têm com o Aprendente L.. A dedicação e carinho de vocês fazem toda a diferença na vida dele! A equipe ABA, liderada pelo supervisor Rafael e pela coordenadora Joyce, é simplesmente incrível. Eles são profissionais exemplares, carinhosos e atenciosos. A mesma gratidão vale para o psicólogo Gutemberg, que faz um trabalho maravilhoso, lúdico, dedicado, e sempre com muita paciência e carinho. E não posso deixar de mencionar a Zel, a recepcionista, que é uma pessoa lindaaa, amorosa e dedicada. Ela é demaissssss! Muito obrigado por tudo! Adoro como vocês ajudam o APRENDENTE L. a se desenvolver de forma incrível, sempre com muita paciência e profissionalismo. É incrível ver o progresso dele! Da nossa família MÃE , Edisonia PAPAI , Jeanderson Sua irmã , Bia ♥️😍✨🙏🏻 ",
+    author: "Cliente: Edisônia",
+    rating: 5
+  },
+  
   {
     quote: "Bom dia! A Beehave para nossa família é um divisor de águas Nosso filho tem se desenvolvido cada vez mais graças ao trabalho multidisciplinar entre escola, terapeutas e o acompanhamento da equipe Beehave. Uma equipe preparada, responsável, humana e que de fato conhece o meu filho. Dessa forma trabalha o que ele precisa desenvolver para alcançar sua autonomia. Vcs são um presente de Deus para nós. Muito obrigada",
     author: "Cliente: Kelly Gadelha de Castro",
     rating: 5
   },
+  
   {
     quote: "Minha experiência com a clínica Beehave é extremamente positiva e marcada por muita confiança, gratidão e reconhecimento. Meu filho, Emanuel, é acompanhado pela equipe da Beehave há cerca de três anos, desde muito próximo ao seu diagnóstico de autismo. Ao longo desse tempo, pude acompanhar de perto o quanto esse suporte foi essencial para o seu desenvolvimento. Grande parte das conquistas e evoluções do Emanuel são resultado do trabalho sério, comprometido e preciso realizado por essa equipe. A Beehave é uma clínica que transmite segurança, acolhimento e profissionalismo. Desde o início, sempre nos sentimos ouvidos como pais. A equipe entende nossos objetivos, respeita nossas preocupações e trabalha com metas bem definidas, clareza e foco, sempre buscando o melhor para a criança. O acompanhamento é feito por uma equipe ABA muito dedicada, com o supervisor Rafael Rodrigues, a coordenadora Andréa Teixeira e o aplicador Isaac, profissionais que demonstram não só conhecimento técnico, mas também cuidado, empatia e compromisso real com o desenvolvimento do Emanuel. Gostaria de deixar um agradecimento especial ao Rafael Rodrigues, que hoje atua como supervisor, mas que por mais de dois anos acompanhou o Emanuel como coordenador, estando presente praticamente desde o início do diagnóstico. Sua dedicação, olhar atento e condução segura fizeram toda a diferença nesse processo. Sou imensamente grata à clínica Beehave por todo o suporte, acolhimento e profissionalismo ao longo desses anos. É uma clínica em que confio plenamente e que recomendo com muita segurança a outras famílias. Luciana Feitoza Mãe do Emanuel",
     author: "Cliente: Luciana Feitoza",
     rating: 5
   },
+  
    {
     quote: "Venho aqui com muita satisfação em nome da nossa família e em especial do nosso querido e amado filho, paciente da  Clínica Beehave, descrever com carinho o belíssimo trabalho que vem desenvolvendo.Chegamos até a Beehave pelas excelentes indicações de outras famílias. E realmente a Clínica superou todas as nossas expectativas.A Equipe de Supervisão, Coordenação e Ats - Atendentes terapêuticos, estão desenvolvendo um brilhante trabalho de acompanhamento com nosso filho, e as evoluções são notoriamente visíveis no dia a dia. Como também a atenção, o carinho, o cuidado, a comunicação e disponibilidade da equipe nos deixam muito felizes e seguros. A equipe Beehave do meu filho é Muuuuito Top, só temos a agradecer a todos os profissionais que fizeram e fazem parte dessa nossa caminhada!!!Parabéns Beehave,  com vocês o trabalho realmente acontece!!! 🥰❤️👏🏻👏🏻👏🏻 😉🐝 Mamãe Juliana, Papai William e toda família",
     author: "Cliente:  Juliana",
     rating: 5
   },
+  
   {
     quote: "Hoje nesse depoimento, começo falando, por quê indicar a Beehave? É minha gente, a nossa experiência na Beehave vem de alguns anos. Experiência essa que obtivemos resultados excelentes no desenvolvimento da minha criança. Hoje agradeço a essa equipe por tamanha dedicação e compromisso que tem em fazer o melhor para nossas crianças. Carinho, acolhimento, amor pela profissão, é um dos poucos elogios a fazer a esses profissionais. Gratidão a todos por tanta dedicação.Relato de uma mãe feliz e realizada",
     author: "Cliente: Laura Monteiro",
