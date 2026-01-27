@@ -7,6 +7,18 @@ const testimonials = [
     author: "Cliente: Edisônia",
     rating: 5
   },
+ 
+  {
+    quote: "Minha experiência com a clínica Beehave é extremamente positiva e marcada por muita confiança, gratidão e reconhecimento. Meu filho, Aprendente E., é acompanhado pela equipe da Beehave há cerca de três anos, desde muito próximo ao seu diagnóstico de autismo. Ao longo desse tempo, pude acompanhar de perto o quanto esse suporte foi essencial para o seu desenvolvimento. Grande parte das conquistas e evoluções do Aprendente E. são resultado do trabalho sério, comprometido e preciso realizado por essa equipe. A Beehave é uma clínica que transmite segurança, acolhimento e profissionalismo. Desde o início, sempre nos sentimos ouvidos como pais. A equipe entende nossos objetivos, respeita nossas preocupações e trabalha com metas bem definidas, clareza e foco, sempre buscando o melhor para a criança. O acompanhamento é feito por uma equipe ABA muito dedicada, com o supervisor Rafael Rodrigues, a coordenadora Andréa Teixeira e o aplicador Isaac, profissionais que demonstram não só conhecimento técnico, mas também cuidado, empatia e compromisso real com o desenvolvimento do Aprendente E.. Gostaria de deixar um agradecimento especial ao Rafael Rodrigues, que hoje atua como supervisor, mas que por mais de dois anos acompanhou o Aprendente E. como coordenador, estando presente praticamente desde o início do diagnóstico. Sua dedicação, olhar atento e condução segura fizeram toda a diferença nesse processo. Sou imensamente grata à clínica Beehave por todo o suporte, acolhimento e profissionalismo ao longo desses anos. É uma clínica em que confio plenamente e que recomendo com muita segurança a outras famílias. Luciana Feitoza Mãe do Aprendente E.",
+    author: "Cliente: Luciana Feitoza",
+    rating: 5
+  },
+
+  {
+    quote: "A experiência na Beehave tem sido fundamental para o desenvolvimento do meu filho. É um ambiente de acolhimento, cuidado e respeito, onde cada conquista é valorizada. Os profissionais trabalham com dedicação e sensibilidade, trazendo segurança para a criança e apoio para a família. Cada avanço representa um passo importante na evolução e na construção de um futuro com mais possibilidades. Sem falar no atendimento da AT [Aplicadora] que ajudou a melhorar bastante o desenvolvimento de Aprendente D.. A parceria entre supervisora, coordenadora e At [Aplicadora] tem sido o ponto chave para a evolução do meu filho. Estou satisfeita com o trabalho da clínica. ",
+    author: "Cliente: Janaína",
+    rating: 5
+  },
   
    {
     quote: "Gratidão, palavra que define toda caminhada cm a família Beehave, pelo carinho, profissionalismo e dedicação nessa caminhada árdua, só quem tem filho(a) atípica sabe o quanto é desafiador mas a evolução desenvolvida nos faz entender que existe um Deus maravilhoso e profissionais excelentes em nossa jornada. Obrigado 🙏🏾 ",
