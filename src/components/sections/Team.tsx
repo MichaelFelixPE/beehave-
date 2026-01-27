@@ -258,6 +258,9 @@ const teamHierarchy: TeamMember[] = [
             crm: 'CRP 00/00000',
             formations: [
               'Graduação em Psicologia',
+              'Graduação em Psicologia',
+              'Graduação em Psicologia',
+              'Graduação em Psicologia'
               
             ],
             bio: 'Me chamo Carlane Machado, sou psicóloga, Coordenadora ABA e Coordenadora Técnica. Sou pós-graduada em Análise do Comportamento Aplicada (ABA) e pós-graduanda em Neuropsicologia com ênfase em avaliações. Possuo capacitação na aplicação de protocolos de avaliação do desenvolvimento e do comportamento, utilizados na construção e acompanhamento do Plano Terapêutico Individualizado.Atuo na avaliação e intervenção de crianças com atrasos no desenvolvimento e transtornos do neurodesenvolvimento, 7 anos de experiência na área. Trabalhando com crianças e adolescentes, típicos e atípicos, sempre com foco em práticas baseadas em evidências, tomada de decisão clínica e atuação interdisciplinar.',
