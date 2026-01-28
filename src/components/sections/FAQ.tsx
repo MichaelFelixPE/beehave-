@@ -65,7 +65,15 @@ const FAQ: React.FC = () => {
     {
       question: "Vocês aceitam planos de saúde?",
       answer: "Infelizmente não, os atendimentos são particulares. Caso você tenha um plano de saúde, você pode solicitar atendimento na sua operadora de saúde e pedir encaminhamento para a Beehave, mas a decisão final cabe à operadora de saúde."
-    }
+    },
+    {
+      question: "Qual é a carga horária recomendada para a intervenção baseada em ABA?",
+      answer: "A definição da carga horária é individualizada. Ela é definida após a Avaliação Comportamental, em que um dos produtos é o Plano de Ensino Individualizado (PEI). Nesse documento, com os objetivos de ensino aprovados pela família, leva-se em consideração a real necessidade de Aprendente, junto a sua família. Dito isso, geralmente a CH indicada varia entre 10 e 40 horas semanais, seja em ambiente escolar, domiciliar, e ainda ambientes externos, como parques e praças, dependendo da atividade a ser desempenhada, incluindo também o tempo de descanso para a(o) Aprendente."
+    },
+    {
+      question: "A Beehave oferta outros serviços, além do de intervenção baseada em ABA para desenvolvimento atípico/TEA?",
+      answer: "Sim, a Beehave oferta serviços de saúde por meio da Beehave Serviços, como Consultoria ou Assessoria em ABA para Clínica, Escola, Serviço público de Educação e Saúde; Supervisão em ABA para Coordenadora(dor) e/ou Supervisora(sor) de Equipe ABA; Profissional da saúde e da educação.; Supervisão Clínica para Psicóloga(o); Psicoterapia infantil, adolescente e adulto. Além disso, por meio da Beehave Cursos, oferta Cursos livres (ex.: Aplicadora(dor) em ABA; PCM; PEI); Treinamento em ABA para Profissionais da saúde e educação; Roda de Conversa; Palestra; Workshop; Docente para ministrar aula em Pós-graduação."
+    },
   ];
 
   return (
