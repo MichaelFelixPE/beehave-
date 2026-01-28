@@ -2,6 +2,14 @@ import React from 'react';
 import Button from '../ui/Button';
 
 const Hero: React.FC = () => {
+
+  // --- AQUI ESTÁ A FUNÇÃO DO WHATSAPP ---
+  const handleWhatsappClick = () => {
+    const phoneNumber = "5500000000000"; // Substitua pelo seu número (Ex: 5587999999999)
+    const text = encodeURIComponent("Olá! Gostaria de agendar uma reunião com a Beehave.");
+    window.open(`https://wa.me/${phoneNumber}?text=${text}`, '_blank');
+  };
+
   return (
     <section className="relative pt-24 pb-16 overflow-hidden">
       {/* Background Pattern */}
@@ -26,9 +34,12 @@ const Hero: React.FC = () => {
             </p>
             
             <div className="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-              <Button size="large">
+              
+              {/* --- ONDE O LINK É ATIVADO NO BOTÃO --- */}
+              <Button size="large" onClick={handleWhatsappClick}>
                 Agende uma Reunião
               </Button>
+
             </div>
 
             <div className="mt-10 grid grid-cols-3 gap-4 max-w-lg mx-auto lg:mx-0">
