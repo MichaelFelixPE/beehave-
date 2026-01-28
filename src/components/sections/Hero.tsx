@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
 
   return (
     <section className="relative pt-24 pb-16 overflow-hidden bg-[#FFFCF0]">
-      {/* 1. O PADRÃO DE COLMEIA (HEXÁGONOS) NO FUNDO */}
+      {/* PADRÃO DE COLMEIA NO FUNDO */}
       <div 
         className="absolute inset-0 opacity-[0.06] z-0" 
         style={{ 
@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
         }}
       ></div>
 
-      {/* 2. GRADIENTES SUAVES PARA DAR PROFUNDIDADE (OS "GLOWS" DO PRINT) */}
+      {/* GRADIENTES DE LUZ (GLOWS) */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-yellow-200/40 rounded-full blur-[120px] z-0"></div>
       <div className="absolute -bottom-20 -left-20 w-[400px] h-[400px] bg-amber-100/50 rounded-full blur-[100px] z-0"></div>
 
@@ -37,15 +37,13 @@ const Hero: React.FC = () => {
             </p>
             
             <div className="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
+              {/* APENAS O BOTÃO DE WHATSAPP AGORA */}
               <Button size="large" onClick={handleWhatsappClick}>
                 Agende uma Reunião
               </Button>
-              <button className="px-8 py-3 rounded-lg border-2 border-yellow-500/20 bg-white/50 backdrop-blur-sm text-yellow-700 font-bold hover:bg-yellow-50 transition-all">
-                Nossa Ciência
-              </button>
             </div>
 
-            {/* STATS EM FORMATO DE HEXÁGONO (OU CARDS MODERNOS) */}
+            {/* STATS CARDS */}
             <div className="mt-14 grid grid-cols-3 gap-6 max-w-lg mx-auto lg:mx-0">
               {[
                 { label: 'Especialistas', val: '25+' },
@@ -60,7 +58,7 @@ const Hero: React.FC = () => {
             </div>
           </div>
           
-          {/* LADO DA IMAGEM COM MOLDURA MODERNA */}
+          {/* IMAGEM COM MOLDURA */}
           <div className="relative group">
             <div className="absolute -inset-4 bg-yellow-400/20 rounded-[2rem] blur-2xl z-0"></div>
             <img 
@@ -73,7 +71,7 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* DIVISOR DE ONDA SUAVE NO FINAL */}
+      {/* DIVISOR DE ONDA SUAVE */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] transform rotate-180">
         <svg fill="#FFFFFF" viewBox="0 0 1200 120" preserveAspectRatio="none" className="relative block w-full h-[60px]">
             <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V49.75C51.26,80.42,149.6,95.29,249.23,85.21,290.41,81.07,321.39,56.44,321.39,56.44Z"></path>
