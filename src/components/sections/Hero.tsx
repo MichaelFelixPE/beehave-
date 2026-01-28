@@ -3,11 +3,10 @@ import Button from '../ui/Button';
 
 const Hero: React.FC = () => {
 
-  // --- AQUI ESTÁ A FUNÇÃO DO WHATSAPP ---
+  // FUNÇÃO QUE ABRE O SEU LINK ESPECÍFICO DO WHATSAPP
   const handleWhatsappClick = () => {
-    const phoneNumber = "5500000000000"; // Substitua pelo seu número (Ex: 5587999999999)
-    const text = encodeURIComponent("Olá! Gostaria de agendar uma reunião com a Beehave.");
-    window.open(`https://wa.me/${phoneNumber}?text=${text}`, '_blank');
+    const whatsappUrl = "https://wa.me/message/HOVDY5ONMWA4A1?src=qr";
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -35,7 +34,7 @@ const Hero: React.FC = () => {
             
             <div className="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
               
-              {/* --- ONDE O LINK É ATIVADO NO BOTÃO --- */}
+              {/* BOTÃO CONFIGURADO COM SEU LINK */}
               <Button size="large" onClick={handleWhatsappClick}>
                 Agende uma Reunião
               </Button>
