@@ -21,7 +21,7 @@ const testimonials = [
   },
   
    {
-    quote: "Gratidão, palavra que define toda caminhada com a família Beehave, pelo carinho, profissionalismo e dedicação nessa caminhada árdua, só quem tem filho(a) atípica sabe o quanto é desafiador mas a evolução desenvolvida nos faz entender que existe um Deus maravilhoso e profissionais excelentes em nossa jornada. Obrigado 🙏🏾 ",
+    quote: "Gratidão, palavra que define toda caminhada com a família Beehave, pelo carinho, profissionalismo e dedicação nessa caminhada árdua, só quem tem filho(a) atípica sabe o quanto é desafiador, mas a evolução desenvolvida nos faz entender que existe um Deus maravilhoso e profissionais excelentes em nossa jornada. Obrigado 🙏🏾",
     author: "Cliente: José Pires",
     rating: 5
   },
