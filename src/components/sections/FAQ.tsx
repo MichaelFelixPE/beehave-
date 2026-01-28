@@ -40,7 +40,7 @@ const FAQ: React.FC = () => {
   const faqItems = [
     {
       question: "O que é a terapia ABA?",
-      answer: "A terapia ABA (Applied Behavior Analysis ou Análise do Comportamento Aplicada) é uma abordagem terapêutica baseada na ciência do comportamento. Ela utiliza princípios da psicologia comportamental para ensinar habilidades e reduzir comportamentos que dificultam o desenvolvimento. É conhecida especialmente na intervenção de pessoas com TEA, mas também pode ser usada em outros contextos, como organizacional, terapia com adultos, etc."
+      answer: "A intervenção baseada em ABA (conhecida, popularmente, como terapia ABA). ABA é uma sigla do inglês, Applied Behavior Analysis, traduzida para o português como Análise do Comportamento Aplicada. Ela é a parte da pesquisa aplicada e da prestação de serviço da Análise do Comportamento, uma ciência do comportamento. A intervenção baseada em ABA tem como objetivos principais ensinar habilidades socialmente relevantes e reduzir comportamentos que dificultam a aprendizagem dessas habilidades. É conhecida especialmente na intervenção para pessoas autistas, mas também pode ser aplicada em outros contextos, como organizacional, escolas, terapia para pessoas típicas, serviços públicos etc."
     },
     {
       question: "Por que a ABA é indicada para pessoas com autismo?",
