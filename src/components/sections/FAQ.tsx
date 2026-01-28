@@ -73,7 +73,7 @@ const FAQ: React.FC = () => {
     {
       question: "A Beehave oferta outros serviços, além do de intervenção baseada em ABA para desenvolvimento atípico/TEA?",
       answer: "Sim, a Beehave oferta serviços de saúde por meio da Beehave Serviços, como Consultoria ou Assessoria em ABA para Clínica, Escola, Serviço público de Educação e Saúde; Supervisão em ABA para Coordenadora(dor) e/ou Supervisora(sor) de Equipe ABA; Profissional da saúde e da educação.; Supervisão Clínica para Psicóloga(o); Psicoterapia infantil, adolescente e adulto. Além disso, por meio da Beehave Cursos, oferta Cursos livres (ex.: Aplicadora(dor) em ABA; PCM; PEI); Treinamento em ABA para Profissionais da saúde e educação; Roda de Conversa; Palestra; Workshop; Docente para ministrar aula em Pós-graduação."
-    },
+    }
   ];
 
   return (
