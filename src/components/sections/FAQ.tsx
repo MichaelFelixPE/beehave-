@@ -59,6 +59,10 @@ const FAQ: React.FC = () => {
       answer: "Não há idade mínima para iniciar atendimento baseado em ABA. Os profissionais irão fazer as adaptações encessárias para proporcionar o melhor atendimento para crianças de qualquer idade."
     },
     {
+      question: "O que é necessário para iniciar a intervenção baseada em ABA?",
+      answer: "Basta entrar em contato com a Recepção da Beehave e agendar um horário para a Avaliação Comportamental. Não é necessário laudo ou qualquer outro documento de outro profissional. Esse mesmo procedimento pode ser feito para contratar outros serviço da Beehave."
+    },
+    {
       question: "Vocês aceitam planos de saúde?",
       answer: "Infelizmente não, os atendimentos são particulares. Caso você tenha um plano de saúde, você pode solicitar atendimento na sua operadora de saúde e pedir encaminhamento para a Beehave, mas a decisão final cabe à operadora de saúde."
     }
