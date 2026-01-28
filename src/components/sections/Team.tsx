@@ -57,7 +57,7 @@ const teamHierarchy: TeamMember[] = [
               'Mestrado em Teoria e Pesquisa do Comportamento (UFPA)',
               'Doutorado em andamento em Teoria e Pesquisa do Comportamento (UFPA)'
             ],
-            bio: 'Oi! Eu sou o Luiz Felipe Alves. Sou psicólogo formado pela Univasf, mestre e doutorando em Teoria e Pesquisa do Comportamento pela UFPA. Sou professor de Psicologia desde 2017 e, atualmente, coordeno o curso de Psicologia da Facesp, em Petrolina. Também atuo na Beehave, na qual sou um dos idealizadores e sócio-fundador. Há 8 anos trabalho como supervisor em Análise do Comportamento Aplicada ao Autismo, conciliando a atuação clínica com o ensino, tanto em universidades quanto dentro da própria Beehave, desenvolvendo formações, treinamentos e acompanhando a prática de profissionais e estudantes em desenvolvimento.Hoje, tenho a alegria de trabalhar ao lado de pessoas que ajudei a formar e que fazem parte da construção diária da Beehave.',
+            bio: 'Oi! Eu sou o Luiz Felipe Alves. Sou psicólogo formado pela Univasf, mestre e doutorando em Teoria e Pesquisa do Comportamento pela UFPA. Sou professor de Psicologia desde 2017 e, atualmente, coordeno o curso de Psicologia da Facesp, em Petrolina.Também atuo na Beehave, na qual sou um dos idealizadores e sócio-fundador. Há 8 anos trabalho como supervisor em Análise do Comportamento Aplicada ao Autismo, conciliando a atuação clínica com o ensino, tanto em universidades quanto dentro da própria Beehave, desenvolvendo formações, treinamentos e acompanhando a prática de profissionais e estudantes em desenvolvimento.Hoje, tenho a alegria de trabalhar ao lado de pessoas que ajudei a formar e que fazem parte da construção diária da Beehave.',
           },
           {
             name: 'Me. Murilo da Cruz',
@@ -142,7 +142,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Me chamo Álex Jonatas dos Santos Rosas, sou Psicólogo formado na Univasf, mestre em Psicologia e especialista em Análise do Comportamento Aplicada (ABA). Atuo como supervisor de intervenção ABA na Beehave, conduzindo planejamento e acompanhamento técnico de programas de intervenção.',
           },
           {
-            name: 'Ma. Joíria Ribeiro',
+            name: 'Ma. Joiria Cerqueira',
             image: 'https://i.imgur.com/zJGPMaX.jpg',
             level: 'C',
             crm: 'CRP-03/15556',
@@ -197,63 +197,10 @@ const teamHierarchy: TeamMember[] = [
             level: 'D',
             crm: 'CRP-03/19674',
             formations: [
-              'Graduação em Psicologia',
-              'Formação em Análise do Comportamento',
-              'Formações em Protocolos e Estratégias de Intervenção (PRT) (SBT) (HRE) (CAA)'
+              'Especialização em Psicologia Organizacional',
+              'Graduação em Psicologia'
             ],
-            bio: `Sou Jamille Mota, psicóloga de ofício,
-Coordenadora ABA por função,
-Analista do comportamento por formação.
-Quando comecei, o caminho era estreito,
-Mais pedra que chão.
-
-Fui AT quando quase não havia trilha,
-Quando inclusão era palavra sem vez.
-Aprendi cedo que toda criança tem a dizer
-E que comportamento é comunicação.
-
-Busquei a ciência onde ela se renova,
-Cruzei fronteiras para poder aprender:
-PRT, SBT, HRE, CAA
-Ferramentas que ampliam a intervenção
-
-Não acredito em caso perdido.
-Onde muitos veem limite,
-Eu investigo função.
-Onde dizem “não dá”,
-Aprendi em supervisão
-A reorganizar o ambiente,
-Ajustar o ensino,
-Sustentar o vínculo
-E seguir com intenção.
-
-Meu lugar clínico é com quem mais precisa,
-Casos nível 3 de suporte,
-Onde o ensino exige assentimento
-E a técnica, compaixão.
-
-Porque ciência que transforma, acolhe.
-E afeto não é ausência de rigor:
-É o que mantém o ensino de pé
-E dá vigor.
-
-Trabalho com dados, gráficos e planos de intervenção,
-Mas nenhum protocolo está acima
-Da história que se vive
-Nem do bem-estar de quem aprende.
-
-Intervir, para mim,
-Não é silenciar comportamento,
-É ampliar repertórios
-Sem apagar quem a criança é.
-
-Sou psicóloga.
-Sou analista do comportamento.
-Sou fruto de um caminho de estudo e dedicação
-E defensora de uma prática clara:
-onde há ciência, há transformação.
-onde há afeto, há direção.
-e onde há compaixão, o desenvolvimento acontece.`,
+            bio: 'Sou Jamille Mota, psicóloga de ofício, Coordenadora ABA por função, Analista do comportamento por formação. Quando comecei, o caminho era estreito, Mais pedra que chão. Fui AT quando quase não havia trilha, Quando inclusão era palavra sem vez. Aprendi cedo que toda criança tem a dizer e que comportamento é comunicação. Busquei a ciência onde ela se renova, Cruzei fronteiras para poder aprender:PRT, SBT, HRE, CAA Ferramentas que ampliam a intervenção Não acredito em caso perdido. Onde muitos veem limite, Eu investigo função.Onde dizem “não dá”, Aprendi em supervisão a reorganizar o ambiente, Ajustar o ensino, Sustentar o vínculo e seguir com intenção. Meu lugar clínico é com quem mais precisa, Casos nível 3 de suporte, Onde o ensino exige assentimento e a técnica, compaixão. Porque ciência que transforma, acolhe. E afeto não é ausência de rigor: É o que mantém o ensino de pé E dá vigor. Trabalho com dados, gráficos e planos de intervenção, Mas nenhum protocolo está acima da história que se vive nem do bem-estar de quem aprende. Intervir, para mim, Não é silenciar comportamento, É ampliar repertórios sem apagar quem a criança é. Sou psicóloga. Sou analista do comportamento. Sou fruto de um caminho de estudo e dedicação E defensora de uma prática clara:onde há ciência, há transformação. onde há afeto, há direção. e onde há compaixão, o desenvolvimento acontece.',
           },
           {
             name: ' Esp. Joice Izabela',
