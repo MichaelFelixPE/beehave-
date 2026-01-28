@@ -43,28 +43,28 @@ const FAQ: React.FC = () => {
       answer: "A intervenção baseada em ABA (conhecida, popularmente, como terapia ABA). ABA é uma sigla do inglês, Applied Behavior Analysis, traduzida para o português como Análise do Comportamento Aplicada. Ela é a parte da pesquisa aplicada e da prestação de serviço da Análise do Comportamento, uma ciência do comportamento. A intervenção baseada em ABA tem como objetivos principais ensinar habilidades socialmente relevantes e reduzir comportamentos que dificultam a aprendizagem dessas habilidades. É conhecida especialmente na intervenção para pessoas autistas, mas também pode ser aplicada em outros contextos, como organizacional, escolas, terapia para pessoas típicas, serviços públicos etc."
     },
     {
-      question: "Por que a ABA é indicada para pessoas com autismo?",
-      answer: "Segundo a Organização Mundial de Saúde (OMS), a intervenção ABA é a que possui melhores resultados apra crianças com desenvolvimento atípico/Transtorno do Espectro Autista (TEA)."
+      question: "Por que a ABA é indicada para autistas?",
+      answer: "Segundo a Organização Mundial de Saúde (OMS), a intervenção baseada em ABA é a que possui melhores resultados para pessoas com Desenvolvimento atípico/Transtorno do Espectro Autista (TEA).."
     },
     {
-      question: "A família participa das sessões?",
-      answer: "Depende! A família é parte essencial do processo de intervenção, mas a participação na sessão dependerá dos objetivos elaborados para o Aprendente. Além das sessões, as manutenções e generalização de habilidades são importantes para que a criança consiga colocar em prática o que aprendeu na sessão, e nessa etapa a participação da família é fundamental."
+      question: "A família participa das sessões da intervenção baseada em ABA?",
+      answer: "Depende! A família é parte essencial do processo dessa intervenção. Contudo, a participação na sessão dependerá dos objetivos elaborados para a(o) Aprendente. Além das sessões, a manutenção e generalização de habilidades são importantes para que essa(e) Aprendente consiga colocar em prática o que aprendeu na sessão, e nessa etapa a participação da família é fundamental."
     },
     {
       question: "A Beehave faz acompanhamento escolar?",
-      answer: "Sim! O Aplicador faz acompanhamento no ambiente escolar. Mas é importante entender as diferenças dos profissionais: o aplicador tem função de mediar relações do Aprendente, auxiliar na comunicação. A depender do repertório da criança, pode haver objetivos acadêmicos. Mas a escola deve cumprir com as funções pedagógicas do ensino da criança. "
+      answer: "Sim! A(o) Aplicadora(dor) pode fazer acompanhamento no ambiente escolar, desde que a Equipe ABA avalie essa necessidade.  Porém, é importante entender as diferenças dos papeis entre Agente de ensino da Equipe ABA e a Escola: a(o) Aplicadora(dor) tem função, basicamente, de mediar as relações da(o) Aprendente com outras pessoas, auxiliar na comunicação, manejar comportamentos desafiadores, (a depender do repertório da(o) Aprendente, pode haver objetivos acadêmicos); enquanto a Escola deve cumprir com as suas funções pedagógicas com essa(e) Aprendente."
     },
     {
       question: "A partir de qual idade minha filha ou meu filho pode começar?",
-      answer: "Não há idade mínima para iniciar atendimento baseado em ABA. Os profissionais irão fazer as adaptações encessárias para proporcionar o melhor atendimento para crianças de qualquer idade."
+      answer: "Não há idade mínima para iniciar a intervenção baseada em ABA. As(os) Agente de ensino da Equipe ABA farão as adaptações necessárias para promover o melhor atendimento às pessoas de qualquer idade."
     },
     {
       question: "O que é necessário para iniciar a intervenção baseada em ABA?",
       answer: "Basta entrar em contato com a Recepção da Beehave e agendar um horário para a Avaliação Comportamental. Não é necessário laudo ou qualquer outro documento de outro profissional. Esse mesmo procedimento pode ser feito para contratar outros serviço da Beehave."
     },
     {
-      question: "Vocês aceitam planos de saúde?",
-      answer: "Infelizmente não, os atendimentos são particulares. Caso você tenha um plano de saúde, você pode solicitar atendimento na sua operadora de saúde e pedir encaminhamento para a Beehave, mas a decisão final cabe à operadora de saúde."
+      question: "Vocês atendem por Planos de saúde?",
+      answer: "Infelizmente não, os atendimentos são particulares. Caso você tenha um Plano de saúde, você pode solicitar atendimento na sua Operadora de saúde e pedir encaminhamento para a Beehave, mas a decisão final cabe à Operadora de saúde."
     },
     {
       question: "Qual é a carga horária recomendada para a intervenção baseada em ABA?",
