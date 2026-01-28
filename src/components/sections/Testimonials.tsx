@@ -15,7 +15,7 @@ const testimonials = [
   },
 
   {
-    quote: "A experiência na Beehave tem sido fundamental para o desenvolvimento do meu filho. É um ambiente de acolhimento, cuidado e respeito, onde cada conquista é valorizada. Os profissionais trabalham com dedicação e sensibilidade, trazendo segurança para a criança e apoio para a família. Cada avanço representa um passo importante na evolução e na construção de um futuro com mais possibilidades. Sem falar no atendimento da AT [Aplicadora] que ajudou a melhorar bastante o desenvolvimento de Aprendente D.. A parceria entre supervisora, coordenadora e At [Aplicadora] tem sido o ponto chave para a evolução do meu filho. Estou satisfeita com o trabalho da clínica. ",
+    quote: "A experiência na Beehave tem sido fundamental para o desenvolvimento do meu filho. É um ambiente de acolhimento, cuidado e respeito, onde cada conquista é valorizada. Os profissionais trabalham com dedicação e sensibilidade, trazendo segurança para a criança e apoio para a família. Cada avanço representa um passo importante na evolução e na construção de um futuro com mais possibilidades. Sem falar no atendimento da AT (Aplicadora) que ajudou a melhorar bastante o desenvolvimento de Aprendente D.. A parceria entre supervisora, coordenadora e At (Aplicadora) tem sido o ponto chave para a evolução do meu filho. Estou satisfeita com o trabalho da clínica. ",
     author: "Cliente: Janaína",
     rating: 5
   },
