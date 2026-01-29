@@ -1,58 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Heart, Users, Lightbulb, Puzzle, Info } from 'lucide-react';
 
-// ARRAY 1: Informações Rotativas (Destaques)
-const highlightInfos = [
-  {
-    title: "O que significa Aprendente?",
-    content: (
-      <>
-        Utilizamos esse termo para nos referir à pessoa que atenderemos, com desenvolvimento atípico ou típico. Essa pessoa é <span className="font-semibold text-yellow-700">Aprendente</span> por ser uma(um) <span className="font-semibold text-yellow-700">Agente ativo</span> em sua história individual e social, em <span className="font-semibold text-yellow-700">processo contínuo de aprendizagem</span>.
-      </>
-    )
-  },
-  {
-    title: "Foco na Família",
-    content: "Acreditamos que a evolução do aprendente acontece em conjunto. Por isso, todos os nossos serviços envolvem o suporte, acolhimento e a participação ativa da família e cuidadores no processo terapêutico."
-  },
-  {
-    title: "Base Científica (ABA)",
-    content: "Nossas intervenções utilizam a Análise do Comportamento Aplicada. Planejamos cada passo com base em dados e evidências para garantir que o ensino seja efetivo, ético e focado na autonomia."
-  }
-];
-
-// ARRAY 2: Seus Serviços Originais
-const serviceItems = [
-  {
-    title: 'Avaliação Comportamental',
-    description: 'Avaliação individualizada, que, por meio de Protocolos de Avaliação publicados, a nossa Equipe de Avaliação identificará os déficits e excessos comportamentais do Aprendente, a fim de auxiliar na produção efetiva e científica de uma Plano de Ensino Individualizado (PEI).',
-    icon: Puzzle,
-  },
-  {
-    title: 'Intervenção Comportamental',
-    description: 'Intervenção baseada nos resultados da Avaliação comportamental, totalmente individualizada. Analistas Supervisores elaboram Programas de Ensino aplicados por aplicadores treinados, configurando o modelo de Equipe ABA.',
-    icon: Users,
-  },
-  {
-    title: 'Psicoterapia',
-    description: 'Sessões baseadas na Ciência da Análise do Comportamento para pessoas com desenvolvimento atípico ou típico. Visa promover autoconhecimento, regulação emocional e repertórios comportamentais flexíveis.',
-    icon: Heart,
-  },
-  {
-    title: 'Orientação Parental',
-    description: 'Suporte para pais e cuidadores compreenderem comportamentos e aplicarem estratégias que melhorem a comunicação, gerenciem conflitos e fortaleçam vínculos familiares.',
-    icon: Lightbulb,
-  },
-];
+// ... (seus arrays highlightInfos e serviceItems continuam iguais aqui)
 
 const Services: React.FC = () => {
   const [currentInfo, setCurrentInfo] = useState(0);
 
-  // Lógica para rotacionar as informações automaticamente
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentInfo((prev) => (prev + 1) % highlightInfos.length);
-    }, 7000); // Troca a cada 7 segundos
+    }, 7000);
     return () => clearInterval(interval);
   }, []);
 
@@ -60,17 +17,8 @@ const Services: React.FC = () => {
     <section id="services" className="py-16 bg-gradient-to-b from-yellow-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Cabeçalho Principal */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-black">Nossa Beehave Serviços</h2>
-          <div className="w-24 h-1 bg-yellow-400 mx-auto my-4"></div>
-          <p className="max-w-2xl mx-auto text-gray-700">
-            Ofertamos uma variedade de serviços em ABA para Aprendentes e suas famílias, Profissionais da Saúde e da Educação, Clínicas e Escolas.
-          </p>
-        </div>
-
-        {/* ÁREA DE DESTAQUE ROTATIVO (Array 1) */}
-        <div className="mb-12">
+        {/* --- INVERTIDO: O "SOBRE/DESTAQUE" AGORA VEM PRIMEIRO --- */}
+        <div className="mb-20"> {/* Aumentei a margem para separar bem */}
           <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-500 p-8 rounded-lg shadow-md max-w-4xl mx-auto relative overflow-hidden">
             <div className="flex items-start gap-4 transition-all duration-500">
               <div className="flex-shrink-0">
@@ -88,7 +36,6 @@ const Services: React.FC = () => {
               </div>
             </div>
 
-            {/* Indicadores de Progresso (Bolinhas) */}
             <div className="flex justify-center gap-2 mt-4">
               {highlightInfos.map((_, idx) => (
                 <button
@@ -103,7 +50,16 @@ const Services: React.FC = () => {
           </div>
         </div>
 
-        {/* GRID DE SERVIÇOS (Array 2) */}
+        {/* --- CABEÇALHO DOS SERVIÇOS --- */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-black">Nossa Beehave Serviços</h2>
+          <div className="w-24 h-1 bg-yellow-400 mx-auto my-4"></div>
+          <p className="max-w-2xl mx-auto text-gray-700">
+            Ofertamos uma variedade de serviços em ABA para Aprendentes e suas famílias, Profissionais da Saúde e da Educação, Clínicas e Escolas.
+          </p>
+        </div>
+
+        {/* --- GRID DE SERVIÇOS --- */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {serviceItems.map((service, index) => {
             const IconComponent = service.icon;
