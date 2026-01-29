@@ -5,7 +5,7 @@ import { Heart, Users, Lightbulb, Puzzle, Info } from 'lucide-react';
 const highlightInfos = [
   {
     title: "O que significa Aprendente?",
-    content: ( 
+    content: (
       <>
         Utilizamos esse termo para nos referir à pessoa que atenderemos, com desenvolvimento atípico ou típico. Essa pessoa é <span className="font-semibold text-yellow-700">Aprendente</span> por ser uma(um) <span className="font-semibold text-yellow-700">Agente ativo</span> em sua história individual e social, em <span className="font-semibold text-yellow-700">processo contínuo de aprendizagem</span>.
       </>
@@ -45,7 +45,7 @@ const serviceItems = [
   },
 ];
 
-const Services: React.FC = () => {
+const Services = () => {
   const [currentInfo, setCurrentInfo] = useState(0);
 
   // Lógica para rotacionar as informações automaticamente
@@ -60,17 +60,8 @@ const Services: React.FC = () => {
     <section id="services" className="py-16 bg-gradient-to-b from-yellow-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Cabeçalho Principal */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-black">Nossa Beehave Serviços</h2>
-          <div className="w-24 h-1 bg-yellow-400 mx-auto my-4"></div>
-          <p className="max-w-2xl mx-auto text-gray-700">
-            Ofertamos uma variedade de serviços em ABA para Aprendentes e suas famílias, Profissionais da Saúde e da Educação, Clínicas e Escolas.
-          </p>
-        </div>
-
-        {/* ÁREA DE DESTAQUE ROTATIVO (Array 1) */}
-        <div className="mb-12">
+        {/* 1. AGORA O DESTAQUE (SOBRE) VEM PRIMEIRO */}
+        <div className="mb-20">
           <div className="bg-gradient-to-r from-yellow-50 to-amber-50 border-l-4 border-yellow-500 p-8 rounded-lg shadow-md max-w-4xl mx-auto relative overflow-hidden">
             <div className="flex items-start gap-4 transition-all duration-500">
               <div className="flex-shrink-0">
@@ -82,7 +73,7 @@ const Services: React.FC = () => {
                 <h3 className="text-lg font-semibold text-yellow-900 mb-2 transition-all">
                   {highlightInfos[currentInfo].title}
                 </h3>
-                <div className="text-gray-700 leading-relaxed animate-in fade-in duration-700">
+                <div className="text-gray-700 leading-relaxed">
                   {highlightInfos[currentInfo].content}
                 </div>
               </div>
@@ -103,7 +94,16 @@ const Services: React.FC = () => {
           </div>
         </div>
 
-        {/* GRID DE SERVIÇOS (Array 2) */}
+        {/* 2. CABEÇALHO DOS SERVIÇOS ABAIXO */}
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-black">Nossa Beehave Serviços</h2>
+          <div className="w-24 h-1 bg-yellow-400 mx-auto my-4"></div>
+          <p className="max-w-2xl mx-auto text-gray-700">
+            Ofertamos uma variedade de serviços em ABA para Aprendentes e suas famílias, Profissionais da Saúde e da Educação, Clínicas e Escolas.
+          </p>
+        </div>
+
+        {/* 3. GRID DE SERVIÇOS (CARDS) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {serviceItems.map((service, index) => {
             const IconComponent = service.icon;
