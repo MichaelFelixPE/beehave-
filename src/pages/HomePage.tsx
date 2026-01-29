@@ -11,8 +11,8 @@ const HomePage: React.FC = () => {
   return (
     <div className="overflow-hidden">
       <Hero />
-      <Services />
-      <About />
+      <About />         {/* Movi para cá (2ª posição) */}
+      <Services />      {/* Desceu para 3ª */}
       <Team />
       <Testimonials />
       <FAQ />
