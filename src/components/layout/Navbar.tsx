@@ -24,7 +24,7 @@ const Navbar: React.FC = () => {
     { name: 'Início', path: '/' },
     { name: 'Sobre', path: '/#about' },
     { name: 'Beehave Serviços', path: '/#services' },
-    { name: 'Beehave Cursos', path: '/cursos' },
+    { name: 'Beehave Cursos', path: '#' }, // MUDADO: path agora é '#' para não navegar
     { name: 'BeeEquipe', path: '/#team' },
     { name: 'Depoimentos', path: '/#testimonials' },
     { name: 'FAQ', path: '/#faq' },
@@ -32,14 +32,15 @@ const Navbar: React.FC = () => {
   ];
 
   const handleNavClick = (path: string) => {
+    // Se o path for apenas '#', não fazemos nada
+    if (path === '#') return;
+
     if (path === '/') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     } else if (path.startsWith('/#')) {
-      // Se estamos na página de cursos e clicamos em uma seção da home
       if (location.pathname === '/cursos') {
         window.location.href = path;
       } else {
-        // Se já estamos na home, apenas rola para a seção
         const sectionId = path.substring(2);
         const element = document.getElementById(sectionId);
         if (element) {
@@ -66,16 +67,21 @@ const Navbar: React.FC = () => {
           
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-3">
-            {navLinks.map((link) => (
-              link.path.startsWith('/#') || link.path === '/' ? (
+            {navLinks.map((link) => {
+              // Lógica especial para o link desativado
+              const isDisabled = link.name === 'Beehave Cursos';
+              
+              return link.path.startsWith('/#') || link.path === '/' || isDisabled ? (
                 <a
                   key={link.name}
                   href={link.path}
                   onClick={(e) => {
                     e.preventDefault();
-                    handleNavClick(link.path);
+                    if (!isDisabled) handleNavClick(link.path);
                   }}
-                  className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-sm font-medium font-bunday"
+                  className={`text-black transition-colors px-3 py-2 text-sm font-medium font-bunday ${
+                    isDisabled ? 'opacity-70 cursor-default' : 'hover:text-yellow-500'
+                  }`}
                 >
                   {link.name}
                 </a>
@@ -87,8 +93,8 @@ const Navbar: React.FC = () => {
                 >
                   {link.name}
                 </Link>
-              )
-            ))}
+              );
+            })}
           </div>
           
           {/* Mobile Nav Button */}
@@ -108,16 +114,20 @@ const Navbar: React.FC = () => {
       {isOpen && (
         <div className="md:hidden bg-white px-2 pt-2 pb-4 shadow-lg">
           <div className="flex flex-col space-y-2">
-            {navLinks.map((link) => (
-              link.path.startsWith('/#') || link.path === '/' ? (
+            {navLinks.map((link) => {
+              const isDisabled = link.name === 'Beehave Cursos';
+
+              return link.path.startsWith('/#') || link.path === '/' || isDisabled ? (
                 <a
                   key={link.name}
                   href={link.path}
                   onClick={(e) => {
                     e.preventDefault();
-                    handleNavClick(link.path);
+                    if (!isDisabled) handleNavClick(link.path);
                   }}
-                  className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-base font-medium font-bunday"
+                  className={`text-black transition-colors px-3 py-2 text-base font-medium font-bunday ${
+                    isDisabled ? 'opacity-70 cursor-default' : 'hover:text-yellow-500'
+                  }`}
                 >
                   {link.name}
                 </a>
@@ -130,8 +140,8 @@ const Navbar: React.FC = () => {
                 >
                   {link.name}
                 </Link>
-              )
-            ))}
+              );
+            })}
           </div>
         </div>
       )}
