@@ -360,7 +360,7 @@ const teamHierarchy: TeamMember[] = [
               'Leitura e análise de gráficos em ABA',
               'Brincar para variar',
               'Entendendo o comportamento',
-              'GCurso prático de operacionalização e registro de comportamentos',
+              'Curso prático de operacionalização e registro de comportamentos',
             ],
             bio: 'Olá, me chamo Patrícia Matos Oliveira, e sou graduada em Serviço Social pela Universidade Federal da Bahia (UFBA), Pós-graduada em Intervenção ABA e Deficiência Intelectual pela CBI of Miami, e tenho formação como Aplicadora ABA pela Beehave.',
           },
