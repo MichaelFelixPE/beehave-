@@ -321,7 +321,7 @@ const teamHierarchy: TeamMember[] = [
               'Graduação em Psicologia (UNINASSAU)',
               'Pós-graduação em andamento em Análise do Comportamento Aplicada ao TEA',
             ],
-            bio: 'Meu nome é Abdiel Oliveira Ferreira, sou Psicólogo formado pela UNINASSAU, pós-graduando em Análise do Comportamento Aplicada ao TEA, aplicador ABA com mais de 3 anos de experiência e vivência em avaliação comportamental.',
+            bio: 'Olá, tudo bem? Me chamo Adson Raul, sou psicólogo formado pela UNINASSAU e hoje faço pós-graduação em ABA voltada para o autismo. Trabalho há mais de 3 anos como aplicador e tenho vivência e experiência prática  em avaliação comportamental.',
           },
           {
             name: 'Brenda Souza',
