@@ -56,7 +56,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "A partir de qual idade minha filha ou meu filho pode começar?",
-      answer: "Não há idade mínima para iniciar a intervenção baseada em ABA. As(os) Agente de ensino da Equipe ABA farão as adaptações necessárias para promover o melhor atendimento às pessoas de qualquer idade."
+      answer: "Não há idade mínima para iniciar a intervenção baseada em ABA. As(os) Agentes de ensino da Equipe ABA farão as adaptações necessárias para promover o melhor atendimento às pessoas de qualquer idade."
     },
     {
       question: "O que é necessário para iniciar a intervenção baseada em ABA?",
