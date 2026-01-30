@@ -44,7 +44,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "Por que a ABA é indicada para autistas?",
-      answer: "Segundo a Organização Mundial de Saúde (OMS), a intervenção baseada em ABA é a que possui melhores resultados para pessoas com Desenvolvimento atípico/Transtorno do Espectro Autista (TEA).."
+      answer: "Segundo a Organização Mundial de Saúde (OMS), a intervenção baseada em ABA é a que possui melhores resultados para pessoas com Desenvolvimento atípico/Transtorno do Espectro Autista (TEA)."
     },
     {
       question: "A família participa das sessões da intervenção baseada em ABA?",
