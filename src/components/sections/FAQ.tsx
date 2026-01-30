@@ -60,7 +60,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "O que é necessário para iniciar a intervenção baseada em ABA?",
-      answer: "Basta entrar em contato com a Recepção da Beehave e agendar um horário para a Avaliação Comportamental. Não é necessário laudo ou qualquer outro documento de outro profissional. Esse mesmo procedimento pode ser feito para contratar outros serviço da Beehave."
+      answer: "Basta entrar em contato com a Recepção da Beehave e agendar um horário para a Avaliação Comportamental. Não é necessário laudo ou qualquer outro documento de outro profissional. Esse mesmo procedimento pode ser feito para contratar outros serviços da Beehave."
     },
     {
       question: "Vocês atendem por Planos de saúde?",
