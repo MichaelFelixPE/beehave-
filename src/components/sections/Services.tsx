@@ -98,7 +98,7 @@ const Services = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-black">Nossa Beehave Serviços</h2>
           <div className="w-24 h-1 bg-yellow-400 mx-auto my-4"></div>
           <p className="max-w-2xl mx-auto text-gray-700">
-            Ofertamos uma variety de serviços em ABA para Aprendentes e suas famílias, Profissionais da Saúde e da Educação, Clínicas e Escolas.
+            Ofertamos uma variedade de serviços em ABA para Aprendentes e suas famílias, Profissionais da Saúde e da Educação, Clínicas e Escolas.
           </p>
         </div>
 
