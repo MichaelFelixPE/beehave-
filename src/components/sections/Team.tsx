@@ -577,7 +577,7 @@ const Team = () => {
           {coordinators.length > 0 && (
             <>
               <div className="text-center w-full">
-                <h3 className="text-lg font-bold text-gray-700 mb-4">Analista do Comportamentos Coordenadoras(es)</h3>
+                <h3 className="text-lg font-bold text-gray-700 mb-4">Analistas do Comportamento Coordenadoras(es)</h3>
               </div>
               <div className="flex justify-center gap-6 flex-wrap max-w-5xl">
                 {coordinators.map((coordinator, idx) => (
