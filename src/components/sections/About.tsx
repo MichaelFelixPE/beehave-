@@ -87,7 +87,6 @@ const About: React.FC = () => {
                 ))}
               </ul>
               <p className="text-sm text-gray-300 mt-4 pt-4 border-t border-gray-600">
-                na região do Vale do São Francisco, cidades circunvizinhas e em outros Estados, seguindo os princípios de uma Ciência do Comportamento.
               </p>
             </div>
           </div>
