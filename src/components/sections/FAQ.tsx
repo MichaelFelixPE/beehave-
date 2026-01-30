@@ -68,7 +68,7 @@ const FAQ: React.FC = () => {
     },
     {
       question: "Qual é a carga horária recomendada para a intervenção baseada em ABA?",
-      answer: "A definição da carga horária é individualizada. Ela é definida após a Avaliação Comportamental, em que um dos produtos é o Plano de Ensino Individualizado (PEI). Nesse documento, com os objetivos de ensino aprovados pela família, leva-se em consideração a real necessidade de Aprendente, junto a sua família. Dito isso, geralmente a CH (carga horária) indicada varia entre 10 e 40 horas semanais, seja em ambiente escolar, domiciliar, e ainda ambientes externos, como parques e praças, dependendo da atividade a ser desempenhada, incluindo também o tempo de descanso para a(o) Aprendente."
+      answer: "A definição da carga horária é individualizada. Ela é definida após a Avaliação Comportamental, em que um dos produtos é o Plano de Ensino Individualizado (PEI). Nesse documento, com os objetivos de ensino aprovados pela família, leva-se em consideração a real necessidade da(o) Aprendente, junto a sua família. Dito isso, geralmente a CH (carga horária) indicada varia entre 10 e 40 horas semanais, seja em ambiente escolar, domiciliar, e ainda ambientes externos, como parques e praças, dependendo da atividade a ser desempenhada, incluindo também o tempo de descanso para a(o) Aprendente."
     },
     {
       question: "A Beehave oferta outros serviços, além do de intervenção baseada em ABA para desenvolvimento atípico/TEA?",
