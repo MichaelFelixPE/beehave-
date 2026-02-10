@@ -179,19 +179,7 @@ const teamHierarchy: TeamMember[] = [
             ],
             bio: 'Olá, me chamo Erica Tamires, mãe de Tiago e Valentina e apaixonada pela infância e desenvolvimento infantil. Sou professora de formação, tendo atuado por 4 anos no município de Petrolina na Educação Infantil.Psicóloga especialista em ABA, com experiência em Psicoterapia clínica de crianças típicas e atípicas na Beehave. Integrante de equipe ABA, desde 2021 como aplicadora escolar e domiciliar, e, atualmente, como Analista do Comportamento Coordenadora de equipe ABA na Beehave.',
           },
-          {
-            name: ' Esp. Gabriel Barão',
-            image: 'https://i.imgur.com/S2TGn6d.jpeg',
-            level: 'D',
-            crm: 'CRP-02/30450',
-            formations: [
-              'Graduação em Psicologia (UNIVASF)',
-              'Pós-graduação em andamento em Intervenção ABA para Autismo e Deficiência Intelectual (CBI of Miami)',
-              'Formação em Gerenciamento Profissional de Crises – PCM (P1)',
-              'Cursos em Protocolos de Avaliação Comportamental (VB-MAPP) (ABLLS-R) (AFLLS)'
-            ],
-            bio: 'Sou Gabriel Barão, sou psicólogo formado pela Univasf; Pós-graduando em Intervenção ABA para Autismo e Deficiência Intelectual pelo CBI of Miami; sou P1 em Gerenciamento Profissional de Crises (PCM; do inglês Professional Crisis Management ); tenho cursos em protocolos de avaliação comportamental, como VB-MAPP, ABLLS-R e AFLLS.Tive experiência como Aplicador entre 2022 e 2025. Atualmente, sou Analista do Comportamento Coordenador pela Beehave.',
-          },
+          
           {
             name: ' Esp. Jamille Mota',
             image: 'https://i.imgur.com/RltbllC.jpeg',
