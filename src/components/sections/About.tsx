@@ -12,7 +12,7 @@ const About: React.FC = () => {
   const images = {
     missao: "https://i.imgur.com/8eC7zWT.jpeg",
     visao: "https://i.imgur.com/tpV4ayQ.jpeg",
-    valores: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80"
+    valores: "https://i.imgur.com/PYMsM7a.jpeg"
   };
 
   return (
