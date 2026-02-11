@@ -11,7 +11,7 @@ const About: React.FC = () => {
   // Defina aqui os links das imagens para cada card
   const images = {
     missao: "https://i.imgur.com/8eC7zWT.jpeg",
-    visao: "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80",
+    visao: "https://i.imgur.com/tpV4ayQ.jpeg",
     valores: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80"
   };
 
