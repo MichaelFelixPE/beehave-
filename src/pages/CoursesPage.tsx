@@ -161,8 +161,19 @@ const CoursesPage: React.FC = () => {
 
       </section>
 
-      {/* ================= AQUI CONTINUA TODO O SEU CÓDIGO DOS CURSOS NORMAL ================= */}
-      {/* Não alterei nada abaixo */}
+      {/* COURSES */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="space-y-16">
+            {courses.map((course) => (
+              <div key={course.id} className="bg-white rounded-2xl shadow-xl p-8">
+                <h2 className="text-2xl font-bold mb-4">{course.title}</h2>
+                <p className="mb-4">{course.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
     </div>
   );
