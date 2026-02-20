@@ -230,7 +230,7 @@ const teamHierarchy: TeamMember[] = [
             name: ' Esp. Thays Cruz', 
             image: 'https://i.imgur.com/gwY6B0k.jpeg',
             level: 'D',
-            crm: 'CRP-02/26518',
+            crm: 'CRP-03/31285',
             formations: [
               'Graduação em Psicologia',
               'Mestrado em Psicologia pela Universidade Federal do Vale do São Francisco (Univasf)',
