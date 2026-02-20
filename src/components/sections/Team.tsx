@@ -228,7 +228,7 @@ const teamHierarchy: TeamMember[] = [
           },
            {
             name: ' Esp. Thays Cruz',
-            image: 'https://i.imgur.com/veAEOsy.jpeg',
+            image: 'https://i.imgur.com/gwY6B0k.jpeg,
             level: 'D',
             crm: 'CRP-02/26518',
             formations: [
