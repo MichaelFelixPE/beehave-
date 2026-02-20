@@ -16,7 +16,7 @@ interface TeamMember {
 const teamHierarchy: TeamMember[] = [
   {
     name: 'Ma. Jacqueline Iukisa',
-    role: 'Sócia | Diretora de Finanças e RH', 
+    role: 'Sócia | Diretora de Finanças e RH',
     image: 'https://i.imgur.com/ZEhbVZI.jpeg', 
     level: 'A',
     crm: 'CRP-02/17658',
