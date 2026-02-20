@@ -17,18 +17,7 @@ const teamHierarchy: TeamMember[] = [
   {
     name: 'Ma. Jacqueline Iukisa',
     role: 'Sócia | Diretora de Finanças e RH',
-    image: 'https://i.imgur.com/ZEhbVZI.jpeg',
-    level: 'A',
-    crm: 'CRP-02/17658',
-    formations: [
-      'Graduação em Psicologia (UNIVASF)',
-      'Graduação em Língua Inglesa (UPE)',
-      'Mestrado em Teoria e Pesquisa do Comportamento (UFPA)'
-    ],
-    {
-    name: 'Ma. Jacqueline Iukisa',
-    role: 'Sócia | Diretora de Finanças e RH',
-    image: 'https://i.imgur.com/ZEhbVZI.jpeg',
+    image: 'https://i.imgur.com/ZEhbVZI.jpeg', 
     level: 'A',
     crm: 'CRP-02/17658',
     formations: [
