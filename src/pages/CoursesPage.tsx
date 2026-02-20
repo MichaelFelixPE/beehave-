@@ -3,7 +3,7 @@ import { BookOpen, Clock, Users, Award, CheckCircle, Calendar, Star, MapPin } fr
 import Button from '../components/ui/Button';
 
 const courses = [
-  { 
+  {
     id: 1,
     title: 'Curso de Aplicador em ABA Beehave',
     subtitle: 'Formação Completa em Análise do Comportamento Aplicada',
