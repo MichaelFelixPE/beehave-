@@ -227,7 +227,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Me chamo Joyce Maria da Silva Ribeiro, sou Psicóloga, pós-graduada em Análise do Comportamento Aplicada (ABA) e atualmente pós-graduanda em ABA com foco em TEA e DI. Tenho experiência na psicoterapia de crianças atípicas, atuando com intervenções baseadas na Análise do Comportamento. Hoje, sou Coordenadora em ABA na Beehave Soluções Comportamentais e será um prazer acompanhar você por aqui.',
           },
            {
-            name: ' Esp. Joyce Ribeiro',
+            name: ' Esp. Thays Cruz',
             image: 'https://i.imgur.com/veAEOsy.jpeg',
             level: 'D',
             crm: 'CRP-02/26518',
