@@ -13,11 +13,11 @@ interface TeamMember {
   children?: TeamMember[];
 }
 
-const teamHierarchy: TeamMember[] = [
+const teamHierarchy: TeamMember[] = [ 
   {
     name: 'Ma. Jacqueline Iukisa',
     role: 'Sócia | Diretora de Finanças e RH',
-    image: 'https://i.imgur.com/ZEhbVZI.jpeg',
+    image: 'https://i.imgur.com/ZEhbVZI.jpeg', 
     level: 'A',
     crm: 'CRP-02/17658',
     formations: [
@@ -224,17 +224,7 @@ const teamHierarchy: TeamMember[] = [
               'Pós-graduação em Análise do Comportamento Aplicada (ABA)',
               'Pós-graduação em andamento em ABA com foco em TEA e DI'
             ],
-             {
-            name: ' Esp. Thays Cruz',
-            image: 'https://i.imgur.com/gwY6B0k.jpeg',
-            level: 'D',
-            crm: 'CRP-02/26518',
-            formations: [
-              'Graduação em Psicologia',
-              'Pós-graduação em Análise do Comportamento Aplicada (ABA)',
-              'Pós-graduação em andamento em ABA com foco em TEA e DI'
-            ],
-            bio: 'Olá! Eu me chamo Thays e com alegria venho contar um pouco da minha história acadêmica e profissional para você! Sou Psicóloga, Analista do Comportamento, atualmente cursando Doutorado em Análise do Comportamento pela Universidade Estadual de Londrina (UEL) e Mestra em Psicologia pela Universidade Federal do Vale do São Francisco (Univasf). Minha caminhada acadêmica e profissional é guiada pelo compromisso com uma prática ética, baseada em evidências e, acima de tudo, buscando estar atenta e sensível ao bem-estar e desenvolvimento dos aprendentes. Sou certificada como Praticante Nível 1 no Gerenciamento Profissional de Crises (PMCA), o que me permite atuar com segurança, respeito e qualidade em situações que exigem manejo cuidadoso de comportamentos desafiadores.Ao longo da minha trajetória, tive a oportunidade de atuar como aplicadora (AT/Acompanhante Terapêutica), realizando intervenções diretas com crianças e adolescentes por meio de programas de ensino individualizados e estratégias naturalísticas. Meu foco foi estimular o desenvolvimento da comunicação, autonomia, habilidades acadêmicas, sociais, emocionais e de vida diária — sempre respeitando o tempo e a singularidade de cada aprendente.Também tenho experiência na coordenação e capacitação de equipes ABA, com ênfase em protocolos individualizados e no trabalho colaborativo entre terapeutas, família e escola. Atuei ainda na Psicoterapia Infantojuvenil,  acolhendo crianças e adolescentes em contexto clínico, e na Assistência Social (CRAS), onde desenvolvi um olhar sensível às famílias em contextos de vulnerabilidade, fortalecendo vínculos e promovendo apoio psicossocial.Meu objetivo é contribuir para que cada aprendente possa se desenvolver com dignidade e pertencimento social.',
+            bio: 'Me chamo Joyce Maria da Silva Ribeiro, sou Psicóloga, pós-graduada em Análise do Comportamento Aplicada (ABA) e atualmente pós-graduanda em ABA com foco em TEA e DI. Tenho experiência na psicoterapia de crianças atípicas, atuando com intervenções baseadas na Análise do Comportamento. Hoje, sou Coordenadora em ABA na Beehave Soluções Comportamentais e será um prazer acompanhar você por aqui.',
           },
           {
             name: ' Esp. Nayara Queiroz',
