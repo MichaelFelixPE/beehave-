@@ -13,7 +13,7 @@ interface TeamMember {
   children?: TeamMember[];
 }
 
-const teamHierarchy: TeamMember[] = [ 
+const teamHierarchy: TeamMember[] = [
   {
     name: 'Ma. Jacqueline Iukisa',
     role: 'Sócia | Diretora de Finanças e RH',
