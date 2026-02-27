@@ -129,5 +129,3 @@ const CoursesPage: React.FC = () => {
           </div>
         </div>
       </section>
-
-      {/* RESTANTE DO CÓDIGO PERMANECE EXATAMENTE IGUAL */}
