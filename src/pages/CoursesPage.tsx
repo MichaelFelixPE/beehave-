@@ -119,7 +119,7 @@ const CoursesPage: React.FC = () => {
         {/* Overlay */}
         <div className="absolute inset-0 bg-yellow-400 bg-opacity-80"></div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10"> 
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-black mb-6">
               Beehave Cursos
@@ -129,6 +129,11 @@ const CoursesPage: React.FC = () => {
               Capacitação profissional em Análise do Comportamento Aplicada (ABA) e gerenciamento de crises, 
               com cursos reconhecidos e ministrados por especialistas qualificados.
             </p>
+            <div className="flex flex-wrap justify-center gap-8 text-black">
+              <div className="flex items-center bg-black bg-opacity-10 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
+                <Award className="w-6 h-6 mr-3" />
+                <span className="font-semibold">Certificação Reconhecida</span>
+              </div>
               <div className="flex items-center bg-black bg-opacity-10 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
                 <Users className="w-6 h-6 mr-3" />
                 <span className="font-semibold">Instrutores Qualificados</span>
