@@ -126,9 +126,26 @@ const CoursesPage: React.FC = () => {
             </h1>
             <div className="w-32 h-1 bg-black mx-auto mb-8"></div>
             <p className="text-xl md:text-2xl text-black max-w-4xl mx-auto mb-10 opacity-90">
-              Capacitação profissional em Análise do Comportamento Aplicada (ABA) e gerenciamento de crises,
+              Capacitação profissional em Análise do Comportamento Aplicada (ABA) e gerenciamento de crises, 
               com cursos reconhecidos e ministrados por especialistas qualificados.
-            </h1>
+            </p>
+            <div className="flex flex-wrap justify-center gap-8 text-black">
+              <div className="flex items-center bg-black bg-opacity-10 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
+                <Award className="w-6 h-6 mr-3" />
+                <span className="font-semibold">Certificação Reconhecida</span>
+              </div>
+              <div className="flex items-center bg-black bg-opacity-10 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
+                <Users className="w-6 h-6 mr-3" />
+                <span className="font-semibold">Instrutores Qualificados</span>
+              </div>
+              <div className="flex items-center bg-black bg-opacity-10 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
+                <BookOpen className="w-6 h-6 mr-3" />
+                <span className="font-semibold">Material Atualizado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Courses Section */}
       <section className="py-20">
