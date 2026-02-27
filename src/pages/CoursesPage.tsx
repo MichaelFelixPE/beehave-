@@ -128,6 +128,7 @@ const CoursesPage: React.FC = () => {
             <p className="text-xl md:text-2xl text-black max-w-4xl mx-auto mb-10 opacity-90">
               Capacitação profissional em Análise do Comportamento Aplicada (ABA) e gerenciamento de crises,
               com cursos reconhecidos e ministrados por especialistas qualificados.
+            </h1>
 
       {/* Courses Section */}
       <section className="py-20">
