@@ -129,11 +129,6 @@ const CoursesPage: React.FC = () => {
               Capacitação profissional em Análise do Comportamento Aplicada (ABA) e gerenciamento de crises, 
               com cursos reconhecidos e ministrados por especialistas qualificados.
             </p>
-            <div className="flex flex-wrap justify-center gap-8 text-black">
-              <div className="flex items-center bg-black bg-opacity-10 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
-                <Award className="w-6 h-6 mr-3" />
-                <span className="font-semibold">Certificação Reconhecida</span>
-              </div>
               <div className="flex items-center bg-black bg-opacity-10 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
                 <Users className="w-6 h-6 mr-3" />
                 <span className="font-semibold">Instrutores Qualificados</span>
