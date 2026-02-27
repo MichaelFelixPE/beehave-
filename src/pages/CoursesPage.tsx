@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BookOpen, Clock, Users, Award, CheckCircle, Calendar, Star, MapPin } from 'lucide-react';
 import Button from '../components/ui/Button';
 
-// Imagens para o slider automático no topo
+// Imagens para o slider automático
 const heroImages = [
   'https://i.etsystatic.com/38939223/r/il/cfd0a5/5827636191/il_fullxfull.5827636191_gbfr.jpg',
   'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -110,19 +110,17 @@ const courses = [
 const CoursesPage: React.FC = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
-  // Lógica para o slider automático
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % heroImages.length);
-    }, 5000); // Troca a cada 5 segundos
+    }, 5000);
     return () => clearInterval(timer);
   }, []);
 
   return (
     <div className="pt-20 bg-white">
-      {/* Hero Section com Slider */}
-      <section className="relative py-24 overflow-hidden min-h-[500px] flex items-center">
-        {/* Imagens de fundo com transição */}
+      {/* Hero Section Automática (Sem Texto) */}
+      <section className="relative h-[350px] md:h-[550px] overflow-hidden">
         {heroImages.map((img, index) => (
           <div
             key={index}
@@ -132,37 +130,18 @@ const CoursesPage: React.FC = () => {
             style={{ backgroundImage: `url('${img}')` }}
           />
         ))}
-
-        {/* Overlay Amarelo */}
-        <div className="absolute inset-0 bg-yellow-400 bg-opacity-85"></div>
-
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-6xl font-bold text-black mb-6">
-              Beehave Cursos
-            </h1> 
-            <div className="w-32 h-1 bg-black mx-auto mb-8"></div>
-            <p className="text-xl md:text-2xl text-black max-w-4xl mx-auto mb-10 font-medium">
-              Capacitação profissional em Análise do Comportamento Aplicada (ABA) e gerenciamento de crises, 
-              com cursos reconhecidos e ministrados por especialistas qualificados.
-            </p>
-            
-            {/* Seção de textos removida conforme solicitado */}
-          </div>
-        </div>
+        {/* Overlay sutil para acabamento visual */}
+        <div className="absolute inset-0 bg-black bg-opacity-5"></div>
       </section>
 
-      {/* Courses Section */}
+      {/* Seção de Conteúdo dos Cursos */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
               Nossos Cursos Especializados
             </h2>
-            <p className="text-xl text-black max-w-3xl mx-auto">
-              Oferecemos cursos especializados para profissionais que desejam se capacitar
-              em ABA e gerenciamento de crises comportamentais.
-            </p>
+            <div className="w-24 h-1 bg-yellow-400 mx-auto"></div>
           </div>
 
           <div className="space-y-16">
@@ -171,6 +150,7 @@ const CoursesPage: React.FC = () => {
                 key={course.id}
                 className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100"
               >
+                {/* Header do Card do Curso */}
                 <div className={`bg-gradient-to-r ${course.color} p-8 text-white`}>
                   <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
                     <div className="flex-1">
@@ -203,15 +183,13 @@ const CoursesPage: React.FC = () => {
                   </div>
                 </div>
 
+                {/* Detalhes do Curso */}
                 <div className="p-8">
                   <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    {/* Informações do Curso */}
                     <div className="lg:col-span-2 space-y-6">
                       <div>
                         <h4 className="text-xl font-semibold text-black mb-3 border-b-2 border-yellow-400 w-fit">Sobre o Curso</h4>
-                        <p className="text-black text-lg leading-relaxed">
-                          {course.description}
-                        </p>
+                        <p className="text-black text-lg leading-relaxed">{course.description}</p>
                       </div>
 
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -233,15 +211,10 @@ const CoursesPage: React.FC = () => {
                       </div>
 
                       <div>
-                        <h4 className="text-xl font-semibold text-black mb-4">
-                          Módulos do Curso
-                        </h4>
+                        <h4 className="text-xl font-semibold text-black mb-4">Módulos do Curso</h4>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           {course.modules.map((module, moduleIndex) => (
-                            <div
-                              key={moduleIndex}
-                              className="flex items-center bg-white border border-yellow-200 p-3 rounded-lg hover:bg-yellow-50 transition-colors"
-                            >
+                            <div key={moduleIndex} className="flex items-center bg-white border border-yellow-200 p-3 rounded-lg">
                               <div className="w-8 h-8 bg-yellow-400 text-black rounded-full flex items-center justify-center text-sm font-bold mr-3 shrink-0">
                                 {moduleIndex + 1}
                               </div>
@@ -252,11 +225,9 @@ const CoursesPage: React.FC = () => {
                       </div>
                     </div>
 
-                    {/* Sidebar com Benefícios */}
+                    {/* Sidebar de Benefícios e Inscrição */}
                     <div className="bg-gray-50 border border-gray-200 p-6 rounded-xl h-fit">
-                      <h4 className="text-xl font-semibold text-black mb-4">
-                        O que você vai receber:
-                      </h4>
+                      <h4 className="text-xl font-semibold text-black mb-4">Você vai receber:</h4>
                       <div className="space-y-3 mb-6">
                         {course.features.map((feature, featureIndex) => (
                           <div key={featureIndex} className="flex items-start">
@@ -271,22 +242,12 @@ const CoursesPage: React.FC = () => {
                           <p className="text-2xl font-bold text-black">{course.price}</p>
                           <p className="text-sm text-gray-600">Investimento</p>
                         </div>
-
                         <div className="space-y-3">
-                          {course.enrollLink ? (
-                            <a href={course.enrollLink} target="_blank" rel="noopener noreferrer" className="block w-full">
-                              <Button size="large" className="w-full bg-yellow-400 hover:bg-yellow-500 text-black border-none shadow-md">
-                                <Calendar className="w-5 h-5 mr-2" />
-                                Inscrever-se Agora
-                              </Button>
-                            </a>
-                          ) : (
-                            <Button size="large" className="w-full bg-yellow-400 hover:bg-yellow-500 text-black border-none shadow-md">
-                              <Calendar className="w-5 h-5 mr-2" />
-                              Inscrever-se Agora
-                            </Button>
-                          )}
-                          <Button variant="outline" size="large" className="w-full border-black text-black hover:bg-black hover:text-white">
+                          <Button size="large" className="w-full bg-yellow-400 hover:bg-yellow-500 text-black border-none">
+                            <Calendar className="w-5 h-5 mr-2" />
+                            Inscrever-se Agora
+                          </Button>
+                          <Button variant="outline" size="large" className="w-full border-black text-black">
                             Mais Informações
                           </Button>
                         </div>
@@ -300,26 +261,13 @@ const CoursesPage: React.FC = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-black mb-6">
-            Pronto para transformar sua carreira?
-          </h2>
-          <p className="text-xl text-black mb-10">
-            Entre em contato conosco para mais informações sobre nossos cursos
-            e próximas turmas disponíveis. Nossa equipe está pronta para ajudar você!
-          </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-6">
-            <Button size="large" className="bg-yellow-400 hover:bg-yellow-500 text-black border-none shadow-lg">
-              <Users className="w-5 h-5 mr-2" />
-              Falar com Consultor
-            </Button>
-            <Button size="large" className="bg-black hover:bg-gray-800 text-white border-none shadow-lg">
-              <Calendar className="w-5 h-5 mr-2" />
-              Ver Calendário de Cursos
-            </Button>
-          </div>
+      {/* CTA Final */}
+      <section className="py-20 bg-gradient-to-r from-yellow-100 to-yellow-300">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-black mb-6">Pronto para transformar sua carreira?</h2>
+          <Button size="large" className="bg-yellow-400 hover:bg-yellow-500 text-black border-none shadow-lg">
+            Falar com um Consultor
+          </Button>
         </div>
       </section>
     </div>
