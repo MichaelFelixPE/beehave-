@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BookOpen, Clock, Users, Award, CheckCircle, Calendar, Star, MapPin } from 'lucide-react';
 import Button from '../components/ui/Button';
+
+// Imagens para o slider automático no topo
+const heroImages = [
+  'https://i.etsystatic.com/38939223/r/il/cfd0a5/5827636191/il_fullxfull.5827636191_gbfr.jpg',
+  'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  'https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+];
 
 const courses = [
   { 
@@ -32,8 +39,7 @@ const courses = [
       'Módulo 5: Coleta de Dados',
       'Módulo 6: Prática Supervisionada',
     ],
-    image:
-      'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     color: 'from-yellow-400 to-yellow-500',
   },
   {
@@ -66,8 +72,7 @@ const courses = [
       'Módulo 5: Documentação Legal',
       'Módulo 6: Certificação Prática',
     ],
-    image:
-      'https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     color: 'from-yellow-400 to-yellow-500',
   },
   {
@@ -97,27 +102,39 @@ const courses = [
       'Módulo 3: Revisão Prática',
       'Módulo 4: Avaliação Final',
     ],
-    image:
-      'https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     color: 'from-yellow-400 to-yellow-500',
   },
 ];
 
 const CoursesPage: React.FC = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+
+  // Lógica para o slider automático
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % heroImages.length);
+    }, 5000); // Troca a cada 5 segundos
+    return () => clearInterval(timer);
+  }, []);
+
   return (
     <div className="pt-20 bg-white">
-      {/* hero section */}
-      <section className="relative py-20 overflow-hidden">
-        {/* background image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: `url('https://i.etsystatic.com/38939223/r/il/cfd0a5/5827636191/il_fullxfull.5827636191_gbfr.jpg')`,
-          }}
-        ></div>
+      {/* Hero Section com Slider */}
+      <section className="relative py-24 overflow-hidden min-h-[500px] flex items-center">
+        {/* Imagens de fundo com transição */}
+        {heroImages.map((img, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
+              index === currentImage ? 'opacity-100' : 'opacity-0'
+            }`}
+            style={{ backgroundImage: `url('${img}')` }}
+          />
+        ))}
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-yellow-400 bg-opacity-80"></div>
+        {/* Overlay Amarelo */}
+        <div className="absolute inset-0 bg-yellow-400 bg-opacity-85"></div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
@@ -125,24 +142,12 @@ const CoursesPage: React.FC = () => {
               Beehave Cursos
             </h1> 
             <div className="w-32 h-1 bg-black mx-auto mb-8"></div>
-            <p className="text-xl md:text-2xl text-black max-w-4xl mx-auto mb-10 opacity-90">
+            <p className="text-xl md:text-2xl text-black max-w-4xl mx-auto mb-10 font-medium">
               Capacitação profissional em Análise do Comportamento Aplicada (ABA) e gerenciamento de crises, 
               com cursos reconhecidos e ministrados por especialistas qualificados.
             </p>
-            <div className="flex flex-wrap justify-center gap-8 text-black">
-              <div className="flex items-center bg-black bg-opacity-10 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
-                <Award className="w-6 h-6 mr-3" />
-                <span className="font-semibold">Certificação Reconhecida</span>
-              </div>
-              <div className="flex items-center bg-black bg-opacity-10 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
-                <Users className="w-6 h-6 mr-3" />
-                <span className="font-semibold">Instrutores Qualificados</span>
-              </div>
-              <div className="flex items-center bg-black bg-opacity-10 backdrop-blur-sm px-6 py-3 rounded-full shadow-lg">
-                <BookOpen className="w-6 h-6 mr-3" />
-                <span className="font-semibold">Material Atualizado</span>
-              </div>
-            </div>
+            
+            {/* Seção de textos removida conforme solicitado */}
           </div>
         </div>
       </section>
@@ -164,7 +169,7 @@ const CoursesPage: React.FC = () => {
             {courses.map((course) => (
               <div
                 key={course.id}
-                className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300"
+                className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100"
               >
                 <div className={`bg-gradient-to-r ${course.color} p-8 text-white`}>
                   <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
@@ -174,15 +179,15 @@ const CoursesPage: React.FC = () => {
                       </h3>
                       <p className="text-lg text-gray-900 mb-4">{course.subtitle}</p>
                       <div className="flex flex-wrap gap-4 text-sm">
-                        <div className="flex items-center bg-white bg-opacity-20 px-3 py-1 rounded-full text-gray-900">
-                          <Star className="w-4 h-4 mr-1" />
+                        <div className="flex items-center bg-white bg-opacity-30 px-3 py-1 rounded-full text-gray-900 font-medium">
+                          <Star className="w-4 h-4 mr-1 fill-gray-900" />
                           <span>{course.rating}</span>
                         </div>
-                        <div className="flex items-center bg-white bg-opacity-20 px-3 py-1 rounded-full text-gray-900">
+                        <div className="flex items-center bg-white bg-opacity-30 px-3 py-1 rounded-full text-gray-900 font-medium">
                           <Users className="w-4 h-4 mr-1" />
                           <span>{course.students}+ alunos</span>
                         </div>
-                        <div className="flex items-center bg-white bg-opacity-20 px-3 py-1 rounded-full text-gray-900">
+                        <div className="flex items-center bg-white bg-opacity-30 px-3 py-1 rounded-full text-gray-900 font-medium">
                           <MapPin className="w-4 h-4 mr-1" />
                           <span>{course.format}</span>
                         </div>
@@ -192,7 +197,7 @@ const CoursesPage: React.FC = () => {
                       <img
                         src={course.image}
                         alt={course.title}
-                        className="w-full lg:w-48 h-32 object-cover rounded-lg shadow-lg"
+                        className="w-full lg:w-48 h-32 object-cover rounded-lg shadow-lg border-2 border-white/50"
                       />
                     </div>
                   </div>
@@ -203,24 +208,24 @@ const CoursesPage: React.FC = () => {
                     {/* Informações do Curso */}
                     <div className="lg:col-span-2 space-y-6">
                       <div>
-                        <h4 className="text-xl font-semibold text-black mb-3">Sobre o Curso</h4>
+                        <h4 className="text-xl font-semibold text-black mb-3 border-b-2 border-yellow-400 w-fit">Sobre o Curso</h4>
                         <p className="text-black text-lg leading-relaxed">
                           {course.description}
                         </p>
                       </div>
 
                       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        <div className="bg-white border border-gray-200 p-4 rounded-lg text-center">
+                        <div className="bg-gray-50 p-4 rounded-lg text-center border border-gray-100">
                           <Clock className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
                           <p className="font-semibold text-black">{course.duration}</p>
-                          <p className="text-sm text-black">Duração</p>
+                          <p className="text-sm text-gray-600">Duração</p>
                         </div>
-                        <div className="bg-white border border-gray-200 p-4 rounded-lg text-center">
+                        <div className="bg-gray-50 p-4 rounded-lg text-center border border-gray-100">
                           <BookOpen className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
                           <p className="font-semibold text-black">{course.format}</p>
                           <p className="text-sm text-gray-600">Formato</p>
                         </div>
-                        <div className="bg-white border border-gray-200 p-4 rounded-lg text-center">
+                        <div className="bg-gray-50 p-4 rounded-lg text-center border border-gray-100">
                           <Users className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
                           <p className="font-semibold text-black">{course.level}</p>
                           <p className="text-sm text-gray-600">Nível</p>
@@ -235,9 +240,9 @@ const CoursesPage: React.FC = () => {
                           {course.modules.map((module, moduleIndex) => (
                             <div
                               key={moduleIndex}
-                              className="flex items-center bg-white border border-yellow-200 p-3 rounded-lg"
+                              className="flex items-center bg-white border border-yellow-200 p-3 rounded-lg hover:bg-yellow-50 transition-colors"
                             >
-                              <div className="w-8 h-8 bg-yellow-400 text-black rounded-full flex items-center justify-center text-sm font-bold mr-3">
+                              <div className="w-8 h-8 bg-yellow-400 text-black rounded-full flex items-center justify-center text-sm font-bold mr-3 shrink-0">
                                 {moduleIndex + 1}
                               </div>
                               <span className="text-black font-medium">{module}</span>
@@ -248,7 +253,7 @@ const CoursesPage: React.FC = () => {
                     </div>
 
                     {/* Sidebar com Benefícios */}
-                    <div className="bg-white border border-gray-200 p-6 rounded-xl">
+                    <div className="bg-gray-50 border border-gray-200 p-6 rounded-xl h-fit">
                       <h4 className="text-xl font-semibold text-black mb-4">
                         O que você vai receber:
                       </h4>
@@ -261,27 +266,27 @@ const CoursesPage: React.FC = () => {
                         ))}
                       </div>
 
-                      <div className="border-t pt-6">
+                      <div className="border-t border-gray-200 pt-6">
                         <div className="text-center mb-4">
                           <p className="text-2xl font-bold text-black">{course.price}</p>
-                          <p className="text-sm text-black">Investimento</p>
+                          <p className="text-sm text-gray-600">Investimento</p>
                         </div>
 
                         <div className="space-y-3">
                           {course.enrollLink ? (
-                            <a href={course.enrollLink} target="_blank" rel="noopener noreferrer">
-                              <Button size="large" className="w-full">
+                            <a href={course.enrollLink} target="_blank" rel="noopener noreferrer" className="block w-full">
+                              <Button size="large" className="w-full bg-yellow-400 hover:bg-yellow-500 text-black border-none shadow-md">
                                 <Calendar className="w-5 h-5 mr-2" />
                                 Inscrever-se Agora
                               </Button>
                             </a>
                           ) : (
-                            <Button size="large" className="w-full">
+                            <Button size="large" className="w-full bg-yellow-400 hover:bg-yellow-500 text-black border-none shadow-md">
                               <Calendar className="w-5 h-5 mr-2" />
                               Inscrever-se Agora
                             </Button>
                           )}
-                          <Button variant="outline" size="large" className="w-full">
+                          <Button variant="outline" size="large" className="w-full border-black text-black hover:bg-black hover:text-white">
                             Mais Informações
                           </Button>
                         </div>
@@ -306,11 +311,11 @@ const CoursesPage: React.FC = () => {
             e próximas turmas disponíveis. Nossa equipe está pronta para ajudar você!
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-6">
-            <Button size="large" className="bg-yellow-400 hover:bg-yellow-500 text-black">
+            <Button size="large" className="bg-yellow-400 hover:bg-yellow-500 text-black border-none shadow-lg">
               <Users className="w-5 h-5 mr-2" />
               Falar com Consultor
             </Button>
-            <Button size="large" className="bg-yellow-400 hover:bg-yellow-500 text-black">
+            <Button size="large" className="bg-black hover:bg-gray-800 text-white border-none shadow-lg">
               <Calendar className="w-5 h-5 mr-2" />
               Ver Calendário de Cursos
             </Button>
