@@ -13,8 +13,8 @@ const courses = [
   { 
     id: 1,
     title: 'Curso de Aplicadora(dor) em Análise do Comportamento Aplicada (ABA)',
-    subtitle: 'às pessoas com desenvolvimento atípico/ TEA – 9ª Edição', 
-    description: 'A 9ª edição do Curso de Aplicadores mais esperado do Vale do São Francisco está com inscrições abertas! Com carga horária de 60 horas e uma BeeEquipe, de Docentes e Monitoras, formada por Especialistas em ABA, Mestras(es) e Doutora em Análise do Comportamento. Todas(os) atuando como Analista do Comportamento Coordenadora(dor) ou Analista do Comportamento Supervisora(sor) na Beehave.Esse é o Curso ideal para quem deseja atuar com o público de pessoas com desenvolvimento atípico/TEA.O nosso Curso une teoria e prática sob o olhar de quem vive a rotina da Intervenção baseada em ABA todos os dias!',
+    subtitle: 'às pessoas com desenvolvimento atípico/ TEA – 9ª Edição',
+    description: 'A 9ª edição do Curso de Aplicadores mais esperado do Vale do São Francisco está com inscrições abertas!, Com carga horária de 60 horas e uma BeeEquipe, de Docentes e Monitoras, formada por Especialistas em ABA, Mestras(es) e Doutora em Análise do Comportamento. Todas(os) atuando como Analista do Comportamento Coordenadora(dor) ou Analista do Comportamento Supervisora(sor) na Beehave.Esse é o Curso ideal para quem deseja atuar com o público de pessoas com desenvolvimento atípico/TEA.O nosso Curso une teoria e prática sob o olhar de quem vive a rotina da Intervenção baseada em ABA todos os dias!',
     duration: '60 horas',
     format: 'Presencial',
     level: 'Iniciante a Intermediário',
