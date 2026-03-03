@@ -131,7 +131,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Olá! Me chamo Jacqueline Iukisa. Sou formada em Psicologia pela Univasf e em Língua Inglesa pela UPE. Tenho mestrado em Teoria e Pesquisa do Comportamento pela UFPA, e atuo na área de desenvolvimento atípico há mais de 13 anos. Enquanto professora de formação, minha paixão é a educação. E é através do ensino que baseio meu trabalho. Desde o lecionar, até o planejamento de ensino de habilidades para pessoas com desenvolvimento atípico através do meu trabalho de Supervisora em ABA. Atualmente desenvolvo meu trabalho dentro da Beehave, a qual idealizei e sou uma das sócias-fundadoras.',
           },
           {
-            name: 'Me. Álex Rosas', 
+            name: 'Me. Álex Rosas',
             image: 'https://i.imgur.com/57Xr5pn.jpeg',
             level: 'C',
             crm: 'CRP-02/26874',
@@ -552,7 +552,7 @@ const Team = () => {
         <div className="relative flex flex-col items-center space-y-8">
           <div className="text-center w-full">
             <h3 className="text-lg font-bold text-gray-700 mb-4">Diretorias</h3>
-          </div>
+          </div> 
           <div className="flex justify-center gap-12 mb-8">
             {directors.map((director, idx) => (
               <HexagonMember key={idx} member={director} onClick={() => setSelectedMember(director)} />
@@ -586,7 +586,7 @@ const Team = () => {
                 ))}
               </div>
             </>
-          )} 
+          )}
 
           {therapists.length > 0 && (
             <>
