@@ -22,7 +22,7 @@ const courses = [
     rating: 4.9,
     students: 150,
     features: [
-      'Material em ABA atualizado,
+      'Material em ABA atualizado',
       'Docentes e monitores especialistas em ABA',
       '60 horas de aulas presenciais',
       'Aulas aos sábados',
