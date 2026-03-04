@@ -28,7 +28,7 @@ const courses = [
       'Aulas aos sábados',
       '60 horas de aulas presenciais',
       'Relatório de desempenho pós curso',
-      'Certificado amplamente reconhecido',
+      'Certificado amplamente reconhecido pelo Selo Beehave Cursos',
       'Docentes e monitores especialistas em ABA',
     ],
     modules: [
