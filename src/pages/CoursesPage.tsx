@@ -24,9 +24,9 @@ const courses = [
     features: [
       'Material em ABA atualizado',
       'Teoria e Prática com domínio sequencial e gradual do conteúdo (Sistema Personalizado de Ensino, PSI)',
-      '60 horas de aulas presenciais',
+      'Sondagens processuais Teóricas e Práticas',
       'Aulas aos sábados',
-      'Sondagens processuais',
+      '60 horas de aulas presenciais',
       'Relatório de desempenho pós curso',
       'Certificado amplamente reconhecido',
       'Docentes e monitores especialistas em ABA',
