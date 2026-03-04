@@ -209,7 +209,7 @@ const CoursesPage: React.FC = () => {
                       </div>
 
                       <div>
-                        <h4 className="text-xl font-semibold text-black mb-4">Módulos do Curso</h4>
+                        <h4 className="text-xl font-semibold text-black mb-4">Ciclos de conteúdo do Curso</h4>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           {course.modules.map((module, moduleIndex) => (
                             <div key={moduleIndex} className="flex items-center bg-white border border-yellow-200 p-3 rounded-lg">
