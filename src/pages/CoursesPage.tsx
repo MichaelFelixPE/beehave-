@@ -23,13 +23,13 @@ const courses = [
     students: 150,
     features: [
       'Material em ABA atualizado',
-      'Docentes e monitores especialistas em ABA',
+      'Teoria e Prática com domínio sequencial e gradual do conteúdo (Sistema Personalizado de Ensino, PSI)',
       '60 horas de aulas presenciais',
       'Aulas aos sábados',
       'Sondagens processuais',
       'Relatório de desempenho pós curso',
       'Certificado amplamente reconhecido',
-      'Teoria e Prática com domínio sequencial e gradual do conteúdo (Sistema Personalizado de Ensino, PSI)',
+      'Docentes e monitores especialistas em ABA',
     ],
     modules: [
       'Ciclo 01: Quero ser aplicadora(dor) em ABA: Por onde iniciar? ',
