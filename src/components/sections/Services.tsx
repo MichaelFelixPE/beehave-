@@ -18,7 +18,7 @@ const highlightInfos = [
   },
   {
     title: "Base Científica (ABA)",
-    tag: "METODOLOGIA",
+    tag: "CIÊNCIA",
     content: "Nossas intervenções utilizam a Análise do Comportamento Aplicada. Planejamos cada passo com base em dados e evidências para garantir um ensino efetivo, ético e focado na autonomia."
   }
 ];
