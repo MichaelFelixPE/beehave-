@@ -78,7 +78,7 @@ const courses = [
     subtitle: 'Atualização e Renovação da Certificação PCM',
     description: 'Curso de atualização e recertificação para profissionais já certificados em PCM, mantendo as competências atualizadas conforme os padrões internacionais.',
     duration: '16 horas',
-    format: 'Presencial',
+    format: 'Online',
     level: 'Recertificação',
     price: 'Consulte valores',
     rating: 4.9,
