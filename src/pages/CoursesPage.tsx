@@ -14,44 +14,45 @@ const courses = [
     id: 1,
     title: 'Curso de Aplicadora(dor) em Análise do Comportamento Aplicada (ABA)',
     subtitle: 'às pessoas com desenvolvimento atípico/ TEA – 9ª Edição',
-    description: 'A 9ª edição do Curso de Aplicadora(dor) em ABA mais esperado do Vale do São Francisco está com inscrições abertas! Com carga horária de 60 horas e uma BeeEquipe, de Docentes e Monitoras, formada por Especialistas em ABA, Mestras(es) e Doutora em Análise do Comportamento. Todas(os) atuando como Analista do Comportamento Coordenadora(dor) ou Analista do Comportamento Supervisora(sor) na Beehave.Esse é o Curso ideal para quem deseja atuar com o público de pessoas com desenvolvimento atípico/TEA.O nosso Curso une teoria e prática sob o olhar de quem vive a rotina da Intervenção baseada em ABA todos os dias!',
+    description: 'A 9ª edição do Curso de Aplicadora(dor) em ABA mais esperado do Vale do São Francisco está com inscrições abertas! Com carga horária de 60 horas e uma BeeEquipe, de Docentes e Monitoras, formada por Especialistas em ABA, Mestras(es) e Doutora em Análise do Comportamento.',
     duration: '60 horas',
     format: 'Presencial',
     level: 'Iniciante',
     price: 'Consulte valores',
     rating: 4.9,
     students: 150,
+    enrollLink: 'https://link-do-curso-aba.com', // ADICIONADO: Link específico
     features: [
       'Material em ABA atualizado',
-      'Teoria e Prática com domínio sequencial e gradual do conteúdo (Sistema Personalizado de Ensino, PSI)',
+      'Teoria e Prática com domínio sequencial e gradual do conteúdo',
       'Sondagens processuais Teóricas e Práticas',
       'Aulas aos sábados',
       '60 horas de aulas presenciais',
       'Relatório de desempenho pós curso',
-      'Certificado amplamente reconhecido pelo Selo Beehave Cursos',
+      'Certificado amplamente reconhecido',
       'Docentes e monitores especialistas em ABA',
     ],
     modules: [
       'Ciclo 01: Quero ser aplicadora(dor) em ABA: Por onde iniciar? ',
-      'Ciclo 02: Quero ser aplicadora(dor) em ABA: O que preciso saber do planejamento da intervenção antes de iniciá-la?',
-      'Ciclo 03: Quero ser aplicadora(dor) em ABA: Quais estratégias de ensino em ABA utilizarei no decorrer de meus atendimentos?',
-      'Ciclo 04: Quero ser aplicadora(dor) em ABA: Comecei meu atendimento, quais as minhas funções?',
+      'Ciclo 02: Quero ser aplicadora(dor) em ABA: O que preciso saber?',
+      'Ciclo 03: Quero ser aplicadora(dor) em ABA: Quais estratégias de ensino?',
+      'Ciclo 04: Quero ser aplicadora(dor) em ABA: Comecei meu atendimento.',
     ],
     image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
     color: 'from-yellow-400 to-yellow-500',
   },
   {
     id: 2,
-    title: 'Workshop: ColmeIA: Inovação terapêutica com Inteligência Artificial e Análise do Comportamento',
+    title: 'Workshop: ColmeIA: Inovação terapêutica com Inteligência Artificial',
     subtitle: 'Gerenciamento Profissional de Crises Comportamentais',
-    description: 'Olá, colegas da Análise do Comportamento! Sabemos que a rotina de uma(um) Profissional que trabalha com ABA exige criatividade constante e muito rigor técnico. Para otimizar seu tempo sem perder a qualidade, a Beehave traz o workshop ColmelA. Sob o comando da nossa Analista do Comportamento Coordenadora, Esp. Joice Izabela, vamos explorar como a Inteligência Artificial pode ser sua maior aliada na criação, adaptação e personalização de recursos terapêuticos.',
+    description: 'Sabemos que a rotina de uma(um) Profissional que trabalha com ABA exige criatividade constante e muito rigor técnico. A Beehave traz o workshop ColmelA.',
     duration: '40 horas',
     format: 'Online',
     level: 'Iniciante',
     price: 'Consulte valores',
     rating: 4.8,
     students: 85,
-    enrollLink: 'https://forms.gle/gM57dboC5otEoxn67',
+    enrollLink: 'https://forms.gle/gM57dboC5otEoxn67', // JÁ EXISTIA: Link específico
     features: [
       'Identificação de sinais de crise',
       'Técnicas de desescalada',
@@ -64,7 +65,7 @@ const courses = [
     ],
     modules: [
       'Ciclo 01: O que é Inteligência Artificial?',
-      'Ciclo 02: Fundamentos de ABA Relevantes para Criação de Materiais',
+      'Ciclo 02: Fundamentos de ABA Relevantes',
       'Ciclo 03: Prompts e exemplos práticos.',
       'Ciclo 04: Inteligência artificial e ética.',
     ],
@@ -82,6 +83,7 @@ const courses = [
     price: 'Consulte valores',
     rating: 4.9,
     students: 120,
+    enrollLink: 'https://link-recertificacao-pcm.com', // ADICIONADO: Link específico
     features: [
       'Revisão de técnicas atualizadas',
       'Novas diretrizes de segurança',
@@ -115,7 +117,6 @@ const CoursesPage: React.FC = () => {
 
   return (
     <div className="pt-20 bg-white">
-      {/* Hero Section Automática (Sem Texto) */}
       <section className="relative h-[350px] md:h-[550px] overflow-hidden">
         {heroImages.map((img, index) => (
           <div
@@ -126,11 +127,9 @@ const CoursesPage: React.FC = () => {
             style={{ backgroundImage: `url('${img}')` }}
           />
         ))}
-        {/* Overlay sutil para acabamento visual */}
         <div className="absolute inset-0 bg-black bg-opacity-5"></div>
       </section>
 
-      {/* Seção de Conteúdo dos Cursos */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -146,7 +145,6 @@ const CoursesPage: React.FC = () => {
                 key={course.id}
                 className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100"
               >
-                {/* Header do Card do Curso */}
                 <div className={`bg-gradient-to-r ${course.color} p-8 text-white`}>
                   <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
                     <div className="flex-1">
@@ -179,7 +177,6 @@ const CoursesPage: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Detalhes do Curso */}
                 <div className="p-8">
                   <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                     <div className="lg:col-span-2 space-y-6">
@@ -221,7 +218,6 @@ const CoursesPage: React.FC = () => {
                       </div>
                     </div>
 
-                    {/* Sidebar de Benefícios e Inscrição */}
                     <div className="bg-gray-50 border border-gray-200 p-6 rounded-xl h-fit">
                       <h4 className="text-xl font-semibold text-black mb-4">Você vai receber:</h4>
                       <div className="space-y-3 mb-6">
@@ -239,12 +235,13 @@ const CoursesPage: React.FC = () => {
                           <p className="text-sm text-gray-600">Investimento</p>
                         </div>
                         <div className="space-y-3">
-                          <a href="https://seulink.com" target="_blank" rel="noopener noreferrer">
-                           <Button size="large" className="w-full bg-yellow-400 hover:bg-yellow-500 text-black border-none">
-                             <Calendar className="w-5 h-5 mr-2" />
-                                Inscrever-se Agora
-                                </Button>
-                                 </a>
+                          {/* MUDANÇA AQUI: href usa agora course.enrollLink */}
+                          <a href={course.enrollLink || "#"} target="_blank" rel="noopener noreferrer" className="block w-full">
+                            <Button size="large" className="w-full bg-yellow-400 hover:bg-yellow-500 text-black border-none">
+                              <Calendar className="w-5 h-5 mr-2" />
+                              Inscrever-se Agora
+                            </Button>
+                          </a>
                           <Button variant="outline" size="large" className="w-full border-black text-black">
                             Mais Informações 
                           </Button>
@@ -259,7 +256,6 @@ const CoursesPage: React.FC = () => {
         </div>
       </section>
 
-      {/* CTA Final */}
       <section className="py-20 bg-gradient-to-r from-yellow-100 to-yellow-300">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-black mb-6">Pronto para transformar sua carreira?</h2>
