@@ -74,7 +74,7 @@ const courses = [
   },
   {
     id: 3,
-    title: 'Curso Recertificação Professional Crisis Management (PCM)',
+    title: 'Curso de Avaliação Funcional',
     subtitle: 'Atualização e Renovação da Certificação PCM',
     description: 'Curso de atualização e recertificação para profissionais já certificados em PCM, mantendo as competências atualizadas conforme os padrões internacionais.',
     duration: '16 horas',
