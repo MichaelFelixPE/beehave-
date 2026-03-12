@@ -69,7 +69,7 @@ const courses = [
       'Ciclo 03: Prompts e exemplos práticos.',
       'Ciclo 04: Inteligência artificial e ética.',
     ],
-    image: 'https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://i.imgur.com/EeKVsoT.jpeg',
     color: 'from-yellow-400 to-yellow-500',
   },
   {
