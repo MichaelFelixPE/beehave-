@@ -76,7 +76,7 @@ const courses = [
     id: 3,
     title: 'Curso de Avaliação Funcional',
     subtitle: 'Atualização e Renovação da Certificação PCM',
-    description: 'Olá! Um profissional de excelência em ABA não atua com base no "eu acho". Ele atua com base em dados e avaliação funcional. e você deseja sair do nível básico e aprender a formular hipóteses funcionais consistentes para o manejo de comportamentos, convidamos você para o curso de Avaliação Funcional. Seja você uma cuidadora, aplicadora iniciante, psicóloga(o), pedagoga(o), profissionais da saúde e educação, este curso fornecerá as ferramentas essenciais para realizar uma avaliação de maneira ética e eficaz.',
+    description: 'Olá! Um profissional de excelência em ABA não atua com base no "eu acho". Ele atua com base em dados e avaliação funcional. E você deseja sair do nível básico e aprender a formular hipóteses funcionais consistentes para o manejo de comportamentos, convidamos você para o curso de Avaliação Funcional. Seja você uma cuidadora, aplicadora iniciante, psicóloga(o), pedagoga(o), profissionais da saúde e educação, este curso fornecerá as ferramentas essenciais para realizar uma avaliação de maneira ética e eficaz.',
     duration: '10 horas',
     format: 'Online',
     level: 'Iniciante',
