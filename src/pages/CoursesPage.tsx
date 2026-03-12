@@ -42,7 +42,7 @@ const courses = [
   },
   {
     id: 2,
-    title: 'Curso Professional Crisis Management (PCM)',
+    title: 'Workshop: ColmeIA: Inovação terapêutica com Inteligência Artificial e Análise do Comportamento',
     subtitle: 'Gerenciamento Profissional de Crises Comportamentais',
     description: 'Treinamento especializado em gerenciamento profissional de crises, focado em técnicas de prevenção, intervenção e manejo de situações de crise comportamental.',
     duration: '40 horas',
