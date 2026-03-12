@@ -44,7 +44,7 @@ const courses = [
     id: 2,
     title: 'Workshop: ColmeIA: Inovação terapêutica com Inteligência Artificial e Análise do Comportamento',
     subtitle: 'Gerenciamento Profissional de Crises Comportamentais',
-    description: 'Treinamento especializado em gerenciamento profissional de crises, focado em técnicas de prevenção, intervenção e manejo de situações de crise comportamental.',
+    description: 'Olá, colegas da Análise do Comportamento! Sabemos que a rotina de uma(um) Profissional que trabalha com ABA exige criatividade constante e muito rigor técnico. Para otimizar seu tempo sem perder a qualidade, a Beehave traz o workshop ColmelA. Sob o comando da nossa Analista do Comportamento Coordenadora, Esp. Joice Izabela, vamos explorar como a Inteligência Artificial pode ser sua maior aliada na criação, adaptação e personalização de recursos terapêuticos.',
     duration: '40 horas',
     format: 'Presencial',
     level: 'Intermediário a Avançado',
