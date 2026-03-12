@@ -52,7 +52,7 @@ const courses = [
     price: 'Consulte valores',
     rating: 4.8,
     students: 85,
-    enrollLink: 'https://forms.gle/gM57dboC5otEoxn67', // JÁ EXISTIA: Link específico
+    enrollLink: 'https://', // JÁ EXISTIA: Link específico
     features: [
       'Identificação de sinais de crise',
       'Técnicas de desescalada',
