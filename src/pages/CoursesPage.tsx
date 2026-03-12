@@ -47,7 +47,7 @@ const courses = [
     description: 'Olá, colegas da Análise do Comportamento! Sabemos que a rotina de uma(um) Profissional que trabalha com ABA exige criatividade constante e muito rigor técnico. Para otimizar seu tempo sem perder a qualidade, a Beehave traz o workshop ColmelA. Sob o comando da nossa Analista do Comportamento Coordenadora, Esp. Joice Izabela, vamos explorar como a Inteligência Artificial pode ser sua maior aliada na criação, adaptação e personalização de recursos terapêuticos.',
     duration: '40 horas',
     format: 'Online',
-    level: 'Intermediário a Avançado',
+    level: 'Iniciante',
     price: 'Consulte valores',
     rating: 4.8,
     students: 85,
