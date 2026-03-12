@@ -239,7 +239,7 @@ const CoursesPage: React.FC = () => {
                           <p className="text-sm text-gray-600">Investimento</p>
                         </div>
                         <div className="space-y-3">
-                          <a href="https://seulink.com" target="_blank" rel="noopener noreferrer">
+                          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMLn2NbyM7ETo4DERkaz60Ob850K90gd59sBhBmBEyrH3pxg/viewform"target="_blank" rel="noopener noreferrer">
                            <Button size="large" className="w-full bg-yellow-400 hover:bg-yellow-500 text-black border-none">
                              <Calendar className="w-5 h-5 mr-2" />
                                 Inscrever-se Agora
