@@ -81,7 +81,8 @@ const courses = [
     modules: [
       {
         title: 'Ciclo 01: O que é Inteligência Artificial?',
-        description: 'Introdução aos conceitos de Inteligência Artificial aplicados ao contexto terapêutico. Entenda como os modelos de linguagem funcionam e quais são suas possibilidades e limitações no suporte à prática em ABA.',
+        description: 'Ciclo 01: Quero ser aplicadora(dor) em ABA: Por onde iniciar? Neste Ciclo, você aprenderá a base para qualquer profissional que deseja trabalhar com ABA: TEORIA da Análise do Comportamento. Lembrando! Como o velho Skinner (que apresentamos antes a vocês) dizia: “Confusão na teoria significa, confusão na prática.” (Skinner, 1953/2003, p. 10). Embora Skinner se refira aí, que definições imprecisas podem prejudicar um consenso científico, nós ampliamos para a nossa Prática, pois se eu não entendo a Teoria, terei uma prática confusa e com isso prejudicando o Aprendente que atendo. Portanto... É necessário saber sobre aspectos conceituais de reforçamento, punição, comportamento verbal, definir comportamento, técnicas de registro e, especificamente, a ABA. E a relação dessa com o público de desenvolvimento atípico, incluindo o Autismo. No Ciclo 01, tem tudo isso e muito mais! 
+',
         tags: ['IA', 'Fundamentos', 'Tecnologia'],
       },
       {
