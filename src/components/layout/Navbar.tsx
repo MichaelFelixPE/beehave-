@@ -68,7 +68,7 @@ const Navbar: React.FC = () => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
-            className={`flex items-center justify-between h-16 px-4 lg:px-6 transition-all duration-500
+            className={`flex items-center justify-between h-20 px-4 lg:px-6 transition-all duration-500
               ${isScrolled
                 ? 'bg-white border-b border-gray-200 shadow-sm rounded-none -mx-4 sm:-mx-6 lg:-mx-8 px-8 sm:px-10 lg:px-12'
                 : 'bg-white border border-gray-200 rounded-2xl shadow-lg'
@@ -83,7 +83,7 @@ const Navbar: React.FC = () => {
               <img
                 src="https://i.imgur.com/vAT2VjM.png"
                 alt="Beehave Logo"
-                className="h-9 w-auto"
+                className="h-14 w-auto"
               />
             </a>
 
@@ -134,7 +134,7 @@ const Navbar: React.FC = () => {
         >
           {/* Header */}
           <div className="flex items-center justify-between px-6 py-5 border-b border-gray-100">
-            <img src="https://i.imgur.com/vAT2VjM.png" alt="Beehave" className="h-8 w-auto" />
+            <img src="https://i.imgur.com/vAT2VjM.png" alt="Beehave" className="h-10 w-auto" />
             <button
               onClick={() => setIsOpen(false)}
               className="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-gray-100 text-gray-500 transition-colors"
