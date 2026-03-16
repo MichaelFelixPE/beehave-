@@ -96,7 +96,7 @@ const courses = [
       },
       {
         title: 'Ciclo 04: Inteligência artificial e ética.',
-        description: 'Discussão aprofundada sobre os limites éticos do uso de IA na prática clínica. Como utilizar a tecnologia com responsabilidade, preservando a privacidade dos clientes e a qualidade do atendimento.',
+        description: 'Ciclo 04: Quero ser aplicadora(dor) em ABA: Comecei meu atendimento, quais as minhas funções? Quando você chegar neste Ciclo, estará com todos os pré-requisitos para desempenhar as suas funções, seguindo o fluxo de como estivesse recebendo uma(um) Aprendente para atender: Com mais Teoria e Práticas, você aprenderá sobre Organização de ambiente para atender, aplicação completa de Programas de Ensino, Manejo de comportamentos desafiadores, Coleta e análise de dados, como deve ocorrer o entrelaçamento entre os Agentes de Ensino de uma Equipe, e Ética em ABA.',
         tags: ['Ética', 'Privacidade', 'Responsabilidade'],
       },
     ],
