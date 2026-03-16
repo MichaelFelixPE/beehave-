@@ -86,12 +86,12 @@ const courses = [
       },
       {
         title: 'Ciclo 02: Fundamentos de ABA Relevantes',
-        description: 'Revisão dos principais conceitos de ABA que serão potencializados com o uso de IA. Como integrar o rigor técnico da análise do comportamento com ferramentas tecnológicas modernas.',
+        description: 'Ciclo 02: Quero ser aplicadora(dor) em ABA: O que preciso saber do planejamento da intervenção antes de iniciá-la? Ah, aqui... Você verá como é o processo de planejamento da intervenção baseada em ABA. Ou seja, o que você fará na etapa de Avaliação Comportamental com Aprendente (pessoa alvo da Avaliação)? E na etapa de aplicação dos Programas de Ensino? Você vai entender a relação das Dimensões da ABA com cada componente de um Programa de Ensino (bem elaborado) e vai colocar a “mão na massa”! Pois bem, aqui você vai começar a suar com as Práticas haha ',
         tags: ['ABA', 'Revisão', 'Integração'],
       },
       {
         title: 'Ciclo 03: Prompts e exemplos práticos.',
-        description: 'Aprenda a criar prompts eficazes para gerar materiais terapêuticos, programas de ensino e relatórios com apoio de IA. Exemplos práticos voltados ao dia a dia do(a) profissional de ABA.',
+        description: 'Ciclo 03: Quero ser aplicadora(dor) em ABA: Quais estratégias de ensino em ABA utilizarei no decorrer de meus atendimentos? No Ciclo 03, a suadeira continua... RsrsVocê aprenderá a teoria das Estratégias de ensino: Ensino por Tentativa Discreta (do inglês, Discrete Trial Training, DTT) e Ensino naturalístico (considerando o ambiente escolar também). E praticará cada uma delas!',
         tags: ['Prompts', 'Prática', 'Materiais'],
       },
       {
