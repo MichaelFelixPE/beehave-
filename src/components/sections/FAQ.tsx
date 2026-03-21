@@ -43,6 +43,10 @@ const FAQ: React.FC = () => {
       answer: "A intervenção baseada em ABA (conhecida, popularmente, como terapia ABA). ABA é uma sigla do inglês, Applied Behavior Analysis, traduzida para o português como Análise do Comportamento Aplicada. Ela é a parte da pesquisa aplicada e da prestação de serviço da Análise do Comportamento, uma ciência do comportamento. A intervenção baseada em ABA tem como objetivos principais ensinar habilidades socialmente relevantes e reduzir comportamentos que dificultam a aprendizagem dessas habilidades. É conhecida especialmente na intervenção para pessoas autistas, mas também pode ser aplicada em outros contextos, como organizacional, escolas, terapia para pessoas típicas, serviços públicos etc."
     },
     {
+      question: "O que é a terapia ABA?",
+      answer: "A intervenção baseada em ABA (conhecida, popularmente, como terapia ABA). ABA é uma sigla do inglês, Applied Behavior Analysis, traduzida para o português como Análise do Comportamento Aplicada. Ela é a parte da pesquisa aplicada e da prestação de serviço da Análise do Comportamento, uma ciência do comportamento. A intervenção baseada em ABA tem como objetivos principais ensinar habilidades socialmente relevantes e reduzir comportamentos que dificultam a aprendizagem dessas habilidades. É conhecida especialmente na intervenção para pessoas autistas, mas também pode ser aplicada em outros contextos, como organizacional, escolas, terapia para pessoas típicas, serviços públicos etc."
+    },
+    {
       question: "Por que a ABA é indicada para autistas?",
       answer: "Segundo a Organização Mundial de Saúde (OMS), a intervenção baseada em ABA é a que possui melhores resultados para pessoas com Desenvolvimento atípico/Transtorno do Espectro Autista (TEA)."
     },
