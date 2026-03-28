@@ -53,7 +53,7 @@ const courses = [
         tags: ['Prática', 'Dados', 'Supervisão', 'Família'],
       },
     ],
-    image: 'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    image: 'https://i.imgur.com/PcsGugO.jpg',
     color: 'from-yellow-400 to-yellow-500',
   },
   {
