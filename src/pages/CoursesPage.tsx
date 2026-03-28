@@ -20,7 +20,7 @@ const courses = [
     price: 'Consulte valores',
     rating: 4.9,
     students: 150,
-    enrollLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfMLn2NbyM7ETo4DERkaz60Ob850K90gd59sBhBmBEyrH3pxg/viewform',
+    enrollLink: 'https://i.imgur.com/PcsGugO.jpg',
     features: [
       'Material em ABA atualizado',
       'Teoria e Prática com domínio sequencial e gradual do conteúdo',
