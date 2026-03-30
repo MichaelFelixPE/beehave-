@@ -54,7 +54,7 @@ const courses = [
       },
     ],
     image: 'https://i.imgur.com/PcsGugO.jpg',
-    color: 'from-stone-100 to-amber-100',
+    color: 'from-yellow-400 to-yellow-500',
   },
   {
     id: 2,
@@ -101,7 +101,7 @@ const courses = [
       },
     ],
     image: 'https://i.imgur.com/EeKVsoT.jpeg',
-    color: 'from-yellow-400 to-yellow-500',
+    color: 'from-stone-100 to-amber-100',
   },
   {
     id: 3,
