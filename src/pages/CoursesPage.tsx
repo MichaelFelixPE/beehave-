@@ -54,7 +54,7 @@ const courses = [
       },
     ],
     image: 'https://i.imgur.com/PcsGugO.jpg',
-    color: 'from-yellow-400 to-yellow-500',
+    color: 'from-stone-100 to-amber-100',
   },
   {
     id: 2,
