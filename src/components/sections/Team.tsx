@@ -1,10 +1,8 @@
-import { Users } from 'lucide-react';
 import { useState } from 'react';
-import Modal from '../ui/Modal';
 
 interface TeamMember {
   name: string;
-  role: string;
+  role?: string;
   image: string;
   level: string;
   crm?: string;
@@ -17,7 +15,7 @@ const teamHierarchy: TeamMember[] = [
   {
     name: 'Ma. Jacqueline Iukisa',
     role: 'Sócia | Diretora de Finanças e RH',
-    image: 'https://i.imgur.com/ZEhbVZI.jpeg', 
+    image: 'https://i.imgur.com/ZEhbVZI.jpeg',
     level: 'A',
     crm: 'CRP-02/17658',
     formations: [
@@ -25,7 +23,7 @@ const teamHierarchy: TeamMember[] = [
       'Graduação em Língua Inglesa (UPE)',
       'Mestrado em Teoria e Pesquisa do Comportamento (UFPA)'
     ],
-    bio: 'Olá! Me chamo Jacqueline Iukisa. Sou formada em Psicologia pela Univasf e em Língua Inglesa pela UPE. Tenho mestrado em Teoria e Pesquisa do Comportamento pela UFPA, e atuo na área de desenvolvimento atípico há mais de 13 anos. Enquanto professora de formação, minha paixão é a educação. E é através do ensino que baseio meu trabalho. Desde o lecionar, até o planejamento de ensino de habilidades para pessoas com desenvolvimento atípico através do meu trabalho de Supervisora em ABA. Atualmente desenvolvo meu trabalho dentro da Beehave, a qual idealizei e sou uma das sócias-fundadoras.',
+    bio: 'Olá! Me chamo Jacqueline Iukisa. Sou formada em Psicologia pela Univasf e em Língua Inglesa pela UPE. Tenho mestrado em Teoria e Pesquisa do Comportamento pela UFPA, e atuo na área de desenvolvimento atípico há mais de 13 anos. Enquanto professora de formação, minha paixão é a educação.',
     children: [
       {
         name: 'Dra. Thais Guimarães',
@@ -34,590 +32,518 @@ const teamHierarchy: TeamMember[] = [
         level: 'B',
         crm: 'CRP-02/15644',
         formations: [
-          'Certificação Internacional de Instrutora em PCM (Professional Crisis Management)',
-          'Formação no Protocolo IGLR (Inventário de Repertórios de um Bom Aprendiz)',
+          'Certificação Internacional de Instrutora em PCM',
+          'Formação no Protocolo IGLR',
           'Formação em Seletividade Alimentar com intervenção baseada em ABA',
-          'Formação em Sistema de Comunicação por Troca de Figuras (PECS)',
+          'Formação em PECS',
           'Capacitação para Supervisão de Intervenção Comportamental em ABA',
-          'Formação em Produção de Materiais e Currículos Adaptados para Inclusão Escolar',
-          'Formação em Avaliação Transdisciplinar em ABA com foco no VB-MAPP',
-          'Formação Introdutória em ABLLS',
-          'Currículo Lattes: http://lattes.cnpq.br/4041324592265957'
         ],
-        bio: 'Olá! Eu sou Thais Maria Monteiro Guimarães, estou feliz em poder contar um tinquim da minha trajetória acadêmica e profissional. Tal trajetória me traz ferramentas para seguir (devargazinho) com um objetivo de vida, que talvez seja ambicioso: ajudar a melhorar a vida das pessoas e da sociedade por meio da Ciência Analítico-comportamental.Tenho Doutorado e Mestrado em Teoria e Pesquisa do Comportamento pela Universidade Federal do Pará (UFPA). Em meu Doutorado, fiz Estágio na Universidade Metropolitana de Oslo (Oslo Metropolitan University) em Oslo-Noruega. Tenho bacharel em Psicologia pela Universidade Federal do Vale do São Francisco (Univasf). Estou concluindo a Pós-gradução em ABA pela ABAEdu e em processo para retirar da Certificação Internacional em Analista do Comportamento Qualificado (sigla do inglês QBA, Qualified Behavior Analyst).Atuo como Pesquisadora, Docente e Analista do Comportamento Supervisora nas áreas de desenvolvimento atípico/TEA, escolar e de práticas culturais de cooperação; Psicóloga (CRP 02/15644).; e Sócia e Diretora de Operações e Marketing da Beehave: Soluções comportamentais.Possuo publicações nacionais e internacionais sobre comportamento social, seleção cultural, controle aversivo e autocontrole ético; apresentações em congressos, como no Encontro da Associação Brasileira de Ciências do Comportamentos (ABPMC).Presto serviços em ABA de: Supervisão técnica para Coordenadora(dor) e Supervisora(sor) de intervenção em ABA ao Desenvolvimento atípico; elaboração e adaptação de protocolos, currículos e materiais individualizados. Supervisão técnica para candidatas(os) à Certificação IBA (sigla do inglês, Analista do Comportamento Internacional).',
+        bio: 'Olá! Eu sou Thais Maria Monteiro Guimarães. Tenho Doutorado e Mestrado em Teoria e Pesquisa do Comportamento pela UFPA. Atuo como Pesquisadora, Docente e Analista do Comportamento Supervisora nas áreas de desenvolvimento atípico/TEA.',
         children: [
-          {
-            name: 'Me. Luiz Felipe Alves',
-            role: 'Sócio ',
-            image: 'https://i.imgur.com/BU6tqCO.jpeg',
-            level: 'C',
-            crm: 'CRP-02/20334',
-            formations: [
-              'Graduação em Psicologia (UNIVASF)',
-              'Mestrado em Teoria e Pesquisa do Comportamento (UFPA)',
-              'Doutorado em andamento em Teoria e Pesquisa do Comportamento (UFPA)'
-            ],
-            bio: 'Oi! Eu sou o Luiz Felipe Alves. Sou psicólogo formado pela Univasf, mestre e doutorando em Teoria e Pesquisa do Comportamento pela UFPA. Sou professor de Psicologia desde 2017 e, atualmente, coordeno o curso de Psicologia da Facesp, em Petrolina.Também atuo na Beehave, na qual sou um dos idealizadores e sócio-fundador. Há 8 anos trabalho como supervisor em Análise do Comportamento Aplicada ao Autismo, conciliando a atuação clínica com o ensino, tanto em universidades quanto dentro da própria Beehave, desenvolvendo formações, treinamentos e acompanhando a prática de profissionais e estudantes em desenvolvimento.Hoje, tenho a alegria de trabalhar ao lado de pessoas que ajudei a formar e que fazem parte da construção diária da Beehave.',
-          },
-          {
-            name: 'Me. Murilo da Cruz',
-            image: 'https://i.imgur.com/DJR131G.jpeg',
-            level: 'C',
-            crm: 'CRP-02/21135',
-            formations: [
-              'Graduação em Psicologia (Univasf)',
-              'Mestrado em Psicologia (Univasf)',
-              'Certificado em Gerenciamento Profissional de Crises P2 (PCMA)',
-              'Curso de Aplicador em ABA (Beehave)'
-            ],
-            bio: 'Olá! Eu sou Murilo da Cruz Santos. Sou bacharel e Mestre em Psicologia pela Universidade Federal do Vale do São Francisco (Univasf), onde fundei a Liga Acadêmica de Análise do Comportamento (LIAAC) e sigo contribuindo com o Grupo de Pesquisa Conceitual Básica e Aplicada em Análise do Comportamento (GPAC). Atuei como professor em cursos de graduação (Univasf e FACESP), lecionando disciplinas fundamentais como Análise do Comportamento e Prática Analítico-Comportamental. Atuo também como docente em cursos de pós-graduação e formação de aplicadores, focando nas áreas de Medidas, Observação e Registro de Comportamento. Desde 2022, sou Supervisor ABA, somando-se à experiência de 3 anos como aplicador. Meu trabalho é focado no acompanhamento de aprendentes de diversas idades, garantindo que cada intervenção seja personalizada, ética e tecnicamente sólida para promover autonomia e qualidade de vida.',
-          },
-          {
-            name: 'Me. Rafael Alves',
-            image: 'https://i.imgur.com/Qz9WLJ6.jpeg',
-            level: 'C',
-            crm: 'CRP-02/26926',
-            formations: [
-              'Mestrado em Processos Cognitivos e Comportamentais pela Universidade Federal do Vale do São Francisco (UNIVASF)',
-              'Graduação em Psicologia pela UNIVASF',
-              'Especialista em Análise do Comportamento Aplicada (ABA)',
-              'Especialista em ABA para Autismo e Deficiência Intelectual',
-              'Formação em manejo de crises agressivas',
-              'Formação em comunicação alternativa',
-              'Membro do grupo de pesquisa Comportamento, Cooperação e Cultura (3C) da UNIVASF',
-              'Membro do Laboratório de Comportamento Social e Seleção Cultural (LACS) da UFPA'
-            ],
-            bio: 'Sou Rafael Alves Rodrigues, mestre em Processos Cognitivos e Comportamentais pela Universidade Federal do Vale do São Francisco (UNIVASF), onde também me formei em Psicologia.Além disso, sou especialista em Análise do Comportamento Aplicada (ABA) e em ABA para Autismo e Deficiência Intelectual; membro do grupo de pesquisa Comportamento, Cooperação e Cultura (3C) da UNIVASF e do Laboratório de Comportamento Social e Seleção Cultural (LACS) da UFPA.Também possuo formações em áreas como manejo de crises agressivas e comunicação alternativa, e atualmente, atuo como supervisor parceiro da Beehave Soluções Comportamentais.',
-          },
-          {
-            name: 'Ma. Thamires Iukisa',
-            image: 'https://i.imgur.com/8082mo0.jpeg',
-            level: 'C',
-            crm: 'CFEP-19002082',
-            formations: [
-              'Graduação em História (Universidade de Pernambuco – UPE)',
-              'Pós-graduação em Intervenção ABA para Autismo e Deficiência Intelectual (CBI of Miami)',
-              'Mestrado em Psicologia (UNIVASF)'
-            ],
-            bio: 'Olá! Me chamo Thamires Iukisa e sou Historiadora pela Universidade de Pernambuco, com Pós-graduação em Intervenção ABA para Autismo e Deficiência Intelectual pelo CBI of Miami e Mestrado em Psicologia pela Univasf.Trabalho com Análise do Comportamento há 8 anos, iniciando a carreira primeiramente como Aplicadora ABA, logo depois como Coordenadora, e atualmente sou Supervisora em ABA na Beehave.',
-          },
-          {
-            name: 'Dra. Thais Guimarães',
-            image: 'https://i.imgur.com/fN975T0.jpeg',
-            level: 'C',
-            crm: 'CRP-02/15644',
-            formations: ['Certificação Internacional de Instrutora em PCM (Professional Crisis Management)',
-          'Formação no Protocolo IGLR (Inventário de Repertórios de um Bom Aprendiz)',
-          'Formação em Seletividade Alimentar com intervenção baseada em ABA',
-          'Formação em Sistema de Comunicação por Troca de Figuras (PECS)',
-          'Capacitação para Supervisão de Intervenção Comportamental em ABA',
-          'Formação em Produção de Materiais e Currículos Adaptados para Inclusão Escolar',
-          'Formação em Avaliação Transdisciplinar em ABA com foco no VB-MAPP',
-          'Formação Introdutória em ABLLS',
-          'Currículo Lattes: http://lattes.cnpq.br/4041324592265957'
-            ],
-            bio: 'Olá! Eu sou Thais Maria Monteiro Guimarães, estou feliz em poder contar um tinquim da minha trajetória acadêmica e profissional. Tal trajetória me traz ferramentas para seguir (devargazinho) com um objetivo de vida, que talvez seja ambicioso: ajudar a melhorar a vida das pessoas e da sociedade por meio da Ciência Analítico-comportamental.Tenho Doutorado e Mestrado em Teoria e Pesquisa do Comportamento pela Universidade Federal do Pará (UFPA). Em meu Doutorado, fiz Estágio na Universidade Metropolitana de Oslo (Oslo Metropolitan University) em Oslo-Noruega. Tenho bacharel em Psicologia pela Universidade Federal do Vale do São Francisco (Univasf). Estou concluindo a Pós-gradução em ABA pela ABAEdu e em processo para retirar da Certificação Internacional em Analista do Comportamento Qualificado (sigla do inglês QBA, Qualified Behavior Analyst).Atuo como Pesquisadora, Docente e Analista do Comportamento Supervisora nas áreas de desenvolvimento atípico/TEA, escolar e de práticas culturais de cooperação; Psicóloga (CRP 02/15644).; e Sócia e Diretora de Operações e Marketing da Beehave: Soluções comportamentais.Possuo publicações nacionais e internacionais sobre comportamento social, seleção cultural, controle aversivo e autocontrole ético; apresentações em congressos, como no Encontro da Associação Brasileira de Ciências do Comportamentos (ABPMC).Presto serviços em ABA de: Supervisão técnica para Coordenadora(dor) e Supervisora(sor) de intervenção em ABA ao Desenvolvimento atípico; elaboração e adaptação de protocolos, currículos e materiais individualizados. Supervisão técnica para candidatas(os) à Certificação IBA (sigla do inglês, Analista do Comportamento Internacional).',
-          },
-          {
-            name: 'Ma. Jacqueline Iukisa',
-            image: 'https://i.imgur.com/ZEhbVZI.jpeg',
-            level: 'C',
-            crm: 'CRP-02/17658',
-            formations: [
-              'Graduação em Psicologia (UNIVASF)',
-              'Graduação em Língua Inglesa (UPE)',
-              'Mestrado em Teoria e Pesquisa do Comportamento (UFPA)'
-            ],
-            bio: 'Olá! Me chamo Jacqueline Iukisa. Sou formada em Psicologia pela Univasf e em Língua Inglesa pela UPE. Tenho mestrado em Teoria e Pesquisa do Comportamento pela UFPA, e atuo na área de desenvolvimento atípico há mais de 13 anos. Enquanto professora de formação, minha paixão é a educação. E é através do ensino que baseio meu trabalho. Desde o lecionar, até o planejamento de ensino de habilidades para pessoas com desenvolvimento atípico através do meu trabalho de Supervisora em ABA. Atualmente desenvolvo meu trabalho dentro da Beehave, a qual idealizei e sou uma das sócias-fundadoras.',
-          },
-          {
-            name: 'Me. Álex Rosas',
-            image: 'https://i.imgur.com/57Xr5pn.jpeg',
-            level: 'C',
-            crm: 'CRP-02/26874',
-            formations: [
-              'Graduação em Psicologia (UNIVASF)',
-              'Mestrado em Psicologia',
-              'Especialização em Análise do Comportamento Aplicada (ABA)'
-            ],
-            bio: 'Me chamo Álex Jonatas dos Santos Rosas, sou Psicólogo formado na Univasf, mestre em Psicologia e especialista em Análise do Comportamento Aplicada (ABA). Atuo como supervisor de intervenção ABA na Beehave, conduzindo planejamento e acompanhamento técnico de programas de intervenção.',
-          },
-          {
-            name: 'Ma. Joíra Ribeiro',
-            image: 'https://i.imgur.com/zJGPMaX.jpg',
-            level: 'C',
-            crm: 'CRP-03/15556',
-            formations: [
-              'Graduação em Psicologia (Universidade Federal do Vale do São Francisco – UNIVASF, 2015)',
-              'Pós-graduação em Análise do Comportamento Aplicada ao Transtorno do Espectro do Autismo(Instituto de Educação e Pesquisa em Saúde e Inclusão Social, 2020)',
-              'Mestrado em Psicologia (UNIVASF, 2023)',
-            ],
-            bio: 'Sou graduada em Psicologia, na Universidade Federal do Vale do São Francisco (UNIVASF), em 2015. Pós-graduada em Análise do Comportamento Aplicada ao Transtorno do Espectro do Autismo, no Instituto de Educação e Pesquisa em Saúde e Inclusão Social, em 2020. Mestre em Psicologia (UNIVASF), em 2023. Atuo como Psicóloga (CRP 03/15556) supervisora no Instituto Tacto - Instituto de Intervenções e estudos do comportamento.',
-          },
-          {
-            name: ' Esp. Andrea Teixeira',
-            image: 'https://i.imgur.com/bPV6yn9.jpeg',
-            level: 'D',
-            crm: 'CRP-02/25615',
-            formations: [
-              'Graduação em Psicologia (FACESF)',
-              'Pós-graduação em Neuropsicologia',
-              'Pós-graduação em Análise do Comportamento Aplicada (ABA) ao TEA',
-              'Formação em Análise do Comportamento Clínica (FAT)'
-            ],
-            bio: 'Sou Andrea Teixeira, psicóloga formada pela FACESF, com uma trajetória de 4 anos dedicada à intervenção ABA. Minha prática clínica é fundamentada em uma formação sólida: sou pós-graduada em Neuropsicologia e em ABA aplicada ao TEA, além de possuir formação em Análise do Comportamento Clínica pela FAT.',
-          },
-          {
-            name: ' Esp. Erica Tamires',
-            image: 'https://i.imgur.com/EGe56gz.jpeg',
-            level: 'D',
-            crm: 'CRP-02/264110',
-            formations: [
-              'Graduação em Psicologia',
-              'Graduação em Pedagogia / Formação em Magistério (professora de formação)',
-              'Especialização em Análise do Comportamento Aplicada (ABA)'
-            ],
-            bio: 'Olá, me chamo Erica Tamires, mãe de Tiago e Valentina e apaixonada pela infância e desenvolvimento infantil. Sou professora de formação, tendo atuado por 4 anos no município de Petrolina na Educação Infantil.Psicóloga especialista em ABA, com experiência em Psicoterapia clínica de crianças típicas e atípicas na Beehave. Integrante de equipe ABA, desde 2021 como aplicadora escolar e domiciliar, e, atualmente, como Analista do Comportamento Coordenadora de equipe ABA na Beehave.',
-          },
-          
-          {
-            name: ' Esp. Jamille Mota',
-            image: 'https://i.imgur.com/RltbllC.jpeg',
-            level: 'D',
-            crm: 'CRP-03/19674',
-            formations: [
-              'Especialização em Psicologia Organizacional',
-              'Graduação em Psicologia'
-            ],
-            bio: 'Sou Jamille Mota, psicóloga de ofício, Coordenadora ABA por função, Analista do comportamento por formação. Quando comecei, o caminho era estreito, Mais pedra que chão. Fui AT quando quase não havia trilha, Quando inclusão era palavra sem vez. Aprendi cedo que toda criança tem a dizer e que comportamento é comunicação. Busquei a ciência onde ela se renova, Cruzei fronteiras para poder aprender:PRT, SBT, HRE, CAA Ferramentas que ampliam a intervenção Não acredito em caso perdido. Onde muitos veem limite, Eu investigo função.Onde dizem “não dá”, Aprendi em supervisão a reorganizar o ambiente, Ajustar o ensino, Sustentar o vínculo e seguir com intenção. Meu lugar clínico é com quem mais precisa, Casos nível 3 de suporte, Onde o ensino exige assentimento e a técnica, compaixão. Porque ciência que transforma, acolhe. E afeto não é ausência de rigor: É o que mantém o ensino de pé E dá vigor. Trabalho com dados, gráficos e planos de intervenção, Mas nenhum protocolo está acima da história que se vive nem do bem-estar de quem aprende. Intervir, para mim, Não é silenciar comportamento, É ampliar repertórios sem apagar quem a criança é. Sou psicóloga. Sou analista do comportamento. Sou fruto de um caminho de estudo e dedicação E defensora de uma prática clara:onde há ciência, há transformação. onde há afeto, há direção. e onde há compaixão, o desenvolvimento acontece.',
-          },
-          {
-            name: ' Esp. Joice Izabela',
-            image: 'https://i.imgur.com/5kDExFR.jpeg',
-            level: 'D',
-            crm: 'CRP-02/26606',
-            formations: [
-              'Graduação em Psicologia (Universidade Federal do Vale do São Francisco – UNIVASF)',
-              'Especialização em Análise do Comportamento Aplicada (ABA) para TEA e Deficiência Intelectual (CBI of Miami)',
-              'Formação em Gerenciamento Profissional de Crises – Praticante Nível 2',
-            ],
-            bio: 'Meu nome é Joice Izabela, sou psicóloga formada pela Universidade Federal do Vale do São Francisco (UNIVASF). Sou especialista em Análise do Comportamento Aplicada (ABA) para o Transtorno do Espectro Autista (TEA) e Deficiência Intelectual, com formação pela CBI of Miami. Atuo como Coordenadora em ABA há mais de três anos na Beehave Soluções Comportamentais, onde desenvolvo, acompanho e oriento intervenções individualizadas. Tenho um carinho especial por trabalhar com o público infantil, buscando promover o desenvolvimento de habilidades de forma respeitosa e significativa. Minha prática profissional é baseada em evidências científicas, conduzida de maneira humanizada e ética, sempre priorizando o bem-estar da criança, o envolvimento da família e o manejo seguro das intervenções. Também sou Praticante Nível 2 em Gerenciamento Profissional de Crises, o que contribui para uma atuação responsável e qualificada em diferentes contextos.',
-          },
-          {
-            name: ' Esp. Fernando Costa',
-            image: 'https://i.imgur.com/JsbcOvA.jpeg',
-            level: 'D',
-            crm: 'CRP-02/26753',
-            formations: [
-              'Graduação em Psicologia (Faculdade FTC)',
-              'Especialização em Análise do Comportamento Aplicada (ABA)'
-            ],
-            bio: 'Sou Fernando Costa, psicólogo formado pela Faculdade FTC e coordenador ABA, com atuação voltada ao Transtorno do Espectro Autista (TEA) nível 3 de suporte. Sou especializado em ABA aplicada ao TEA e atuo há mais de 6 anos na área, tendo iniciado minha trajetória ainda na graduação, como estagiário desde o 4º período. Minha escolha pelo público nível 3 de suporte não é apenas profissional, mas também pessoal: sou irmão de uma pessoa com TEA nível 3 e conheço de perto as dificuldades, a escassez de profissionais e a falta de acolhimento que muitas famílias enfrentam. Minha prática é fundamentada na Análise do Comportamento, com foco no desenvolvimento individualizado, na promoção de saúde, qualidade de vida e esperança para cada família acolhida. Acredito em uma intervenção que una o técnico ao lúdico, valorizando a diversão, o vínculo e o bem-estar dos aprendentes. Também compreendo a importância da saúde física aliada à saúde mental, buscando rotinas saudáveis que favoreçam o desenvolvimento global. Escolhi me especializar e atuar prioritariamente com o nível 3 de suporte por reconhecer a urgência e a carência de atendimento qualificado para esse público. Por isso, acolho com responsabilidade e compromisso cada demanda que chega até mim. Você não precisa enfrentar isso sozinho.',
-          },
-          {
-            name: ' Esp. Joyce Ribeiro',
-            image: 'https://i.imgur.com/veAEOsy.jpeg',
-            level: 'D',
-            crm: 'CRP-02/26518',
-            formations: [
-              'Graduação em Psicologia',
-              'Pós-graduação em Análise do Comportamento Aplicada (ABA)',
-              'Pós-graduação em andamento em ABA com foco em TEA e DI'
-            ],
-            bio: 'Me chamo Joyce Maria da Silva Ribeiro, sou Psicóloga, pós-graduada em Análise do Comportamento Aplicada (ABA) e atualmente pós-graduanda em ABA com foco em TEA e DI. Tenho experiência na psicoterapia de crianças atípicas, atuando com intervenções baseadas na Análise do Comportamento. Hoje, sou Coordenadora em ABA na Beehave Soluções Comportamentais e será um prazer acompanhar você por aqui.',
-          },
-           {
-            name: ' Esp. Thays Cruz', 
-            image: 'https://i.imgur.com/gwY6B0k.jpeg',
-            level: 'D',
-            crm: 'CRP-03/31285',
-            formations: [
-              'Graduação em Psicologia',
-              'Mestrado em Psicologia pela Universidade Federal do Vale do São Francisco (Univasf)',
-              'Doutoranda em Análise do Comportamento pela Universidade Estadual de Londrina (UEL)'
-            ],
-            bio: 'Olá! Eu me chamo Thays e com alegria venho contar um pouco da minha história acadêmica e profissional para você! Sou Psicóloga, Analista do Comportamento, atualmente cursando Doutorado em Análise do Comportamento pela Universidade Estadual de Londrina (UEL) e Mestra em Psicologia pela Universidade Federal do Vale do São Francisco (Univasf). Minha caminhada acadêmica e profissional é guiada pelo compromisso com uma prática ética, baseada em evidências e, acima de tudo, buscando estar atenta e sensível ao bem-estar e desenvolvimento dos aprendentes. Sou certificada como Praticante Nível 1 no Gerenciamento Profissional de Crises (PMCA), o que me permite atuar com segurança, respeito e qualidade em situações que exigem manejo cuidadoso de comportamentos desafiadores.Ao longo da minha trajetória, tive a oportunidade de atuar como aplicadora (AT/Acompanhante Terapêutica), realizando intervenções diretas com crianças e adolescentes por meio de programas de ensino individualizados e estratégias naturalísticas. Meu foco foi estimular o desenvolvimento da comunicação, autonomia, habilidades acadêmicas, sociais, emocionais e de vida diária — sempre respeitando o tempo e a singularidade de cada aprendente.Também tenho experiência na coordenação e capacitação de equipes ABA, com ênfase em protocolos individualizados e no trabalho colaborativo entre terapeutas, família e escola. Atuei ainda na Psicoterapia Infantojuvenil,  acolhendo crianças e adolescentes em contexto clínico, e na Assistência Social (CRAS), onde desenvolvi um olhar sensível às famílias em contextos de vulnerabilidade, fortalecendo vínculos e promovendo apoio psicossocial.Meu objetivo é contribuir para que cada aprendente possa se desenvolver com dignidade e pertencimento social.',
-          },
-          {
-            name: ' Esp. Nayara Queiroz',
-            image: 'https://i.imgur.com/W6FVLyd.jpeg',
-            level: 'D',
-            crm: 'CRP 02/28286',
-            formations: [
-              'Licenciatura em Artes Visuais',
-              'Graduação em Psicologia',
-              'Pós-graduação em Análise do Comportamento Aplicada a pessoas com TEA',
-              'Formação em Gerenciamento Profissional de Crises (PCM)',
-              'Formação em Picture Exchange Communication System (PECS)'
-            ],
-            bio: 'Olá, sou Nayara Queiroz. Licenciada em Artes Visuais; Graduada em Psicologia; Pós-graduada em Analise do Comportamento aplicada a pessoas com TEA; AC Coordenadora de Equipes ABA; Formação profissional para gerenciamento de crises - PCM; Formação Picture Exchange Communication System - PECS. Genuinamente apaixonada pela potencia da infância, inicie minha jornada na sala de aula com atuação voltada para uma educação inclusiva e respeitosa  onde aprendi que olhar para além do óbvio também é proteção à infância; Na caminhada, formei como Psicóloga infantil e de gênero, atuei como aplicadora ABA, atualmente atuo como coordenadora parceira da Beehave.Com ciência, afeto e atravessa da pela vivência do feminismo,  acredito numa prática clínica de cuidado ampliado comprometida com promoção de mudanças sociais e coletivas, na construção de uma sociedade equânime, com olhar sensível para o acolhimento de mulheres mães, acreditando que cuidar da infância exige, necessariamente, acolher quem cuida e com respeito inegociável as existências humanas',
-          },
-          {
-            name: 'Esp. Carlane Machado',
-            image: 'https://i.imgur.com/9ekDBk6.jpg',
-            level: 'D',
-            crm: 'CRP-03/29529',
-            formations: [
-              'Graduação em Psicologia',
-              'Pós-graduação em Análise do Comportamento Aplicada (ABA)',
-              'Pós-graduação em andamento em Neuropsicologia com ênfase em avaliações',
-              'Capacitação em Protocolos de Avaliação do Desenvolvimento e do Comportamento'
-              
-            ],
-            bio: 'Me chamo Carlane Machado, sou psicóloga, Coordenadora ABA e Coordenadora Técnica. Sou pós-graduada em Análise do Comportamento Aplicada (ABA) e pós-graduanda em Neuropsicologia com ênfase em avaliações. Possuo capacitação na aplicação de protocolos de avaliação do desenvolvimento e do comportamento, utilizados na construção e acompanhamento do Plano Terapêutico Individualizado.Atuo na avaliação e intervenção de crianças com atrasos no desenvolvimento e transtornos do neurodesenvolvimento, 7 anos de experiência na área. Trabalhando com crianças e adolescentes, típicos e atípicos, sempre com foco em práticas baseadas em evidências, tomada de decisão clínica e atuação interdisciplinar.',
-          },
-          {
-            name: 'Aline Rodrigues',
-            image: 'https://i.imgur.com/vrqMI2m.jpeg',
-            level: 'E',
-            crm: 'CRP-02/23629',
-            formations: [
-              'Graduação em Psicologia (Faculdade Uninassau João Pessoa)',
-              'Especialização em Intervenção ABA aplicada ao Transtorno do Espectro Autista (TEA)',
-              'Formação em Aplicação ABA'
-            ],
-            bio: 'Sou Aline Rodrigues, Psicóloga formada pela Faculdade Uninassau João Pessoa, com atuação voltada para o público infantil. Tenho especialização em Intervenção ABA aplicada ao Transtorno do Espectro Autista (TEA)  e Aplicação ABA . Tenho experiência como aplicadora ABA (contexto escolar e casa) e em psicoterapia. Minha escolha pela área infantil se baseou nas minhas experiências, olhar e paixão pela infância e como ela acontece. E ao longo da graduação fui caminhando para me aprimorar no desenvolvimento De crianças atípicas.Minha atuação é baseada na Análise do Comportamento, uma ciência que busca compreender as interações entre o indivíduo e o ambiente, promovendo mudanças significativas por meio de intervenções individualizadas e sempre pautadas na ética e no respeito.Nos atendimentos infantis, especialmente com crianças em desenvolvimento atípico, o lúdico é utilizado como ferramenta central para a formação do vínculo terapêutico e para a implementação de estratégias personalizadas, respeitando o ritmo individual de cada criança.',
-          },
-          {
-            name: 'Gutemberg dos Santos',
-            image: 'https://i.imgur.com/luGPgKa.jpeg',
-            level: 'E',
-            crm: 'CRP-02/20367',
-            formations: [
-              'Graduação em Psicologia pela Universidade Federal do Vale do São Francisco',
-              'Pós-graduando em ABA (Análise do Comportamento Aplicada) pela Facuminas'
-            ],
-            bio: 'Sou Gutemberg Santos, Psicólogo formado pela Universidade Federal do Vale do São Francisco, com atuação voltada para o público infanto juvenil. Sou pós-graduando em ABA (Análise do Comportamento Aplicada) pela Facuminas. Trabalho desde de 2022 com crianças e adolescentes típicos e atípicos; dentro deste contexto, priorizo as intervenções que utilizam o lúdico enquanto recurso terapêutico, tornando as sessões de terapia mais aprazíveis para que os objetivos terapêuticos sejam alcançados de maneira menos aversiva e que possam sobretudo trazer bem estar à criança ou adolescente. Meu trabalho também envolve instigar a família a participar mais ativamente do processo de alcance dos objetivos terapêuticos a partir de orientações parentais. Vale ressaltar que o acolhimento às famílias e o respeito ao perfil de cada criança são de extrema importância nesse processo, visto que cada um é um sujeito dotado de características diferentes e isso deve ser base para a intervenção de maneira individualizada.',
-          },
-          {
-            name: 'Núbia Costa',
-            image: 'https://i.imgur.com/nD3QWnm.jpeg',
-            level: 'E',
-            crm: 'CRP-03/18294',
-            formations: [
-              'Bacharelado em Psicologia pela Univasf (2015)',
-              'Pós-graduanda em Psicopedagogia pela UPE',
-              'Pós-graduação em Intervenção ABA para Autismo e Deficiência Intelectual pelo CBI of Miami'
-            ],
-            bio: 'Sou Núbia de Sousa, tenho Bacharelado em Psicologia pela Univasf, em 2015; Pós-graduação em Intervenção ABA para Autismo e Deficiência  Intelectual  pelo  CBI of Miami; e sou Pós-graduanda em Psicopedagogia pela  UPE.Tive experiência como Aplicadora entre 2019 e 2021; e Analista do Comportamento Coordenadora entre 2022 e 2024.Atualmente, sou Psicóloga pela Beehave.',
-          },
-          {
-            name: 'Renata Dantas',
-            image: 'https://i.imgur.com/TGufhH3.jpeg',
-            level: 'E',
-            crm: 'CRP-02/30345',
-            formations: [
-              'Graduação em Psicologia pela Faculdade Uninassau',
-              'Especialização em Intervenção ABA aplicada ao Transtorno do Espectro Autista (TEA)',
-              'Formação em Terapias Contextuais'
-            ],
-            bio: 'Sou Renata Dantas, Psicóloga formada pela Faculdade Uninassau, com atuação voltada para o público infantil. Tenho especialização em Intervenção ABA aplicada ao Transtorno do Espectro Autista (TEA) e formação em Terapias Contextuais. Minha escolha pela área infantil, especialmente no acompanhamento de crianças com TEA, foi motivada por uma experiência pessoal que me permitiu vivenciar, de perto, os impactos positivos da intervenção precoce no desenvolvimento infantil. Minha atuação é fundamentada na Análise do Comportamento, uma abordagem científica que busca compreender e promover mudanças significativas no comportamento por meio de intervenções individualizadas, planejadas de forma ética e cuidadosa, sempre com o objetivo de melhorar a qualidade de vida do indivíduo. No trabalho com crianças, especialmente aquelas com desenvolvimento atípico, o lúdico é utilizado como ferramenta central para a construção do vínculo, além da aplicação de estratégias que respeitam o tempo, as necessidades e o contexto de cada uma, favorecendo a aquisição de habilidades sociais, cognitivas, comunicativas e emocionais. Acredito em uma prática que une conhecimento técnico e acolhimento, criando um espaço seguro para que cada criança possa se desenvolver com confiança, autonomia e respeitando sua singularidade.',
-          },
-          {
-            name: 'Adson Raul',
-            image: 'https://i.imgur.com/Cc4mOuy.jpeg',
-            level: 'E-EVAL',
-            crm: '',
-            formations: [
-              'Graduação em Psicologia (UNINASSAU)',
-              'Pós-graduação em andamento em Análise do Comportamento Aplicada ao TEA',
-            ],
-            bio: 'Olá, tudo bem? Me chamo Adson Raul, sou psicólogo formado pela UNINASSAU e hoje faço pós-graduação em ABA voltada para o autismo. Trabalho há mais de 3 anos como aplicador e tenho vivência e experiência prática  em avaliação comportamental.',
-          },
-          {
-            name: 'Brenda Souza',
-            image: 'https://i.imgur.com/DcKJBzc.jpeg',
-            level: 'E-EVAL',
-            crm: '',
-            formations: [
-              'Graduação em Psicologia (UNINASSAU – Petrolina, 2025)',
-              'Formação em Análise do Comportamento Aplicada (ABA) (Instituto Fratelli)',
-              'Curso de Aplicadora ABA com foco em desenvolvimento atípico/TEA (Beehave Soluções Comportamentais)'
-            ],
-            bio: 'Me chamo Brenda Souza, sou Bacharela em Psicologia pela UNINASSAU-PETROLINA (2025.2). Cofundadora da Liga Acadêmica de Análise do Comportamento (LAAC). Possuo formação em Análise do Comportamento Aplicada (ABA) pelo Instituto Fratelli e curso de Aplicadora ABA voltado ao desenvolvimento atípico/TEA pela Beehave Soluções Comportamentais. Com experiência na atuação como aplicadora ABA entre 2023 a 2025, e coleta de dados/aplicação de avaliações por meio dos protocolos VB-MAPP e ABLLS, tendo integrado a equipe de avaliação da Beehave no ano de 2025.',
-          },
-          {
-            name: 'Luégina Sena',
-            image: 'https://i.imgur.com/4RpCe4h.jpeg',
-            level: 'E-EVAL',
-            crm: '',
-            formations: [
-              'Curso de Sistema de Comunicação por troca de Figuras (PECS), nível 1',
-              'Curso de Aplicadora ABA, pela Beehave',
-              'Aprimoramento interno do Modelo de Serviços da Beehave em Análise do Comportamento Aplicada ABA para pessoas com desenvolvimento atípico/TEA',
-              'Curso VB-MAPP'
-            ],
-            bio: 'Sou Luégina de Sena Dias, tenho graduação em Pedagogia pela Universidade do Estado da Bahia ( UNEB); Pós - graduada em Intervenção em ABA e Deficiência Intelectual pela CBI of Maiami; Pós-Graduanda em Psipedagoga Institucional e Clínica pela FAVENI. Atuo como aplicadora ABA (escola e casa) há quase 4 anos, atualmente, estou no ambiente escolar. Atuo também como Aplicadora da Equipe de Avaliação da Beehave, em que coleto dados por meio de Protocolos de Avaliação baseados em ABA. Atuo com ética e comprometimento, buscando sempre me atualizar para que meu Aprendente consiga adquirir todas habilidades para a sua maior qualidade de visa.',
-          },
-          {
-            name: 'Patrícia Matos',
-            image: 'https://i.imgur.com/TxZAhzt.jpeg',
-            level: 'E-EVAL',
-            crm: '',
-            formations: [
-              'ABA na escola',
-              'ABA na prática - guia prático para a Construção de Programas ABA e coleta de dados',
-              'Protocolo de avaliação VB-MAPP',
-              'Leitura e análise de gráficos em ABA',
-              'Brincar para variar',
-              'Entendendo o comportamento',
-              'Curso prático de operacionalização e registro de comportamentos',
-            ],
-            bio: 'Olá, me chamo Patrícia Matos Oliveira, e sou graduada em Serviço Social pela Universidade Federal da Bahia (UFBA), Pós-graduada em Intervenção ABA e Deficiência Intelectual pela CBI of Miami, e tenho formação como Aplicadora ABA pela Beehave.',
-          },
-          {
-            name: 'Waleska Oliveira',
-            image: 'https://i.imgur.com/sT3ZMfi.jpeg',
-            level: 'E-EVAL',
-            crm: '',
-            formations: [
-              'ABA e Autismo (Beehave)',
-              'VB-MAPP Descomplicado (Beehave)',
-              'Workshop de Inovação Terapêutica com IA aplicada à ABA (Regina Bergamo Academy)'
-            ],
-            bio: 'Sou Waleska Oliveira, estudante de Fonoaudiologia e atuo como aplicadora ABA há mais de 2 anos. Minha atuação é voltada ao Transtorno do Espectro Autista (TEA).',
-          },
+          { name: 'Me. Luiz Felipe Alves', role: 'Sócio', image: 'https://i.imgur.com/BU6tqCO.jpeg', level: 'C', crm: 'CRP-02/20334', formations: ['Graduação em Psicologia (UNIVASF)', 'Mestrado em Teoria e Pesquisa do Comportamento (UFPA)', 'Doutorado em andamento em Teoria e Pesquisa do Comportamento (UFPA)'], bio: 'Sou psicólogo formado pela Univasf, mestre e doutorando pela UFPA. Atuo na Beehave como supervisor em ABA há 8 anos.' },
+          { name: 'Me. Murilo da Cruz', image: 'https://i.imgur.com/DJR131G.jpeg', level: 'C', crm: 'CRP-02/21135', formations: ['Graduação em Psicologia (Univasf)', 'Mestrado em Psicologia (Univasf)', 'Certificado em Gerenciamento Profissional de Crises P2 (PCMA)'], bio: 'Bacharel e Mestre em Psicologia pela Univasf. Supervisor ABA desde 2022.' },
+          { name: 'Me. Rafael Alves', image: 'https://i.imgur.com/Qz9WLJ6.jpeg', level: 'C', crm: 'CRP-02/26926', formations: ['Mestrado em Processos Cognitivos e Comportamentais (UNIVASF)', 'Graduação em Psicologia pela UNIVASF', 'Especialista em ABA para Autismo e Deficiência Intelectual'], bio: 'Mestre em Processos Cognitivos e Comportamentais pela UNIVASF. Supervisor parceiro da Beehave.' },
+          { name: 'Ma. Thamires Iukisa', image: 'https://i.imgur.com/8082mo0.jpeg', level: 'C', crm: 'CFEP-19002082', formations: ['Graduação em História (UPE)', 'Pós-graduação em ABA para Autismo e DI (CBI of Miami)', 'Mestrado em Psicologia (UNIVASF)'], bio: 'Historiadora pela UPE, pós-graduada em ABA e Mestre em Psicologia. Trabalha com Análise do Comportamento há 8 anos.' },
+          { name: 'Dra. Thais Guimarães', image: 'https://i.imgur.com/fN975T0.jpeg', level: 'C', crm: 'CRP-02/15644', formations: ['Doutorado em Teoria e Pesquisa do Comportamento (UFPA)', 'Mestrado em Teoria e Pesquisa do Comportamento (UFPA)'], bio: 'Pesquisadora, Docente e Analista do Comportamento Supervisora nas áreas de desenvolvimento atípico/TEA.' },
+          { name: 'Ma. Jacqueline Iukisa', image: 'https://i.imgur.com/ZEhbVZI.jpeg', level: 'C', crm: 'CRP-02/17658', formations: ['Graduação em Psicologia (UNIVASF)', 'Mestrado em Teoria e Pesquisa do Comportamento (UFPA)'], bio: 'Supervisora em ABA e sócia-fundadora da Beehave. Atua na área de desenvolvimento atípico há mais de 13 anos.' },
+          { name: 'Me. Álex Rosas', image: 'https://i.imgur.com/57Xr5pn.jpeg', level: 'C', crm: 'CRP-02/26874', formations: ['Graduação em Psicologia (UNIVASF)', 'Mestrado em Psicologia', 'Especialização em ABA'], bio: 'Psicólogo, mestre em Psicologia e especialista em ABA. Supervisor de intervenção ABA na Beehave.' },
+          { name: 'Ma. Joíra Ribeiro', image: 'https://i.imgur.com/zJGPMaX.jpg', level: 'C', crm: 'CRP-03/15556', formations: ['Graduação em Psicologia (UNIVASF)', 'Pós-graduação em ABA ao TEA', 'Mestrado em Psicologia (UNIVASF)'], bio: 'Graduada e Mestre em Psicologia pela UNIVASF. Supervisora no Instituto Tacto.' },
+          { name: 'Esp. Andrea Teixeira', image: 'https://i.imgur.com/bPV6yn9.jpeg', level: 'D', crm: 'CRP-02/25615', formations: ['Graduação em Psicologia (FACESF)', 'Pós-graduação em Neuropsicologia', 'Pós-graduação em ABA ao TEA'], bio: 'Psicóloga com 4 anos dedicados à intervenção ABA. Pós-graduada em Neuropsicologia e ABA aplicada ao TEA.' },
+          { name: 'Esp. Erica Tamires', image: 'https://i.imgur.com/EGe56gz.jpeg', level: 'D', crm: 'CRP-02/264110', formations: ['Graduação em Psicologia', 'Graduação em Pedagogia', 'Especialização em ABA'], bio: 'Professora de formação e psicóloga especialista em ABA. Coordenadora de equipe ABA na Beehave.' },
+          { name: 'Esp. Jamille Mota', image: 'https://i.imgur.com/RltbllC.jpeg', level: 'D', crm: 'CRP-03/19674', formations: ['Especialização em Psicologia Organizacional', 'Graduação em Psicologia'], bio: 'Psicóloga, Coordenadora ABA e Analista do Comportamento. Atua com PRT, SBT, HRE e CAA.' },
+          { name: 'Esp. Joice Izabela', image: 'https://i.imgur.com/5kDExFR.jpeg', level: 'D', crm: 'CRP-02/26606', formations: ['Graduação em Psicologia (UNIVASF)', 'Especialização em ABA para TEA e DI (CBI of Miami)', 'Formação em Gerenciamento Profissional de Crises – Praticante Nível 2'], bio: 'Coordenadora em ABA há mais de três anos na Beehave. Praticante Nível 2 em Gerenciamento Profissional de Crises.' },
+          { name: 'Esp. Fernando Costa', image: 'https://i.imgur.com/JsbcOvA.jpeg', level: 'D', crm: 'CRP-02/26753', formations: ['Graduação em Psicologia (FTC)', 'Especialização em ABA'], bio: 'Psicólogo e Coordenador ABA com mais de 6 anos de experiência, especializado em TEA nível 3.' },
+          { name: 'Esp. Joyce Ribeiro', image: 'https://i.imgur.com/veAEOsy.jpeg', level: 'D', crm: 'CRP-02/26518', formations: ['Graduação em Psicologia', 'Pós-graduação em ABA', 'Pós-graduação em andamento em ABA com foco em TEA e DI'], bio: 'Psicóloga, pós-graduada em ABA. Coordenadora em ABA na Beehave.' },
+          { name: 'Esp. Thays Cruz', image: 'https://i.imgur.com/gwY6B0k.jpeg', level: 'D', crm: 'CRP-03/31285', formations: ['Graduação em Psicologia', 'Mestrado em Psicologia (Univasf)', 'Doutoranda em Análise do Comportamento (UEL)'], bio: 'Psicóloga e Analista do Comportamento, Doutoranda pela UEL e Mestra pela Univasf. Praticante PCM Nível 1.' },
+          { name: 'Esp. Nayara Queiroz', image: 'https://i.imgur.com/W6FVLyd.jpeg', level: 'D', crm: 'CRP 02/28286', formations: ['Licenciatura em Artes Visuais', 'Graduação em Psicologia', 'Pós-graduação em ABA para TEA', 'Formação em PCM e PECS'], bio: 'Licenciada em Artes Visuais e psicóloga. Coordenadora parceira da Beehave.' },
+          { name: 'Esp. Carlane Machado', image: 'https://i.imgur.com/9ekDBk6.jpg', level: 'D', crm: 'CRP-03/29529', formations: ['Graduação em Psicologia', 'Pós-graduação em ABA', 'Pós-graduação em andamento em Neuropsicologia'], bio: 'Psicóloga, Coordenadora ABA com 7 anos de experiência. Especializada em avaliação e intervenção em TEA.' },
+          { name: 'Aline Rodrigues', image: 'https://i.imgur.com/vrqMI2m.jpeg', level: 'E', crm: 'CRP-02/23629', formations: ['Graduação em Psicologia (Uninassau)', 'Especialização em ABA para TEA'], bio: 'Psicóloga com especialização em ABA para TEA. Experiência como aplicadora ABA e psicoterapia infantil.' },
+          { name: 'Gutemberg dos Santos', image: 'https://i.imgur.com/luGPgKa.jpeg', level: 'E', crm: 'CRP-02/20367', formations: ['Graduação em Psicologia (UNIVASF)', 'Pós-graduando em ABA (Facuminas)'], bio: 'Psicólogo com atuação voltada ao público infanto-juvenil. Trabalha com crianças e adolescentes típicos e atípicos desde 2022.' },
+          { name: 'Núbia Costa', image: 'https://i.imgur.com/nD3QWnm.jpeg', level: 'E', crm: 'CRP-03/18294', formations: ['Bacharelado em Psicologia (Univasf)', 'Pós-graduação em ABA para Autismo e DI (CBI of Miami)', 'Pós-graduanda em Psicopedagogia (UPE)'], bio: 'Psicóloga com experiência como aplicadora e coordenadora em ABA. Atualmente Psicóloga pela Beehave.' },
+          { name: 'Renata Dantas', image: 'https://i.imgur.com/TGufhH3.jpeg', level: 'E', crm: 'CRP-02/30345', formations: ['Graduação em Psicologia (Uninassau)', 'Especialização em ABA para TEA', 'Formação em Terapias Contextuais'], bio: 'Psicóloga com atuação infantil especializada em TEA. Prática fundamentada na Análise do Comportamento.' },
+          { name: 'Adson Raul', image: 'https://i.imgur.com/Cc4mOuy.jpeg', level: 'E-EVAL', crm: '', formations: ['Graduação em Psicologia (UNINASSAU)', 'Pós-graduação em ABA para TEA (em andamento)'], bio: 'Psicólogo formado pela UNINASSAU. Mais de 3 anos como aplicador com experiência em avaliação comportamental.' },
+          { name: 'Brenda Souza', image: 'https://i.imgur.com/DcKJBzc.jpeg', level: 'E-EVAL', crm: '', formations: ['Graduação em Psicologia (UNINASSAU)', 'Formação em ABA (Instituto Fratelli)', 'Curso de Aplicadora ABA (Beehave)'], bio: 'Bacharela em Psicologia. Cofundadora da LAAC. Experiência como aplicadora ABA e coleta de dados VB-MAPP/ABLLS.' },
+          { name: 'Luégina Sena', image: 'https://i.imgur.com/4RpCe4h.jpeg', level: 'E-EVAL', crm: '', formations: ['Graduação em Pedagogia (UNEB)', 'Pós-graduação em ABA e DI (CBI of Miami)', 'Pós-graduanda em Psicopedagogia (FAVENI)'], bio: 'Pedagoga e aplicadora ABA há quase 4 anos. Atua na Equipe de Avaliação da Beehave com protocolos baseados em ABA.' },
+          { name: 'Patrícia Matos', image: 'https://i.imgur.com/TxZAhzt.jpeg', level: 'E-EVAL', crm: '', formations: ['Graduação em Serviço Social (UFBA)', 'Pós-graduação em ABA e DI (CBI of Miami)', 'Formação como Aplicadora ABA (Beehave)'], bio: 'Graduada em Serviço Social pela UFBA. Pós-graduada em ABA e DI pelo CBI of Miami.' },
+          { name: 'Waleska Oliveira', image: 'https://i.imgur.com/sT3ZMfi.jpeg', level: 'E-EVAL', crm: '', formations: ['ABA e Autismo (Beehave)', 'VB-MAPP Descomplicado (Beehave)', 'Workshop de Inovação Terapêutica com IA'], bio: 'Estudante de Fonoaudiologia e aplicadora ABA há mais de 2 anos. Atuação voltada ao TEA.' },
         ],
       },
     ],
   },
 ];
 
-const HexagonMember = ({ member, onClick }: { member: TeamMember; onClick: () => void }) => {
+// Flatten hierarchy
+const allChildren = teamHierarchy[0]?.children?.[0]?.children || [];
+const directors = teamHierarchy;
+const subDirectors = teamHierarchy[0]?.children || [];
+const supervisors = allChildren.filter(m => m.level === 'C');
+const coordinators = allChildren.filter(m => m.level === 'D');
+const therapists = allChildren.filter(m => m.level === 'E');
+const evaluationTeam = allChildren.filter(m => m.level === 'E-EVAL');
+
+const TIER_CONFIG = {
+  A: { ring: '#F59E0B', glow: '#FDE68A', badge: 'Diretoria', size: 'large' },
+  B: { ring: '#F59E0B', glow: '#FDE68A', badge: 'Diretoria', size: 'large' },
+  C: { ring: '#FCD34D', glow: '#FEF3C7', badge: 'Supervisão', size: 'medium' },
+  D: { ring: '#FDE68A', glow: '#FFFBEB', badge: 'Coordenação', size: 'medium' },
+  E: { ring: '#E5E7EB', glow: '#F9FAFB', badge: 'Psicoterapia', size: 'small' },
+  'E-EVAL': { ring: '#D1D5DB', glow: '#F3F4F6', badge: 'Avaliação', size: 'small' },
+};
+
+interface HexProps {
+  member: TeamMember;
+  size?: 'large' | 'medium' | 'small';
+  onClick: () => void;
+}
+
+const HexCard = ({ member, size = 'medium', onClick }: HexProps) => {
+  const cfg = TIER_CONFIG[member.level as keyof typeof TIER_CONFIG] || TIER_CONFIG['E'];
+  const dim = size === 'large' ? 130 : size === 'medium' ? 105 : 88;
+
   return (
-    <div className="relative group cursor-pointer" onClick={onClick}>
-      <div className="hexagon-wrapper">
-        <div className="hexagon bg-gradient-to-br from-yellow-400 to-amber-500 p-0.5">
-          <div className="hexagon-inner bg-white">
-            <img
-              src={member.image}
-              alt={member.name}
-              className="hexagon-image"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.onerror = null;
-                target.src = 'https://via.placeholder.com/200x200/FCD34D/1F2937?text=' + encodeURIComponent(member.name.split(' ')[0]);
-              }}
-              loading="lazy"
-              crossOrigin="anonymous"
-            />
-          </div>
+    <button
+      onClick={onClick}
+      className="hex-card group"
+      style={{ '--hex-dim': `${dim}px`, '--ring': cfg.ring, '--glow': cfg.glow } as React.CSSProperties}
+    >
+      <div className="hex-outer">
+        <div className="hex-inner">
+          <img
+            src={member.image}
+            alt={member.name}
+            className="hex-img"
+            onError={(e) => {
+              (e.target as HTMLImageElement).src =
+                `https://via.placeholder.com/200x200/FCD34D/1F2937?text=${encodeURIComponent(member.name.split(' ').slice(-1)[0])}`;
+            }}
+          />
         </div>
       </div>
-      <div className="text-center mt-3">
-        <h4 className="text-sm font-semibold text-gray-900">{member.name}</h4>
-        <p className="text-sm text-gray-600">{member.role}</p>
+      <div className="hex-label">
+        <p className="hex-name">{member.name}</p>
+        {member.role && <p className="hex-role">{member.role}</p>}
+      </div>
+    </button>
+  );
+};
+
+const Modal = ({ member, onClose }: { member: TeamMember; onClose: () => void }) => {
+  const cfg = TIER_CONFIG[member.level as keyof typeof TIER_CONFIG] || TIER_CONFIG['E'];
+  return (
+    <div className="modal-backdrop" onClick={onClose}>
+      <div className="modal-panel" onClick={e => e.stopPropagation()}>
+        <button className="modal-close" onClick={onClose}>✕</button>
+        <div className="modal-header">
+          <div className="modal-hex-wrap" style={{ '--ring': cfg.ring, '--glow': cfg.glow } as React.CSSProperties}>
+            <img src={member.image} alt={member.name} className="modal-img"
+              onError={(e) => { (e.target as HTMLImageElement).src = `https://via.placeholder.com/200x200/FCD34D/1F2937?text=${encodeURIComponent(member.name.split(' ').slice(-1)[0])}`; }} />
+          </div>
+          <div className="modal-title-wrap">
+            <h2 className="modal-name">{member.name}</h2>
+            {member.role && <p className="modal-role">{member.role}</p>}
+            {member.crm && <span className="modal-crm">{member.crm}</span>}
+          </div>
+        </div>
+        {member.bio && <p className="modal-bio">{member.bio}</p>}
+        {member.formations && member.formations.length > 0 && (
+          <div className="modal-formations">
+            <h3 className="modal-formations-title">Formações</h3>
+            <ul className="modal-formations-list">
+              {member.formations.map((f, i) => (
+                <li key={i} className="modal-formation-item">
+                  <span className="modal-dot" />
+                  <span>{f}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </div>
     </div>
   );
 };
 
-const MemberModal = ({ member, onClose }: { member: TeamMember; onClose: () => void }) => {
-  return (
-    <Modal isOpen={true} onClose={onClose}>
-      <div className="p-8">
-        <div className="flex flex-col items-center">
-          <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-yellow-400 mb-6">
-            <img
-              src={member.image}
-              alt={member.name}
-              className="w-full h-full object-cover object-center"
-              onError={(e) => {
-                const target = e.target as HTMLImageElement;
-                target.onerror = null;
-                target.src = 'https://via.placeholder.com/400x400/FCD34D/1F2937?text=' + encodeURIComponent(member.name.split(' ')[0]);
-              }}
-              crossOrigin="anonymous"
-            />
-          </div>
+interface TierSectionProps {
+  title: string;
+  members: TeamMember[];
+  size?: 'large' | 'medium' | 'small';
+  accent?: string;
+  onSelect: (m: TeamMember) => void;
+}
 
-          <h2 className="text-3xl font-bold text-gray-900 mb-2">{member.name}</h2>
-          <p className="text-xl text-yellow-600 font-semibold mb-4">{member.role}</p>
+const TierSection = ({ title, members, size = 'medium', accent = '#F59E0B', onSelect }: TierSectionProps) => (
+  <div className="tier-section">
+    <div className="tier-header">
+      <div className="tier-line" style={{ background: `linear-gradient(to right, transparent, ${accent})` }} />
+      <span className="tier-label" style={{ color: accent, borderColor: accent }}>{title}</span>
+      <div className="tier-line" style={{ background: `linear-gradient(to left, transparent, ${accent})` }} />
+    </div>
+    <div className="tier-members">
+      {members.map((m, i) => (
+        <HexCard key={i} member={m} size={size} onClick={() => onSelect(m)} />
+      ))}
+    </div>
+  </div>
+);
 
-          {member.crm && (
-            <p className="text-lg text-gray-700 mb-6">{member.crm}</p>
-          )}
-
-          {member.bio && (
-            <p className="text-gray-600 text-center mb-6 max-w-xl">{member.bio}</p>
-          )}
-
-          {member.formations && member.formations.length > 0 && (
-            <div className="w-full max-w-xl">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Formações</h3>
-              <ul className="space-y-2">
-                {member.formations.map((formation, idx) => (
-                  <li key={idx} className="flex items-start">
-                    <span className="inline-block w-2 h-2 bg-yellow-400 rounded-full mt-2 mr-3 flex-shrink-0"></span>
-                    <span className="text-gray-700">{formation}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          )}
-        </div>
-      </div>
-    </Modal>
-  );
-};
-
-const Team = () => {
-  const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
-
-  const directors = teamHierarchy;
-  const subDirectors = directors[0]?.children || [];
-  const supervisors = subDirectors[0]?.children?.filter(m => m.level === 'C') || [];
-  const coordinators = subDirectors[0]?.children?.filter(m => m.level === 'D') || [];
-  const evaluationTeam = subDirectors[0]?.children?.filter(m => m.level === 'E-EVAL') || [];
-  const therapists = subDirectors[0]?.children?.filter(m => m.level === 'E') || [];
+export default function Team() {
+  const [selected, setSelected] = useState<TeamMember | null>(null);
 
   return (
     <>
-      {selectedMember && (
-        <MemberModal
-          member={selectedMember}
-          onClose={() => setSelectedMember(null)}
-        />
-      )}
-    <section id="team" className="py-20 bg-gradient-to-b from-gray-50 to-white overflow-x-auto">
       <style>{`
-        .hexagon-wrapper {
-          width: 120px;
-          height: 120px;
+        .team-section {
+          padding: 80px 0 100px;
+          background: #0D0D0F;
+          position: relative;
+          overflow: hidden;
+        }
+        .team-bg-glow {
+          position: absolute;
+          top: -200px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 800px;
+          height: 800px;
+          background: radial-gradient(ellipse at center, rgba(251,191,36,0.07) 0%, transparent 65%);
+          pointer-events: none;
+        }
+        .team-container {
+          max-width: 1100px;
           margin: 0 auto;
+          padding: 0 24px;
+          position: relative;
+        }
+        .team-headline {
+          text-align: center;
+          margin-bottom: 72px;
+        }
+        .team-eyebrow {
+          display: inline-flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 12px;
+          font-weight: 600;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: #F59E0B;
+          margin-bottom: 16px;
+        }
+        .team-eyebrow-dot {
+          width: 6px; height: 6px;
+          border-radius: 50%;
+          background: #F59E0B;
+          box-shadow: 0 0 8px #F59E0B;
+        }
+        .team-title {
+          font-size: clamp(32px, 5vw, 52px);
+          font-weight: 800;
+          color: #FAFAFA;
+          line-height: 1.1;
+          letter-spacing: -0.03em;
+          font-family: Georgia, 'Times New Roman', serif;
+        }
+        .team-title em {
+          font-style: italic;
+          color: #F59E0B;
+        }
+        .team-subtitle {
+          margin-top: 16px;
+          font-size: 17px;
+          color: #6B7280;
+          max-width: 480px;
+          margin-left: auto;
+          margin-right: auto;
+          line-height: 1.6;
         }
 
-        .hexagon {
-          width: 100%;
-          height: 100%;
+        /* Tier sections */
+        .tier-section {
+          margin-bottom: 56px;
+        }
+        .tier-header {
+          display: flex;
+          align-items: center;
+          gap: 16px;
+          margin-bottom: 32px;
+        }
+        .tier-line {
+          flex: 1;
+          height: 1px;
+          opacity: 0.3;
+        }
+        .tier-label {
+          font-size: 11px;
+          font-weight: 700;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+          padding: 5px 16px;
+          border: 1px solid;
+          border-radius: 100px;
+          white-space: nowrap;
+        }
+        .tier-members {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 8px 4px;
+        }
+
+        /* Hex Card */
+        .hex-card {
+          background: none;
+          border: none;
+          cursor: pointer;
+          padding: 6px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 8px;
+          transition: transform 0.25s cubic-bezier(0.34, 1.56, 0.64, 1);
+          width: calc(var(--hex-dim) + 16px);
+        }
+        .hex-card:hover {
+          transform: translateY(-6px) scale(1.04);
+        }
+        .hex-outer {
+          width: var(--hex-dim);
+          height: var(--hex-dim);
           clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-          transition: transform 0.3s ease;
+          background: linear-gradient(135deg, var(--ring), color-mix(in srgb, var(--ring) 60%, white));
+          padding: 2.5px;
+          transition: box-shadow 0.3s ease;
+          position: relative;
         }
-
-        .hexagon:hover {
-          transform: scale(1.1);
+        .hex-card:hover .hex-outer {
+          filter: drop-shadow(0 0 14px var(--ring));
         }
-
-        .hexagon-inner {
+        .hex-inner {
           width: 100%;
           height: 100%;
           clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
           overflow: hidden;
+          background: #1a1a20;
+        }
+        .hex-img {
+          width: 110%;
+          height: 110%;
+          object-fit: cover;
+          object-position: center top;
+          margin: -5%;
+          transition: transform 0.3s ease;
+        }
+        .hex-card:hover .hex-img {
+          transform: scale(1.08);
+        }
+        .hex-label {
+          text-align: center;
+          max-width: var(--hex-dim);
+        }
+        .hex-name {
+          font-size: 11.5px;
+          font-weight: 600;
+          color: #E5E7EB;
+          line-height: 1.3;
+          margin: 0;
+        }
+        .hex-role {
+          font-size: 10px;
+          color: #6B7280;
+          margin: 2px 0 0;
+          line-height: 1.3;
+        }
+
+        /* Modal */
+        .modal-backdrop {
+          position: fixed;
+          inset: 0;
+          background: rgba(0,0,0,0.75);
+          backdrop-filter: blur(6px);
+          z-index: 50;
           display: flex;
           align-items: center;
           justify-content: center;
+          padding: 20px;
         }
-
-        .hexagon-image {
-          width: 120%;
-          height: 120%;
-          object-fit: cover;
-          object-position: center;
-          image-rendering: -webkit-optimize-contrast;
-          image-rendering: crisp-edges;
+        .modal-panel {
+          background: #111113;
+          border: 1px solid #2a2a30;
+          border-radius: 20px;
+          max-width: 580px;
+          width: 100%;
+          max-height: 85vh;
+          overflow-y: auto;
+          padding: 40px;
+          position: relative;
+          box-shadow: 0 40px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(251,191,36,0.08);
         }
-
-        .hexagon-image[src*="andrea"] {
+        .modal-close {
+          position: absolute;
+          top: 20px; right: 20px;
+          background: #222228;
+          border: 1px solid #333;
+          color: #9CA3AF;
+          width: 32px; height: 32px;
+          border-radius: 50%;
+          cursor: pointer;
+          font-size: 14px;
+          display: flex; align-items: center; justify-content: center;
+          transition: background 0.2s;
+        }
+        .modal-close:hover { background: #2d2d35; color: #fff; }
+        .modal-header {
+          display: flex;
+          gap: 24px;
+          align-items: flex-start;
+          margin-bottom: 24px;
+        }
+        .modal-hex-wrap {
+          flex-shrink: 0;
+          width: 100px; height: 100px;
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          background: linear-gradient(135deg, var(--ring), color-mix(in srgb, var(--ring) 60%, white));
+          padding: 2px;
+        }
+        .modal-img {
           width: 100%;
           height: 100%;
+          object-fit: cover;
+          object-position: center top;
+          clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+          display: block;
+        }
+        .modal-title-wrap { flex: 1; padding-top: 4px; }
+        .modal-name {
+          font-size: 20px;
+          font-weight: 700;
+          color: #FAFAFA;
+          margin: 0 0 4px;
+        }
+        .modal-role {
+          font-size: 13px;
+          color: #F59E0B;
+          margin: 0 0 8px;
+          font-weight: 500;
+        }
+        .modal-crm {
+          display: inline-block;
+          font-size: 11px;
+          color: #6B7280;
+          background: #1c1c22;
+          border: 1px solid #2a2a30;
+          padding: 3px 10px;
+          border-radius: 100px;
+        }
+        .modal-bio {
+          font-size: 14px;
+          color: #9CA3AF;
+          line-height: 1.7;
+          margin-bottom: 24px;
+        }
+        .modal-formations {
+          border-top: 1px solid #1e1e26;
+          padding-top: 20px;
+        }
+        .modal-formations-title {
+          font-size: 13px;
+          font-weight: 700;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+          color: #6B7280;
+          margin: 0 0 14px;
+        }
+        .modal-formations-list {
+          list-style: none;
+          padding: 0; margin: 0;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .modal-formation-item {
+          display: flex;
+          gap: 10px;
+          align-items: flex-start;
+          font-size: 13.5px;
+          color: #D1D5DB;
+          line-height: 1.5;
+        }
+        .modal-dot {
+          flex-shrink: 0;
+          width: 6px; height: 6px;
+          border-radius: 50%;
+          background: #F59E0B;
+          margin-top: 6px;
         }
 
-        .hexagon-image[src*="JsbcOvA"] {
-          width: 98%;
-          height: 98%;
-        }
-
-        .hexagon-image[src*="BU6tqCO"] {
-          width: 112%;
-          height: 112%;
-        }
-
-        .connector-line {
-          position: absolute;
-          background: linear-gradient(to bottom, #fbbf24, #f59e0b);
-          z-index: -1;
+        @media (max-width: 600px) {
+          .modal-header { flex-direction: column; align-items: center; text-align: center; }
+          .modal-panel { padding: 28px 20px; }
         }
       `}</style>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <div className="flex justify-center mb-4">
-            <Users className="h-12 w-12 text-yellow-500" />
-          </div>
-          <h2 className="text-4xl font-bold text-gray-900 mb-4">Nossa BeeEquipe </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-          </p>
-        </div>
+      {selected && <Modal member={selected} onClose={() => setSelected(null)} />}
 
-        <div className="relative flex flex-col items-center space-y-8">
-          <div className="text-center w-full">
-            <h3 className="text-lg font-bold text-gray-700 mb-4">Diretorias</h3>
-          </div> 
-          <div className="flex justify-center gap-12 mb-8">
-            {directors.map((director, idx) => (
-              <HexagonMember key={idx} member={director} onClick={() => setSelectedMember(director)} />
-            ))}
-            {subDirectors.length > 0 && subDirectors.map((subDir, idx) => (
-              <HexagonMember key={idx} member={subDir} onClick={() => setSelectedMember(subDir)} />
-            ))}
+      <section id="team" className="team-section">
+        <div className="team-bg-glow" />
+        <div className="team-container">
+          <div className="team-headline">
+            <div className="team-eyebrow">
+              <span className="team-eyebrow-dot" />
+              Conheça quem faz a Beehave
+            </div>
+            <h2 className="team-title">Nossa <em>BeeEquipe</em></h2>
+            <p className="team-subtitle">Profissionais especializados em ABA, unidos pelo compromisso com o desenvolvimento e qualidade de vida.</p>
           </div>
+
+          <TierSection
+            title="Diretorias"
+            members={[...directors, ...subDirectors]}
+            size="large"
+            accent="#F59E0B"
+            onSelect={setSelected}
+          />
 
           {supervisors.length > 0 && (
-            <>
-              <div className="text-center w-full">
-                <h3 className="text-lg font-bold text-gray-700 mb-4">Analistas do Comportamento Supervisoras(es)</h3>
-              </div>
-              <div className="flex justify-center gap-6 flex-wrap max-w-4xl">
-                {supervisors.map((supervisor, idx) => (
-                  <HexagonMember key={idx} member={supervisor} onClick={() => setSelectedMember(supervisor)} />
-                ))}
-              </div>
-            </>
+            <TierSection
+              title="Analistas do Comportamento Supervisoras(es)"
+              members={supervisors}
+              size="medium"
+              accent="#FCD34D"
+              onSelect={setSelected}
+            />
           )}
 
           {coordinators.length > 0 && (
-            <>
-              <div className="text-center w-full">
-                <h3 className="text-lg font-bold text-gray-700 mb-4">Analistas do Comportamento Coordenadoras(es)</h3>
-              </div>
-              <div className="flex justify-center gap-6 flex-wrap max-w-5xl">
-                {coordinators.map((coordinator, idx) => (
-                  <HexagonMember key={idx} member={coordinator} onClick={() => setSelectedMember(coordinator)} />
-                ))}
-              </div>
-            </>
+            <TierSection
+              title="Analistas do Comportamento Coordenadoras(es)"
+              members={coordinators}
+              size="medium"
+              accent="#FDE68A"
+              onSelect={setSelected}
+            />
           )}
- 
+
           {therapists.length > 0 && (
-            <>
-              <div className="text-center w-full">
-                <h3 className="text-lg font-bold text-gray-700 mb-4">Psicoterapeutas</h3>
-              </div>
-              <div className="flex justify-center gap-6 flex-wrap max-w-4xl">
-                {therapists.map((therapist, idx) => ( 
-                  <HexagonMember key={idx} member={therapist} onClick={() => setSelectedMember(therapist)} />
-                ))}
-              </div> 
-            </>
+            <TierSection
+              title="Psicoterapeutas"
+              members={therapists}
+              size="small"
+              accent="#9CA3AF"
+              onSelect={setSelected}
+            />
           )}
 
           {evaluationTeam.length > 0 && (
-            <> 
-              <div className="text-center w-full">
-                <h3 className="text-lg font-bold text-gray-700 mb-4">Equipe de Avaliação</h3>
-              </div>
-              <div className="flex justify-center gap-6 flex-wrap max-w-5xl"> 
-                {evaluationTeam.map((member, idx) => (
-                  <HexagonMember key={idx} member={member} onClick={() => setSelectedMember(member)} />
-                ))}
-              </div>
-            </> 
+            <TierSection
+              title="Equipe de Avaliação"
+              members={evaluationTeam}
+              size="small"
+              accent="#6B7280"
+              onSelect={setSelected}
+            />
           )}
         </div>
-      </div>
-    </section>
+      </section>
     </>
   );
-};
-
-export default Team;
+}
