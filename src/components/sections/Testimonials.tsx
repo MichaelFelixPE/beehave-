@@ -122,7 +122,7 @@ const Testimonials: React.FC = () => {
                   </div>
 
                   {/* Text */}
-                  <blockquote className="text-gray-700 text-sm md:text-base text-center italic leading-relaxed max-h-44 overflow-y-auto px-2 scrollbar-thin scrollbar-thumb-yellow-300 scrollbar-track-transparent">
+                  <blockquote className="text-gray-700 text-sm md:text-base text-center italic leading-relaxed px-2">
                     {t.quote}"
                   </blockquote>
 
