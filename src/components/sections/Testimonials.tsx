@@ -80,14 +80,6 @@ const Testimonials: React.FC = () => {
 
         {/* Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-yellow-50 border border-yellow-200 rounded-full px-4 py-1.5 text-xs text-yellow-800 mb-4">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="#F5C400">
-              <ellipse cx="12" cy="12" rx="5" ry="8" />
-              <line x1="7" y1="8" x2="3" y2="5" stroke="#F5C400" strokeWidth="1.5" />
-              <line x1="17" y1="8" x2="21" y2="5" stroke="#F5C400" strokeWidth="1.5" />
-            </svg>
-            Beehave
-          </div>
           <h2 className="text-3xl md:text-4xl font-semibold text-gray-900">
             Depoimentos de clientes
           </h2>
