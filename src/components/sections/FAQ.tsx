@@ -86,7 +86,6 @@ const FAQ: React.FC = () => {
     <section id="faq" className="py-16 bg-gray-50">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Cabeçalho */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-black">Perguntas Frequentes</h2>
           <div className="w-24 h-1 bg-yellow-400 mx-auto my-4"></div>
@@ -95,7 +94,6 @@ const FAQ: React.FC = () => {
           </p>
         </div>
 
-        {/* Filtros por categoria */}
         <div className="flex flex-wrap gap-2 justify-center mb-8">
           {cats.map((c) => (
             <button
@@ -112,7 +110,6 @@ const FAQ: React.FC = () => {
           ))}
         </div>
 
-        {/* Lista de perguntas */}
         <div className="flex flex-col gap-2">
           {filtered.map((f, i) => (
             <div
@@ -139,7 +136,6 @@ const FAQ: React.FC = () => {
                   <path d="M5 7.5l5 5 5-5" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>
               </div>
-
               <div
                 className={`transition-all duration-300 ease-in-out overflow-hidden ${
                   open === i ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
@@ -153,13 +149,9 @@ const FAQ: React.FC = () => {
           ))}
         </div>
 
-        {/* CTA */}
         <div className="mt-10 text-center">
           <p className="text-gray-700 mb-4">Ainda tem dúvidas? Estamos aqui para ajudar.</p>
-          
-            href="#contact"
-            className="inline-flex items-center text-black bg-yellow-400 hover:bg-yellow-500 px-5 py-2 rounded-md font-medium transition-colors"
-          >
+          <a href="#contact" className="inline-flex items-center text-black bg-yellow-400 hover:bg-yellow-500 px-5 py-2 rounded-md font-medium transition-colors">
             Entre em Contato
           </a>
         </div>
