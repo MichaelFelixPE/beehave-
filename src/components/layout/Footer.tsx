@@ -1,175 +1,109 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Mail, Phone, MapPin, Instagram, MessageCircle } from 'lucide-react';
+import Logo from '../ui/Logo';
 
-type Category = 'todos' | 'servicos' | 'agendamento' | 'valores' | 'online';
-
-const faqs = [
-  {
-    cat: 'servicos',
-    icon: '🧠',
-    color: 'bg-blue-50',
-    q: 'Quais serviços a Beehave oferece?',
-    a: 'Oferecemos atendimento psicológico individual para adultos e adolescentes, orientação para pais, acompanhamento de crianças e sessões online. Trabalhamos com diversas abordagens terapêuticas adaptadas às necessidades de cada cliente.',
-  },
-  {
-    cat: 'agendamento',
-    icon: '📅',
-    color: 'bg-teal-50',
-    q: 'Como posso agendar uma consulta?',
-    a: 'Você pode entrar em contato pelo nosso WhatsApp (87 98828-7826), por e-mail em empresabeehave@gmail.com ou presencialmente em nossa unidade na Rua Bahia, 808, Vila Moco, Petrolina-PE. Respondemos em horário comercial.',
-  },
-  {
-    cat: 'valores',
-    icon: '💳',
-    color: 'bg-amber-50',
-    q: 'Quais são os valores das sessões?',
-    a: 'Os valores variam de acordo com o tipo de atendimento e profissional. Entre em contato conosco para obter informações detalhadas sobre os planos disponíveis e possibilidade de deslizamento social.',
-  },
-  {
-    cat: 'online',
-    icon: '💻',
-    color: 'bg-purple-50',
-    q: 'Vocês realizam atendimento online?',
-    a: 'Sim! Oferecemos atendimento psicológico 100% online por videoconferência. As sessões têm a mesma qualidade do atendimento presencial e são especialmente indicadas para quem tem rotina agitada ou mora fora de Petrolina.',
-  },
-  {
-    cat: 'agendamento',
-    icon: '🕐',
-    color: 'bg-green-50',
-    q: 'Qual é a duração de uma sessão?',
-    a: 'Cada sessão tem duração de 50 minutos, que é o tempo padrão para psicoterapia individual. Em casos de avaliação ou orientação, a duração pode variar conforme a necessidade.',
-  },
-  {
-    cat: 'servicos',
-    icon: '👶',
-    color: 'bg-pink-50',
-    q: 'Vocês atendem crianças?',
-    a: 'Sim, temos psicólogos especializados em psicologia infantil. Atendemos crianças a partir dos 3 anos, utilizando técnicas lúdicas e adequadas para cada faixa etária. Também oferecemos orientação para os pais.',
-  },
-  {
-    cat: 'valores',
-    icon: '🏥',
-    color: 'bg-red-50',
-    q: 'Aceitam convênios ou planos de saúde?',
-    a: 'Atualmente trabalhamos com pagamento particular. Caso tenha plano de saúde, verifique com sua operadora sobre o reembolso de sessões de psicologia — muitos planos cobrem parte do valor.',
-  },
-  {
-    cat: 'agendamento',
-    icon: '🔄',
-    color: 'bg-teal-50',
-    q: 'Posso cancelar ou remarcar uma sessão?',
-    a: 'Sim. Pedimos apenas que o cancelamento ou remarcação seja feito com no mínimo 24 horas de antecedência, para que possamos oferecer o horário a outro paciente. Cancelamentos tardios podem ser cobrados.',
-  },
-];
-
-const cats: { key: Category; label: string }[] = [
-  { key: 'todos', label: 'Todos' },
-  { key: 'servicos', label: 'Serviços' },
-  { key: 'agendamento', label: 'Agendamento' },
-  { key: 'valores', label: 'Valores' },
-  { key: 'online', label: 'Online' },
-];
-
-const FAQ: React.FC = () => {
-  const [cat, setCat] = useState<Category>('todos');
-  const [open, setOpen] = useState<number | null>(null);
-
-  const filtered = faqs.filter((f) => cat === 'todos' || f.cat === cat);
-
+const Footer: React.FC = () => {
   return (
-    <section id="faq" className="py-20 bg-white">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="bg-black text-white pt-12 pb-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          {/* Logo e Sobre */}
+          <div className="col-span-1 md:col-span-1">
+            <a href="#" className="flex items-center mb-4" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+              <img src="https://i.imgur.com/LqSTFWW.png" alt="Beehave Logo" className="w-13 h-13" />
+              <span className="ml-2 text-xl font-bold text-white"> </span>
+            </a>  
+          </div>
 
-        <div className="text-center mb-10">
-          <span className="inline-block bg-yellow-200 text-yellow-800 text-xs font-medium px-4 py-1 rounded-full mb-3 tracking-wide">
-            FAQ
-          </span>
-          <h2 className="text-3xl font-semibold text-gray-900 mb-2">Perguntas frequentes</h2>
-          <p className="text-gray-500">
-            Encontre respostas rápidas sobre nossos serviços, agendamentos e muito mais.
-          </p>
-        </div>
+          {/* Links Rápidos */}
+          <div className="col-span-1">
+            <h3 className="text-lg font-semibold mb-4 text-yellow-400">Links Rápidos</h3>
+            <ul className="space-y-2">
+              <li><a href="#services" className="text-gray-300 hover:text-yellow-400 transition-colors">Beehave Serviços</a></li>
+              <li><a href="#about" className="text-gray-300 hover:text-yellow-400 transition-colors">Sobre Nós</a></li>
+              <li><a href="#team" className="text-gray-300 hover:text-yellow-400 transition-colors">Nossa BeeEquipe</a></li>
+              <li><a href="#faq" className="text-gray-300 hover:text-yellow-400 transition-colors">Perguntas Frequentes</a></li>
+              <li><a href="#contact" className="text-gray-300 hover:text-yellow-400 transition-colors">Contato</a></li>
+            </ul>
+          </div>
 
-        <div className="flex flex-wrap gap-2 justify-center mb-8">
-          {cats.map((c) => (
-            <button
-              key={c.key}
-              onClick={() => { setCat(c.key); setOpen(null); }}
-              className={`px-4 py-1.5 rounded-full text-sm border transition-all ${
-                cat === c.key
-                  ? 'bg-gray-900 text-yellow-400 border-gray-900'
-                  : 'bg-gray-100 text-gray-500 border-gray-200 hover:border-gray-400 hover:text-gray-700'
-              }`}
-            >
-              {c.label}
-            </button>
-          ))}
-        </div>
-
-        <div className="flex flex-col gap-2">
-          {filtered.map((f, i) => (
-            <div
-              key={i}
-              onClick={() => setOpen(open === i ? null : i)}
-              className={`border rounded-xl overflow-hidden cursor-pointer transition-all ${
-                open === i ? 'border-gray-300' : 'border-gray-100'
-              }`}
-            >
-              <div className="flex items-center gap-3 px-5 py-4">
-                <div className={`w-8 h-8 rounded-lg ${f.color} flex items-center justify-center text-sm flex-shrink-0`}>
-                  {f.icon}
+          {/* Informações de Contato */}
+          <div className="col-span-1">
+            <h3 className="text-lg font-semibold mb-4 text-yellow-400">Contate-nos</h3>
+            <div className="space-y-3">
+              <div className="bg-gray-900 rounded p-3 flex items-start">
+                <MapPin size={20} className="mr-3 text-yellow-400 flex-shrink-0 mt-0.5" />
+                <div>
+                  <p className="font-semibold text-yellow-400 text-sm mb-1">Endereço</p>
+                  <p className="text-sm text-gray-300">Rua Bahia, N 808, Vila Moco<br />Petrolina-PE, CEP 56.306-430</p>
                 </div>
-                <span className="flex-1 text-sm font-medium text-gray-800">{f.q}</span>
-                <svg
-                  className={`w-5 h-5 text-gray-400 flex-shrink-0 transition-transform duration-300 ${
-                    open === i ? 'rotate-180' : ''
-                  }`}
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={1.5}
-                  viewBox="0 0 20 20"
-                >
-                  <path d="M5 7.5l5 5 5-5" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
               </div>
-
-              <div
-                className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                  open === i ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
-                }`}
-              >
-                <div className="px-5 pb-4 pl-16 text-sm text-gray-500 leading-relaxed">
-                  {f.a}
+              <div className="bg-gray-900 rounded p-3 flex items-center">
+                <Phone size={20} className="mr-3 text-yellow-400 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold text-yellow-400 text-sm mb-1">Telefone</p>
+                  <a href="tel:+5587988287826" className="text-sm text-gray-300 hover:text-yellow-400 transition-colors">87 98828-7826</a>
+                </div>
+              </div>
+              <div className="bg-gray-900 rounded p-3 flex items-center">
+                <Mail size={20} className="mr-3 text-yellow-400 flex-shrink-0" />
+                <div>
+                  <p className="font-semibold text-yellow-400 text-sm mb-1">Email</p>
+                  <p className="text-sm text-gray-300">empresabeehave@gmail.com</p>
                 </div>
               </div>
             </div>
-          ))}
-        </div>
+          </div>
 
-        <div className="mt-10 bg-gray-50 rounded-xl p-6 text-center border border-gray-100">
-          <p className="text-sm text-gray-500 mb-4">
-            Não encontrou o que procurava? Fale diretamente com nossa equipe.
-          </p>
-          <div className="flex gap-3 justify-center flex-wrap">
-            
-              href="https://wa.me/5587988287826"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-green-500 text-white text-sm px-5 py-2 rounded-lg font-medium hover:bg-green-600 transition-colors"
-            >
-              WhatsApp
-            </a>
-            
-              href="mailto:empresabeehave@gmail.com"
-              className="bg-white text-gray-700 border border-gray-200 text-sm px-5 py-2 rounded-lg hover:border-gray-400 transition-colors"
-            >
-              E-mail
-            </a>
+          {/* Horário de Funcionamento */}
+          <div className="col-span-1">
+            <h3 className="text-lg font-semibold mb-4 text-yellow-400">Horários</h3>
+            <div className="space-y-3">
+              <div className="bg-gray-900 rounded p-3">
+                <p className="font-semibold text-yellow-400 mb-2">Segunda - Sexta</p>
+                <p className="text-sm text-gray-300">8:00 - 12:00</p>
+                <p className="text-sm text-gray-300">14:00 - 18:00</p>
+              </div>
+              <div className="bg-gray-900 rounded p-3">
+                <p className="font-semibold text-gray-400 mb-1">Sábado</p>
+                <p className="text-sm text-gray-400">Fechado</p>
+              </div>
+              <div className="bg-gray-900 rounded p-3">
+                <p className="font-semibold text-gray-400 mb-1">Domingo</p>
+                <p className="text-sm text-gray-400">Fechado</p>
+              </div>
+              <p className="text-xs text-gray-500 italic pt-2">*Fechado de 12:00 às 14:00 para almoço</p>
+            </div>
+
+            {/* Redes Sociais */}
+            <div className="mt-6">
+              <h3 className="text-lg font-semibold mb-4 text-yellow-400">Siga-nos</h3>
+              <div className="flex space-x-4">
+                <a href="https://www.instagram.com/beehave_sc/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                  <Instagram size={24} />
+                </a>
+                <a href="https://wa.me/5587988287826" className="text-gray-300 hover:text-yellow-400 transition-colors">
+                  <MessageCircle size={24} />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 
+        <div className="border-t border-gray-800 mt-10 pt-6">
+          <div className="flex flex-col md:flex-row justify-between items-center">
+            <p className="text-gray-400 text-sm">
+              &copy; {new Date().getFullYear()} beehave Psicologia. Todos os direitos reservados.
+            </p>
+            <div className="flex space-x-4 mt-4 md:mt-0">
+              <a href="#" className="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Política de Privacidade</a>
+              <a href="#" className="text-gray-400 hover:text-yellow-400 text-sm transition-colors">Termos de Serviço</a>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
-  );
+    </footer>
+  ); 
 };
 
-export default FAQ;
+export default Footer;    
