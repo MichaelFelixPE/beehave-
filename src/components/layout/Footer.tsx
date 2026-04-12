@@ -79,7 +79,6 @@ const FAQ: React.FC = () => {
     <section id="faq" className="py-20 bg-white">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        {/* Cabeçalho */}
         <div className="text-center mb-10">
           <span className="inline-block bg-yellow-200 text-yellow-800 text-xs font-medium px-4 py-1 rounded-full mb-3 tracking-wide">
             FAQ
@@ -90,15 +89,11 @@ const FAQ: React.FC = () => {
           </p>
         </div>
 
-        {/* Filtros por categoria */}
         <div className="flex flex-wrap gap-2 justify-center mb-8">
           {cats.map((c) => (
             <button
               key={c.key}
-              onClick={() => {
-                setCat(c.key);
-                setOpen(null);
-              }}
+              onClick={() => { setCat(c.key); setOpen(null); }}
               className={`px-4 py-1.5 rounded-full text-sm border transition-all ${
                 cat === c.key
                   ? 'bg-gray-900 text-yellow-400 border-gray-900'
@@ -110,7 +105,6 @@ const FAQ: React.FC = () => {
           ))}
         </div>
 
-        {/* Lista de perguntas */}
         <div className="flex flex-col gap-2">
           {filtered.map((f, i) => (
             <div
@@ -121,9 +115,7 @@ const FAQ: React.FC = () => {
               }`}
             >
               <div className="flex items-center gap-3 px-5 py-4">
-                <div
-                  className={`w-8 h-8 rounded-lg ${f.color} flex items-center justify-center text-sm flex-shrink-0`}
-                >
+                <div className={`w-8 h-8 rounded-lg ${f.color} flex items-center justify-center text-sm flex-shrink-0`}>
                   {f.icon}
                 </div>
                 <span className="flex-1 text-sm font-medium text-gray-800">{f.q}</span>
@@ -140,7 +132,6 @@ const FAQ: React.FC = () => {
                 </svg>
               </div>
 
-              {/* Resposta com animação */}
               <div
                 className={`transition-all duration-300 ease-in-out overflow-hidden ${
                   open === i ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
@@ -154,7 +145,6 @@ const FAQ: React.FC = () => {
           ))}
         </div>
 
-        {/* CTA */}
         <div className="mt-10 bg-gray-50 rounded-xl p-6 text-center border border-gray-100">
           <p className="text-sm text-gray-500 mb-4">
             Não encontrou o que procurava? Fale diretamente com nossa equipe.
