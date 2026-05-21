@@ -181,7 +181,7 @@ const teamHierarchy: TeamMember[] = [
           },
            {
             name: ' Esp. Renata Silva',
-            image: 'https://i.imgur.com/a/vPS3yia.jpeg',
+            image: 'https://i.imgur.com/cDj2eu2.jpeg',
             level: 'D',
             crm: 'CRP-02/26436',
             formations: [
