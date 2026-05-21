@@ -166,7 +166,7 @@ const teamHierarchy: TeamMember[] = [
               'Formação em Análise do Comportamento Clínica (FAT)'
             ],
             {
-            name: ' Esp. Renata ',
+            name: ' Esp. Renata Silva ',
             image: 'https://i.imgur.com/cDj2eu2.jpeg',
             level: 'D',
             crm: 'CRP-02/26436',
