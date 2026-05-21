@@ -169,7 +169,7 @@ const teamHierarchy: TeamMember[] = [
             name: ' Esp. Renata ',
             image: 'https://i.imgur.com/cDj2eu2.jpeg',
             level: 'D',
-            crm: 'CRP-02/25615',
+            crm: 'CRP-02/26436',
             formations: [
               'Graduação em Psicologia',
               'Pós graduação em ABA',
