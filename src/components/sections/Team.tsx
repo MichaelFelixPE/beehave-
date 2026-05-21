@@ -186,7 +186,7 @@ const teamHierarchy: TeamMember[] = [
             crm: 'CRP-02/26436',
             formations: [
               'Graduação em Psicologia',
-              'Graduação em Pedagogia / Formação em Magistério (professora de formação)',
+              'Pós graduação em ABA',
               'Especialização em Análise do Comportamento Aplicada (ABA)'
             ],
             bio: 'Olá, me chamo Erica Tamires, mãe de Tiago e Valentina e apaixonada pela infância e desenvolvimento infantil. Sou professora de formação, tendo atuado por 4 anos no município de Petrolina na Educação Infantil.Psicóloga especialista em ABA, com experiência em Psicoterapia clínica de crianças típicas e atípicas na Beehave. Integrante de equipe ABA, desde 2021 como aplicadora escolar e domiciliar, e, atualmente, como Analista do Comportamento Coordenadora de equipe ABA na Beehave.',
