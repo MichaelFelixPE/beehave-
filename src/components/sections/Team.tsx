@@ -165,7 +165,18 @@ const teamHierarchy: TeamMember[] = [
               'Pós-graduação em Análise do Comportamento Aplicada (ABA) ao TEA',
               'Formação em Análise do Comportamento Clínica (FAT)'
             ],
-            bio: 'Sou Andrea Teixeira, psicóloga formada pela FACESF, com uma trajetória de 4 anos dedicada à intervenção ABA. Minha prática clínica é fundamentada em uma formação sólida: sou pós-graduada em Neuropsicologia e em ABA aplicada ao TEA, além de possuir formação em Análise do Comportamento Clínica pela FAT.',
+            {
+            name: ' Esp. Renata ',
+            image: 'https://i.imgur.com/cDj2eu2.jpeg',
+            level: 'D',
+            crm: 'CRP-02/25615',
+            formations: [
+              'Graduação em Psicologia',
+              'Pós graduação em ABA',
+              'Pós graduação em Parentalidade',
+              'Formação Profissional para Gerenciamento de Crises (PCM)'
+            ],
+            bio: 'Olá, Sou Renata Silva. Psicóloga de formação, analista do comportamento por paixão. Estudar o comportamento humano me fascina, mas atuar com o desenvolvimento infantojuvenil é meu propósito de vida. Iniciei como aplicadora ABA em 2022 pela Beehave. Como psicóloga clínica, já caminhei pelo serviço particular e público, atuando com crianças e adolescentes típicos e atípicos. Em ambos os ambientes, o meu olhar sempre vai além dos pacientes, vai para a família. Além de especialização em ABA, também realizei em Parentalide, justamente para compreender e auxiliar da melhor forma todas as famílias que eu acompanhe. Hoje, atuando como coordenadora ABA pela Beehave, me sinto realizada e principalmente mais próxima das famílias para assim desenvolvermos juntos o melhor para sua criança/adolescente.',
           },
           {
             name: ' Esp. Erica Tamires',
