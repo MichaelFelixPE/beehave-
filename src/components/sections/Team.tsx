@@ -183,7 +183,7 @@ const teamHierarchy: TeamMember[] = [
             name: ' EEsp. Renata Silva',
             image: 'https://i.imgur.com/a/vPS3yia.jpeg',
             level: 'D',
-            crm: 'CRP-02/264110',
+            crm: 'CRP-02/26436',
             formations: [
               'Graduação em Psicologia',
               'Graduação em Pedagogia / Formação em Magistério (professora de formação)',
