@@ -159,36 +159,26 @@ const Contact: React.FC = () => {
               className="relative z-10"
             ></iframe>
 
-            {/* CARD FLUTUANTE */}
-            <div className="absolute bottom-6 left-6 right-6 z-20">
+{/* CARD FLUTUANTE */}
+<div className="absolute bottom-6 left-6 right-6 z-20">
 
-              <div className="bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl p-5 border border-yellow-100">
+  <div className="bg-white/90 backdrop-blur-md rounded-2xl shadow-2xl p-5 border border-yellow-100">
 
-                <div className="flex items-center justify-between flex-wrap gap-4">
+    <div className="flex items-center justify-between flex-wrap gap-4">
 
-                  <div>
-                    <h4 className="font-bold text-zinc-900 text-lg">
-                      🐝 Beehave Psicologia
-                    </h4>
+      <div>
+        <h4 className="font-bold text-zinc-900 text-lg">
+          🐝 Beehave Psicologia
+        </h4>
 
-                    <p className="text-zinc-600 text-sm mt-1">
-                      Um ambiente moderno, acolhedor e preparado para você.
-                    </p>
-                  </div>
+        <p className="text-zinc-600 text-sm mt-1">
+          Um ambiente moderno, acolhedor e preparado para você.
+        </p>
+      </div>
 
-                  <div className="flex items-center gap-2 bg-yellow-100 px-4 py-2 rounded-xl">
-                    <Star
-                      size={18}
-                      className="text-yellow-500 fill-yellow-500"
-                    />
-
-                    <span className="font-semibold text-zinc-900">
-                      Ambiente Premium
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+    </div>
+  </div>
+</div>
 
           </div>
         </div>
