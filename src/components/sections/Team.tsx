@@ -190,7 +190,7 @@ const teamHierarchy: TeamMember[] = [
               'Pós graduação em Parentalidade',
               'Formação Profissional para Gerenciamento de Crises (PCM)'
             ],
-            bio: 'Olá, me chamo Erica Tamires, mãe de Tiago e Valentina e apaixonada pela infância e desenvolvimento infantil. Sou professora de formação, tendo atuado por 4 anos no município de Petrolina na Educação Infantil.Psicóloga especialista em ABA, com experiência em Psicoterapia clínica de crianças típicas e atípicas na Beehave. Integrante de equipe ABA, desde 2021 como aplicadora escolar e domiciliar, e, atualmente, como Analista do Comportamento Coordenadora de equipe ABA na Beehave.',
+            bio: 'Olá, Sou Renata Silva. Psicóloga de formação, analista do comportamento por paixão. Estudar o comportamento humano me fascina, mas atuar com o desenvolvimento infantojuvenil é meu propósito de vida. Iniciei como aplicadora ABA em 2022 pela Beehave. Como psicóloga clínica, já caminhei pelo serviço particular e público, atuando com crianças e adolescentes típicos e atípicos. Em ambos os ambientes, o meu olhar sempre vai além dos pacientes, vai para a família. Além de especialização em ABA, também realizei em Parentalide, justamente para compreender e auxiliar da melhor forma todas as famílias que eu acompanhe. Hoje, atuando como coordenadora ABA pela Beehave, me sinto realizada e principalmente mais próxima das famílias para assim desenvolvermos juntos o melhor para sua criança/adolescente. ',
           },       
           {
             name: ' Esp. Jamille Mota',
