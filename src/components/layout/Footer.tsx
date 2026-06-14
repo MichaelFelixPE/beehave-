@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
               Pronto para começar?
             </p>
             <h2 style={{ fontSize: '32px', fontWeight: 700, lineHeight: 1.2, margin: 0 }}>
-              Agende sua primeira consulta
+              Agende uma Reunião
             </h2>
           </div>
           <a
