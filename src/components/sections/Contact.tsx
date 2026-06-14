@@ -182,6 +182,14 @@ const Contact: React.FC = () => {
                       className="text-yellow-500 fill-yellow-500"
                     />
 
+                    <span className="font-semibold text-zinc-900">
+                      Ambiente Premium
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
