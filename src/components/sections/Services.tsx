@@ -14,7 +14,7 @@ const highlightInfos = [
   {
     title: "Foco na Família",
     tag: "SUPORTE INTEGRAL",
-    content: "Acreditamos que a evolução do aprendente acontece em conjunto. Por isso, todos os nossos serviços envolvem o suporte, acolhimento e a participação ativa da família no processo terapêutico."
+    content: "Acreditamos que a evolução da(o) Aprendente ocorre em conjunto com as pessoas que convivem com Ela(e). Por isso, todos os nossos Serviços em ABA envolvem o suporte, o acolhimento e a participação ativa da Família no processo de intervenção, garantindo, assim, maior qualidade de vida para Ela(e) e a Família."
   },
   {
     title: "Base Científica (ABA)",
