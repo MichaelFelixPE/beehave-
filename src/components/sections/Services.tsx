@@ -26,7 +26,7 @@ const highlightInfos = [
 const serviceItems = [
   {
     title: 'Avaliação Comportamental',
-    description: 'Avaliação individualizada por meio de Protocolos de Avaliação publicados para identificar déficits e excessos, auxiliando na produção do PEI.',
+    description: 'Avaliação individualizada por meio de Protocolos de Avaliação publicados para identificar déficits e excessos comportamentais, auxiliando na produção do Plano de Ensino Individualizada (PEI)',
     icon: Puzzle,
   },
   {
