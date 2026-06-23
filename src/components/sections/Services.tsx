@@ -31,7 +31,7 @@ const serviceItems = [
   },
   {
     title: 'Intervenção Comportamental',
-    description: 'Intervenção baseada nos resultados da avaliação. Analistas Supervisores elaboram programas aplicados por técnicos treinados em modelo ABA.',
+    description: 'Intervenção baseada nos resultados da Avaliação Comportamental. Analistas do Comportamento (AC) Supervisoras(es) elaboram Programas de Ensino, que são aplicados por Aplicadoras(es), sob Orientação da(o) AC Coordenadora(dor), basicamente.',
     icon: Users,
   },
   {
