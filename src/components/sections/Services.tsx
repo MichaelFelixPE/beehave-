@@ -26,22 +26,22 @@ const highlightInfos = [
 const serviceItems = [
   {
     title: 'Avaliação Comportamental',
-    description: 'Avaliação individualizada por meio de Protocolos de Avaliação publicados para identificar déficits e excessos comportamentais, auxiliando na produção do Plano de Ensino Individualizada (PEI)',
+    description: 'Avaliação individualizada por meio de Protocolos de Avaliação publicados para identificar déficits e excessos, auxiliando na produção do PEI.',
     icon: Puzzle,
   },
   {
     title: 'Intervenção Comportamental',
-    description: 'Intervenção baseada nos resultados da Avaliação Comportamental. Analistas do Comportamento (AC) Supervisoras(es) elaboram Programas de Ensino, que são aplicados por Aplicadoras(es), sob Orientação da(o) AC Coordenadora(dor), basicamente.',
+    description: 'Intervenção baseada nos resultados da avaliação. Analistas Supervisores elaboram programas aplicados por técnicos treinados em modelo ABA.',
     icon: Users,
   },
   {
     title: 'Psicoterapia',
-    description: 'Sessões baseadas na Ciência da Análise do Comportamento para promover autoconhecimento, regulação emocional e repertórios flexíveis de pessoas com desenvolvimento típico e atípico.',
+    description: 'Sessões baseadas na Ciência da Análise do Comportamento para promover autoconhecimento, regulação emocional e repertórios flexíveis.',
     icon: Heart,
   },
   {
     title: 'Orientação Parental',
-    description: 'Suporte para Famílias identificarem funções de comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação com sua(seu) Aprendente.',
+    description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
     icon: Lightbulb,
   },
 ];
