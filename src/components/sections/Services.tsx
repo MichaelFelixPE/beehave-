@@ -19,7 +19,7 @@ const highlightInfos = [
   {
     title: "Base Científica (ABA)",
     tag: "CIÊNCIA",
-    content: "Nossas intervenções utilizam a Análise do Comportamento Aplicada. Planejamos cada passo com base em dados e evidências para garantir um ensino efetivo, ético e focado na autonomia."
+    content: "Nossas intervenções são baseada na Ciência da Análise do Comportamento. Planejamos cada passo da intervenção com  Afeto, Ciência e Ética!"
   }
 ];
 
