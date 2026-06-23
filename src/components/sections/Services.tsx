@@ -36,12 +36,12 @@ const serviceItems = [
   },
   {
     title: 'Psicoterapia',
-    description: 'Sessões baseadas na Ciência da Análise do Comportamento para promover autoconhecimento, regulação emocional e repertórios flexíveis.',
+    description: 'Sessões baseadas na Ciência da Análise do Comportamento para promover autoconhecimento, regulação emocional e repertórios flexíveis de pessoas com desenvolvimento típico e atípico.',
     icon: Heart,
   },
   {
     title: 'Orientação Parental',
-    description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
+    description: 'Suporte para Famílias identificarem funções de comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação com sua(seu) Aprendente.',
     icon: Lightbulb,
   },
 ];
