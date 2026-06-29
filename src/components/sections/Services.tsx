@@ -45,7 +45,7 @@ const serviceItems = [
     icon: Lightbulb,
   },
     {
-    title: 'Orientação Parental',
+    title: 'Supervisão técnica para profissionais que trabalham com ABA',
     description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
     icon: Lightbulb,
   },
