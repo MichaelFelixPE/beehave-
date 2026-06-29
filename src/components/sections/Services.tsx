@@ -44,6 +44,26 @@ const serviceItems = [
     description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
     icon: Lightbulb,
   },
+    {
+    title: 'Orientação Parental',
+    description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
+    icon: Lightbulb,
+  },
+    {
+    title: 'Orientação Parental',
+    description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
+    icon: Lightbulb,
+  },
+    {
+    title: 'Orientação Parental',
+    description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
+    icon: Lightbulb,
+  },
+    {
+    title: 'Orientação Parental',
+    description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
+    icon: Lightbulb,
+  },
 ];
 
 const Services = () => {
