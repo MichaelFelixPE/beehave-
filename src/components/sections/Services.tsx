@@ -60,7 +60,7 @@ const serviceItems = [
     icon: Lightbulb,
   },
     {
-    title: 'Orientação Parental',
+    title: 'Consultoria/Assessoria em ABA para Clínica; Escola; Serviço público de Educação e Saúde',
     description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
     icon: Lightbulb,
   },
