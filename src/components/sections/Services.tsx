@@ -50,7 +50,7 @@ const serviceItems = [
     icon: Lightbulb,
   },
     {
-    title: 'Orientação Parental',
+    title: 'Supervisão técnica para Certificação Internacional de Análise do Comportamento (IBAO)',
     description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
     icon: Lightbulb,
   },
