@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Heart, Users, Lightbulb, Puzzle, Info, Home, GraduationCap, Award, Brain, Building2 } from 'lucide-react';
+import { Heart, Users, Lightbulb, Puzzle, Info } from 'lucide-react';
 
 const highlightInfos = [
   {
@@ -42,27 +42,7 @@ const serviceItems = [
   {
     title: 'Orientação Parental',
     description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
-    icon: Home,
-  },
-  {
-    title: 'Supervisão técnica para profissionais que trabalham com ABA',
-    description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
-    icon: GraduationCap,
-  },
-  {
-    title: 'Supervisão técnica para Certificação Internacional de Análise do Comportamento (IBAO)',
-    description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
-    icon: Award,
-  },
-  {
-    title: 'Supervisão clínica para Psicóloga(o)',
-    description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
-    icon: Brain,
-  },
-  {
-    title: 'Consultoria/Assessoria em ABA para Clínica; Escola; Serviço público de Educação e Saúde',
-    description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
-    icon: Building2,
+    icon: Lightbulb,
   },
 ];
 
@@ -83,6 +63,7 @@ const Services = () => {
         
         {/* CARROSSEL COM DESIGN MODERNO (GLASSMORPHISM) */}
         <div className="mb-32 relative">
+          {/* Blobs Decorativos de Fundo */}
           <div className="absolute -top-16 -left-16 w-64 h-64 bg-yellow-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse"></div>
           <div className="absolute -bottom-16 -right-16 w-64 h-64 bg-amber-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-pulse shadow-2xl"></div>
 
@@ -92,6 +73,7 @@ const Services = () => {
               key={currentInfo} 
               className="flex flex-col md:flex-row items-center md:items-start gap-10 animate-[fadeIn_0.6s_ease-out]"
             >
+              {/* Ícone Estilizado */}
               <div className="flex-shrink-0">
                 <div className="relative group">
                   <div className="absolute -inset-2 bg-gradient-to-r from-yellow-400 to-amber-500 rounded-2xl blur opacity-20 group-hover:opacity-40 transition duration-500"></div>
@@ -101,6 +83,7 @@ const Services = () => {
                 </div>
               </div>
 
+              {/* Texto do Slide */}
               <div className="flex-1 text-center md:text-left">
                 <span className="text-yellow-600 font-bold text-xs uppercase tracking-[0.3em] mb-3 block">
                   {highlightInfos[currentInfo].tag}
@@ -114,6 +97,7 @@ const Services = () => {
               </div>
             </div>
 
+            {/* Navegação Minimalista */}
             <div className="flex justify-center md:justify-start gap-3 mt-12">
               {highlightInfos.map((_, idx) => (
                 <button
@@ -143,7 +127,7 @@ const Services = () => {
           </p>
         </div>
 
-        {/* GRID DE SERVIÇOS */}
+        {/* GRID DE SERVIÇOS (CARDS REESTILIZADOS) */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {serviceItems.map((service, index) => {
             const IconComponent = service.icon;
@@ -167,6 +151,7 @@ const Services = () => {
         </div>
       </div>
 
+      {/* Adicione este CSS global ou no seu arquivo de estilos para a animação fadeIn */}
       <style jsx>{`
         @keyframes fadeIn {
           from { opacity: 0; transform: translateY(10px); }
