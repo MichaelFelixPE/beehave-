@@ -46,7 +46,7 @@ const serviceItems = [
   },
   {
     title: 'Supervisão técnica em ABA para Profissionais da Saúde e Educação',
-    description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
+    description: 'Eleve o nível da sua prática profissional com suporte especializado em ABA. Tenha o direcionamento técnico e ético necessário para alcançar resultados bem-sucedidos com suas(seus) Clientes ou Aprendentes. Uma supervisão 100% online e individualizada para as suas demandas diárias. Apresente seus casos clínicos, discuta estratégias de resolução fundamentadas e receba indicações de literatura científica de forma prática e segura em ABA.',
     icon: GraduationCap,
   },
   {
