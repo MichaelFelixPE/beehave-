@@ -34,14 +34,19 @@ const Navbar: React.FC = () => {
   const handleNavClick = (path: string) => {
     if (path === '#') return;
 
-    if (path === '/') {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    } else if (path.startsWith('/#')) {
+    if (path.startsWith('/#')) {
       const sectionId = path.substring(2);
       const element = document.getElementById(sectionId);
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
+    }
+    setIsOpen(false);
+  };
+
+  const handleHomeClick = () => {
+    if (location.pathname === '/') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
     setIsOpen(false);
   };
@@ -55,16 +60,27 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex-shrink-0 flex items-center">
-            <a href="#" className="flex items-center" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+            <Link to="/" className="flex items-center" onClick={handleHomeClick}>
               <img src="https://i.imgur.com/vAT2VjM.png" alt="Beehave Logo" className="w-60 h-50" />
-            </a>
+            </Link>
           </div>
           
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-3">
             {navLinks.map((link) => {
-              // Removida a lógica de isDisabled daqui
-              return link.path.startsWith('/#') || link.path === '/' ? (
+              if (link.path === '/') {
+                return (
+                  <Link
+                    key={link.name}
+                    to={link.path}
+                    onClick={handleHomeClick}
+                    className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-sm font-medium font-bunday"
+                  >
+                    {link.name}
+                  </Link>
+                );
+              }
+              return link.path.startsWith('/#') ? (
                 <a
                   key={link.name}
                   href={link.path}
@@ -106,8 +122,19 @@ const Navbar: React.FC = () => {
         <div className="md:hidden bg-white px-2 pt-2 pb-4 shadow-lg">
           <div className="flex flex-col space-y-2">
             {navLinks.map((link) => {
-              // Removida a lógica de isDisabled daqui também
-              return link.path.startsWith('/#') || link.path === '/' ? (
+              if (link.path === '/') {
+                return (
+                  <Link
+                    key={link.name}
+                    to={link.path}
+                    onClick={handleHomeClick}
+                    className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-base font-medium font-bunday"
+                  >
+                    {link.name}
+                  </Link>
+                );
+              }
+              return link.path.startsWith('/#') ? (
                 <a
                   key={link.name}
                   href={link.path}
