@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
             </h2>
           </div>
           <a
-            href="https://wa.me/5587988287826"
+            href="https://wa.me/558791547238"
             target="_blank"
             rel="noopener noreferrer"
             style={{
