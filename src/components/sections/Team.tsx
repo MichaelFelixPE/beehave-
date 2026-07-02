@@ -279,7 +279,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Me chamo Carlane Machado, sou psicóloga, Coordenadora ABA e Coordenadora Técnica. Sou pós-graduada em Análise do Comportamento Aplicada (ABA) e pós-graduanda em Neuropsicologia com ênfase em avaliações. Possuo capacitação na aplicação de protocolos de avaliação do desenvolvimento e do comportamento, utilizados na construção e acompanhamento do Plano Terapêutico Individualizado.Atuo na avaliação e intervenção de crianças com atrasos no desenvolvimento e transtornos do neurodesenvolvimento, 7 anos de experiência na área. Trabalhando com crianças e adolescentes, típicos e atípicos, sempre com foco em práticas baseadas em evidências, tomada de decisão clínica e atuação interdisciplinar.',
           },
           {
-            name: 'Aline Rodrigues',
+            name: 'Esp. Aline Rodrigues',
             image: 'https://i.imgur.com/vrqMI2m.jpeg',
             level: 'E',
             crm: 'CRP-02/23629',
@@ -291,7 +291,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Sou Aline Rodrigues, Psicóloga formada pela Faculdade Uninassau João Pessoa, com atuação voltada para o público infantil. Tenho especialização em Intervenção ABA aplicada ao Transtorno do Espectro Autista (TEA)  e Aplicação ABA . Tenho experiência como aplicadora ABA (contexto escolar e casa) e em psicoterapia. Minha escolha pela área infantil se baseou nas minhas experiências, olhar e paixão pela infância e como ela acontece. E ao longo da graduação fui caminhando para me aprimorar no desenvolvimento De crianças atípicas.Minha atuação é baseada na Análise do Comportamento, uma ciência que busca compreender as interações entre o indivíduo e o ambiente, promovendo mudanças significativas por meio de intervenções individualizadas e sempre pautadas na ética e no respeito.Nos atendimentos infantis, especialmente com crianças em desenvolvimento atípico, o lúdico é utilizado como ferramenta central para a formação do vínculo terapêutico e para a implementação de estratégias personalizadas, respeitando o ritmo individual de cada criança.',
           },
           {
-            name: 'Gutemberg dos Santos',
+            name: 'Esp. Gutemberg dos Santos',
             image: 'https://i.imgur.com/luGPgKa.jpeg',
             level: 'E',
             crm: 'CRP-02/20367',
@@ -302,7 +302,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Sou Gutemberg Santos, Psicólogo formado pela Universidade Federal do Vale do São Francisco, com atuação voltada para o público infanto juvenil. Sou pós-graduando em ABA (Análise do Comportamento Aplicada) pela Facuminas. Trabalho desde de 2022 com crianças e adolescentes típicos e atípicos; dentro deste contexto, priorizo as intervenções que utilizam o lúdico enquanto recurso terapêutico, tornando as sessões de terapia mais aprazíveis para que os objetivos terapêuticos sejam alcançados de maneira menos aversiva e que possam sobretudo trazer bem estar à criança ou adolescente. Meu trabalho também envolve instigar a família a participar mais ativamente do processo de alcance dos objetivos terapêuticos a partir de orientações parentais. Vale ressaltar que o acolhimento às famílias e o respeito ao perfil de cada criança são de extrema importância nesse processo, visto que cada um é um sujeito dotado de características diferentes e isso deve ser base para a intervenção de maneira individualizada.',
           },
           {
-            name: 'Núbia Costa',
+            name: 'Esp. Núbia Costa',
             image: 'https://i.imgur.com/nD3QWnm.jpeg',
             level: 'E',
             crm: 'CRP-03/18294',
@@ -314,7 +314,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Sou Núbia de Sousa, tenho Bacharelado em Psicologia pela Univasf, em 2015; Pós-graduação em Intervenção ABA para Autismo e Deficiência  Intelectual  pelo  CBI of Miami; e sou Pós-graduanda em Psicopedagogia pela  UPE.Tive experiência como Aplicadora entre 2019 e 2021; e Analista do Comportamento Coordenadora entre 2022 e 2024.Atualmente, sou Psicóloga pela Beehave.',
           },
           {
-            name: 'Renata Dantas',
+            name: 'Esp. Renata Dantas',
             image: 'https://i.imgur.com/TGufhH3.jpeg',
             level: 'E',
             crm: 'CRP-02/30345',
@@ -326,7 +326,7 @@ const teamHierarchy: TeamMember[] = [
             bio: 'Sou Renata Dantas, Psicóloga formada pela Faculdade Uninassau, com atuação voltada para o público infantil. Tenho especialização em Intervenção ABA aplicada ao Transtorno do Espectro Autista (TEA) e formação em Terapias Contextuais. Minha escolha pela área infantil, especialmente no acompanhamento de crianças com TEA, foi motivada por uma experiência pessoal que me permitiu vivenciar, de perto, os impactos positivos da intervenção precoce no desenvolvimento infantil. Minha atuação é fundamentada na Análise do Comportamento, uma abordagem científica que busca compreender e promover mudanças significativas no comportamento por meio de intervenções individualizadas, planejadas de forma ética e cuidadosa, sempre com o objetivo de melhorar a qualidade de vida do indivíduo. No trabalho com crianças, especialmente aquelas com desenvolvimento atípico, o lúdico é utilizado como ferramenta central para a construção do vínculo, além da aplicação de estratégias que respeitam o tempo, as necessidades e o contexto de cada uma, favorecendo a aquisição de habilidades sociais, cognitivas, comunicativas e emocionais. Acredito em uma prática que une conhecimento técnico e acolhimento, criando um espaço seguro para que cada criança possa se desenvolver com confiança, autonomia e respeitando sua singularidade.',
           },
           {
-            name: 'Adson Raul',
+            name: 'Esp. Adson Raul',
             image: 'https://i.imgur.com/Cc4mOuy.jpeg',
             level: 'E',
             crm: '',
