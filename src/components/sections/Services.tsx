@@ -45,7 +45,7 @@ const serviceItems = [
     icon: Home,
   },
   {
-    title: 'Supervisão técnica para profissionais que trabalham com ABA',
+    title: 'Supervisão técnica em ABA para Profissionais da Saúde e Educação',
     description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
     icon: GraduationCap,
   },
