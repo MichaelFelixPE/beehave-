@@ -60,8 +60,8 @@ const serviceItems = [
     icon: Brain,
   },
   {
-    title: 'Consultoria/Assessoria em ABA para Clínica; Escola; Serviço público de Educação e Saúde',
-    description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
+    title: 'Consultoria e Assessoria em ABA para Instituições de Saúde e Educação',
+    description: 'Estruture e qualifique sua instituição com soluções individualizadas baseadas em ABA. Oferecemos Consultorias e Assessorias sob medida para clínicas, escolas, e serviços públicos de saúde e educação. Desenvolvemos projetos pautados na ciência e na ética, alinhados às diretrizes de órgãos oficiais da Análise do Comportamento, como a Associação Nacional de Profissionais Analistas do Comportamento (Anpac), Associação Brasileira de Ciências do Comportamento (ABPMC) e o Conselho de Provedores de Serviços de Autismo (Casp, sigla do inglês). Desde Treinamentos e Supervisões integradas até a Estruturação Organizacional completa de serviços em ABA, de forma pontual (Consultoria) ou contínua (Assessoria), conforme a necessidade da sua Instituição.',
     icon: Building2,
   },
 ];
