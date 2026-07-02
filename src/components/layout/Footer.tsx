@@ -85,7 +85,7 @@ const Footer: React.FC = () => {
             <img src="https://i.imgur.com/LqSTFWW.png" alt="Beehave Logo" style={{ height: '52px', width: 'auto' }} />
           </a>
           <p style={{ color: '#888', fontSize: '14px', lineHeight: 1.7, maxWidth: '240px', margin: '0 0 28px' }}>
-            Cuidando da sua saúde mental com acolhimento, ética e ciência.
+            Serviços em ABA baseados em Afeto, Ciência e Ética!
           </p>
           {/* Social */}
           <div style={{ display: 'flex', gap: '12px' }}>
