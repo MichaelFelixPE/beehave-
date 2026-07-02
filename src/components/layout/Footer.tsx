@@ -189,7 +189,7 @@ const Footer: React.FC = () => {
               {
                 icon: <Phone size={16} />,
                 content: (
-                  <a href="tel:+5587988287826" style={{ color: '#888', textDecoration: 'none' }}>87 98828-7826</a>
+                  <a href="tel:+5587988287826" style={{ color: '#888', textDecoration: 'none' }}>+55 87 9 9154-7238</a>
                 ),
               },
               {
