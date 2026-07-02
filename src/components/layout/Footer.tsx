@@ -96,7 +96,7 @@ const Footer: React.FC = () => {
                 label: 'Instagram',
               },
               {
-                href: 'https://wa.me/5587988287826',
+                href: 'https://wa.me/558791547238',
                 icon: <MessageCircle size={18} />,
                 label: 'WhatsApp',
               },
