@@ -4,7 +4,7 @@ import Button from '../ui/Button';
 const Hero: React.FC = () => {
   // FUNÇÃO DO WHATSAPP COM SEU LINK
   const handleWhatsappClick = () => {
-    const whatsappUrl = "https://wa.me/message/HOVDY5ONMWA4A1?src=qr";
+    const whatsappUrl = "https://wa.me/558791547238";
     window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
   };
 
