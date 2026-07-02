@@ -24,7 +24,6 @@ const Contact: React.FC = () => {
         <div className="text-center mb-14">
 
           <span className="inline-block px-5 py-2 rounded-full bg-yellow-100 text-yellow-700 font-medium text-sm mb-5">
-            🐝 Nossa Localização
           </span>
 
           <h2 className="text-4xl md:text-5xl font-bold text-zinc-900">
