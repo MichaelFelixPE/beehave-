@@ -31,10 +31,9 @@ const Navbar: React.FC = () => {
     { name: 'Contato', path: '/#contact' },
   ];
 
-  const handleNavClick = (path: string) => {
-    if (path === '#') return;
-
-    if (path.startsWith('/#')) {
+  const handleSectionClick = (e: React.MouseEvent, path: string) => {
+    if (location.pathname === '/') {
+      e.preventDefault();
       const sectionId = path.substring(2);
       const element = document.getElementById(sectionId);
       if (element) {
@@ -81,17 +80,14 @@ const Navbar: React.FC = () => {
                 );
               }
               return link.path.startsWith('/#') ? (
-                <a
+                <Link
                   key={link.name}
-                  href={link.path}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleNavClick(link.path);
-                  }}
+                  to={link.path}
+                  onClick={(e) => handleSectionClick(e, link.path)}
                   className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-sm font-medium font-bunday"
                 >
                   {link.name}
-                </a>
+                </Link>
               ) : (
                 <Link
                   key={link.name}
@@ -135,17 +131,14 @@ const Navbar: React.FC = () => {
                 );
               }
               return link.path.startsWith('/#') ? (
-                <a
+                <Link
                   key={link.name}
-                  href={link.path}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleNavClick(link.path);
-                  }}
+                  to={link.path}
+                  onClick={(e) => handleSectionClick(e, link.path)}
                   className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-base font-medium font-bunday"
                 >
                   {link.name}
-                </a>
+                </Link>
               ) : (
                 <Link
                   key={link.name}
