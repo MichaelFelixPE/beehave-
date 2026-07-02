@@ -56,7 +56,7 @@ const serviceItems = [
   },
   {
     title: 'Supervisão clínica para Psicóloga(o)',
-    description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
+    description: 'Fortaleça sua atuação na Psicoterapia com um espaço seguro de orientação e crescimento profissional. Desenvolva seu raciocínio clínico e ganhe mais segurança no manejo de casos complexos. Uma supervisão focada na prática analítico-comportamental, desenhada para Psicólogas e Psicólogos. Discuta a relação terapêutica, aprimore suas avaliações funcionais e receba direcionamento técnico e ético para potencializar os resultados de suas(seus) Clientes ou Aprendentes.',
     icon: Brain,
   },
   {
