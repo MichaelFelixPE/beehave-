@@ -51,7 +51,7 @@ const serviceItems = [
   },
   {
     title: 'Supervisão técnica para a Certificação Internacional de Análise do Comportamento (IBAO)',
-    description: 'Suporte para pais compreenderem comportamentos e aplicarem estratégias que fortaleçam vínculos e melhorem a comunicação.',
+    description: 'Conquiste o seu reconhecimento internacional na ABA. Receba a Supervisão Técnica oficial exigida para obter a sua Certificação Internacional pelo IBAO. Atenda a todos os critérios e padrões internacionais de competência e ética de forma estruturada. Uma Supervisão especializada para direcionar suas horas práticas, expandir sua atuação no mercado e consolidar sua carreira a nível mundial.',
     icon: Award,
   },
   {
