@@ -67,7 +67,7 @@ const courses = [
     price: 'Consulte valores',
     rating: 4.8,
     students: 85,
-    enrollLink: 'https://',
+        enrollLink: 'https://hotmart.com/pt-br/marketplace/produtos/workshop-colmeia-inovacao-terapeutica-com-inteligencia-artificial-e-analise-do-comportamento/X106048986Y?sck=HOTMART_PRODUCT_PAGE',
     features: [
       'Identificação de sinais de crise',
       'Técnicas de desescalada',
