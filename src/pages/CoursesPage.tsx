@@ -114,7 +114,7 @@ const courses = [
     price: 'Consulte valores',
     rating: 4.9,
     students: 120,
-    enrollLink: 'https://link-recertificacao-pcm.com',
+    enrollLink: 'https://hotmart.com/pt-br/marketplace/produtos/curso-de-avaliacao-funcional-beehave/T106293965T',
     features: [
       'Revisão de técnicas atualizadas',
       'Novas diretrizes de segurança',
