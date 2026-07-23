@@ -280,18 +280,28 @@ const CoursesPage: React.FC = () => {
         </div>
       )}
 
-{/* ── HERO SLIDER ── */}
+      {/* ── HERO SLIDER ── */}
       <section className="relative h-[350px] md:h-[550px] overflow-hidden bg-gray-900">
         {heroImages.map((img, index) => (
           <div
             key={index}
-            className={`absolute inset-0 bg-contain bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out ${
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
               index === currentImage ? 'opacity-100' : 'opacity-0'
             }`}
-            style={{ backgroundImage: `url('${img}')` }}
-          />
+          >
+            {/* Fundo desfocado, preenche todo o espaço sem deixar vazio nas laterais */}
+            <div
+              className="absolute inset-0 bg-cover bg-center scale-110 blur-2xl opacity-60"
+              style={{ backgroundImage: `url('${img}')` }}
+            />
+            {/* Imagem nítida por cima, sem cortes, centralizada */}
+            <div
+              className="absolute inset-0 bg-contain bg-center bg-no-repeat"
+              style={{ backgroundImage: `url('${img}')` }}
+            />
+          </div>
         ))}
-        <div className="absolute inset-0 bg-black bg-opacity-5"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-10"></div>
       </section>
 
       {/* ── CURSOS ── */}
