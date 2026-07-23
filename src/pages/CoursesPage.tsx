@@ -280,12 +280,12 @@ const CoursesPage: React.FC = () => {
         </div>
       )}
 
-      {/* ── HERO SLIDER ── */}
-      <section className="relative h-[350px] md:h-[550px] overflow-hidden">
+{/* ── HERO SLIDER ── */}
+      <section className="relative h-[350px] md:h-[550px] overflow-hidden bg-gray-900">
         {heroImages.map((img, index) => (
           <div
             key={index}
-            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
+            className={`absolute inset-0 bg-contain bg-center bg-no-repeat transition-opacity duration-1000 ease-in-out ${
               index === currentImage ? 'opacity-100' : 'opacity-0'
             }`}
             style={{ backgroundImage: `url('${img}')` }}
