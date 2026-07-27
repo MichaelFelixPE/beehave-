@@ -3,11 +3,9 @@ import { BookOpen, Clock, Users, Award, CheckCircle, Calendar, Star, MapPin, X, 
 import Button from '../components/ui/Button';
 
 const heroImages = [
-  'https://i.imgur.com/2bgyz3q.jpg',
-  'https://i.imgur.com/na6VSwk.jpeg',
-  'https://i.imgur.com/ZvtxFKV.jpeg',
-  'https://i.imgur.com/LrOIX8y.jpeg',
-  'https://imgur.com/xjGT9JD',
+  'https://i.etsystatic.com/38939223/r/il/cfd0a5/5827636191/il_fullxfull.5827636191_gbfr.jpg',
+  'https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+  'https://images.pexels.com/photos/7551667/pexels-photo-7551667.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
 ];
 
 const courses = [
@@ -281,27 +279,17 @@ const CoursesPage: React.FC = () => {
       )}
 
       {/* ── HERO SLIDER ── */}
-      <section className="relative h-[350px] md:h-[550px] overflow-hidden bg-gray-900">
+      <section className="relative h-[350px] md:h-[550px] overflow-hidden">
         {heroImages.map((img, index) => (
           <div
             key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+            className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out ${
               index === currentImage ? 'opacity-100' : 'opacity-0'
             }`}
-          >
-            {/* Fundo desfocado, preenche todo o espaço sem deixar vazio nas laterais */}
-            <div
-              className="absolute inset-0 bg-cover bg-center scale-110 blur-2xl opacity-60"
-              style={{ backgroundImage: `url('${img}')` }}
-            />
-            {/* Imagem nítida por cima, sem cortes, centralizada */}
-            <div
-              className="absolute inset-0 bg-contain bg-center bg-no-repeat"
-              style={{ backgroundImage: `url('${img}')` }}
-            />
-          </div>
+            style={{ backgroundImage: `url('${img}')` }}
+          />
         ))}
-        <div className="absolute inset-0 bg-black bg-opacity-10"></div>
+        <div className="absolute inset-0 bg-black bg-opacity-5"></div>
       </section>
 
       {/* ── CURSOS ── */}
