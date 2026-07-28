@@ -1,0 +1,31 @@
+{
+  "name": "beeHave Psicologia",
+  "short_name": "beeHave",
+  "description": "A beeHave Psicologia oferece serviços psicológicos especializados para crianças autistas em um ambiente seguro e acolhedor.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "https://i.imgur.com/YvBzI9u.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.imgur.com/jbYu8EG.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.imgur.com/0Gdgrjv.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://i.imgur.com/0Gdgrjv.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
