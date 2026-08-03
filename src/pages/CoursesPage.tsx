@@ -448,15 +448,6 @@ const CoursesPage: React.FC = () => {
         </div>
       </section>
 
-      {/* ── CTA FINAL ── */}
-      <section className="py-20 bg-gradient-to-r from-yellow-100 to-yellow-300">
-        <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold text-black mb-6">Pronto para transformar sua carreira?</h2>
-          <Button size="large" className="bg-yellow-400 hover:bg-yellow-500 text-black border-none shadow-lg">
-            Falar com um Consultor
-          </Button>
-        </div>
-      </section>
     </div>
   );
 };
