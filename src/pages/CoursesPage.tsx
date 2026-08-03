@@ -3,11 +3,11 @@ import { BookOpen, Clock, Users, Award, CheckCircle, Calendar, Star, MapPin, X, 
 import Button from '../components/ui/Button';
 
 const heroImages = [
-  'https://i.imgur.com/2bgyz3q.jpg',
-  'https://i.imgur.com/na6VSwk.jpeg',
-  'https://i.imgur.com/ZvtxFKV.jpeg',
-  'https://i.imgur.com/LrOIX8y.jpeg',
-  'https://imgur.com/xjGT9JD',
+  'https://i.imgur.com/tNVbybM.jpg',
+  'https://i.imgur.com/rMR26mV.jpeg',
+  'https://i.imgur.com/1rP9rFp.jpeg',
+  'https://i.imgur.com/mWtOlKq.jpeg',
+  'https://i.imgur.com/NBa81NN.jpeg',
 ];
 
 const courses = [
