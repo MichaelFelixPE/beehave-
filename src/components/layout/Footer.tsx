@@ -82,7 +82,7 @@ const Footer: React.FC = () => {
         {/* Brand Column */}
         <div style={{ gridColumn: 'span 1' }}>
           <a href="#" onClick={scrollToTop} style={{ display: 'inline-block', marginBottom: '20px' }}>
-            <img src="https://i.imgur.com/vAT2VjM.png" alt="Beehave Logo" style={{ height: '52px', width: 'auto' }} />
+            <img src="/android-chrome-512x512 copy.png" alt="Beehave Logo" style={{ height: '100px', width: 'auto' }} />
           </a>
           <p style={{ color: '#888', fontSize: '14px', lineHeight: 1.7, maxWidth: '240px', margin: '0 0 28px' }}>
             Serviços em ABA baseados em Afeto, Ciência e Ética!
