@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BookOpen, Clock, Users, CheckCircle2, Calendar, Star, MapPin, X, ChevronRight } from 'lucide-react';
+import { BookOpen, Clock, Users, Award, CheckCircle, Calendar, Star, MapPin, X, ChevronRight } from 'lucide-react';
 import Button from '../components/ui/Button';
 
 const heroImages = [
@@ -22,7 +22,7 @@ const courses = [
     price: 'Consulte valores',
     rating: 4.9,
     students: 150,
-    enrollLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfMLn2NbyM7ETo4DERkaz60Ob850K90gd59sBhBmBEyrH3pxg/viewform',
+    enrollLink: 'https://docs.google.com/forms/d/e/1FAIpQLSfMLn2NbyM7ETo4DERkaz60Ob850K90gd59sBhBmBEyrH3pxg/viewform', 
     features: [
       'Material em ABA atualizado',
       'Teoria e Prática com domínio sequencial e gradual do conteúdo',
@@ -56,6 +56,7 @@ const courses = [
       },
     ],
     image: 'https://i.imgur.com/PcsGugO.jpg',
+    color: 'from-yellow-400 to-yellow-500',
   },
   {
     id: 2,
@@ -68,7 +69,7 @@ const courses = [
     price: 'Consulte valores',
     rating: 4.8,
     students: 85,
-    enrollLink: 'https://hotmart.com/pt-br/marketplace/produtos/workshop-colmeia-inovacao-terapeutica-com-inteligencia-artificial-e-analise-do-comportamento/X106048986Y?sck=HOTMART_PRODUCT_PAGE',
+        enrollLink: 'https://hotmart.com/pt-br/marketplace/produtos/workshop-colmeia-inovacao-terapeutica-com-inteligencia-artificial-e-analise-do-comportamento/X106048986Y?sck=HOTMART_PRODUCT_PAGE',
     features: [
       'Identificação de sinais de crise',
       'Técnicas de desescalada',
@@ -102,6 +103,7 @@ const courses = [
       },
     ],
     image: 'https://i.imgur.com/EeKVsoT.jpeg',
+    color: 'from-stone-100 to-amber-100',
   },
   {
     id: 3,
@@ -168,6 +170,7 @@ const courses = [
       },
     ],
     image: 'https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    color: 'from-yellow-400 to-yellow-500',
   },
 ];
 
@@ -179,13 +182,9 @@ interface CycleModal {
   tags: string[];
 }
 
-// shared hexagon clip-path used across icons / badges — the recurring motif of the redesign
-const HEX = '[clip-path:polygon(25%_5%,75%_5%,100%_50%,75%_95%,25%_95%,0%_50%)]';
-
 const CoursesPage: React.FC = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [selectedCycle, setSelectedCycle] = useState<CycleModal | null>(null);
-  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -194,12 +193,7 @@ const CoursesPage: React.FC = () => {
     return () => clearInterval(timer);
   }, []);
 
-  useEffect(() => {
-    // triggers the staggered entrance animation on the course cards after first paint
-    const t = setTimeout(() => setMounted(true), 80);
-    return () => clearTimeout(t);
-  }, []);
-
+  // Bloqueia o scroll do body quando o modal estiver aberto
   useEffect(() => {
     if (selectedCycle) {
       document.body.style.overflow = 'hidden';
@@ -212,57 +206,46 @@ const CoursesPage: React.FC = () => {
   }, [selectedCycle]);
 
   return (
-    <div className="pt-20 bg-[#FFFBF2]">
-      {/* one-off design tokens + keyframes for this page — move to tailwind.config.js / index.css when you have access to them */}
-      <style>{`
-        @keyframes bh-rise { from { opacity:0; transform: translateY(18px);} to { opacity:1; transform: translateY(0);} }
-        @keyframes bh-drift { from { background-position: 0 0; } to { background-position: 70px 70px; } }
-        .bh-hexbg {
-          background-image:
-            repeating-linear-gradient(60deg, transparent 0 34px, rgba(255,255,255,.16) 34px 36px),
-            repeating-linear-gradient(-60deg, transparent 0 34px, rgba(255,255,255,.10) 34px 36px);
-          animation: bh-drift 40s linear infinite;
-        }
-      `}</style>
+    <div className="pt-20 bg-white">
 
       {/* ── MODAL DE CICLO ── */}
       {selectedCycle && (
         <div
-          className="fixed inset-0 bg-[#241B0D]/60 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
           onClick={() => setSelectedCycle(null)}
         >
           <div
-            className="bg-white rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden"
-            style={{ animation: 'bh-rise .3s ease forwards' }}
+            className="bg-white rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden animate-fade-in"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative p-6 bg-gradient-to-br from-[#FFC933] via-[#F5A623] to-[#D98A0F] overflow-hidden">
-              <div className="absolute inset-0 bh-hexbg opacity-40" />
+            {/* Header amarelo */}
+            <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 p-6 relative">
               <button
                 onClick={() => setSelectedCycle(null)}
-                className="absolute top-4 right-4 w-8 h-8 bg-black/10 hover:bg-black/20 rounded-full flex items-center justify-center transition-all z-10"
+                className="absolute top-4 right-4 w-8 h-8 bg-black bg-opacity-10 hover:bg-opacity-20 rounded-full flex items-center justify-center transition-all"
               >
-                <X className="w-4 h-4 text-[#241B0D]" />
+                <X className="w-4 h-4 text-gray-900" />
               </button>
 
-              <div className="relative flex items-center gap-4">
-                <div className={`w-12 h-12 bg-[#241B0D] text-[#FFC933] ${HEX} flex items-center justify-center text-lg font-extrabold shrink-0`}>
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-white bg-opacity-30 text-gray-900 rounded-full flex items-center justify-center text-xl font-bold shrink-0 border-2 border-white border-opacity-50">
                   {selectedCycle.num}
                 </div>
                 <div>
-                  <p className="text-xs text-[#241B0D]/70 uppercase tracking-widest font-bold mb-1">
+                  <p className="text-xs text-gray-800 uppercase tracking-widest font-medium mb-1">
                     Ciclo {selectedCycle.num}
                   </p>
-                  <h3 className="text-lg font-bold text-[#241B0D] leading-snug">
+                  <h3 className="text-lg font-bold text-gray-900 leading-snug">
                     {selectedCycle.title}
                   </h3>
                 </div>
               </div>
             </div>
 
+            {/* Corpo */}
             <div className="p-6">
-              <p className="text-xs text-gray-400 mb-3 flex items-center gap-1.5">
-                <BookOpen className="w-3.5 h-3.5" />
+              <p className="text-xs text-gray-400 mb-3 flex items-center gap-1">
+                <BookOpen className="w-3 h-3" />
                 {selectedCycle.courseTitle}
               </p>
 
@@ -270,12 +253,13 @@ const CoursesPage: React.FC = () => {
                 {selectedCycle.description}
               </p>
 
+              {/* Tags */}
               {selectedCycle.tags.length > 0 && (
                 <div className="flex flex-wrap gap-2 mb-6">
                   {selectedCycle.tags.map((tag, i) => (
                     <span
                       key={i}
-                      className="bg-[#FFF4D6] text-[#8a5c0f] text-xs font-semibold px-3 py-1 rounded-full border border-[#FFE29A]"
+                      className="bg-yellow-100 text-yellow-800 text-xs font-medium px-3 py-1 rounded-full border border-yellow-200"
                     >
                       {tag}
                     </span>
@@ -286,7 +270,7 @@ const CoursesPage: React.FC = () => {
               <div className="flex justify-end gap-3">
                 <button
                   onClick={() => setSelectedCycle(null)}
-                  className="px-5 py-2 border border-gray-200 rounded-lg text-gray-600 hover:bg-gray-50 text-sm font-medium transition-all"
+                  className="px-5 py-2 border border-gray-200 rounded-lg text-gray-600 hover:bg-gray-50 text-sm transition-all"
                 >
                   Fechar
                 </button>
@@ -297,7 +281,7 @@ const CoursesPage: React.FC = () => {
       )}
 
       {/* ── HERO SLIDER ── */}
-      <section className="relative h-[380px] md:h-[560px] overflow-hidden bg-[#241B0D]">
+      <section className="relative h-[350px] md:h-[550px] overflow-hidden bg-gray-900">
         {heroImages.map((img, index) => (
           <div
             key={index}
@@ -305,85 +289,65 @@ const CoursesPage: React.FC = () => {
               index === currentImage ? 'opacity-100' : 'opacity-0'
             }`}
           >
+            {/* Fundo desfocado, preenche todo o espaço sem deixar vazio nas laterais */}
             <div
-              className="absolute inset-0 bg-cover bg-center scale-110 blur-2xl opacity-50"
+              className="absolute inset-0 bg-cover bg-center scale-110 blur-2xl opacity-60"
               style={{ backgroundImage: `url('${img}')` }}
             />
+            {/* Imagem nítida por cima, sem cortes, centralizada */}
             <div
               className="absolute inset-0 bg-contain bg-center bg-no-repeat"
               style={{ backgroundImage: `url('${img}')` }}
             />
           </div>
         ))}
-        {/* legibility gradient + eyebrow so the slider reads as intentional, not just a photo stack */}
-        <div className="absolute inset-0 bg-gradient-to-t from-[#241B0D]/70 via-transparent to-[#241B0D]/20" />
-        <div className="absolute bottom-6 left-0 right-0 flex flex-col items-center gap-4">
-          <div className="flex gap-2">
-            {heroImages.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => setCurrentImage(i)}
-                aria-label={`Ir para imagem ${i + 1}`}
-                className={`h-1.5 rounded-full transition-all duration-300 ${
-                  i === currentImage ? 'w-6 bg-[#FFC933]' : 'w-1.5 bg-white/50 hover:bg-white/80'
-                }`}
-              />
-            ))}
-          </div>
-        </div>
+        <div className="absolute inset-0 bg-black bg-opacity-10"></div>
       </section>
 
       {/* ── CURSOS ── */}
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-extrabold text-[#1B1A17] mb-4 tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
               Nossos Cursos Especializados
             </h2>
-            <div className="w-16 h-1.5 rounded-full mx-auto bg-gradient-to-r from-[#FFC933] to-[#5C8A72]" />
+            <div className="w-24 h-1 bg-yellow-400 mx-auto"></div>
           </div>
 
-          <div className="space-y-14">
-            {courses.map((course, courseIndex) => (
+          <div className="space-y-16">
+            {courses.map((course) => (
               <div
                 key={course.id}
-                className="bg-white rounded-3xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 border border-[#1B1A17]/[0.06]"
-                style={{
-                  opacity: mounted ? 1 : 0,
-                  transform: mounted ? 'translateY(0)' : 'translateY(24px)',
-                  transition: 'opacity .6s ease, transform .6s ease',
-                  transitionDelay: `${courseIndex * 100}ms`,
-                }}
+                className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100"
               >
                 {/* Header do curso */}
-                <div className="relative bg-gradient-to-br from-[#FFC933] via-[#F5A623] to-[#D98A0F] p-8 overflow-hidden">
-                  <div className="absolute inset-0 bh-hexbg opacity-30" />
-                  <div className="relative flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6">
+                <div className={`bg-gradient-to-r ${course.color} p-8 text-white`}>
+                  <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
                     <div className="flex-1">
-                      <h3 className="text-2xl md:text-3xl font-extrabold mb-2 text-[#241B0D] leading-tight">
+                      <h3 className="text-2xl md:text-3xl font-bold mb-2 text-gray-900">
                         {course.title}
                       </h3>
-                      <p className="text-lg text-[#241B0D]/80 mb-4 font-medium">{course.subtitle}</p>
-                      <div className="flex flex-wrap gap-3 text-sm">
-                        <div className="flex items-center bg-[#241B0D] text-[#FFC933] px-3 py-1.5 rounded-full font-bold">
-                          <Star className="w-4 h-4 mr-1.5 fill-[#FFC933]" />
+                      <p className="text-lg text-gray-900 mb-4">{course.subtitle}</p>
+                      <div className="flex flex-wrap gap-4 text-sm">
+                        <div className="flex items-center bg-white bg-opacity-30 px-3 py-1 rounded-full text-gray-900 font-medium">
+                          <Star className="w-4 h-4 mr-1 fill-gray-900" />
                           <span>{course.rating}</span>
                         </div>
-                        <div className="flex items-center bg-white/60 px-3 py-1.5 rounded-full text-[#241B0D] font-bold">
-                          <Users className="w-4 h-4 mr-1.5" />
+                        <div className="flex items-center bg-white bg-opacity-30 px-3 py-1 rounded-full text-gray-900 font-medium">
+                          <Users className="w-4 h-4 mr-1" />
                           <span>{course.students}+ alunos</span>
                         </div>
-                        <div className="flex items-center bg-white/60 px-3 py-1.5 rounded-full text-[#241B0D] font-bold">
-                          <MapPin className="w-4 h-4 mr-1.5" />
+                        <div className="flex items-center bg-white bg-opacity-30 px-3 py-1 rounded-full text-gray-900 font-medium">
+                          <MapPin className="w-4 h-4 mr-1" />
                           <span>{course.format}</span>
                         </div>
                       </div>
                     </div>
-                    <div className="shrink-0">
+                    <div className="mt-6 lg:mt-0 lg:ml-8">
                       <img
                         src={course.image}
                         alt={course.title}
-                        className="w-full lg:w-52 h-36 object-cover rounded-2xl shadow-lg border-4 border-white/40 rotate-1 hover:rotate-0 transition-transform duration-300"
+                        className="w-full lg:w-48 h-32 object-cover rounded-lg shadow-lg border-2 border-white/50"
                       />
                     </div>
                   </div>
@@ -391,47 +355,35 @@ const CoursesPage: React.FC = () => {
 
                 {/* Corpo do curso */}
                 <div className="p-8">
-                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
-                    <div className="lg:col-span-2 space-y-8">
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div className="lg:col-span-2 space-y-6">
                       <div>
-                        <h4 className="text-xl font-bold text-[#1B1A17] mb-3 flex items-center gap-2.5">
-                          <span className="w-2 h-6 rounded bg-gradient-to-b from-[#FFC933] to-[#5C8A72]" />
-                          Sobre o Curso
-                        </h4>
-                        <p className="text-[#3A362C] text-[15.5px] leading-relaxed max-w-2xl">{course.description}</p>
+                        <h4 className="text-xl font-semibold text-black mb-3 border-b-2 border-yellow-400 w-fit">Sobre o Curso</h4>
+                        <p className="text-black text-lg leading-relaxed">{course.description}</p>
                       </div>
 
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
-                        <div className="bg-[#FFF6E3] p-5 rounded-2xl text-center border border-[#1B1A17]/[0.05] hover:-translate-y-1 hover:shadow-md transition-all duration-200">
-                          <div className={`w-11 h-11 bg-[#FFF4D6] ${HEX} flex items-center justify-center mx-auto mb-2.5`}>
-                            <Clock className="w-5 h-5 text-[#D98A0F]" />
-                          </div>
-                          <p className="font-bold text-[#1B1A17] text-sm">{course.duration}</p>
-                          <p className="text-xs text-[#3A362C]/60">Duração</p>
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div className="bg-gray-50 p-4 rounded-lg text-center border border-gray-100">
+                          <Clock className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
+                          <p className="font-semibold text-black">{course.duration}</p>
+                          <p className="text-sm text-gray-600">Duração</p>
                         </div>
-                        <div className="bg-[#FFF6E3] p-5 rounded-2xl text-center border border-[#1B1A17]/[0.05] hover:-translate-y-1 hover:shadow-md transition-all duration-200">
-                          <div className={`w-11 h-11 bg-[#FFF4D6] ${HEX} flex items-center justify-center mx-auto mb-2.5`}>
-                            <BookOpen className="w-5 h-5 text-[#D98A0F]" />
-                          </div>
-                          <p className="font-bold text-[#1B1A17] text-sm">{course.format}</p>
-                          <p className="text-xs text-[#3A362C]/60">Formato</p>
+                        <div className="bg-gray-50 p-4 rounded-lg text-center border border-gray-100">
+                          <BookOpen className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
+                          <p className="font-semibold text-black">{course.format}</p>
+                          <p className="text-sm text-gray-600">Formato</p>
                         </div>
-                        <div className="bg-[#FFF6E3] p-5 rounded-2xl text-center border border-[#1B1A17]/[0.05] hover:-translate-y-1 hover:shadow-md transition-all duration-200">
-                          <div className={`w-11 h-11 bg-[#FFF4D6] ${HEX} flex items-center justify-center mx-auto mb-2.5`}>
-                            <Users className="w-5 h-5 text-[#D98A0F]" />
-                          </div>
-                          <p className="font-bold text-[#1B1A17] text-sm">{course.level}</p>
-                          <p className="text-xs text-[#3A362C]/60">Nível</p>
+                        <div className="bg-gray-50 p-4 rounded-lg text-center border border-gray-100">
+                          <Users className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
+                          <p className="font-semibold text-black">{course.level}</p>
+                          <p className="text-sm text-gray-600">Nível</p>
                         </div>
                       </div>
 
                       {/* Ciclos — clicáveis */}
                       <div>
-                        <h4 className="text-xl font-bold text-[#1B1A17] mb-1.5 flex items-center gap-2.5">
-                          <span className="w-2 h-6 rounded bg-gradient-to-b from-[#FFC933] to-[#5C8A72]" />
-                          Ciclos de conteúdo do Curso
-                        </h4>
-                        <p className="text-sm text-[#456B57] font-semibold mb-4 ml-[18px]">Clique em um ciclo para saber mais</p>
+                        <h4 className="text-xl font-semibold text-black mb-4">Ciclos de conteúdo do Curso</h4>
+                        <p className="text-sm text-gray-500 mb-3">Clique em um ciclo para saber mais</p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                           {course.modules.map((module, moduleIndex) => (
                             <button
@@ -445,15 +397,13 @@ const CoursesPage: React.FC = () => {
                                   tags: module.tags,
                                 })
                               }
-                              className="relative flex items-center bg-white border border-[#1B1A17]/[0.08] p-4 pl-[60px] rounded-2xl text-left hover:border-[#F5A623] hover:shadow-[0_14px_30px_-20px_rgba(217,138,15,0.5)] hover:-translate-y-0.5 transition-all duration-200 group w-full"
+                              className="flex items-center bg-white border border-yellow-200 p-3 rounded-lg text-left hover:bg-yellow-50 hover:border-yellow-400 hover:shadow-md transition-all duration-200 group w-full"
                             >
-                              <div className={`absolute left-3.5 top-1/2 -translate-y-1/2 w-8 h-8 bg-gradient-to-br from-[#FFC933] to-[#D98A0F] ${HEX} flex items-center justify-center text-xs font-extrabold text-[#241B0D] shrink-0`}>
+                              <div className="w-8 h-8 bg-yellow-400 text-black rounded-full flex items-center justify-center text-sm font-bold mr-3 shrink-0 group-hover:bg-yellow-500 transition-colors">
                                 {moduleIndex + 1}
                               </div>
-                              <span className="text-[#1B1A17] font-semibold text-sm flex-1 leading-snug">
-                                {module.title.replace(/^Ciclo \d+:\s*/, '')}
-                              </span>
-                              <ChevronRight className="w-4 h-4 text-[#D98A0F] opacity-0 group-hover:opacity-100 -translate-x-1 group-hover:translate-x-0 transition-all ml-2 shrink-0" />
+                              <span className="text-black font-medium flex-1">{module.title}</span>
+                              <ChevronRight className="w-4 h-4 text-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity ml-2 shrink-0" />
                             </button>
                           ))}
                         </div>
@@ -461,43 +411,32 @@ const CoursesPage: React.FC = () => {
                     </div>
 
                     {/* Sidebar de inscrição */}
-                    <div className="lg:sticky lg:top-24 h-fit">
-                      <div className="bg-[#FFF6E3] border border-[#1B1A17]/[0.06] p-6 rounded-2xl shadow-sm">
-                        <h4 className="text-lg font-bold text-[#1B1A17] mb-4">Você vai receber:</h4>
-                        <div className="space-y-3 mb-6">
-                          {course.features.map((feature, featureIndex) => (
-                            <div key={featureIndex} className="flex items-start gap-2.5">
-                              <span className="mt-0.5 w-5 h-5 rounded-full bg-[#5C8A72] flex items-center justify-center shrink-0">
-                                <CheckCircle2 className="w-3.5 h-3.5 text-white" strokeWidth={3} />
-                              </span>
-                              <span className="text-[#3A362C] text-sm leading-snug">{feature}</span>
-                            </div>
-                          ))}
-                        </div>
+                    <div className="bg-gray-50 border border-gray-200 p-6 rounded-xl h-fit">
+                      <h4 className="text-xl font-semibold text-black mb-4">Você vai receber:</h4>
+                      <div className="space-y-3 mb-6">
+                        {course.features.map((feature, featureIndex) => (
+                          <div key={featureIndex} className="flex items-start">
+                            <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                            <span className="text-black">{feature}</span>
+                          </div>
+                        ))}
+                      </div>
 
-                        <div className="border-t border-dashed border-[#1B1A17]/15 pt-5">
-                          <div className="text-center mb-4">
-                            <p className="text-xs uppercase tracking-wide font-bold text-[#3A362C]/60">Investimento</p>
-                            <p className="text-xl font-extrabold text-[#1B1A17]">{course.price}</p>
-                          </div>
-                          <div className="space-y-2.5">
-                            <a href={course.enrollLink || '#'} target="_blank" rel="noopener noreferrer" className="block w-full">
-                              <Button
-                                size="large"
-                                className="w-full !bg-gradient-to-r !from-[#FFC933] !to-[#D98A0F] hover:!brightness-105 !text-[#241B0D] !border-none !font-extrabold shadow-[0_12px_24px_-10px_rgba(217,138,15,0.6)] hover:!-translate-y-0.5 transition-transform"
-                              >
-                                <Calendar className="w-5 h-5 mr-2" />
-                                Inscrever-se Agora
-                              </Button>
-                            </a>
-                            <Button
-                              variant="outline"
-                              size="large"
-                              className="w-full !border-[#1B1A17]/20 !text-[#1B1A17] hover:!bg-white"
-                            >
-                              Mais Informações
+                      <div className="border-t border-gray-200 pt-6">
+                        <div className="text-center mb-4">
+                          <p className="text-2xl font-bold text-black">{course.price}</p>
+                          <p className="text-sm text-gray-600">Investimento</p>
+                        </div>
+                        <div className="space-y-3">
+                          <a href={course.enrollLink || '#'} target="_blank" rel="noopener noreferrer" className="block w-full">
+                            <Button size="large" className="w-full bg-yellow-400 hover:bg-yellow-500 text-black border-none">
+                              <Calendar className="w-5 h-5 mr-2" />
+                              Inscrever-se Agora
                             </Button>
-                          </div>
+                          </a>
+                          <Button variant="outline" size="large" className="w-full border-black text-black">
+                            Mais Informações
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -510,16 +449,10 @@ const CoursesPage: React.FC = () => {
       </section>
 
       {/* ── CTA FINAL ── */}
-      <section className="relative py-20 bg-gradient-to-br from-[#FFE29A] via-[#FFC933] to-[#F5A623] overflow-hidden">
-        <div className="absolute inset-0 bh-hexbg opacity-30" />
-        <div className="relative max-w-3xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#241B0D] mb-6 tracking-tight">
-            Pronto para transformar sua carreira?
-          </h2>
-          <Button
-            size="large"
-            className="!bg-[#241B0D] !text-[#FFC933] hover:!bg-[#1B1A17] !border-none shadow-lg !font-bold"
-          >
+      <section className="py-20 bg-gradient-to-r from-yellow-100 to-yellow-300">
+        <div className="max-w-4xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold text-black mb-6">Pronto para transformar sua carreira?</h2>
+          <Button size="large" className="bg-yellow-400 hover:bg-yellow-500 text-black border-none shadow-lg">
             Falar com um Consultor
           </Button>
         </div>
