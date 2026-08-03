@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BookOpen, Clock, Users, Award, CheckCircle2, Calendar, Star, MapPin, X, ChevronRight } from 'lucide-react';
+import { BookOpen, Clock, Users, CheckCircle2, Calendar, Star, MapPin, X, ChevronRight } from 'lucide-react';
 import Button from '../components/ui/Button';
 
 const heroImages = [
@@ -216,7 +216,6 @@ const CoursesPage: React.FC = () => {
       {/* one-off design tokens + keyframes for this page — move to tailwind.config.js / index.css when you have access to them */}
       <style>{`
         @keyframes bh-rise { from { opacity:0; transform: translateY(18px);} to { opacity:1; transform: translateY(0);} }
-        @keyframes bh-float { 0%,100% { transform: translateY(0);} 50% { transform: translateY(-6px);} }
         @keyframes bh-drift { from { background-position: 0 0; } to { background-position: 70px 70px; } }
         .bh-hexbg {
           background-image:
@@ -319,9 +318,6 @@ const CoursesPage: React.FC = () => {
         {/* legibility gradient + eyebrow so the slider reads as intentional, not just a photo stack */}
         <div className="absolute inset-0 bg-gradient-to-t from-[#241B0D]/70 via-transparent to-[#241B0D]/20" />
         <div className="absolute bottom-6 left-0 right-0 flex flex-col items-center gap-4">
-          <span className="inline-flex items-center gap-2 bg-white/90 backdrop-blur px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wide text-[#241B0D]">
-            🐝 Beehave Cursos
-          </span>
           <div className="flex gap-2">
             {heroImages.map((_, i) => (
               <button
@@ -341,9 +337,6 @@ const CoursesPage: React.FC = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#456B57] mb-3">
-              Formação contínua em ABA
-            </p>
             <h2 className="text-3xl md:text-5xl font-extrabold text-[#1B1A17] mb-4 tracking-tight">
               Nossos Cursos Especializados
             </h2>
@@ -520,33 +513,15 @@ const CoursesPage: React.FC = () => {
       <section className="relative py-20 bg-gradient-to-br from-[#FFE29A] via-[#FFC933] to-[#F5A623] overflow-hidden">
         <div className="absolute inset-0 bh-hexbg opacity-30" />
         <div className="relative max-w-3xl mx-auto px-4 text-center">
-          <div
-            className={`w-16 h-16 mx-auto mb-6 bg-[#241B0D] text-[#FFC933] ${HEX} flex items-center justify-center text-2xl`}
-            style={{ animation: 'bh-float 4s ease-in-out infinite' }}
-          >
-            🐝
-          </div>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#241B0D] mb-4 tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-[#241B0D] mb-6 tracking-tight">
             Pronto para transformar sua carreira?
           </h2>
-          <p className="text-[#241B0D]/75 mb-8 text-lg max-w-xl mx-auto">
-            Fale com a gente e descubra qual formação combina com o seu momento profissional.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <Button
-              size="large"
-              className="!bg-[#241B0D] !text-[#FFC933] hover:!bg-[#1B1A17] !border-none shadow-lg !font-bold"
-            >
-              Falar com um Consultor
-            </Button>
-            <Button
-              size="large"
-              variant="outline"
-              className="!border-[#241B0D] !text-[#241B0D] hover:!bg-white/40 !font-bold"
-            >
-              Ver todos os cursos
-            </Button>
-          </div>
+          <Button
+            size="large"
+            className="!bg-[#241B0D] !text-[#FFC933] hover:!bg-[#1B1A17] !border-none shadow-lg !font-bold"
+          >
+            Falar com um Consultor
+          </Button>
         </div>
       </section>
     </div>
