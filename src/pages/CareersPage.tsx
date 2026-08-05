@@ -72,7 +72,7 @@ const CareersPage: React.FC = () => {
           </h1>
           <p className="mt-5 text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
             Quer fazer parte da BeeEquipe? Envie seu currículo e nos conte sobre você.
-            Buscamos profissionais comprometidos com o Afeto, a Ciência e a Ética.
+            Buscamos profissionais comprometidos com o Afeto, Ciência e Ética.
           </p>
         </div>
       </section>
