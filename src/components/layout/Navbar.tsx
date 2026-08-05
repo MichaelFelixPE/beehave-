@@ -29,6 +29,7 @@ const Navbar: React.FC = () => {
     { name: 'Depoimentos', path: '/#testimonials' },
     { name: 'FAQ', path: '/#faq' },
     { name: 'Contato', path: '/#contact' },
+    { name: 'Trabalhe Conosco', path: '/trabalhe-conosco' },
   ];
 
   const handleSectionClick = (e: React.MouseEvent, path: string) => {

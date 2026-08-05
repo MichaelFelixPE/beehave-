@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import CoursesPage from './pages/CoursesPage';
+import CareersPage from './pages/CareersPage';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 
@@ -23,6 +24,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/cursos" element={<CoursesPage />} />
+            <Route path="/trabalhe-conosco" element={<CareersPage />} />
           </Routes>
         </main>
         <Footer />
