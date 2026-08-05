@@ -29,6 +29,7 @@ const Navbar: React.FC = () => {
     { name: 'Depoimentos', path: '/#testimonials' },
     { name: 'FAQ', path: '/#faq' },
     { name: 'Contato', path: '/#contact' },
+    { name: 'Trabalhe Conosco', path: '/trabalhe-conosco' },
   ];
 
   const handleSectionClick = (e: React.MouseEvent, path: string) => {
@@ -60,12 +61,12 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-20">
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center" onClick={handleHomeClick}>
-              <img src="https://i.imgur.com/vAT2VjM.png" alt="Beehave Logo" className="w-60 h-auto" />
+              <img src="https://i.imgur.com/vAT2VjM.png" alt="Beehave Logo" className="w-48 lg:w-60 h-auto" />
             </Link>
           </div>
           
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center space-x-3">
+          <div className="hidden md:flex items-center space-x-1 lg:space-x-2">
             {navLinks.map((link) => {
               if (link.path === '/') {
                 return (
@@ -73,7 +74,7 @@ const Navbar: React.FC = () => {
                     key={link.name}
                     to={link.path}
                     onClick={handleHomeClick}
-                    className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-sm font-medium font-bunday"
+                    className="whitespace-nowrap text-black hover:text-yellow-500 transition-colors px-2 py-2 text-xs lg:text-sm font-medium font-bunday"
                   >
                     {link.name}
                   </Link>
@@ -84,7 +85,7 @@ const Navbar: React.FC = () => {
                   key={link.name}
                   to={link.path}
                   onClick={(e) => handleSectionClick(e, link.path)}
-                  className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-sm font-medium font-bunday"
+                  className="whitespace-nowrap text-black hover:text-yellow-500 transition-colors px-2 py-2 text-xs lg:text-sm font-medium font-bunday"
                 >
                   {link.name}
                 </Link>
@@ -92,7 +93,7 @@ const Navbar: React.FC = () => {
                 <Link
                   key={link.name}
                   to={link.path}
-                  className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-sm font-medium font-bunday"
+                  className="whitespace-nowrap text-black hover:text-yellow-500 transition-colors px-2 py-2 text-xs lg:text-sm font-medium font-bunday"
                 >
                   {link.name}
                 </Link>
@@ -157,4 +158,4 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;
