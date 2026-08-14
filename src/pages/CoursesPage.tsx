@@ -69,7 +69,7 @@ const courses = [
     price: 'Consulte valores',
     rating: 4.8,
     students: 85,
-    enrollLink: 'https://hotmart.com/pt-br/marketplace/produtos/workshop-colmeia-inovacao-terapeutica-com-inteligencia-artificial-e-analise-do-comportamento/X106048986Y?sck=HOTMART_PRODUCT_PAGE',
+        enrollLink: 'https://hotmart.com/pt-br/marketplace/produtos/workshop-colmeia-inovacao-terapeutica-com-inteligencia-artificial-e-analise-do-comportamento/X106048986Y?sck=HOTMART_PRODUCT_PAGE',
     features: [
       'Identificação de sinais de crise',
       'Técnicas de desescalada',
@@ -83,33 +83,33 @@ const courses = [
     modules: [
       {
         title: 'Ciclo 01: O que é Inteligência Artificial?',
-        description: 'Neste Ciclo, você aprenderá a base para qualquer profissional que deseja trabalhar com ABA: TEORIA da Análise do Comportamento.',
+        description: 'Ciclo 01: Quero ser aplicadora(dor) em ABA: Por onde iniciar? Neste Ciclo, você aprenderá a base para qualquer profissional que deseja trabalhar com ABA: TEORIA da Análise do Comportamento. Lembrando! Como o velho Skinner (que apresentamos antes a vocês) dizia: “Confusão na teoria significa, confusão na prática.” (Skinner, 1953/2003, p. 10). Embora Skinner se refira aí, que definições imprecisas podem prejudicar um consenso científico, nós ampliamos para a nossa Prática, pois se eu não entendo a Teoria, terei uma prática confusa e com isso prejudicando o Aprendente que atendo. Portanto... É necessário saber sobre aspectos conceituais de reforçamento, punição, comportamento verbal, definir comportamento, técnicas de registro e, especificamente, a ABA. E a relação dessa com o público de desenvolvimento atípico, incluindo o Autismo. No Ciclo 01, tem tudo isso e muito mais! ',
         tags: ['IA', 'Fundamentos', 'Tecnologia'],
       },
       {
         title: 'Ciclo 02: Fundamentos de ABA Relevantes',
-        description: 'Você verá como é o processo de planejamento da intervenção baseada em ABA.',
+        description: 'Ciclo 02: Quero ser aplicadora(dor) em ABA: O que preciso saber do planejamento da intervenção antes de iniciá-la? Ah, aqui... Você verá como é o processo de planejamento da intervenção baseada em ABA. Ou seja, o que você fará na etapa de Avaliação Comportamental com Aprendente (pessoa alvo da Avaliação)? E na etapa de aplicação dos Programas de Ensino? Você vai entender a relação das Dimensões da ABA com cada componente de um Programa de Ensino (bem elaborado) e vai colocar a “mão na massa”! Pois bem, aqui você vai começar a suar com as Práticas haha ',
         tags: ['ABA', 'Revisão', 'Integração'],
       },
       {
         title: 'Ciclo 03: Prompts e exemplos práticos.',
-        description: 'Aprenderá a teoria das Estratégias de ensino: Ensino por Tentativa Discreta (DTT) e Ensino naturalístico.',
+        description: 'Ciclo 03: Quero ser aplicadora(dor) em ABA: Quais estratégias de ensino em ABA utilizarei no decorrer de meus atendimentos? No Ciclo 03, a suadeira continua... RsrsVocê aprenderá a teoria das Estratégias de ensino: Ensino por Tentativa Discreta (do inglês, Discrete Trial Training, DTT) e Ensino naturalístico (considerando o ambiente escolar também). E praticará cada uma delas!',
         tags: ['Prompts', 'Prática', 'Materiais'],
       },
       {
         title: 'Ciclo 04: Inteligência artificial e ética.',
-        description: 'Organização de ambiente para atender, aplicação completa de Programas de Ensino, Manejo de comportamentos desafiadores e Ética em ABA.',
+        description: 'Ciclo 04: Quero ser aplicadora(dor) em ABA: Comecei meu atendimento, quais as minhas funções? Quando você chegar neste Ciclo, estará com todos os pré-requisitos para desempenhar as suas funções, seguindo o fluxo de como estivesse recebendo uma(um) Aprendente para atender: Com mais Teoria e Práticas, você aprenderá sobre Organização de ambiente para atender, aplicação completa de Programas de Ensino, Manejo de comportamentos desafiadores, Coleta e análise de dados, como deve ocorrer o entrelaçamento entre os Agentes de Ensino de uma Equipe, e Ética em ABA.',
         tags: ['Ética', 'Privacidade', 'Responsabilidade'],
       },
     ],
     image: 'https://i.imgur.com/EeKVsoT.jpeg',
-    color: 'from-amber-400 to-amber-500',
+    color: 'from-stone-100 to-amber-100',
   },
   {
     id: 3,
     title: 'Curso de Avaliação Funcional',
     subtitle: 'Atualização e Renovação da Certificação PCM',
-    description: 'Um profissional de excelência em ABA não atua com base no "eu acho". Ele atua com base em dados e avaliação funcional.',
+    description: 'Olá! Um profissional de excelência em ABA não atua com base no "eu acho". Ele atua com base em dados e avaliação funcional. E você deseja sair do nível básico e aprender a formular hipóteses funcionais consistentes para o manejo de comportamentos, convidamos você para o curso de Avaliação Funcional.',
     duration: '10 horas',
     format: 'Online',
     level: 'Iniciante',
@@ -130,13 +130,43 @@ const courses = [
     modules: [
       {
         title: 'Ciclo 01: Fundamentos da avaliação funcional em ABA',
-        description: 'Introdução à avaliação funcional como ferramenta central na prática em ABA.',
+        description: 'Introdução à avaliação funcional como ferramenta central na prática em ABA. Entenda por que avaliar a função do comportamento é indispensável para intervenções eficazes e éticas.',
         tags: ['Fundamentos', 'Avaliação', 'ABA'],
       },
       {
         title: 'Ciclo 02: Topografia versus Função',
-        description: 'Aprenda a diferenciar a forma como um comportamento se apresenta de sua função.',
+        description: 'Aprenda a diferenciar a forma como um comportamento se apresenta (topografia) de sua função no contexto comportamental. Essa distinção é essencial para planejar intervenções personalizadas e eficazes.',
         tags: ['Topografia', 'Função', 'Diferenciação'],
+      },
+      {
+        title: 'Ciclo 03: Classes funcionais do comportamento',
+        description: 'Exploração das quatro principais funções do comportamento: atenção, acesso a itens/atividades, fuga/esquiva e automática. Como identificá-las e utilizá-las no planejamento da intervenção.',
+        tags: ['Classes', 'Funções', 'Identificação'],
+      },
+      {
+        title: 'Ciclo 04: Avaliação funcional indireta',
+        description: 'Uso de entrevistas, questionários e escalas de avaliação comportamental com famílias, cuidadores e profissionais. Como coletar informações relevantes sem observação direta do comportamento.',
+        tags: ['Indireta', 'Entrevistas', 'Questionários'],
+      },
+      {
+        title: 'Ciclo 05: Avaliação funcional direta',
+        description: 'Técnicas de observação direta e sistemática do comportamento em ambiente natural. Registro de dados, identificação de antecedentes e consequências e análise de padrões comportamentais.',
+        tags: ['Direta', 'Observação', 'Registro'],
+      },
+      {
+        title: 'Ciclo 06: Avaliação funcional em diferentes contextos',
+        description: 'Como adaptar a avaliação funcional para contextos variados: clínica, escola e domicílio. Considerações específicas para cada ambiente e suas implicações no processo avaliativo.',
+        tags: ['Contextos', 'Escola', 'Clínica', 'Domicílio'],
+      },
+      {
+        title: 'Ciclo 07: Análise de dados e formulação de hipóteses funcionais',
+        description: 'Transforme dados coletados em hipóteses funcionais consistentes. Aprenda a organizar, interpretar e utilizar os dados para fundamentar as decisões clínicas com rigor técnico.',
+        tags: ['Dados', 'Hipóteses', 'Análise'],
+      },
+      {
+        title: 'Ciclo 08: Relatando os resultados',
+        description: 'Como elaborar relatórios de avaliação funcional claros, objetivos e tecnicamente adequados. Comunicação dos resultados para famílias, equipes e outros profissionais envolvidos no atendimento.',
+        tags: ['Relatório', 'Comunicação', 'Documentação'],
       },
     ],
     image: 'https://images.pexels.com/photos/5212317/pexels-photo-5212317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
@@ -163,6 +193,7 @@ const CoursesPage: React.FC = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // Bloqueia o scroll do body quando o modal estiver aberto
   useEffect(() => {
     if (selectedCycle) {
       document.body.style.overflow = 'hidden';
@@ -175,252 +206,248 @@ const CoursesPage: React.FC = () => {
   }, [selectedCycle]);
 
   return (
-    <div className="pt-20 bg-amber-50/30 relative min-h-screen">
-      {/* ── MÁSCARA DE FUNDO HEXAGONAL ── */}
-      <div 
-        className="absolute inset-0 pointer-events-none z-0 opacity-20" 
-        style={{
-          backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23d97706' fill-opacity='0.5' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h2v7.5L28 15v16.5l-13 7.5v7.5h-2v-7.5L0 31.5V15z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          backgroundRepeat: 'repeat'
-        }}
-      />
+    <div className="pt-20 bg-white">
 
-      <div className="relative z-10">
-        {/* ── MODAL DE CICLO ── */}
-        {selectedCycle && (
+      {/* ── MODAL DE CICLO ── */}
+      {selectedCycle && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+          onClick={() => setSelectedCycle(null)}
+        >
           <div
-            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
-            onClick={() => setSelectedCycle(null)}
+            className="bg-white rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden animate-fade-in"
+            onClick={(e) => e.stopPropagation()}
           >
-            <div
-              className="bg-white rounded-2xl shadow-2xl max-w-lg w-full overflow-hidden animate-fade-in"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 p-6 relative">
+            {/* Header amarelo */}
+            <div className="bg-gradient-to-r from-yellow-400 to-yellow-500 p-6 relative">
+              <button
+                onClick={() => setSelectedCycle(null)}
+                className="absolute top-4 right-4 w-8 h-8 bg-black bg-opacity-10 hover:bg-opacity-20 rounded-full flex items-center justify-center transition-all"
+              >
+                <X className="w-4 h-4 text-gray-900" />
+              </button>
+
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 bg-white bg-opacity-30 text-gray-900 rounded-full flex items-center justify-center text-xl font-bold shrink-0 border-2 border-white border-opacity-50">
+                  {selectedCycle.num}
+                </div>
+                <div>
+                  <p className="text-xs text-gray-800 uppercase tracking-widest font-medium mb-1">
+                    Ciclo {selectedCycle.num}
+                  </p>
+                  <h3 className="text-lg font-bold text-gray-900 leading-snug">
+                    {selectedCycle.title}
+                  </h3>
+                </div>
+              </div>
+            </div>
+
+            {/* Corpo */}
+            <div className="p-6">
+              <p className="text-xs text-gray-400 mb-3 flex items-center gap-1">
+                <BookOpen className="w-3 h-3" />
+                {selectedCycle.courseTitle}
+              </p>
+
+              <p className="text-gray-700 text-sm leading-relaxed mb-5">
+                {selectedCycle.description}
+              </p>
+
+              {/* Tags */}
+              {selectedCycle.tags.length > 0 && (
+                <div className="flex flex-wrap gap-2 mb-6">
+                  {selectedCycle.tags.map((tag, i) => (
+                    <span
+                      key={i}
+                      className="bg-yellow-100 text-yellow-800 text-xs font-medium px-3 py-1 rounded-full border border-yellow-200"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+              )}
+
+              <div className="flex justify-end gap-3">
                 <button
                   onClick={() => setSelectedCycle(null)}
-                  className="absolute top-4 right-4 w-8 h-8 bg-black bg-opacity-10 hover:bg-opacity-20 rounded-full flex items-center justify-center transition-all"
+                  className="px-5 py-2 border border-gray-200 rounded-lg text-gray-600 hover:bg-gray-50 text-sm transition-all"
                 >
-                  <X className="w-4 h-4 text-gray-900" />
+                  Fechar
                 </button>
-
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 bg-white bg-opacity-30 text-gray-900 rounded-full flex items-center justify-center text-xl font-bold shrink-0 border-2 border-white border-opacity-50">
-                    {selectedCycle.num}
-                  </div>
-                  <div>
-                    <p className="text-xs text-gray-800 uppercase tracking-widest font-medium mb-1">
-                      Ciclo {selectedCycle.num}
-                    </p>
-                    <h3 className="text-lg font-bold text-gray-900 leading-snug">
-                      {selectedCycle.title}
-                    </h3>
-                  </div>
-                </div>
-              </div>
-
-              <div className="p-6">
-                <p className="text-xs text-gray-400 mb-3 flex items-center gap-1">
-                  <BookOpen className="w-3 h-3" />
-                  {selectedCycle.courseTitle}
-                </p>
-
-                <p className="text-gray-700 text-sm leading-relaxed mb-5">
-                  {selectedCycle.description}
-                </p>
-
-                {selectedCycle.tags.length > 0 && (
-                  <div className="flex flex-wrap gap-2 mb-6">
-                    {selectedCycle.tags.map((tag, i) => (
-                      <span
-                        key={i}
-                        className="bg-yellow-100 text-yellow-800 text-xs font-medium px-3 py-1 rounded-full border border-yellow-200"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-                )}
-
-                <div className="flex justify-end gap-3">
-                  <button
-                    onClick={() => setSelectedCycle(null)}
-                    className="px-5 py-2 border border-gray-200 rounded-lg text-gray-600 hover:bg-gray-50 text-sm transition-all"
-                  >
-                    Fechar
-                  </button>
-                </div>
               </div>
             </div>
           </div>
-        )}
+        </div>
+      )}
 
-        {/* ── HERO SLIDER ── */}
-        <section className="relative h-[350px] md:h-[550px] overflow-hidden bg-gray-900">
-          {heroImages.map((img, index) => (
+      {/* ── HERO SLIDER ── */}
+      <section className="relative h-[350px] md:h-[550px] overflow-hidden bg-gray-900">
+        {heroImages.map((img, index) => (
+          <div
+            key={index}
+            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+              index === currentImage ? 'opacity-100' : 'opacity-0'
+            }`}
+          >
+            {/* Fundo desfocado, preenche todo o espaço sem deixar vazio nas laterais */}
             <div
-              key={index}
-              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                index === currentImage ? 'opacity-100' : 'opacity-0'
-              }`}
-            >
-              <div
-                className="absolute inset-0 bg-cover bg-center scale-110 blur-2xl opacity-60"
-                style={{ backgroundImage: `url('${img}')` }}
-              />
-              <div
-                className="absolute inset-0 bg-contain bg-center bg-no-repeat"
-                style={{ backgroundImage: `url('${img}')` }}
-              />
-            </div>
-          ))}
-          <div className="absolute inset-0 bg-black bg-opacity-10"></div>
-        </section>
+              className="absolute inset-0 bg-cover bg-center scale-110 blur-2xl opacity-60"
+              style={{ backgroundImage: `url('${img}')` }}
+            />
+            {/* Imagem nítida por cima, sem cortes, centralizada */}
+            <div
+              className="absolute inset-0 bg-contain bg-center bg-no-repeat"
+              style={{ backgroundImage: `url('${img}')` }}
+            />
+          </div>
+        ))}
+        <div className="absolute inset-0 bg-black bg-opacity-10"></div>
+      </section>
 
-        {/* ── CURSOS ── */}
-        <section className="py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
-                Nossos Cursos Especializados
-              </h2>
-              <div className="w-24 h-1 bg-yellow-400 mx-auto"></div>
-            </div>
+      {/* ── CURSOS ── */}
+      <section className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+              Nossos Cursos Especializados
+            </h2>
+            <div className="w-24 h-1 bg-yellow-400 mx-auto"></div>
+          </div>
 
-            <div className="space-y-16">
-              {courses.map((course) => (
-                <div
-                  key={course.id}
-                  className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-amber-100/80"
-                >
-                  {/* Header do curso */}
-                  <div className={`bg-gradient-to-r ${course.color} p-8 text-white`}>
-                    <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
-                      <div className="flex-1">
-                        <h3 className="text-2xl md:text-3xl font-bold mb-2 text-gray-900">
-                          {course.title}
-                        </h3>
-                        <p className="text-lg text-gray-900 mb-4">{course.subtitle}</p>
-                        <div className="flex flex-wrap gap-4 text-sm">
-                          <div className="flex items-center bg-white bg-opacity-30 px-3 py-1 rounded-full text-gray-900 font-medium">
-                            <Star className="w-4 h-4 mr-1 fill-gray-900" />
-                            <span>{course.rating}</span>
-                          </div>
-                          <div className="flex items-center bg-white bg-opacity-30 px-3 py-1 rounded-full text-gray-900 font-medium">
-                            <Users className="w-4 h-4 mr-1" />
-                            <span>{course.students}+ alunos</span>
-                          </div>
-                          <div className="flex items-center bg-white bg-opacity-30 px-3 py-1 rounded-full text-gray-900 font-medium">
-                            <MapPin className="w-4 h-4 mr-1" />
-                            <span>{course.format}</span>
-                          </div>
+          <div className="space-y-16">
+            {courses.map((course) => (
+              <div
+                key={course.id}
+                className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100"
+              >
+                {/* Header do curso */}
+                <div className={`bg-gradient-to-r ${course.color} p-8 text-white`}>
+                  <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
+                    <div className="flex-1">
+                      <h3 className="text-2xl md:text-3xl font-bold mb-2 text-gray-900">
+                        {course.title}
+                      </h3>
+                      <p className="text-lg text-gray-900 mb-4">{course.subtitle}</p>
+                      <div className="flex flex-wrap gap-4 text-sm">
+                        <div className="flex items-center bg-white bg-opacity-30 px-3 py-1 rounded-full text-gray-900 font-medium">
+                          <Star className="w-4 h-4 mr-1 fill-gray-900" />
+                          <span>{course.rating}</span>
                         </div>
-                      </div>
-                      <div className="mt-6 lg:mt-0 lg:ml-8">
-                        <img
-                          src={course.image}
-                          alt={course.title}
-                          className="w-full lg:w-48 h-32 object-cover rounded-lg shadow-lg border-2 border-white/50"
-                        />
+                        <div className="flex items-center bg-white bg-opacity-30 px-3 py-1 rounded-full text-gray-900 font-medium">
+                          <Users className="w-4 h-4 mr-1" />
+                          <span>{course.students}+ alunos</span>
+                        </div>
+                        <div className="flex items-center bg-white bg-opacity-30 px-3 py-1 rounded-full text-gray-900 font-medium">
+                          <MapPin className="w-4 h-4 mr-1" />
+                          <span>{course.format}</span>
+                        </div>
                       </div>
                     </div>
+                    <div className="mt-6 lg:mt-0 lg:ml-8">
+                      <img
+                        src={course.image}
+                        alt={course.title}
+                        className="w-full lg:w-48 h-32 object-cover rounded-lg shadow-lg border-2 border-white/50"
+                      />
+                    </div>
                   </div>
+                </div>
 
-                  {/* Corpo do curso */}
-                  <div className="p-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                      <div className="lg:col-span-2 space-y-6">
-                        <div>
-                          <h4 className="text-xl font-semibold text-black mb-3 border-b-2 border-yellow-400 w-fit">Sobre o Curso</h4>
-                          <p className="text-black text-lg leading-relaxed">{course.description}</p>
+                {/* Corpo do curso */}
+                <div className="p-8">
+                  <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <div className="lg:col-span-2 space-y-6">
+                      <div>
+                        <h4 className="text-xl font-semibold text-black mb-3 border-b-2 border-yellow-400 w-fit">Sobre o Curso</h4>
+                        <p className="text-black text-lg leading-relaxed">{course.description}</p>
+                      </div>
+
+                      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div className="bg-gray-50 p-4 rounded-lg text-center border border-gray-100">
+                          <Clock className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
+                          <p className="font-semibold text-black">{course.duration}</p>
+                          <p className="text-sm text-gray-600">Duração</p>
                         </div>
-
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                          <div className="bg-gray-50/80 p-4 rounded-lg text-center border border-gray-100">
-                            <Clock className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
-                            <p className="font-semibold text-black">{course.duration}</p>
-                            <p className="text-sm text-gray-600">Duração</p>
-                          </div>
-                          <div className="bg-gray-50/80 p-4 rounded-lg text-center border border-gray-100">
-                            <BookOpen className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
-                            <p className="font-semibold text-black">{course.format}</p>
-                            <p className="text-sm text-gray-600">Formato</p>
-                          </div>
-                          <div className="bg-gray-50/80 p-4 rounded-lg text-center border border-gray-100">
-                            <Users className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
-                            <p className="font-semibold text-black">{course.level}</p>
-                            <p className="text-sm text-gray-600">Nível</p>
-                          </div>
+                        <div className="bg-gray-50 p-4 rounded-lg text-center border border-gray-100">
+                          <BookOpen className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
+                          <p className="font-semibold text-black">{course.format}</p>
+                          <p className="text-sm text-gray-600">Formato</p>
                         </div>
-
-                        {/* Ciclos */}
-                        <div>
-                          <h4 className="text-xl font-semibold text-black mb-4">Ciclos de conteúdo do Curso</h4>
-                          <p className="text-sm text-gray-500 mb-3">Clique em um ciclo para saber mais</p>
-                          <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                            {course.modules.map((module, moduleIndex) => (
-                              <button
-                                key={moduleIndex}
-                                onClick={() =>
-                                  setSelectedCycle({
-                                    title: module.title.replace(/^Ciclo \d+:\s*/, ''),
-                                    num: moduleIndex + 1,
-                                    courseTitle: course.title,
-                                    description: module.description,
-                                    tags: module.tags,
-                                  })
-                                }
-                                className="flex items-center bg-white border border-yellow-200 p-3 rounded-lg text-left hover:bg-yellow-50 hover:border-yellow-400 hover:shadow-md transition-all duration-200 group w-full"
-                              >
-                                <div className="w-8 h-8 bg-yellow-400 text-black rounded-full flex items-center justify-center text-sm font-bold mr-3 shrink-0 group-hover:bg-yellow-500 transition-colors">
-                                  {moduleIndex + 1}
-                                </div>
-                                <span className="text-black font-medium flex-1">{module.title}</span>
-                                <ChevronRight className="w-4 h-4 text-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity ml-2 shrink-0" />
-                              </button>
-                            ))}
-                          </div>
+                        <div className="bg-gray-50 p-4 rounded-lg text-center border border-gray-100">
+                          <Users className="w-8 h-8 text-yellow-500 mx-auto mb-2" />
+                          <p className="font-semibold text-black">{course.level}</p>
+                          <p className="text-sm text-gray-600">Nível</p>
                         </div>
                       </div>
 
-                      {/* Sidebar de inscrição */}
-                      <div className="bg-gray-50/80 border border-gray-200 p-6 rounded-xl h-fit">
-                        <h4 className="text-xl font-semibold text-black mb-4">Você vai receber:</h4>
-                        <div className="space-y-3 mb-6">
-                          {course.features.map((feature, featureIndex) => (
-                            <div key={featureIndex} className="flex items-start">
-                              <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                              <span className="text-black">{feature}</span>
-                            </div>
+                      {/* Ciclos — clicáveis */}
+                      <div>
+                        <h4 className="text-xl font-semibold text-black mb-4">Ciclos de conteúdo do Curso</h4>
+                        <p className="text-sm text-gray-500 mb-3">Clique em um ciclo para saber mais</p>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                          {course.modules.map((module, moduleIndex) => (
+                            <button
+                              key={moduleIndex}
+                              onClick={() =>
+                                setSelectedCycle({
+                                  title: module.title.replace(/^Ciclo \d+:\s*/, ''),
+                                  num: moduleIndex + 1,
+                                  courseTitle: course.title,
+                                  description: module.description,
+                                  tags: module.tags,
+                                })
+                              }
+                              className="flex items-center bg-white border border-yellow-200 p-3 rounded-lg text-left hover:bg-yellow-50 hover:border-yellow-400 hover:shadow-md transition-all duration-200 group w-full"
+                            >
+                              <div className="w-8 h-8 bg-yellow-400 text-black rounded-full flex items-center justify-center text-sm font-bold mr-3 shrink-0 group-hover:bg-yellow-500 transition-colors">
+                                {moduleIndex + 1}
+                              </div>
+                              <span className="text-black font-medium flex-1">{module.title}</span>
+                              <ChevronRight className="w-4 h-4 text-yellow-500 opacity-0 group-hover:opacity-100 transition-opacity ml-2 shrink-0" />
+                            </button>
                           ))}
                         </div>
+                      </div>
+                    </div>
 
-                        <div className="border-t border-gray-200 pt-6">
-                          <div className="text-center mb-4">
-                            <p className="text-2xl font-bold text-black">{course.price}</p>
-                            <p className="text-sm text-gray-600">Investimento</p>
+                    {/* Sidebar de inscrição */}
+                    <div className="bg-gray-50 border border-gray-200 p-6 rounded-xl h-fit">
+                      <h4 className="text-xl font-semibold text-black mb-4">Você vai receber:</h4>
+                      <div className="space-y-3 mb-6">
+                        {course.features.map((feature, featureIndex) => (
+                          <div key={featureIndex} className="flex items-start">
+                            <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
+                            <span className="text-black">{feature}</span>
                           </div>
-                          <div className="space-y-3">
-                            <a href={course.enrollLink || '#'} target="_blank" rel="noopener noreferrer" className="block w-full">
-                              <Button size="large" className="w-full bg-yellow-400 hover:bg-yellow-500 text-black border-none">
-                                <Calendar className="w-5 h-5 mr-2" />
-                                Inscrever-se Agora
-                              </Button>
-                            </a>
-                            <Button variant="outline" size="large" className="w-full border-black text-black">
-                              Mais Informações
+                        ))}
+                      </div>
+
+                      <div className="border-t border-gray-200 pt-6">
+                        <div className="text-center mb-4">
+                          <p className="text-2xl font-bold text-black">{course.price}</p>
+                          <p className="text-sm text-gray-600">Investimento</p>
+                        </div>
+                        <div className="space-y-3">
+                          <a href={course.enrollLink || '#'} target="_blank" rel="noopener noreferrer" className="block w-full">
+                            <Button size="large" className="w-full bg-yellow-400 hover:bg-yellow-500 text-black border-none">
+                              <Calendar className="w-5 h-5 mr-2" />
+                              Inscrever-se Agora
                             </Button>
-                          </div>
+                          </a>
+                          <Button variant="outline" size="large" className="w-full border-black text-black">
+                            Mais Informações
+                          </Button>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
     </div>
   );
 };
