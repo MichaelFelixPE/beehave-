@@ -206,7 +206,7 @@ const CoursesPage: React.FC = () => {
   }, [selectedCycle]);
 
   return (
-    <div className="pt-20 bg-white">
+    <div className="pt-20 bg-white honeycomb-bg">
 
       {/* ── MODAL DE CICLO ── */}
       {selectedCycle && (
