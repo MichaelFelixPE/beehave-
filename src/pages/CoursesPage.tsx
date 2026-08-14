@@ -169,7 +169,7 @@ const courses = [
         tags: ['Relatório', 'Comunicação', 'Documentação'],
       },
     ],
-    image: 'https://i.imgur.com/undefined.jpeg',
+    image: 'https://i.imgur.com/wUif5eK.jpeg',
     color: 'from-yellow-400 to-yellow-500',
   },
 ];
