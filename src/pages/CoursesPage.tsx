@@ -6,8 +6,8 @@ const heroImages = [
   'https://i.imgur.com/BN2udau.jpeg',
   'https://i.imgur.com/d3fOGaa.jpeg',
   'https://i.imgur.com/O42NRrN.jpeg',
-  'https://i.imgur.com/mWtOlKq.jpeg',
-  'https://i.imgur.com/NBa81NN.jpeg',
+  'https://i.imgur.com/dXiqBIm.jpeg',
+  'https://i.imgur.com/wobeYTz.jpeg',
 ];
 
 const courses = [
