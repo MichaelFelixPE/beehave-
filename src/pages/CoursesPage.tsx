@@ -3,7 +3,7 @@ import { BookOpen, Clock, Users, Award, CheckCircle, Calendar, Star, MapPin, X, 
 import Button from '../components/ui/Button';
 
 const heroImages = [
-  'https://i.imgur.com/tNVbybM.jpg',
+  'https://i.imgur.com/BN2udau.jpeg',
   'https://i.imgur.com/rMR26mV.jpeg',
   'https://i.imgur.com/1rP9rFp.jpeg',
   'https://i.imgur.com/mWtOlKq.jpeg',
