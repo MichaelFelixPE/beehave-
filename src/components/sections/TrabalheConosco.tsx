@@ -54,7 +54,7 @@ const TrabalheConosco: React.FC = () => {
           <p className="mt-4 text-gray-700 max-w-xl mx-auto">
             Quer fazer parte da BeeEquipe? Envie seu currículo e nos conte sobre você.
             <br />
-            Buscamos profissionais comprometidos com o Afeto, a Ciência e a Ética.
+            Buscamos profissionais comprometidos com o Afeto, Ciência e a Ética.
           </p>
         </div>
 
