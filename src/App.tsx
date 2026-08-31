@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import HomePage from './pages/HomePage';
 import CoursesPage from './pages/CoursesPage';
 import TrabalhePage from './pages/TrabalhePage';
-import ValidarCertificadoPage from './pages/ValidarCertificadoPage';
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
+
 const ScrollToTop: React.FC = () => {
   const { pathname } = useLocation();
   useEffect(() => {
@@ -13,6 +13,7 @@ const ScrollToTop: React.FC = () => {
   }, [pathname]);
   return null;
 };
+
 function App() {
   return (
     <Router>
@@ -24,7 +25,6 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/cursos" element={<CoursesPage />} />
             <Route path="/trabalhe-conosco" element={<TrabalhePage />} />
-            <Route path="/validar-certificado" element={<ValidarCertificadoPage />} />
           </Routes>
         </main>
         <Footer />
@@ -32,4 +32,5 @@ function App() {
     </Router>
   );
 }
+
 export default App;
