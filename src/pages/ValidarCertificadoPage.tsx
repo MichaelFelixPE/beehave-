@@ -1,39 +1,73 @@
 // src/pages/ValidarCertificadoPage.tsx
 //
 // Página que abre quando alguém escaneia o QR Code de um certificado.
-// Lê nome, curso e assinatura da URL, confirma se o certificado é válido
-// e mostra uma tela de celebração com o nome da pessoa.
-//
-// Requer a fonte "Fraunces" carregada globalmente (ver instruções de instalação
-// enviadas junto com este arquivo) para o efeito de destaque no nome.
+// Busca o certificado no Supabase (tabela "certificados") pelo código
+// recebido na URL (?id=CODIGO) e mostra o resultado.
 
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { verificarAssinatura } from '../utils/certificado';
+import { supabase } from '../utils/supabaseClient';
 
 type Resultado = 'carregando' | 'valido' | 'invalido';
 
-function formatarTexto(valor: string): string {
-  return decodeURIComponent(valor.replace(/-/g, ' '));
+interface Certificado {
+  nome: string;
+  curso: string;
+  carga_horaria: string;
+  data_conclusao: string | null;
+  data_emissao: string | null;
 }
 
 export default function ValidarCertificadoPage() {
   const [searchParams] = useSearchParams();
   const [resultado, setResultado] = useState<Resultado>('carregando');
   const [selado, setSelado] = useState(false);
+  const [certificado, setCertificado] = useState<Certificado | null>(null);
 
-  const nome = searchParams.get('nome') || '';
-  const curso = searchParams.get('curso') || '';
-  const sig = searchParams.get('sig') || '';
+  const codigo = searchParams.get('id') || '';
 
   useEffect(() => {
-    if (!nome || !curso || !sig) {
+    setSelado(false);
+
+    if (!codigo) {
       setResultado('invalido');
       return;
     }
-    const valido = verificarAssinatura({ nome, curso }, sig);
-    setResultado(valido ? 'valido' : 'invalido');
-  }, [nome, curso, sig]);
+
+    const buscar = async () => {
+      try {
+        const { data, error } = await supabase
+          .from('certificados')
+          .select('nome, curso, carga_horaria, data_conclusao, data_emissao, status')
+          .eq('codigo_certificado', codigo)
+          .maybeSingle();
+
+        if (error) {
+          console.error('Erro ao consultar certificado:', error);
+          setResultado('invalido');
+          return;
+        }
+
+        if (data && data.status === 'valido') {
+          setCertificado({
+            nome: data.nome,
+            curso: data.curso,
+            carga_horaria: data.carga_horaria,
+            data_conclusao: data.data_conclusao,
+            data_emissao: data.data_emissao,
+          });
+          setResultado('valido');
+        } else {
+          setResultado('invalido');
+        }
+      } catch (err) {
+        console.error('Erro ao validar certificado:', err);
+        setResultado('invalido');
+      }
+    };
+
+    buscar();
+  }, [codigo]);
 
   useEffect(() => {
     if (resultado === 'valido') {
@@ -42,16 +76,28 @@ export default function ValidarCertificadoPage() {
     }
   }, [resultado]);
 
+  function formatarData(iso: string | null): string {
+    if (!iso) return '';
+    try {
+      const [ano, mes, dia] = iso.split('-');
+      return `${dia}/${mes}/${ano}`;
+    } catch {
+      return iso;
+    }
+  }
+
   return (
     <div
       className="flex flex-col items-center justify-center min-h-[80vh] px-4 py-16"
       style={{ backgroundColor: '#FAF7F1' }}
     >
       {resultado === 'carregando' && (
-        <p style={{ color: '#8A8478' }}>Verificando certificado...</p>
+        <p style={{ color: '#8A8478', fontFamily: 'Inter, sans-serif' }}>
+          Verificando certificado...
+        </p>
       )}
 
-      {resultado === 'valido' && (
+      {resultado === 'valido' && certificado && (
         <div
           className="w-full max-w-lg rounded-3xl p-10 text-center relative overflow-hidden"
           style={{
@@ -60,7 +106,6 @@ export default function ValidarCertificadoPage() {
             boxShadow: '0 20px 60px -20px rgba(44, 95, 91, 0.25)',
           }}
         >
-          {/* Selo de verificação */}
           <div
             className="mx-auto mb-6 flex items-center justify-center rounded-full transition-all duration-500 ease-out"
             style={{
@@ -98,40 +143,56 @@ export default function ValidarCertificadoPage() {
               fontWeight: 600,
             }}
           >
-            Parabéns, {formatarTexto(nome)}!
+            Parabéns, {certificado.nome}!
           </h1>
 
           <p
             className="mb-8"
             style={{ color: '#5C574C', fontFamily: 'Inter, sans-serif' }}
           >
-            Sua conclusão do curso foi confirmada pela Behave.
+            Sua conclusão do curso foi confirmada pela Beehave.
           </p>
 
-          <div
-            className="text-left rounded-2xl p-5"
-            style={{ backgroundColor: '#FAF7F1' }}
-          >
+          <div className="text-left rounded-2xl p-5" style={{ backgroundColor: '#FAF7F1' }}>
             <div className="flex justify-between items-start gap-4 py-2">
+              <span style={{ color: '#8A8478', fontFamily: 'Inter, sans-serif' }}>Curso</span>
               <span
-                style={{ color: '#8A8478', fontFamily: 'Inter, sans-serif' }}
+                className="text-right font-medium"
+                style={{ color: '#2A2A2A', fontFamily: 'Inter, sans-serif' }}
               >
-                Curso
+                {certificado.curso}
+              </span>
+            </div>
+
+            <div className="flex justify-between items-start gap-4 py-2">
+              <span style={{ color: '#8A8478', fontFamily: 'Inter, sans-serif' }}>
+                Carga horária
               </span>
               <span
                 className="text-right font-medium"
                 style={{ color: '#2A2A2A', fontFamily: 'Inter, sans-serif' }}
               >
-                {formatarTexto(curso)}
+                {certificado.carga_horaria}
               </span>
             </div>
+
+            {certificado.data_conclusao && (
+              <div className="flex justify-between items-start gap-4 py-2">
+                <span style={{ color: '#8A8478', fontFamily: 'Inter, sans-serif' }}>
+                  Conclusão
+                </span>
+                <span
+                  className="text-right font-medium"
+                  style={{ color: '#2A2A2A', fontFamily: 'Inter, sans-serif' }}
+                >
+                  {formatarData(certificado.data_conclusao)}
+                </span>
+              </div>
+            )}
           </div>
 
-          <p
-            className="text-xs mt-8"
-            style={{ color: '#B3AC9C', fontFamily: 'Inter, sans-serif' }}
-          >
-            Behave · Formação e supervisão técnica em ABA
+          <p className="text-xs mt-8" style={{ color: '#B3AC9C', fontFamily: 'Inter, sans-serif' }}>
+            Beehave · Formação e supervisão técnica em ABA
           </p>
         </div>
       )}
@@ -156,17 +217,13 @@ export default function ValidarCertificadoPage() {
           </div>
           <h1
             className="mb-3"
-            style={{
-              fontFamily: '"Fraunces", serif',
-              fontSize: '1.5rem',
-              color: '#2A2A2A',
-            }}
+            style={{ fontFamily: '"Fraunces", serif', fontSize: '1.5rem', color: '#2A2A2A' }}
           >
             Certificado não encontrado
           </h1>
           <p style={{ color: '#8A8478', fontFamily: 'Inter, sans-serif' }}>
             Não foi possível validar este certificado. Verifique se o QR Code
-            está correto ou entre em contato com a Behave.
+            está correto ou entre em contato com a Beehave.
           </p>
         </div>
       )}
