@@ -249,10 +249,7 @@ const Footer: React.FC = () => {
           gap: '12px',
         }}>
           <p style={{ color: '#444', fontSize: '13px', margin: 0 }}>
-            © {new Date().getFullYear()} 
-            Beehave Soluções Comportamentais
-            CNPJ: 55.945.950/0001-48
-            © 2026 Beehave — Todos os direitos reservados.
+            © {new Date().getFullYear()} Beehave Psicologia. Todos os direitos reservados.
           </p>
           <div style={{ display: 'flex', gap: '24px' }}>
             {['Política de Privacidade', 'Termos de Serviço'].map(label => (
