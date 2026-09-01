@@ -171,7 +171,7 @@ const Contact: React.FC = () => {
                     </h4>
 
                     <p className="text-zinc-600 text-sm mt-1">
-                      Um ambiente moderno, acolhedor e preparado para você.
+                      Um ambiente acolhedor e preparado para você.
                     </p>
                   </div>
 
