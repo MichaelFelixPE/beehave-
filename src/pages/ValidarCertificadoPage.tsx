@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { verificarAssinatura } from '../utils/certificado';
+import { supabase } from '../utils/supabaseClient';
 
 type Resultado = 'carregando' | 'valido' | 'invalido';
 
-function formatarTexto(valor: string): string {
-  try {
-    return decodeURIComponent(valor.replace(/-/g, ' '));
-  } catch {
-    return valor.replace(/-/g, ' ');
-  }
+interface Certificado {
+  nome: string;
+  curso: string;
+  carga_horaria: string;
+  data_conclusao: string | null;
+  data_emissao: string | null;
 }
 
 export default function ValidarCertificadoPage() {
@@ -20,52 +20,53 @@ export default function ValidarCertificadoPage() {
 
   const [selado, setSelado] = useState(false);
 
-  const nome = searchParams.get('nome') || '';
-  const curso = searchParams.get('curso') || '';
-  const sig = searchParams.get('sig') || '';
+  const [certificado, setCertificado] =
+    useState<Certificado | null>(null);
+
+  const codigo = searchParams.get('id') || '';
 
   useEffect(() => {
     setSelado(false);
 
-    // Sem os dados necessários = inválido
-    if (!nome || !curso || !sig) {
+    if (!codigo) {
       setResultado('invalido');
       return;
     }
 
-    // Assinaturas claramente usadas apenas para teste
-    // nunca devem ser consideradas válidas.
-    const assinaturasDeTeste = [
-      'teste',
-      'teste123',
-      'test',
-      '123456',
-      'abc123',
-      'fake',
-      'invalid',
-      'assinatura-teste',
-    ];
+    const buscar = async () => {
+      try {
+        const { data, error } = await supabase
+          .from('certificados')
+          .select('nome, curso, carga_horaria, data_conclusao, data_emissao, status')
+          .eq('codigo_certificado', codigo)
+          .maybeSingle();
 
-    if (assinaturasDeTeste.includes(sig.toLowerCase().trim())) {
-      setResultado('invalido');
-      return;
-    }
+        if (error) {
+          console.error('Erro ao consultar certificado:', error);
+          setResultado('invalido');
+          return;
+        }
 
-    try {
-      const valido = verificarAssinatura(
-        {
-          nome,
-          curso,
-        },
-        sig
-      );
+        if (data && data.status === 'valido') {
+          setCertificado({
+            nome: data.nome,
+            curso: data.curso,
+            carga_horaria: data.carga_horaria,
+            data_conclusao: data.data_conclusao,
+            data_emissao: data.data_emissao,
+          });
+          setResultado('valido');
+        } else {
+          setResultado('invalido');
+        }
+      } catch (error) {
+        console.error('Erro ao validar certificado:', error);
+        setResultado('invalido');
+      }
+    };
 
-      setResultado(valido ? 'valido' : 'invalido');
-    } catch (error) {
-      console.error('Erro ao validar certificado:', error);
-      setResultado('invalido');
-    }
-  }, [nome, curso, sig]);
+    buscar();
+  }, [codigo]);
 
   useEffect(() => {
     if (resultado === 'valido') {
@@ -76,6 +77,16 @@ export default function ValidarCertificadoPage() {
       return () => clearTimeout(timer);
     }
   }, [resultado]);
+
+  function formatarData(iso: string | null): string {
+    if (!iso) return '';
+    try {
+      const [ano, mes, dia] = iso.split('-');
+      return `${dia}/${mes}/${ano}`;
+    } catch {
+      return iso;
+    }
+  }
 
   return (
     <div
@@ -99,7 +110,7 @@ export default function ValidarCertificadoPage() {
       )}
 
       {/* CERTIFICADO VÁLIDO */}
-      {resultado === 'valido' && (
+      {resultado === 'valido' && certificado && (
         <div
           className="w-full max-w-lg rounded-3xl p-10 text-center relative overflow-hidden"
           style={{
@@ -157,7 +168,7 @@ export default function ValidarCertificadoPage() {
               fontWeight: 600,
             }}
           >
-            Parabéns, {formatarTexto(nome)}!
+            Parabéns, {certificado.nome}!
           </h1>
 
           <p
@@ -193,9 +204,76 @@ export default function ValidarCertificadoPage() {
                   fontFamily: 'Inter, sans-serif',
                 }}
               >
-                {formatarTexto(curso)}
+                {certificado.curso}
               </span>
             </div>
+
+            <div className="flex justify-between items-start gap-4 py-2">
+              <span
+                style={{
+                  color: '#8A8478',
+                  fontFamily: 'Inter, sans-serif',
+                }}
+              >
+                Carga horária
+              </span>
+
+              <span
+                className="text-right font-medium"
+                style={{
+                  color: '#2A2A2A',
+                  fontFamily: 'Inter, sans-serif',
+                }}
+              >
+                {certificado.carga_horaria}
+              </span>
+            </div>
+
+            {certificado.data_conclusao && (
+              <div className="flex justify-between items-start gap-4 py-2">
+                <span
+                  style={{
+                    color: '#8A8478',
+                    fontFamily: 'Inter, sans-serif',
+                  }}
+                >
+                  Conclusão
+                </span>
+
+                <span
+                  className="text-right font-medium"
+                  style={{
+                    color: '#2A2A2A',
+                    fontFamily: 'Inter, sans-serif',
+                  }}
+                >
+                  {formatarData(certificado.data_conclusao)}
+                </span>
+              </div>
+            )}
+
+            {certificado.data_emissao && (
+              <div className="flex justify-between items-start gap-4 py-2">
+                <span
+                  style={{
+                    color: '#8A8478',
+                    fontFamily: 'Inter, sans-serif',
+                  }}
+                >
+                  Emissão
+                </span>
+
+                <span
+                  className="text-right font-medium"
+                  style={{
+                    color: '#2A2A2A',
+                    fontFamily: 'Inter, sans-serif',
+                  }}
+                >
+                  {formatarData(certificado.data_emissao)}
+                </span>
+              </div>
+            )}
           </div>
 
           <p
