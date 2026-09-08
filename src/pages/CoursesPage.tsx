@@ -61,7 +61,7 @@ const courses = [
   {
     id: 2,
     title: 'Workshop: ColmeIA: Inovação terapêutica com Inteligência Artificial',
-    subtitle: 'Gerenciamento Profissional de Crises Comportamentais',
+    subtitle: 'Aplicação prática da Inteligência Artificial na prática terapêutica',
     description: 'Sabemos que a rotina de uma(um) Profissional que trabalha com ABA exige criatividade constante e muito rigor técnico. A Beehave traz o workshop ColmelA.',
     duration: '40 horas',
     format: 'Online',
