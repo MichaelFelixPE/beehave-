@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Briefcase, User, Mail, Phone, Link as LinkIcon, MessageSquare, Send } from 'lucide-react';
+import { Briefcase, User, Mail, Phone, Paperclip, MessageSquare, Send } from 'lucide-react';
 
 const TrabalheConosco: React.FC = () => {
   const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
@@ -10,9 +10,11 @@ const TrabalheConosco: React.FC = () => {
 
     const form = e.currentTarget;
     const data = new FormData(form);
+    data.append('access_key', 'SUA_CHAVE_AQUI');
+    data.append('subject', 'Nova candidatura - BeeEquipe');
 
     try {
-      const response = await fetch('https://formspree.io/f/SEU_ID_AQUI', {
+      const response = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
         body: data,
         headers: { Accept: 'application/json' },
@@ -128,19 +130,20 @@ const TrabalheConosco: React.FC = () => {
 
             <div>
               <label htmlFor="curriculo" className="block text-sm font-semibold text-gray-800 mb-1">
-                Link do currículo (Google Drive, etc.)
+                Currículo (PDF ou Word) *
               </label>
               <div className="relative">
-                <LinkIcon className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={16} />
+                <Paperclip className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" size={16} />
                 <input
-                  type="url"
+                  type="file"
                   id="curriculo"
                   name="curriculo"
                   required
-                  placeholder="https://drive.google.com/..."
-                  className="w-full pl-9 pr-4 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400/30 focus:border-yellow-400"
+                  accept=".pdf,.doc,.docx"
+                  className="w-full pl-9 pr-4 py-2 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400/30 focus:border-yellow-400 file:mr-3 file:py-1 file:px-3 file:rounded-md file:border-0 file:bg-yellow-100 file:text-sm file:font-medium file:text-gray-700"
                 />
               </div>
+              <p className="text-xs text-gray-500 mt-1">Formatos aceitos: PDF, DOC ou DOCX (máx. 5MB)</p>
             </div>
 
             <div>
