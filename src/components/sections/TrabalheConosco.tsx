@@ -10,7 +10,7 @@ const TrabalheConosco: React.FC = () => {
 
     const form = e.currentTarget;
     const data = new FormData(form);
-    data.append('access_key', 'SUA_CHAVE_AQUI');
+    data.append('access_key', 'f2289b9f-d109-4ed1-9b19-abef5342f9e2');
     data.append('subject', 'Nova candidatura - BeeEquipe');
 
     try {
