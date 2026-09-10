@@ -9,13 +9,32 @@ const TrabalheConosco: React.FC = () => {
     setStatus('sending');
 
     const form = e.currentTarget;
-    const data = new FormData(form);
+    const formData = new FormData(form);
+    const arquivo = formData.get('curriculo') as File;
 
     try {
-      const response = await fetch('https://formspree.io/f/myeyojvy', {
+      const curriculoBase64 = await new Promise<string>((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => {
+          const result = reader.result as string;
+          resolve(result.split(',')[1]); // remove o prefixo "data:...;base64,"
+        };
+        reader.onerror = () => reject(new Error('Falha ao ler o arquivo'));
+        reader.readAsDataURL(arquivo);
+      });
+
+      const response = await fetch('/api/enviar-curriculo', {
         method: 'POST',
-        body: data,
-        headers: { Accept: 'application/json' },
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          nome: formData.get('nome'),
+          email: formData.get('email'),
+          telefone: formData.get('telefone'),
+          cargo: formData.get('cargo'),
+          mensagem: formData.get('mensagem'),
+          curriculoBase64,
+          curriculoNome: arquivo.name,
+        }),
       });
 
       if (response.ok) {
@@ -60,8 +79,6 @@ const TrabalheConosco: React.FC = () => {
 
         <div className="bg-white p-6 md:p-8 rounded-2xl shadow-xl border border-yellow-100">
           <form onSubmit={handleSubmit} className="space-y-5">
-            <input type="hidden" name="_subject" value="Nova candidatura - BeeEquipe" />
-
             <div>
               <label htmlFor="nome" className="block text-sm font-semibold text-gray-800 mb-1">
                 Nome completo *
