@@ -10,11 +10,9 @@ const TrabalheConosco: React.FC = () => {
 
     const form = e.currentTarget;
     const data = new FormData(form);
-    data.append('access_key', '7d67847f-979f-4a2d-a3b7-5bb917ba2459');
-    data.append('subject', 'Nova candidatura - BeeEquipe');
 
     try {
-      const response = await fetch('https://api.web3forms.com/submit', {
+      const response = await fetch('https://formspree.io/f/SEU_FORM_ID_AQUI', {
         method: 'POST',
         body: data,
         headers: { Accept: 'application/json' },
@@ -56,12 +54,14 @@ const TrabalheConosco: React.FC = () => {
           <p className="mt-4 text-gray-700 max-w-xl mx-auto">
             Quer fazer parte da BeeEquipe? Envie seu currículo e nos conte sobre você.
             <br />
-            Buscamos profissionais comprometidos com Afeto, Ciência e a Ética.
+            Buscamos profissionais comprometidos com o Afeto, a Ciência e a Ética.
           </p>
         </div>
 
         <div className="bg-white p-6 md:p-8 rounded-2xl shadow-xl border border-yellow-100">
           <form onSubmit={handleSubmit} className="space-y-5">
+            <input type="hidden" name="_subject" value="Nova candidatura - BeeEquipe" />
+
             <div>
               <label htmlFor="nome" className="block text-sm font-semibold text-gray-800 mb-1">
                 Nome completo *
