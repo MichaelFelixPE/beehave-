@@ -17,7 +17,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     await resend.emails.send({
       from: 'BeeEquipe <onboarding@resend.dev>', // trocar depois de verificar o domínio da Behave
-      to: 'beehave.rh@gmail.com', // trocar pelo e-mail real que vai receber os currículos
+      to: 'beehave.dev@gmail.com', // trocar pelo e-mail real que vai receber os currículos
       replyTo: email,
       subject: `Nova candidatura - BeeEquipe: ${nome}`,
       html: `
