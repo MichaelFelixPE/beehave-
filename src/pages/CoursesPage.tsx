@@ -172,6 +172,73 @@ const courses = [
     image: 'https://i.imgur.com/wUif5eK.jpeg',
     color: 'from-yellow-400 to-yellow-500',
   },
+  {
+    id: 3,
+    title: 'Curso de Avaliação Funcional',
+    subtitle: 'Atualização e Renovação da Certificação PCM',
+    description: 'Olá! Um profissional de excelência em ABA não atua com base no "eu acho". Ele atua com base em dados e avaliação funcional. E você deseja sair do nível básico e aprender a formular hipóteses funcionais consistentes para o manejo de comportamentos, convidamos você para o curso de Avaliação Funcional.',
+    duration: '10 horas',
+    format: 'Online',
+    level: 'Iniciante',
+    price: 'Consulte valores',
+    rating: 4.9,
+    students: 120,
+    enrollLink: 'https://hotmart.com/pt-br/marketplace/produtos/curso-de-avaliacao-funcional-beehave/T106293965T',
+    features: [
+      'Revisão de técnicas atualizadas',
+      'Novas diretrizes de segurança',
+      'Prática supervisionada',
+      'Avaliação de competências',
+      'Renovação da certificação',
+      'Materiais atualizados',
+      'Networking profissional',
+      'Certificado válido por 2 anos',
+    ],
+    modules: [
+      {
+        title: 'Ciclo 01: Fundamentos da avaliação funcional em ABA',
+        description: 'Introdução à avaliação funcional como ferramenta central na prática em ABA. Entenda por que avaliar a função do comportamento é indispensável para intervenções eficazes e éticas.',
+        tags: ['Fundamentos', 'Avaliação', 'ABA'],
+      },
+      {
+        title: 'Ciclo 02: Topografia versus Função',
+        description: 'Aprenda a diferenciar a forma como um comportamento se apresenta (topografia) de sua função no contexto comportamental. Essa distinção é essencial para planejar intervenções personalizadas e eficazes.',
+        tags: ['Topografia', 'Função', 'Diferenciação'],
+      },
+      {
+        title: 'Ciclo 03: Classes funcionais do comportamento',
+        description: 'Exploração das quatro principais funções do comportamento: atenção, acesso a itens/atividades, fuga/esquiva e automática. Como identificá-las e utilizá-las no planejamento da intervenção.',
+        tags: ['Classes', 'Funções', 'Identificação'],
+      },
+      {
+        title: 'Ciclo 04: Avaliação funcional indireta',
+        description: 'Uso de entrevistas, questionários e escalas de avaliação comportamental com famílias, cuidadores e profissionais. Como coletar informações relevantes sem observação direta do comportamento.',
+        tags: ['Indireta', 'Entrevistas', 'Questionários'],
+      },
+      {
+        title: 'Ciclo 05: Avaliação funcional direta',
+        description: 'Técnicas de observação direta e sistemática do comportamento em ambiente natural. Registro de dados, identificação de antecedentes e consequências e análise de padrões comportamentais.',
+        tags: ['Direta', 'Observação', 'Registro'],
+      },
+      {
+        title: 'Ciclo 06: Avaliação funcional em diferentes contextos',
+        description: 'Como adaptar a avaliação funcional para contextos variados: clínica, escola e domicílio. Considerações específicas para cada ambiente e suas implicações no processo avaliativo.',
+        tags: ['Contextos', 'Escola', 'Clínica', 'Domicílio'],
+      },
+      {
+        title: 'Ciclo 07: Análise de dados e formulação de hipóteses funcionais',
+        description: 'Transforme dados coletados em hipóteses funcionais consistentes. Aprenda a organizar, interpretar e utilizar os dados para fundamentar as decisões clínicas com rigor técnico.',
+        tags: ['Dados', 'Hipóteses', 'Análise'],
+      },
+      {
+        title: 'Ciclo 08: Relatando os resultados',
+        description: 'Como elaborar relatórios de avaliação funcional claros, objetivos e tecnicamente adequados. Comunicação dos resultados para famílias, equipes e outros profissionais envolvidos no atendimento.',
+        tags: ['Relatório', 'Comunicação', 'Documentação'],
+      },
+    ],
+    image: 'https://i.imgur.com/wUif5eK.jpeg',
+    color: 'from-yellow-400 to-yellow-500',
+  },
 ];
 
 interface CycleModal {
