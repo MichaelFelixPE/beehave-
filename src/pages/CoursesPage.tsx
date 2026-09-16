@@ -175,8 +175,8 @@ const courses = [
   {
     id: 4,
     title: 'Curso de Avaliação Funcional',
-    subtitle: 'Atualização e Renovação da Certificação PCM',
-    description: 'Olá! Um profissional de excelência em ABA não atua com base no "eu acho". Ele atua com base em dados e avaliação funcional. E você deseja sair do nível básico e aprender a formular hipóteses funcionais consistentes para o manejo de comportamentos, convidamos você para o curso de Avaliação Funcional.',
+    subtitle: 'Atualização e Renovação da Certificação PCM 2',
+    description: 'Sobre o Curso: O Professional Crisis Management (PCM) é um sistema seguro e humanizado para a prevenção e manejo de comportamentos de crise. Focado em procedimentos indolores e estratégias de desescalada, o nível P2 capacita os alunos para atuar antes, durante e após a crise, abrangendo intervenções em estratégias verticais (de pé) e horizontais (em decúbito).',
     duration: '10 horas',
     format: 'Online',
     level: 'Iniciante',
