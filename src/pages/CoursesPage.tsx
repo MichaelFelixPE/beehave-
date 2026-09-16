@@ -175,10 +175,10 @@ const courses = [
   {
     id: 4,
     title: 'Curso de Avaliação Funcional',
-    subtitle: 'Atualização e Renovação da Certificação PCM 2',
+    subtitle: 'Atualização e Renovação da Certificação PCM',
     description: 'Sobre o Curso: O Professional Crisis Management (PCM) é um sistema seguro e humanizado para a prevenção e manejo de comportamentos de crise. Focado em procedimentos indolores e estratégias de desescalada, o nível P2 capacita os alunos para atuar antes, durante e após a crise, abrangendo intervenções em estratégias verticais (de pé) e horizontais (em decúbito).',
-    duration: '24 horas',
-    format: 'Presencial',
+    duration: '10 horas',
+    format: 'Online',
     level: 'Iniciante',
     price: 'Consulte valores',
     rating: 4.9,
