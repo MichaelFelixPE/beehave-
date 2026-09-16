@@ -173,7 +173,7 @@ const courses = [
     color: 'from-yellow-400 to-yellow-500',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Curso de Avaliação Funcional',
     subtitle: 'Atualização e Renovação da Certificação PCM',
     description: 'Olá! Um profissional de excelência em ABA não atua com base no "eu acho". Ele atua com base em dados e avaliação funcional. E você deseja sair do nível básico e aprender a formular hipóteses funcionais consistentes para o manejo de comportamentos, convidamos você para o curso de Avaliação Funcional.',
