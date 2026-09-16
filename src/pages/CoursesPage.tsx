@@ -183,7 +183,7 @@ const courses = [
     price: 'Consulte valores',
     rating: 4.9,
     students: 120,
-    enrollLink: 'https://forms.gle/6Wz54jS6g8nZ9ZPSA',
+    enrollLink: 'https://hotmart.com/pt-br/marketplace/produtos/curso-de-avaliacao-funcional-beehave/T106293965T',
     features: [
       'Revisão de técnicas atualizadas',
       'Novas diretrizes de segurança',
