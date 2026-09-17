@@ -60,10 +60,14 @@ const Hero: React.FC = () => {
           <div className="relative">
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-yellow-400 rounded-full opacity-40"></div>
             <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-yellow-400 rounded-full opacity-30"></div>
-            <img 
-              src="https://images.pexels.com/photos/8612927/pexels-photo-8612927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" 
-              alt="Criança em sessão de terapia" 
+            <img
+              src="https://images.pexels.com/photos/8612927/pexels-photo-8612927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt="Criança em sessão de terapia"
               className="rounded-lg shadow-xl relative z-10 w-full object-cover object-center h-[500px]"
+              fetchPriority="high"
+              decoding="async"
+              srcSet="https://images.pexels.com/photos/8612927/pexels-photo-8612927.jpeg?auto=compress&cs=tinysrgb&w=630&h=375&dpr=1 630w, https://images.pexels.com/photos/8612927/pexels-photo-8612927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 1260w"
+              sizes="(max-width: 1024px) 100vw, 50vw"
             />
           </div>
         </div>

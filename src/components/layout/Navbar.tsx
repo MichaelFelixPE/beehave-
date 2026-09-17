@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between h-20">
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="flex items-center" onClick={handleHomeClick}>
-              <img src="https://i.imgur.com/vAT2VjM.png" alt="Beehave Logo" className="w-48 lg:w-60 h-auto" />
+              <img src="https://i.imgur.com/vAT2VjM.png" alt="Beehave Logo" className="w-48 lg:w-60 h-auto" fetchPriority="high" decoding="async" />
             </Link>
           </div>
           

@@ -283,25 +283,41 @@ const CoursesPage: React.FC = () => {
 
       {/* ── HERO SLIDER ── */}
       <section className="relative h-[350px] md:h-[550px] overflow-hidden bg-gray-900">
-        {heroImages.map((img, index) => (
-          <div
-            key={index}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              index === currentImage ? 'opacity-100' : 'opacity-0'
-            }`}
-          >
-            {/* Fundo desfocado, preenche todo o espaço sem deixar vazio nas laterais */}
+        {heroImages.map((img, index) => {
+          const isVisible = index === currentImage;
+          const isNext = index === (currentImage + 1) % heroImages.length;
+          const shouldLoad = isVisible || isNext;
+          return (
             <div
-              className="absolute inset-0 bg-cover bg-center scale-110 blur-2xl opacity-60"
-              style={{ backgroundImage: `url('${img}')` }}
-            />
-            {/* Imagem nítida por cima, sem cortes, centralizada */}
-            <div
-              className="absolute inset-0 bg-contain bg-center bg-no-repeat"
-              style={{ backgroundImage: `url('${img}')` }}
-            />
-          </div>
-        ))}
+              key={index}
+              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                isVisible ? 'opacity-100' : 'opacity-0'
+              }`}
+            >
+              {/* Fundo desfocado, preenche todo o espaço sem deixar vazio nas laterais */}
+              {shouldLoad && (
+                <img
+                  src={img}
+                  alt=""
+                  aria-hidden="true"
+                  className="absolute inset-0 w-full h-full object-cover scale-110 blur-2xl opacity-60"
+                  loading={isVisible ? 'eager' : 'lazy'}
+                  decoding="async"
+                />
+              )}
+              {/* Imagem nítida por cima, sem cortes, centralizada */}
+              {shouldLoad && (
+                <img
+                  src={img}
+                  alt="Imagem do curso"
+                  className="absolute inset-0 w-full h-full object-contain"
+                  loading={isVisible ? 'eager' : 'lazy'}
+                  decoding="async"
+                />
+              )}
+            </div>
+          );
+        })}
         <div className="absolute inset-0 bg-black bg-opacity-10"></div>
       </section>
 
@@ -349,6 +365,8 @@ const CoursesPage: React.FC = () => {
                         src={course.image}
                         alt={course.title}
                         className="w-full lg:w-48 h-32 object-cover rounded-lg shadow-lg border-2 border-white/50"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                   </div>

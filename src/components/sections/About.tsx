@@ -32,6 +32,8 @@ const About: React.FC = () => {
                 src="https://i.imgur.com/shWLLoV.jpeg" 
                 alt="Psicólogo trabalhando com criança"
                 className="rounded-2xl shadow-2xl w-full h-auto object-cover"
+                loading="lazy"
+                decoding="async"
               />
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-yellow-400 rounded-full opacity-30 blur-2xl"></div>
             </div>
@@ -65,8 +67,15 @@ const About: React.FC = () => {
             {/* Card Missão */}
             <div 
               className="relative overflow-hidden rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow border-t-4 border-yellow-500 min-h-[300px] flex flex-col justify-center"
-              style={{ backgroundImage: `url(${images.missao})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
+              <img
+                src={images.missao}
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
               <div className="absolute inset-0 bg-yellow-600/80 mix-blend-multiply"></div> {/* Overlay */}
               <div className="relative z-10">
                 <div className="flex items-center justify-center w-16 h-16 bg-yellow-500 rounded-full mb-6">
@@ -82,8 +91,15 @@ const About: React.FC = () => {
             {/* Card Visão */}
             <div 
               className="relative overflow-hidden rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow border-t-4 border-amber-600 min-h-[300px] flex flex-col justify-center"
-              style={{ backgroundImage: `url(${images.visao})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
+              <img
+                src={images.visao}
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
               <div className="absolute inset-0 bg-amber-800/80 mix-blend-multiply"></div> {/* Overlay */}
               <div className="relative z-10">
                 <div className="flex items-center justify-center w-16 h-16 bg-amber-600 rounded-full mb-6">
@@ -99,8 +115,15 @@ const About: React.FC = () => {
             {/* Card Valores */}
             <div 
               className="relative overflow-hidden rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-shadow border-t-4 border-gray-900 min-h-[300px] flex flex-col justify-center"
-              style={{ backgroundImage: `url(${images.valores})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
             >
+              <img
+                src={images.valores}
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
+              />
               <div className="absolute inset-0 bg-gray-900/85"></div> {/* Overlay mais escuro para os valores */}
               <div className="relative z-10">
                 <div className="flex items-center justify-center w-16 h-16 bg-gray-800 rounded-full mb-6 border border-gray-700">
