@@ -183,7 +183,7 @@ const courses = [
     price: 'Consulte valores',
     rating: 4.9,
     students: 100,
-    enrollLink: 'https://i.imgur.com/NaOUmaq.jpeg',
+    enrollLink: 'https://forms.gle/6Wz54jS6g8nZ9ZPSA',
     features: [
       'Certificação internacional em intervenções à crise',
       'Qualificação em intervenções verticais e horizontais',
@@ -214,7 +214,7 @@ const courses = [
         tags: ['Reintegração', 'Pós-crise', 'Acolhimento'],
       },
     ],
-    image: 'SUBSTITUA_PELO_LINK_DA_IMAGEM',
+    image: 'https://i.imgur.com/NaOUmaq.jpeg',
     color: 'from-yellow-400 to-yellow-500',
   },
 ];
