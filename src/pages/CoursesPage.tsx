@@ -215,7 +215,7 @@ const courses = [
       },
     ],
     image: 'SUBSTITUA_PELO_LINK_DA_IMAGEM',
-    color: 'from-blue-500 to-blue-600',
+    color: 'from-yellow-400 to-yellow-500',
   },
 ];
 
