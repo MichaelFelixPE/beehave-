@@ -172,7 +172,51 @@ const courses = [
     image: 'https://i.imgur.com/wUif5eK.jpeg',
     color: 'from-yellow-400 to-yellow-500',
   },
-  
+  {
+    id: 4,
+    title: 'Curso de PCM (Professional Crisis Management)',
+    subtitle: 'Nível P2 – Prevenção e Manejo de Comportamentos de Crise',
+    description: 'O Professional Crisis Management (PCM) é um sistema seguro e humanizado para a prevenção e manejo de comportamentos de crise. Focado em procedimentos indolores e estratégias de desescalada, o nível P2 capacita os alunos para atuar antes, durante e após a crise, abrangendo intervenções em estratégias verticais (de pé) e horizontais (em decúbito).',
+    duration: '24 horas',
+    format: 'Presencial',
+    level: 'Iniciante',
+    price: 'Consulte valores',
+    rating: 4.9,
+    students: 100,
+    enrollLink: 'https://forms.gle/6Wz54jS6g8nZ9ZPSA',
+    features: [
+      'Certificação internacional em intervenções à crise',
+      'Qualificação em intervenções verticais e horizontais',
+      '24 horas de aulas presenciais',
+      'Certificado com selo Beehave e PCM Internacional',
+      'Teoria e Prática com domínio sequencial e gradual do conteúdo',
+      'Docentes e monitores especialistas em ABA',
+    ],
+    modules: [
+      {
+        title: 'Ciclo 01: Prevenção da crise',
+        description: 'Fundamentos do sistema PCM voltados à antecipação de comportamentos de crise. Você vai aprender a identificar sinais precoces e aplicar estratégias preventivas que reduzem a chance de escalada, priorizando sempre a segurança e o bem-estar do Aprendente.',
+        tags: ['Prevenção', 'Segurança', 'PCM'],
+      },
+      {
+        title: 'Ciclo 02: De-escalonamento do momento de crise (pré-crise 1, 2 e 3)',
+        description: 'Estratégias de desescalada organizadas em três estágios progressivos de pré-crise. Você vai entender como reconhecer cada fase e aplicar as intervenções indolores e humanizadas recomendadas pelo PCM para conter a escalada antes que ela se agrave.',
+        tags: ['Desescalada', 'Pré-crise', 'Intervenção'],
+      },
+      {
+        title: 'Ciclo 03: Intervenção à crise',
+        description: 'Procedimentos práticos de intervenção vertical (de pé) e horizontal (em decúbito) durante o momento de crise propriamente dito. Ênfase em técnicas seguras, indolores e eticamente responsáveis para proteger o Aprendente e a equipe.',
+        tags: ['Intervenção', 'Vertical', 'Horizontal'],
+      },
+      {
+        title: 'Ciclo 04: Reintegração pós-crise (pós-crise 1 e 2)',
+        description: 'Etapas de reorganização e retorno à rotina após o episódio de crise, divididas em dois estágios de pós-crise. Você vai aprender a conduzir a reintegração do Aprendente com acolhimento, além de registrar e comunicar o ocorrido à equipe.',
+        tags: ['Reintegração', 'Pós-crise', 'Acolhimento'],
+      },
+    ],
+    image: 'SUBSTITUA_PELO_LINK_DA_IMAGEM',
+    color: 'from-blue-500 to-blue-600',
+  },
 ];
 
 interface CycleModal {
