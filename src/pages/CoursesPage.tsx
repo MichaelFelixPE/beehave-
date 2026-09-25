@@ -183,7 +183,7 @@ const courses = [
     price: 'Consulte valores',
     rating: 4.9,
     students: 100,
-    enrollLink: 'https://forms.gle/6Wz54jS6g8nZ9ZPSA',
+    enrollLink: 'https://i.imgur.com/NaOUmaq.jpeg',
     features: [
       'Certificação internacional em intervenções à crise',
       'Qualificação em intervenções verticais e horizontais',
