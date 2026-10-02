@@ -19,7 +19,7 @@ const highlightInfos = [
   {
     title: "Base Científica (ABA)",
     tag: "CIÊNCIA",
-    content: "Nossas intervenções são baseada na Ciência da Análise do Comportamento. Planejamos cada passo da intervenção com  Afeto, Ciência e Ética!"
+    content: "Nossas intervenções são baseadas na Ciência da Análise do Comportamento. Planejamos cada passo da intervenção com  Afeto, Ciência e Ética!"
   }
 ];
 
