@@ -214,7 +214,7 @@ const courses = [
         tags: ['Reintegração', 'Pós-crise', 'Acolhimento'],
       },
     ],
-    image: 'https://i.imgur.com/6eMgUOD.jpeg',
+    image: 'https://i.imgur.com/LnKU85y.jpeg',
     color: 'from-yellow-400 to-yellow-500',
   },
 ];
