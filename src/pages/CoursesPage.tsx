@@ -174,7 +174,7 @@ const courses = [
   },
   {
     id: 4,
-    title: 'Curso de PCM (Professional Crisis Management)',
+    title: 'Curso de PCM P2 (Professional Crisis Management)',
     subtitle: 'Nível P2 – Prevenção e Manejo de Comportamentos de Crise',
     description: 'O Professional Crisis Management (PCM) é um sistema seguro e humanizado para a prevenção e manejo de comportamentos de crise. Focado em procedimentos indolores e estratégias de desescalada, o nível P2 capacita os alunos para atuar antes, durante e após a crise, abrangendo intervenções em estratégias verticais (de pé) e horizontais (em decúbito).',
     duration: '24 horas',
