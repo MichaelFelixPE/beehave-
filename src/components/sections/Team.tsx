@@ -142,18 +142,7 @@ const teamHierarchy: TeamMember[] = [
             ],
             bio: 'Me chamo Álex Jonatas dos Santos Rosas, sou Psicólogo formado na Univasf, mestre em Psicologia e especialista em Análise do Comportamento Aplicada (ABA). Atuo como supervisor de intervenção ABA na Beehave, conduzindo planejamento e acompanhamento técnico de programas de intervenção.',
           },
-          {
-            name: 'Ma. Joíra Ribeiro',
-            image: 'https://i.imgur.com/zJGPMaX.jpg',
-            level: 'C',
-            crm: 'CRP-03/15556',
-            formations: [
-              'Graduação em Psicologia (Universidade Federal do Vale do São Francisco – UNIVASF, 2015)',
-              'Pós-graduação em Análise do Comportamento Aplicada ao Transtorno do Espectro do Autismo(Instituto de Educação e Pesquisa em Saúde e Inclusão Social, 2020)',
-              'Mestrado em Psicologia (UNIVASF, 2023)',
-            ],
-            bio: 'Sou graduada em Psicologia, na Universidade Federal do Vale do São Francisco (UNIVASF), em 2015. Pós-graduada em Análise do Comportamento Aplicada ao Transtorno do Espectro do Autismo, no Instituto de Educação e Pesquisa em Saúde e Inclusão Social, em 2020. Mestre em Psicologia (UNIVASF), em 2023. Atuo como Psicóloga (CRP 03/15556) supervisora no Instituto Tacto - Instituto de Intervenções e estudos do comportamento.',
-          },
+          
           {
             name: ' Esp. Andrea Teixeira',
             image: 'https://i.imgur.com/bPV6yn9.jpeg',
