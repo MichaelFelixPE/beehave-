@@ -88,9 +88,31 @@ export default function ValidarCertificadoPage() {
 
   return (
     <div
-      className="flex flex-col items-center justify-center min-h-[80vh] px-4 py-16"
-      style={{ backgroundColor: '#FAF7F1' }}
+      className="relative flex flex-col items-center justify-center min-h-[80vh] px-4 py-16 overflow-hidden"
+      style={{ backgroundColor: '#FFFCF0' }}
     >
+      {/* BACKGROUND PATTERN DE COLMEIA (igual ao do Hero) */}
+      <div
+        className="absolute inset-0 opacity-[0.06] z-0 pointer-events-none"
+        aria-hidden="true"
+        style={{
+          backgroundImage: 'url("data:image/svg+xml,%3Csvg width=\'56\' height=\'98\' viewBox=\'0 0 28 49\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath d=\'M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.32v12.86l10.99 6.34 11-6.35V17.32L14 10.98 3 17.32z\' fill=\'%23eab308\' fill-rule=\'evenodd\'/%3E%3C/svg%3E")',
+          backgroundSize: '56px 98px',
+        }}
+      ></div>
+
+      {/* EFEITOS DE BRILHO (GLOWS) (igual ao do Hero) */}
+      <div
+        className="absolute top-0 right-0 w-[600px] h-[600px] bg-yellow-200/40 rounded-full blur-[120px] z-0 pointer-events-none"
+        aria-hidden="true"
+      ></div>
+      <div
+        className="absolute -bottom-20 -left-20 w-[400px] h-[400px] bg-amber-100/50 rounded-full blur-[100px] z-0 pointer-events-none"
+        aria-hidden="true"
+      ></div>
+
+      {/* CONTEÚDO POR CIMA DO FUNDO */}
+      <div className="relative z-10 w-full flex flex-col items-center">
       {resultado === 'carregando' && (
         <p style={{ color: '#8A8478', fontFamily: 'Inter, sans-serif' }}>
           Verificando certificado...
@@ -230,6 +252,7 @@ export default function ValidarCertificadoPage() {
           </p>
         </div>
       )}
+      </div>
     </div>
   );
 }
