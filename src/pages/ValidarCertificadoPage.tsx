@@ -126,7 +126,7 @@ export default function ValidarCertificadoPage() {
             backgroundColor: '#FFFFFF',
             border: '1px solid #E8E2D4',
             // sombra agora em tom amarelo
-            boxShadow: '0 20px 60px -20px rgba(240, 180, 41, 0.35)',
+            boxShadow: '0 20px 60px -20px rgba(255, 238, 88, 0.45)',
           }}
         >
           <div
@@ -135,7 +135,7 @@ export default function ValidarCertificadoPage() {
               width: 88,
               height: 88,
               // círculo agora amarelo
-              backgroundColor: '#F0B429',
+              backgroundColor: '#FFEE58',
               transform: selado ? 'scale(1) rotate(0deg)' : 'scale(0.5) rotate(-15deg)',
               opacity: selado ? 1 : 0,
             }}
