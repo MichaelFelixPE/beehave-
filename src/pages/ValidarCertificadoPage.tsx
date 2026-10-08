@@ -126,7 +126,7 @@ export default function ValidarCertificadoPage() {
             backgroundColor: '#FFFFFF',
             border: '1px solid #E8E2D4',
             // sombra agora em tom amarelo
-            boxShadow: '0 20px 60px -20px rgba(245, 184, 46, 0.35)',
+            boxShadow: '0 20px 60px -20px rgba(240, 180, 41, 0.35)',
           }}
         >
           <div
