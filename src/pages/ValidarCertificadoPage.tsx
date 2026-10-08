@@ -135,7 +135,7 @@ export default function ValidarCertificadoPage() {
               width: 88,
               height: 88,
               // círculo agora amarelo
-              backgroundColor: '#F5B82E',
+              backgroundColor: '#F0B429',
               transform: selado ? 'scale(1) rotate(0deg)' : 'scale(0.5) rotate(-15deg)',
               opacity: selado ? 1 : 0,
             }}
