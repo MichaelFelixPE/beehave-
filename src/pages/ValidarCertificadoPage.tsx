@@ -103,7 +103,8 @@ export default function ValidarCertificadoPage() {
           style={{
             backgroundColor: '#FFFFFF',
             border: '1px solid #E8E2D4',
-            boxShadow: '0 20px 60px -20px rgba(44, 95, 91, 0.25)',
+            // sombra agora em tom amarelo
+            boxShadow: '0 20px 60px -20px rgba(245, 184, 46, 0.35)',
           }}
         >
           <div
@@ -111,7 +112,8 @@ export default function ValidarCertificadoPage() {
             style={{
               width: 88,
               height: 88,
-              backgroundColor: '#2C5F5B',
+              // círculo agora amarelo
+              backgroundColor: '#F5B82E',
               transform: selado ? 'scale(1) rotate(0deg)' : 'scale(0.5) rotate(-15deg)',
               opacity: selado ? 1 : 0,
             }}
@@ -119,7 +121,8 @@ export default function ValidarCertificadoPage() {
             <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
               <path
                 d="M5 13l4 4L19 7"
-                stroke="#FAF7F1"
+                // check escuro para dar contraste sobre o amarelo
+                stroke="#2A2A2A"
                 strokeWidth="2.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
