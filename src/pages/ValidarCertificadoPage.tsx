@@ -199,13 +199,15 @@ export default function ValidarCertificadoPage() {
 
       {resultado === 'invalido' && (
         <div
-          className="w-full max-w-md rounded-3xl p-10 text-center"
-          style={{ backgroundColor: '#FFFFFF', border: '1px solid #E8E2D4' }}
-        >
-          <div
-            className="mx-auto mb-6 flex items-center justify-center rounded-full"
-            style={{ width: 72, height: 72, backgroundColor: '#F3E7E2' }}
-          >
+  className="mx-auto mb-6 flex items-center justify-center rounded-full transition-all duration-500 ease-out"
+  style={{
+    width: 88,
+    height: 88,
+    backgroundColor: '#F5B82E', // amarelo
+    transform: selado ? 'scale(1) rotate(0deg)' : 'scale(0.5) rotate(-15deg)',
+    opacity: selado ? 1 : 0,
+  }}
+>
             <svg width="30" height="30" viewBox="0 0 24 24" fill="none">
               <path
                 d="M6 6l12 12M18 6L6 18"
