@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import LogoAbelha from '../../aplicador/components/LogoAbelha';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -99,6 +100,14 @@ const Navbar: React.FC = () => {
                 </Link>
               );
             })}
+            <Link
+              to="/aplicador"
+              className="flex items-center gap-1.5 whitespace-nowrap text-xs lg:text-sm font-medium font-bunday text-black hover:text-yellow-600 transition-colors px-2 py-2"
+              title="Área do Aplicador"
+            >
+              <LogoAbelha size={18} />
+              Aplicador
+            </Link>
           </div>
           
           {/* Mobile Nav Button */}
@@ -151,6 +160,14 @@ const Navbar: React.FC = () => {
                 </Link>
               );
             })}
+            <Link
+              to="/aplicador"
+              className="flex items-center gap-2 text-black hover:text-yellow-600 transition-colors px-3 py-2 text-base font-medium font-bunday border-t border-gray-100 pt-3 mt-1"
+              onClick={() => setIsOpen(false)}
+            >
+              <LogoAbelha size={20} />
+              Aplicador
+            </Link>
           </div>
         </div>
       )}
