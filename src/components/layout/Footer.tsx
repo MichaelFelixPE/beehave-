@@ -268,17 +268,18 @@ const Footer: React.FC = () => {
             <Link
               to="/aplicador"
               aria-label="Área do Aplicador"
+              title="Área do Aplicador"
               style={{
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                opacity: 0.4,
-                transition: 'opacity 0.2s',
+                opacity: 0.55,
+                transition: 'opacity 0.2s, transform 0.2s',
               }}
-              onMouseEnter={e => { e.currentTarget.style.opacity = '1'; }}
-              onMouseLeave={e => { e.currentTarget.style.opacity = '0.4'; }}
+              onMouseEnter={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.transform = 'scale(1.15)'; }}
+              onMouseLeave={e => { e.currentTarget.style.opacity = '0.55'; e.currentTarget.style.transform = 'scale(1)'; }}
             >
-              <LogoAbelha size={20} />
+              <LogoAbelha size={28} />
             </Link>
           </div>
         </div>
