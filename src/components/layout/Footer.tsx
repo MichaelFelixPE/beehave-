@@ -1,7 +1,5 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Instagram, MessageCircle, ArrowUpRight } from 'lucide-react';
-import { Link } from 'react-router-dom';
-import LogoAbelha from '../../aplicador/components/LogoAbelha';
 
 const Footer: React.FC = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -253,7 +251,7 @@ const Footer: React.FC = () => {
           <p style={{ color: '#444', fontSize: '13px', margin: 0 }}>
             © {new Date().getFullYear()} Beehave — Soluções Comportamentais. Todos os direitos reservados. CNPJ: 55.945.950/0001-48.
           </p>
-          <div style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>
+          <div style={{ display: 'flex', gap: '24px' }}>
             {['Política de Privacidade', 'Termos de Serviço'].map(label => (
               <a
                 key={label}
@@ -265,21 +263,6 @@ const Footer: React.FC = () => {
                 {label}
               </a>
             ))}
-            <Link
-              to="/aplicador"
-              aria-label="Área do Aplicador"
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                opacity: 0.4,
-                transition: 'opacity 0.2s',
-              }}
-              onMouseEnter={e => { e.currentTarget.style.opacity = '1'; }}
-              onMouseLeave={e => { e.currentTarget.style.opacity = '0.4'; }}
-            >
-              <LogoAbelha size={20} />
-            </Link>
           </div>
         </div>
       </div>
