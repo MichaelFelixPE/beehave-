@@ -1,0 +1,7 @@
+project_id = ""
+
+[functions.aplicador-checkin]
+verify_jwt = true
+
+[functions.aplicador-checkout]
+verify_jwt = true
