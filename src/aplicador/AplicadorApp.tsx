@@ -2,21 +2,16 @@ import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import { AplicadorAuthProvider, useAplicadorAuth } from './AplicadorAuthContext';
 import AplicadorLogin from './pages/AplicadorLogin';
-import LogoAbelha from './components/LogoAbelha';
 
 const AplicadorCarregando: React.FC = () => (
   <div className="min-h-screen flex flex-col items-center justify-center" style={{ background: '#0a0a0a' }}>
-    <div className="animate-pulse">
-      <LogoAbelha size={48} />
-    </div>
-    <p className="text-gray-400 text-sm mt-4">Carregando...</p>
+    <p className="text-gray-400 text-sm">Carregando...</p>
   </div>
 );
 
 const AplicadorNaoAutorizado: React.FC = () => (
   <div className="min-h-screen flex flex-col items-center justify-center px-6" style={{ background: '#0a0a0a' }}>
-    <LogoAbelha size={48} />
-    <p className="text-white text-lg font-semibold mt-6">Acesso restrito</p>
+    <p className="text-white text-lg font-semibold">Acesso restrito</p>
     <p className="text-gray-400 text-sm mt-2 text-center max-w-xs">
       Sua conta não está ativa ou não tem permissão para acessar esta área.
     </p>
@@ -52,9 +47,6 @@ const AplicadorInicio: React.FC = () => {
     <div className="min-h-screen flex flex-col" style={{ background: '#0a0a0a' }}>
       <div style={{ background: '#F0B429', height: '4px', width: '100%' }} />
       <div className="flex-1 flex flex-col items-center justify-center px-6 py-12">
-        <div className="bg-white/10 rounded-2xl p-4 mb-6">
-          <LogoAbelha size={48} />
-        </div>
         <h1 className="text-white text-2xl font-bold mb-2">
           Bem-vindo, {perfil?.nome}
         </h1>

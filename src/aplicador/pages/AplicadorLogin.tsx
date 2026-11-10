@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Mail, Lock, Eye, EyeOff, ArrowLeft, AlertCircle, CheckCircle } from 'lucide-react';
 import { useAplicadorAuth } from '../AplicadorAuthContext';
-import LogoAbelha from '../components/LogoAbelha';
 
 const AplicadorLogin: React.FC = () => {
   const { signIn, resetPassword } = useAplicadorAuth();
@@ -55,11 +54,8 @@ const AplicadorLogin: React.FC = () => {
       <div style={{ background: '#F0B429', height: '4px', width: '100%' }} />
 
       <div className="flex-1 flex flex-col items-center justify-center px-6 py-12">
-        {/* Logo */}
+        {/* Título */}
         <div className="flex flex-col items-center mb-8">
-          <div className="bg-white/10 rounded-2xl p-4 mb-4">
-            <LogoAbelha size={56} />
-          </div>
           <h1 className="text-white text-2xl font-bold tracking-tight">Área do Aplicador</h1>
           <p className="text-gray-400 text-sm mt-1">Behave — Soluções Comportamentais</p>
         </div>
