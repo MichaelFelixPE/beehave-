@@ -1,7 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin, Instagram, MessageCircle, ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import LogoAbelha from '../../aplicador/components/LogoAbelha';
 
 const Footer: React.FC = () => {
   const scrollToTop = () => window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -270,16 +269,15 @@ const Footer: React.FC = () => {
               aria-label="Área do Aplicador"
               title="Área do Aplicador"
               style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                opacity: 0.55,
-                transition: 'opacity 0.2s, transform 0.2s',
+                color: '#444',
+                fontSize: '13px',
+                textDecoration: 'none',
+                transition: 'color 0.2s',
               }}
-              onMouseEnter={e => { e.currentTarget.style.opacity = '1'; e.currentTarget.style.transform = 'scale(1.15)'; }}
-              onMouseLeave={e => { e.currentTarget.style.opacity = '0.55'; e.currentTarget.style.transform = 'scale(1)'; }}
+              onMouseEnter={e => { e.currentTarget.style.color = '#F0B429'; }}
+              onMouseLeave={e => { e.currentTarget.style.color = '#444'; }}
             >
-              <LogoAbelha size={28} />
+              Área do Aplicador
             </Link>
           </div>
         </div>
