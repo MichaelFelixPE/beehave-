@@ -5,7 +5,7 @@ interface LogoAbelhaProps {
 
 // Para trocar a imagem, altere só o caminho abaixo.
 // O arquivo precisa estar na pasta "public" do projeto.
-const CAMINHO_LOGO = '/logo-aplicador.png';
+const CAMINHO_LOGO = 'https://i.imgur.com/a/gZXmAYk.jpeg';
 
 export default function LogoAbelha({ size = 24, className = '' }: LogoAbelhaProps) {
   return (
