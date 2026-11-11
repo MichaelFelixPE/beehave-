@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import type { Session } from '@supabase/supabase-js';
 import { supabase, supabaseConfigurado } from './supabase';
 import type { Perfil } from './supabase';
-import AplicadorLogin from './AplicadorLogin';
+import AplicadorLogin from './LoginAplicador';
 import CheckinPanel from './CheckinPanel';
 import AdminPanel from './AdminPanel';
 import LogoAbelha from './LogoAbelha';
@@ -93,8 +93,8 @@ export default function AplicadorApp() {
   }
 
   return (
-    <main className="min-h-screen bg-amber-50/40 px-4 pb-12 pt-28">
+    <div className="min-h-screen bg-amber-50/40 px-4 pb-12 pt-28">
       <div className="mx-auto max-w-5xl">{conteudo}</div>
-    </main>
+    </div>
   );
 }
