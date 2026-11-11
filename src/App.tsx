@@ -10,6 +10,7 @@ import HomePage from './pages/HomePage';
 import CoursesPage from './pages/CoursesPage';
 import TrabalhePage from './pages/TrabalhePage';
 import ValidarCertificadoPage from './pages/ValidarCertificadoPage';
+import AplicadorApp from './aplicador/AplicadorApp';
 
 import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
@@ -50,6 +51,8 @@ function App() {
               path="/validar-certificado"
               element={<ValidarCertificadoPage />}
             />
+
+            <Route path="/aplicador" element={<AplicadorApp />} />
           </Routes>
         </main>
 
