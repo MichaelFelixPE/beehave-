@@ -50,7 +50,7 @@ const faqs = [
     icon: '🏥',
     color: 'bg-red-50',
     q: 'Vocês atendem por Planos de saúde?',
-    a: 'Infelizmente não, os atendimentos são particulares. Caso você tenha um Plano de saúde, você pode solicitar atendimento na sua Operadora de saúde e pedir encaminhamento para a Beehave, mas a decisão final cabe à Operadora de saúde.',
+    a: 'Infelizmente não, os atendimentos são particulares. Caso você tenha um Plano de saúde, você pode solicitar atendimento na sua Operadora de saúde e pedir encaminhamento para a Beehave, via decisão judicial ou reembolso.',
   },
   {
     cat: 'aba',
