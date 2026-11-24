@@ -109,7 +109,7 @@ function LogoAbelha({ size = 24, className = '' }: LogoAbelhaProps) {
   return (
     <img
       src={CAMINHO_LOGO}
-      alt="Behave"
+      alt="Beehave"
       width={size}
       height={size}
       className={`object-contain ${className}`}
@@ -210,7 +210,7 @@ function AplicadorLogin() {
         <LogoAbelha size={40} />
         <div>
           <h1 className="text-xl font-bold text-gray-900">Área do aplicador</h1>
-          <p className="text-sm text-gray-500">Acesso restrito à equipe Behave</p>
+          <p className="text-sm text-gray-500">Acesso restrito à equipe Beehave</p>
         </div>
       </div>
       <form onSubmit={entrar} className="space-y-3">
@@ -229,7 +229,7 @@ function AplicadorLogin() {
           {busy ? 'Entrando…' : 'Entrar'}
         </button>
         <p className="text-center text-xs text-gray-500">
-          Esqueceu a senha? Peça ao administrador da Behave para redefinir.
+          Esqueceu a senha? Peça ao administrador da Beehave para redefinir.
         </p>
       </form>
     </div>
@@ -241,13 +241,22 @@ interface LocalOpcao {
   id: number;
   descricao: string;
   endereco: string;
+  status: string;
   aplicador_criancas: { nome: string } | null;
+}
+interface CriancaOpcao {
+  id: number;
+  nome: string;
+}
+interface Pendente {
+  id: number;
+  descricao: string;
 }
 interface Sessao {
   id: number;
   checkin_em: string;
   checkin_no_local: boolean | null;
-  aplicador_locais: { descricao: string; aplicador_criancas: { nome: string } | null } | null;
+  aplicador_locais: { descricao: string; status: string; aplicador_criancas: { nome: string } | null } | null;
 }
 interface Feito {
   id: number;
@@ -256,41 +265,57 @@ interface Feito {
   duracao_min: number | null;
   status: string;
   resumo: string | null;
-  aplicador_locais: { descricao: string; aplicador_criancas: { nome: string } | null } | null;
+  aplicador_locais: { descricao: string; status: string; aplicador_criancas: { nome: string } | null } | null;
 }
 
 function CheckinPanel({ perfil }: { perfil: Perfil }) {
   const [locais, setLocais] = useState<LocalOpcao[]>([]);
+  const [criancas, setCriancas] = useState<CriancaOpcao[]>([]);
+  const [pendentes, setPendentes] = useState<Pendente[]>([]);
   const [sessao, setSessao] = useState<Sessao | null>(null);
   const [feitos, setFeitos] = useState<Feito[]>([]);
   const [localSel, setLocalSel] = useState<number | null>(null);
-  const [camera, setCamera] = useState<null | 'in' | 'out'>(null);
+  const [camera, setCamera] = useState<null | 'in' | 'novo' | 'out'>(null);
   const [resumo, setResumo] = useState('');
   const [busy, setBusy] = useState(false);
   const [info, setInfo] = useState('');
   const [erro, setErro] = useState('');
   const [agora, setAgora] = useState(Date.now());
+  const [novoAberto, setNovoAberto] = useState(false);
+  const [nCrianca, setNCrianca] = useState('');
+  const [nDesc, setNDesc] = useState('');
+  const [nEnd, setNEnd] = useState('');
 
   const carregar = useCallback(async () => {
     const inicioDia = new Date();
     inicioDia.setHours(0, 0, 0, 0);
-    const [l, s, f] = await Promise.all([
-      supabase.from('aplicador_locais').select('id, descricao, endereco, aplicador_criancas(nome)').order('descricao'),
+    const [l, c, p, s, f] = await Promise.all([
+      supabase
+        .from('aplicador_locais')
+        .select('id, descricao, endereco, status, aplicador_criancas(nome)')
+        .or(`status.eq.aprovado,and(status.eq.pendente,sugerido_por.eq.${perfil.id})`)
+        .order('descricao'),
+      supabase.from('aplicador_criancas').select('id, nome').order('nome'),
+      supabase.from('aplicador_locais').select('id, descricao').eq('sugerido_por', perfil.id).eq('status', 'pendente'),
       supabase
         .from('aplicador_atendimentos')
-        .select('id, checkin_em, checkin_no_local, aplicador_locais(descricao, aplicador_criancas(nome))')
+        .select('id, checkin_em, checkin_no_local, aplicador_locais(descricao, status, aplicador_criancas(nome))')
         .eq('aplicador_id', perfil.id)
         .eq('status', 'em_andamento')
         .maybeSingle(),
       supabase
         .from('aplicador_atendimentos')
-        .select('id, checkin_em, checkout_em, duracao_min, status, resumo, aplicador_locais(descricao, aplicador_criancas(nome))')
+        .select('id, checkin_em, checkout_em, duracao_min, status, resumo, aplicador_locais(descricao, status, aplicador_criancas(nome))')
         .eq('aplicador_id', perfil.id)
         .neq('status', 'em_andamento')
         .gte('checkin_em', inicioDia.toISOString())
         .order('checkin_em', { ascending: false }),
     ]);
+    const falha = [l, c, p, s, f].find((r) => r.error);
+    if (falha && falha.error) setErro('Não foi possível carregar os dados: ' + falha.error.message);
     setLocais((l.data ?? []) as unknown as LocalOpcao[]);
+    setCriancas((c.data ?? []) as CriancaOpcao[]);
+    setPendentes((p.data ?? []) as Pendente[]);
     setSessao((s.data ?? null) as unknown as Sessao | null);
     setFeitos((f.data ?? []) as unknown as Feito[]);
   }, [perfil.id]);
@@ -339,6 +364,49 @@ function CheckinPanel({ perfil }: { perfil: Perfil }) {
     }
   }
 
+  async function fazerCheckinNovo(foto: Blob) {
+    setBusy(true);
+    setErro('');
+    setInfo('Obtendo localização…');
+    try {
+      const pos = await obterPosicao();
+      setInfo('Enviando foto…');
+      const caminho = await enviarFoto(foto, 'checkin');
+      setInfo('Registrando chegada e enviando o local para aprovação…');
+      const { error } = await supabase.rpc('aplicador_checkin_novo_local', {
+        p_crianca_id: Number(nCrianca), p_descricao: nDesc, p_endereco: nEnd,
+        p_lat: pos.lat, p_lng: pos.lng, p_prec: pos.prec, p_foto: caminho,
+      });
+      if (error) throw new Error(error.message);
+      setInfo('Chegada registrada. A localização foi enviada ao administrador para aprovação. Seu atendimento já pode seguir normalmente.');
+      setNovoAberto(false);
+      setNCrianca('');
+      setNDesc('');
+      setNEnd('');
+      await carregar();
+    } catch (e) {
+      setInfo('');
+      setErro(msgErro(e));
+    } finally {
+      setCamera(null);
+      setBusy(false);
+    }
+  }
+
+  function pedirCheckinNovo() {
+    if (!nCrianca) {
+      setErro('Escolha a criança.');
+      return;
+    }
+    if (nDesc.trim().length < 2 || nEnd.trim().length < 3) {
+      setErro('Preencha a descrição do local (ex.: Casa, Colégio X) e o endereço.');
+      return;
+    }
+    setErro('');
+    setInfo('');
+    setCamera('novo');
+  }
+
   async function fazerCheckout(foto: Blob) {
     setBusy(true);
     setErro('');
@@ -384,6 +452,8 @@ function CheckinPanel({ perfil }: { perfil: Perfil }) {
         <div className={`${cardCls} text-center text-gray-600`}>Processando… não feche a página.</div>
       ) : camera === 'in' ? (
         <Camera titulo="Selfie de chegada" onCapturar={fazerCheckin} onCancelar={() => setCamera(null)} />
+      ) : camera === 'novo' ? (
+        <Camera titulo="Selfie de chegada (local novo)" onCapturar={fazerCheckinNovo} onCancelar={() => setCamera(null)} />
       ) : camera === 'out' ? (
         <Camera titulo="Selfie de saída" onCapturar={fazerCheckout} onCancelar={() => setCamera(null)} />
       ) : sessao ? (
@@ -392,6 +462,11 @@ function CheckinPanel({ perfil }: { perfil: Perfil }) {
             {sessao.aplicador_locais?.aplicador_criancas?.nome ?? 'Atendimento'} · {sessao.aplicador_locais?.descricao}
           </h2>
           <p className="text-sm text-gray-500">Chegada às {fmtDataHora(sessao.checkin_em)}</p>
+          {sessao.aplicador_locais?.status === 'pendente' && (
+            <p className="mt-2 rounded-lg bg-amber-50 p-2 text-xs text-amber-900">
+              Local novo aguardando aprovação do administrador. Este atendimento ficará marcado para revisão até a aprovação.
+            </p>
+          )}
           <p className="my-4 text-center font-mono text-5xl font-bold text-gray-900" aria-live="off">{fmtDuracao(segundos)}</p>
           <label htmlFor="resumo" className="mb-1 block text-sm font-medium text-gray-700">Resumo da sessão (3 a 4 linhas)</label>
           <textarea id="resumo" rows={5} maxLength={400} value={resumo} onChange={(e) => setResumo(e.target.value)}
@@ -403,20 +478,66 @@ function CheckinPanel({ perfil }: { perfil: Perfil }) {
       ) : (
         <div className={cardCls}>
           <h2 className="mb-3 text-lg font-bold text-gray-900">Novo atendimento</h2>
-          {locais.length === 0 ? (
+          {criancas.length === 0 ? (
             <p className="text-sm text-gray-600">Nenhuma criança atribuída a você ainda. Fale com o administrador.</p>
           ) : (
             <div className="space-y-2">
+              {locais.length === 0 && (
+                <p className="text-sm text-gray-600">Ainda não há local aprovado. Use a opção abaixo para enviar o local onde você está.</p>
+              )}
               {locais.map((l) => (
                 <button key={l.id} type="button" onClick={() => setLocalSel(l.id)}
                   className={`block w-full rounded-xl border-2 p-3 text-left ${localSel === l.id ? 'border-amber-500 bg-amber-50' : 'border-gray-200 bg-white'}`}>
                   <span className="font-semibold text-gray-900">{l.aplicador_criancas?.nome}</span>
-                  <span className="block text-sm text-gray-500">{l.descricao} · {l.endereco}</span>
+                  <span className="block text-sm text-gray-500">
+                    {l.descricao} · {l.endereco}{l.status === 'pendente' ? ' · aguardando aprovação do administrador' : ''}
+                  </span>
                 </button>
               ))}
-              <button className={`${btnCls} mt-2 w-full`} disabled={localSel === null} onClick={() => { setErro(''); setInfo(''); setCamera('in'); }}>
-                Cheguei ao local
-              </button>
+              {locais.length > 0 && (
+                <button className={`${btnCls} mt-2 w-full`} disabled={localSel === null} onClick={() => { setErro(''); setInfo(''); setCamera('in'); }}>
+                  Cheguei ao local
+                </button>
+              )}
+
+              <div className="mt-4 border-t border-gray-100 pt-4">
+                {!novoAberto ? (
+                  <button type="button" className={`${btnSecCls} w-full`} onClick={() => { setErro(''); setInfo(''); setNovoAberto(true); }}>
+                    Estou em um local não cadastrado
+                  </button>
+                ) : (
+                  <div className="space-y-3">
+                    <p className="text-sm text-gray-600">
+                      Sua localização atual e a selfie serão enviadas ao administrador, que aprova o local na primeira vez. Você já pode iniciar o atendimento.
+                    </p>
+                    <div>
+                      <label htmlFor="n-cr" className={labelCls}>Criança</label>
+                      <select id="n-cr" className={inputCls} value={nCrianca} onChange={(e) => setNCrianca(e.target.value)}>
+                        <option value="">Selecione</option>
+                        {criancas.map((c) => <option key={c.id} value={c.id}>{c.nome}</option>)}
+                      </select>
+                    </div>
+                    <div>
+                      <label htmlFor="n-desc" className={labelCls}>Descrição do local</label>
+                      <input id="n-desc" maxLength={80} className={inputCls} value={nDesc} onChange={(e) => setNDesc(e.target.value)} placeholder="Casa, Colégio X, Clínica…" />
+                    </div>
+                    <div>
+                      <label htmlFor="n-end" className={labelCls}>Endereço</label>
+                      <input id="n-end" maxLength={200} className={inputCls} value={nEnd} onChange={(e) => setNEnd(e.target.value)} placeholder="Rua, número, bairro" />
+                    </div>
+                    <div className="flex gap-2">
+                      <button type="button" className={`${btnCls} flex-1`} onClick={pedirCheckinNovo}>Cheguei ao local novo</button>
+                      <button type="button" className={btnSecCls} onClick={() => setNovoAberto(false)}>Cancelar</button>
+                    </div>
+                  </div>
+                )}
+              </div>
+
+              {pendentes.length > 0 && (
+                <p className="pt-2 text-xs text-gray-500">
+                  Aguardando aprovação do administrador: {pendentes.map((p) => p.descricao).join(', ')}.
+                </p>
+              )}
             </div>
           )}
         </div>
@@ -436,6 +557,9 @@ function CheckinPanel({ perfil }: { perfil: Perfil }) {
                 </span>
               </div>
               <p className="text-sm text-gray-500">{fmtDataHora(f.checkin_em)} até {fmtDataHora(f.checkout_em)} ({f.duracao_min} min)</p>
+              {f.aplicador_locais?.status === 'pendente' && (
+                <p className="text-xs text-amber-800">Local aguardando aprovação do administrador.</p>
+              )}
               <p className="mt-1 text-sm text-gray-700">{f.resumo}</p>
             </div>
           ))
@@ -446,19 +570,27 @@ function CheckinPanel({ perfil }: { perfil: Perfil }) {
 }
 
 // ===== AdminPanel.tsx =====
-type Aba = 'atendimentos' | 'aplicadores' | 'criancas' | 'atribuicoes';
+type Aba = 'atendimentos' | 'locais' | 'aplicadores' | 'criancas' | 'atribuicoes';
 
 function AdminPanel({ perfil }: { perfil: Perfil }) {
   const leitura = perfil.papel === 'medico';
+  const [pend, setPend] = useState(0);
+  const contarPendentes = useCallback(async () => {
+    if (perfil.papel !== 'admin') return;
+    const { count } = await supabase.from('aplicador_locais').select('id', { count: 'exact', head: true }).eq('status', 'pendente');
+    setPend(count ?? 0);
+  }, [perfil.papel]);
   const abas: { id: Aba; nome: string }[] = leitura
     ? [{ id: 'atendimentos', nome: 'Atendimentos' }]
     : [
         { id: 'atendimentos', nome: 'Atendimentos' },
+        { id: 'locais', nome: pend > 0 ? `Locais pendentes (${pend})` : 'Locais pendentes' },
         { id: 'aplicadores', nome: 'Aplicadores' },
         { id: 'criancas', nome: 'Crianças e locais' },
         { id: 'atribuicoes', nome: 'Atribuições' },
       ];
   const [aba, setAba] = useState<Aba>('atendimentos');
+  useEffect(() => { contarPendentes(); }, [contarPendentes, aba]);
 
   return (
     <div>
@@ -471,6 +603,7 @@ function AdminPanel({ perfil }: { perfil: Perfil }) {
         ))}
       </nav>
       {aba === 'atendimentos' && <AbaAtendimentos leitura={leitura} />}
+      {aba === 'locais' && <AbaLocaisPendentes onMudou={contarPendentes} />}
       {aba === 'aplicadores' && <AbaAplicadores meuId={perfil.id} />}
       {aba === 'criancas' && <AbaCriancas />}
       {aba === 'atribuicoes' && <AbaAtribuicoes />}
@@ -495,7 +628,7 @@ interface Linha {
   checkout_foto: string | null;
   aplicador_usuarios: { nome: string } | null;
   aplicador_criancas: { nome: string } | null;
-  aplicador_locais: { descricao: string } | null;
+  aplicador_locais: { descricao: string; status: string } | null;
 }
 interface Edicao {
   id: number;
@@ -508,7 +641,7 @@ interface Edicao {
 interface Opcao { id: string | number; nome: string }
 
 const POR_PAGINA = 15;
-const SEL = '*, aplicador_usuarios(nome), aplicador_criancas(nome), aplicador_locais(descricao)';
+const SEL = '*, aplicador_usuarios(nome), aplicador_criancas(nome), aplicador_locais(descricao, status)';
 
 function AbaAtendimentos({ leitura }: { leitura: boolean }) {
   const [linhas, setLinhas] = useState<Linha[]>([]);
@@ -672,6 +805,9 @@ function AbaAtendimentos({ leitura }: { leitura: boolean }) {
             Chegada: {l.checkin_no_local ? 'no local' : 'fora do local'}{l.checkin_dist_m !== null && ` (${Math.round(l.checkin_dist_m)} m)`} ·
             Saída: {l.checkout_no_local === null ? '—' : l.checkout_no_local ? 'no local' : 'fora do local'}{l.checkout_dist_m !== null && ` (${Math.round(l.checkout_dist_m)} m)`}
           </p>
+          {l.aplicador_locais?.status === 'pendente' && (
+            <p className="mt-1 text-xs font-semibold text-amber-800">Local novo aguardando sua aprovação (aba Locais pendentes).</p>
+          )}
           {l.resumo && <p className="mt-2 text-sm text-gray-800">{l.resumo}</p>}
           {l.observacao_admin && <p className="mt-1 text-sm italic text-gray-500">Obs. admin: {l.observacao_admin}</p>}
           {!leitura && (
@@ -722,6 +858,110 @@ function AbaAtendimentos({ leitura }: { leitura: boolean }) {
         <span className="text-sm text-gray-600">Página {pagina + 1} de {paginas}</span>
         <button className={btnSecCls} disabled={pagina + 1 >= paginas} onClick={() => setPagina(pagina + 1)}>Próxima</button>
       </div>
+    </div>
+  );
+}
+
+/* ====================== LOCAIS PENDENTES ====================== */
+interface Pendente {
+  id: number;
+  descricao: string;
+  endereco: string;
+  latitude: number;
+  longitude: number;
+  raio_metros: number;
+  precisao_m: number | null;
+  sugerido_em: string | null;
+  aplicador_criancas: { nome: string } | null;
+  aplicador_usuarios: { nome: string } | null;
+}
+interface EdLocal { descricao: string; endereco: string; raio: string }
+
+function AbaLocaisPendentes({ onMudou }: { onMudou: () => void }) {
+  const [lista, setLista] = useState<Pendente[]>([]);
+  const [eds, setEds] = useState<Record<number, EdLocal>>({});
+  const [msg, setMsg] = useState('');
+  const [busy, setBusy] = useState(false);
+
+  const carregar = useCallback(async () => {
+    const { data, error } = await supabase
+      .from('aplicador_locais')
+      .select('id, descricao, endereco, latitude, longitude, raio_metros, precisao_m, sugerido_em, aplicador_criancas(nome), aplicador_usuarios!sugerido_por(nome)')
+      .eq('status', 'pendente')
+      .order('sugerido_em', { ascending: true });
+    if (error) { setMsg(error.message); return; }
+    setLista((data ?? []) as unknown as Pendente[]);
+  }, []);
+  useEffect(() => { carregar(); }, [carregar]);
+
+  function campo(p: Pendente): EdLocal {
+    return eds[p.id] ?? { descricao: p.descricao, endereco: p.endereco, raio: String(p.raio_metros) };
+  }
+  function mudar(p: Pendente, parte: Partial<EdLocal>) {
+    setEds({ ...eds, [p.id]: { ...campo(p), ...parte } });
+  }
+
+  async function decidir(p: Pendente, aprovar: boolean) {
+    if (!aprovar && !window.confirm('Recusar este local? Os atendimentos feitos nele continuam marcados para revisão.')) return;
+    setBusy(true);
+    const c = campo(p);
+    const { error } = await supabase.rpc('aplicador_aprovar_local', {
+      p_local_id: p.id,
+      p_aprovar: aprovar,
+      p_descricao: aprovar ? c.descricao : null,
+      p_endereco: aprovar ? c.endereco : null,
+      p_raio: aprovar ? Number(c.raio) || null : null,
+    });
+    setBusy(false);
+    if (error) { setMsg(error.message); return; }
+    setMsg(aprovar ? 'Local aprovado. Os atendimentos feitos nele, com chegada e saída no ponto, passaram a Validado.' : 'Local recusado.');
+    await carregar();
+    onMudou();
+  }
+
+  return (
+    <div className="space-y-4">
+      <p className="text-sm text-gray-600">
+        Locais enviados pelos aplicadores na primeira vez que chegaram. Confira no mapa e na selfie do atendimento antes de aprovar.
+      </p>
+      {msg && <p role="status" className="rounded-lg bg-amber-50 p-3 text-sm text-amber-900">{msg}</p>}
+      {lista.length === 0 && <div className={`${cardCls} text-sm text-gray-500`}>Nenhum local aguardando aprovação.</div>}
+      {lista.map((p) => {
+        const c = campo(p);
+        return (
+          <div key={p.id} className={cardCls}>
+            <p className="font-semibold text-gray-900">{p.aplicador_criancas?.nome}</p>
+            <p className="text-sm text-gray-600">
+              Enviado por {p.aplicador_usuarios?.nome ?? 'aplicador'} em {fmtDataHora(p.sugerido_em)}
+              {p.precisao_m !== null && ` · precisão do GPS ${Math.round(p.precisao_m)} m`}
+            </p>
+            <p className="mt-1 text-sm">
+              <a className="text-amber-700 underline" target="_blank" rel="noreferrer"
+                href={`https://www.google.com/maps?q=${p.latitude},${p.longitude}`}>
+                Ver no mapa ({p.latitude.toFixed(5)}, {p.longitude.toFixed(5)})
+              </a>
+            </p>
+            <div className="mt-3 grid gap-3 sm:grid-cols-3">
+              <div>
+                <label className={labelCls} htmlFor={`pd-${p.id}`}>Descrição</label>
+                <input id={`pd-${p.id}`} className={inputCls} value={c.descricao} onChange={(e) => mudar(p, { descricao: e.target.value })} />
+              </div>
+              <div>
+                <label className={labelCls} htmlFor={`pe-${p.id}`}>Endereço</label>
+                <input id={`pe-${p.id}`} className={inputCls} value={c.endereco} onChange={(e) => mudar(p, { endereco: e.target.value })} />
+              </div>
+              <div>
+                <label className={labelCls} htmlFor={`pr-${p.id}`}>Raio (metros)</label>
+                <input id={`pr-${p.id}`} type="number" min={20} max={2000} className={inputCls} value={c.raio} onChange={(e) => mudar(p, { raio: e.target.value })} />
+              </div>
+            </div>
+            <div className="mt-3 flex gap-2">
+              <button className={btnCls} disabled={busy} onClick={() => decidir(p, true)}>Aprovar</button>
+              <button className={btnSecCls} disabled={busy} onClick={() => decidir(p, false)}>Recusar</button>
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }
@@ -802,7 +1042,7 @@ function AbaAplicadores({ meuId }: { meuId: string }) {
 
 /* ====================== CRIANÇAS E LOCAIS ====================== */
 interface Crianca { id: number; nome: string; medico_id: string | null }
-interface LocalLinha { id: number; crianca_id: number; descricao: string; endereco: string; latitude: number; longitude: number; raio_metros: number }
+interface LocalLinha { id: number; crianca_id: number; descricao: string; endereco: string; latitude: number; longitude: number; raio_metros: number; status: string }
 
 function AbaCriancas() {
   const [criancas, setCriancas] = useState<Crianca[]>([]);
@@ -816,6 +1056,7 @@ function AbaCriancas() {
   const [lLat, setLLat] = useState('');
   const [lLng, setLLng] = useState('');
   const [lRaio, setLRaio] = useState('200');
+  const [raios, setRaios] = useState<Record<number, string>>({});
   const [msg, setMsg] = useState('');
 
   const carregar = useCallback(async () => {
@@ -858,6 +1099,14 @@ function AbaCriancas() {
     });
     setMsg(error ? error.message : 'Local cadastrado.');
     if (!error) { setLDesc(''); setLEnd(''); setLLat(''); setLLng(''); carregar(); }
+  }
+
+  async function salvarRaio(l: LocalLinha) {
+    const r = Number(raios[l.id] ?? l.raio_metros);
+    if (!Number.isFinite(r) || r < 20 || r > 2000) { setMsg('O raio deve ficar entre 20 e 2000 metros.'); return; }
+    const { error } = await supabase.from('aplicador_locais').update({ raio_metros: Math.round(r) }).eq('id', l.id);
+    setMsg(error ? error.message : 'Raio atualizado.');
+    carregar();
   }
 
   async function removerLocal(id: number) {
@@ -920,9 +1169,16 @@ function AbaCriancas() {
           <div key={c.id} className="border-t border-gray-100 py-3 first:border-0">
             <p className="font-semibold text-gray-900">{c.nome}</p>
             {locais.filter((l) => l.crianca_id === c.id).map((l) => (
-              <div key={l.id} className="mt-1 flex items-center justify-between gap-2 text-sm text-gray-600">
-                <span>{l.descricao} · {l.endereco} · raio {l.raio_metros} m</span>
-                <button className="text-red-600 underline" onClick={() => removerLocal(l.id)}>Remover</button>
+              <div key={l.id} className="mt-2 flex flex-wrap items-center justify-between gap-2 text-sm text-gray-600">
+                <span>{l.descricao} · {l.endereco}{l.status !== 'aprovado' ? ` · ${l.status}` : ''}</span>
+                <span className="flex items-center gap-2">
+                  <label className="sr-only" htmlFor={`raio-${l.id}`}>Raio em metros</label>
+                  <input id={`raio-${l.id}`} type="number" min={20} max={2000} className={inputCls + ' !w-24'}
+                    value={raios[l.id] ?? String(l.raio_metros)} onChange={(e) => setRaios({ ...raios, [l.id]: e.target.value })} />
+                  <span>m</span>
+                  <button className={btnSecCls} onClick={() => salvarRaio(l)}>Salvar raio</button>
+                  <button className="text-red-600 underline" onClick={() => removerLocal(l.id)}>Remover</button>
+                </span>
               </div>
             ))}
           </div>
@@ -1068,7 +1324,7 @@ export default function AplicadorApp() {
     conteudo = (
       <div className={`${cardCls} mx-auto max-w-md text-center`}>
         <p className="mb-3 text-sm text-gray-700">
-          Seu acesso ainda não foi liberado pela Behave. Fale com o administrador.
+          Seu acesso ainda não foi liberado pela Beehave. Fale com o administrador.
         </p>
         <button className={btnSecCls} onClick={() => supabase.auth.signOut()}>Sair</button>
       </div>
