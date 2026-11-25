@@ -1125,7 +1125,7 @@ function AbaCriancas() {
         <div className="grid gap-3 sm:grid-cols-2">
           <div><label className={labelCls} htmlFor="c-nome">Nome (ou iniciais)</label>
             <input id="c-nome" required className={inputCls} value={nome} onChange={(e) => setNome(e.target.value)} /></div>
-          <div><label className={labelCls} htmlFor="c-med">Médico responsável (opcional)</label>
+          <div><label className={labelCls} htmlFor="c-med">Supervisor responsável (opcional)</label>
             <select id="c-med" className={inputCls} value={medico} onChange={(e) => setMedico(e.target.value)}>
               <option value="">—</option>
               {medicos.map((m) => <option key={m.id} value={m.id}>{m.nome}</option>)}
