@@ -13,7 +13,7 @@ export default function AdminPanel({ perfil }: { perfil: Perfil }) {
     : [
         { id: 'atendimentos', nome: 'Atendimentos' },
         { id: 'aplicadores', nome: 'Aplicadores' },
-        { id: 'criancas', nome: 'Crianças e locais' },
+        { id: 'Aprendete', nome: 'Aprendente e locais' },
         { id: 'atribuicoes', nome: 'Atribuições' },
       ];
   const [aba, setAba] = useState<Aba>('atendimentos');
