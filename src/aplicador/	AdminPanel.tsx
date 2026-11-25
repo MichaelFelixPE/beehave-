@@ -472,7 +472,7 @@ function AbaCriancas() {
       </form>
 
       <div className={cardCls}>
-        <h2 className="mb-2 text-lg font-bold text-gray-900">Crianças e locais</h2>
+        <h2 className="mb-2 text-lg font-bold text-gray-900">Aprendentes e locais</h2>
         {criancas.length === 0 && <p className="text-sm text-gray-500">Nenhuma criança cadastrada.</p>}
         {criancas.map((c) => (
           <div key={c.id} className="border-t border-gray-100 py-3 first:border-0">
