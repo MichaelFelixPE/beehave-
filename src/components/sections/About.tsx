@@ -30,7 +30,7 @@ const About: React.FC = () => {
             <div className="relative">
               <img
                 src="https://i.imgur.com/shWLLoV.jpeg" 
-                alt="Psicólogo trabalhando com criança"
+                alt="Psicólogo trabalhando com aprendente"
                 className="rounded-2xl shadow-2xl w-full h-auto object-cover"
                 loading="lazy"
                 decoding="async"

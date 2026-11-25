@@ -10,7 +10,7 @@ const testimonials = [
     author: "Luciana Feitoza",
   },
   {
-    quote: "A experiência na Beehave tem sido fundamental para o desenvolvimento do meu filho. É um ambiente de acolhimento, cuidado e respeito, onde cada conquista é valorizada. Os profissionais trabalham com dedicação e sensibilidade, trazendo segurança para a criança e apoio para a família. Cada avanço representa um passo importante na evolução e na construção de um futuro com mais possibilidades. Sem falar no atendimento da AT (Aplicadora) que ajudou a melhorar bastante o desenvolvimento de Aprendente D.. A parceria entre supervisora, coordenadora e At (Aplicadora) tem sido o ponto chave para a evolução do meu filho. Estou satisfeita com o trabalho da clínica.",
+    quote: "A experiência na Beehave tem sido fundamental para o desenvolvimento do meu filho. É um ambiente de acolhimento, cuidado e respeito, onde cada conquista é valorizada. Os profissionais trabalham com dedicação e sensibilidade, trazendo segurança para a aprendente e apoio para a família. Cada avanço representa um passo importante na evolução e na construção de um futuro com mais possibilidades. Sem falar no atendimento da AT (Aplicadora) que ajudou a melhorar bastante o desenvolvimento de Aprendente D.. A parceria entre supervisora, coordenadora e At (Aplicadora) tem sido o ponto chave para a evolução do meu filho. Estou satisfeita com o trabalho da clínica.",
     author: "Janaína",
   },
   {
@@ -18,7 +18,7 @@ const testimonials = [
     author: "José Pires",
   },
   {
-    quote: "Eu sou Josineide, mãe de um aprendente de suporte nível 3, não verbal. Ele faz terapia na clínica beehave que desenvolve um papel fundamental em intervenção comportamental ABA. A clínica beehave faz um excelente trabalho de qualidade nos atendimentos prestados. Tem uma equipe de profissionais preparados e capacitados, dentro da ética e comprometimento com a aprendizagem da criança, seguindo todos os critérios adotados, utilizando de várias técnicas na intervenção comportamental ABA, respeitando os limites do aprendente. Acredito muito na ciência, e que todo trabalho desenvolvido para melhorar o bem-estar de cada ser humano é bem vindo, e a Beehave faz parte dessa transformação na vida cada um deles!",
+    quote: "Eu sou Josineide, mãe de um aprendente de suporte nível 3, não verbal. Ele faz terapia na clínica beehave que desenvolve um papel fundamental em intervenção comportamental ABA. A clínica beehave faz um excelente trabalho de qualidade nos atendimentos prestados. Tem uma equipe de profissionais preparados e capacitados, dentro da ética e comprometimento com a aprendizagem da aprendente, seguindo todos os critérios adotados, utilizando de várias técnicas na intervenção comportamental ABA, respeitando os limites do aprendente. Acredito muito na ciência, e que todo trabalho desenvolvido para melhorar o bem-estar de cada ser humano é bem vindo, e a Beehave faz parte dessa transformação na vida cada um deles!",
     author: "Josineide",
   },
   {
@@ -34,7 +34,7 @@ const testimonials = [
     author: "Juliana",
   },
   {
-    quote: "Hoje nesse depoimento, começo falando, por quê indicar a Beehave? É minha gente, a nossa experiência na Beehave vem de alguns anos. Experiência essa que obtivemos resultados excelentes no desenvolvimento da minha criança. Hoje agradeço a essa equipe por tamanha dedicação e compromisso que tem em fazer o melhor para nossas crianças. Carinho, acolhimento, amor pela profissão, são alguns elogios, diante de muitos, a fazer a esses profissionais. Gratidão a todos por tanta dedicação. Relato de uma mãe feliz e realizada. 🤭🫶🏼",
+    quote: "Hoje nesse depoimento, começo falando, por quê indicar a Beehave? É minha gente, a nossa experiência na Beehave vem de alguns anos. Experiência essa que obtivemos resultados excelentes no desenvolvimento da minha aprendente. Hoje agradeço a essa equipe por tamanha dedicação e compromisso que tem em fazer o melhor para nossas aprendentes. Carinho, acolhimento, amor pela profissão, são alguns elogios, diante de muitos, a fazer a esses profissionais. Gratidão a todos por tanta dedicação. Relato de uma mãe feliz e realizada. 🤭🫶🏼",
     author: "Laura Monteiro",
   },
 ];

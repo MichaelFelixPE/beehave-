@@ -162,7 +162,7 @@ export default function CheckinPanel({ perfil }: { perfil: Perfil }) {
           <p className="my-4 text-center font-mono text-5xl font-bold text-gray-900" aria-live="off">{fmtDuracao(segundos)}</p>
           <label htmlFor="resumo" className="mb-1 block text-sm font-medium text-gray-700">Resumo da sessão (3 a 4 linhas)</label>
           <textarea id="resumo" rows={5} maxLength={400} value={resumo} onChange={(e) => setResumo(e.target.value)}
-            placeholder="O que foi trabalhado e como a criança respondeu."
+            placeholder="O que foi trabalhado e como a aprendente respondeu."
             className="w-full rounded-lg border border-gray-300 p-3 text-sm focus:outline-none focus:ring-2 focus:ring-amber-400" />
           <p className="mb-3 text-right text-xs text-gray-500">{resumo.length}/400</p>
           <button className={`${btnDangerCls} w-full`} onClick={pedirCheckout}>Finalizar atendimento</button>
@@ -171,7 +171,7 @@ export default function CheckinPanel({ perfil }: { perfil: Perfil }) {
         <div className={cardCls}>
           <h2 className="mb-3 text-lg font-bold text-gray-900">Novo atendimento</h2>
           {locais.length === 0 ? (
-            <p className="text-sm text-gray-600">Nenhuma criança atribuída a você ainda. Fale com o administrador.</p>
+            <p className="text-sm text-gray-600">Nenhum aprendente atribuído a você ainda. Fale com o administrador.</p>
           ) : (
             <div className="space-y-2">
               {locais.map((l) => (

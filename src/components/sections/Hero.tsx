@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
             <div className="absolute -bottom-6 -right-6 w-40 h-40 bg-yellow-400 rounded-full opacity-30"></div>
             <img
               src="https://images.pexels.com/photos/8612927/pexels-photo-8612927.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="Criança em sessão de terapia"
+              alt="Aprendente em sessão de terapia"
               className="rounded-lg shadow-xl relative z-10 w-full object-cover object-center h-[500px]"
               fetchPriority="high"
               decoding="async"
