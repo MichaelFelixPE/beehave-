@@ -1263,7 +1263,7 @@ function AbaAtribuicoes() {
 }
 
 // ===== AplicadorApp =====
-const NOME_PAPEL = { admin: 'Administrador', aplicador: 'Aplicador', medico: 'Médico' } as const;
+const NOME_PAPEL = { admin: 'Administrador', aplicador: 'Aplicador', medico: 'Supervisor' } as const;
 
 export default function AplicadorApp() {
   const [session, setSession] = useState<Session | null>(null);
