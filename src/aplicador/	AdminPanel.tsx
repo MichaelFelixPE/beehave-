@@ -1,3 +1,4 @@
+
 import { useCallback, useEffect, useState } from 'react';
 import type { FormEvent } from 'react';
 import { supabase } from './supabase';
@@ -13,7 +14,7 @@ export default function AdminPanel({ perfil }: { perfil: Perfil }) {
     : [
         { id: 'atendimentos', nome: 'Atendimentos' },
         { id: 'aplicadores', nome: 'Aplicadores' },
-        { id: 'Aprendete', nome: 'Aprendente e locais' },
+        { id: 'criancas', nome: 'Aprendentes e locais' },
         { id: 'atribuicoes', nome: 'Atribuições' },
       ];
   const [aba, setAba] = useState<Aba>('atendimentos');
@@ -145,7 +146,7 @@ function AbaAtendimentos({ leitura }: { leitura: boolean }) {
     const { data, error } = await montar().limit(2000);
     if (error) { setMsg(error.message); return; }
     const esc = (v: unknown) => `"${String(v ?? '').replace(/"/g, '""').replace(/\r?\n/g, ' ')}"`;
-    const cab = ['Data', 'Aplicador', 'Criança', 'Local', 'Chegada', 'Saída', 'Duração (min)', 'Presença na chegada', 'Presença na saída', 'Status', 'Resumo'];
+    const cab = ['Data', 'Aplicador', 'Aprendente', 'Local', 'Chegada', 'Saída', 'Duração (min)', 'Presença na chegada', 'Presença na saída', 'Status', 'Resumo'];
     const rows = ((data ?? []) as unknown as Linha[]).map((l) => [
       fmtDataHora(l.checkin_em).slice(0, 8), l.aplicador_usuarios?.nome, l.aplicador_criancas?.nome, l.aplicador_locais?.descricao,
       fmtDataHora(l.checkin_em), fmtDataHora(l.checkout_em), l.duracao_min,
@@ -173,7 +174,7 @@ function AbaAtendimentos({ leitura }: { leitura: boolean }) {
           </select>
         </div>
         <div>
-          <label className={labelCls} htmlFor="f-cr">Criança</label>
+          <label className={labelCls} htmlFor="f-cr">Aprendente</label>
           <select id="f-cr" className={inputCls} value={fCrianca} onChange={(e) => { setPagina(0); setFCrianca(e.target.value); }}>
             <option value="">Todas</option>
             {criancas.map((o) => <option key={o.id} value={o.id}>{o.nome}</option>)}
@@ -358,7 +359,7 @@ function AbaAplicadores({ meuId }: { meuId: string }) {
   );
 }
 
-/* ====================== CRIANÇAS E LOCAIS ====================== */
+/* ====================== APRENDENTES E LOCAIS ====================== */
 interface Crianca { id: number; nome: string; medico_id: string | null }
 interface LocalLinha { id: number; crianca_id: number; descricao: string; endereco: string; latitude: number; longitude: number; raio_metros: number }
 
@@ -391,7 +392,7 @@ function AbaCriancas() {
   async function addCrianca(e: FormEvent) {
     e.preventDefault();
     const { error } = await supabase.from('aplicador_criancas').insert({ nome: nome.trim(), medico_id: medico || null });
-    setMsg(error ? error.message : 'Criança cadastrada.');
+    setMsg(error ? error.message : 'Aprendente cadastrada.');
     if (!error) { setNome(''); setMedico(''); carregar(); }
   }
 
@@ -430,7 +431,7 @@ function AbaCriancas() {
       {msg && <p role="status" className="rounded-lg bg-amber-50 p-3 text-sm text-amber-900">{msg}</p>}
 
       <form onSubmit={addCrianca} className={`${cardCls} space-y-3`}>
-        <h2 className="text-lg font-bold text-gray-900">Nova Aprendente</h2>
+        <h2 className="text-lg font-bold text-gray-900">Nova aprendente</h2>
         <div className="grid gap-3 sm:grid-cols-2">
           <div><label className={labelCls} htmlFor="c-nome">Nome (ou iniciais)</label>
             <input id="c-nome" required className={inputCls} value={nome} onChange={(e) => setNome(e.target.value)} /></div>
@@ -440,13 +441,13 @@ function AbaCriancas() {
               {medicos.map((m) => <option key={m.id} value={m.id}>{m.nome}</option>)}
             </select></div>
         </div>
-        <button type="submit" className={btnCls}>Cadastrar criança</button>
+        <button type="submit" className={btnCls}>Cadastrar aprendente</button>
       </form>
 
       <form onSubmit={addLocal} className={`${cardCls} space-y-3`}>
         <h2 className="text-lg font-bold text-gray-900">Novo local de atendimento</h2>
         <div className="grid gap-3 sm:grid-cols-2">
-          <div><label className={labelCls} htmlFor="l-cr">Criança</label>
+          <div><label className={labelCls} htmlFor="l-cr">Aprendente</label>
             <select id="l-cr" required className={inputCls} value={lCrianca} onChange={(e) => setLCrianca(e.target.value)}>
               <option value="">Selecione</option>
               {criancas.map((c) => <option key={c.id} value={c.id}>{c.nome}</option>)}
@@ -533,14 +534,14 @@ function AbaAtribuicoes() {
   return (
     <div className="space-y-4">
       <form onSubmit={adicionar} className={`${cardCls} space-y-3`}>
-        <h2 className="text-lg font-bold text-gray-900">Atribuir aplicador a uma Aprendente</h2>
+        <h2 className="text-lg font-bold text-gray-900">Atribuir aplicador a uma aprendente</h2>
         <div className="grid gap-3 sm:grid-cols-2">
           <div><label className={labelCls} htmlFor="a-ap">Aplicador</label>
             <select id="a-ap" required className={inputCls} value={ap} onChange={(e) => setAp(e.target.value)}>
               <option value="">Selecione</option>
               {aplicadores.map((o) => <option key={o.id} value={o.id}>{o.nome}</option>)}
             </select></div>
-          <div><label className={labelCls} htmlFor="a-cr">Criança</label>
+          <div><label className={labelCls} htmlFor="a-cr">Aprendente</label>
             <select id="a-cr" required className={inputCls} value={cr} onChange={(e) => setCr(e.target.value)}>
               <option value="">Selecione</option>
               {criancas.map((o) => <option key={o.id} value={o.id}>{o.nome}</option>)}
