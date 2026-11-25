@@ -446,7 +446,7 @@ function AbaCriancas() {
       <form onSubmit={addLocal} className={`${cardCls} space-y-3`}>
         <h2 className="text-lg font-bold text-gray-900">Novo local de atendimento</h2>
         <div className="grid gap-3 sm:grid-cols-2">
-          <div><label className={labelCls} htmlFor="l-cr">Criança</label>
+          <div><label className={labelCls} htmlFor="l-cr">Aprendente</label>
             <select id="l-cr" required className={inputCls} value={lCrianca} onChange={(e) => setLCrianca(e.target.value)}>
               <option value="">Selecione</option>
               {criancas.map((c) => <option key={c.id} value={c.id}>{c.nome}</option>)}
