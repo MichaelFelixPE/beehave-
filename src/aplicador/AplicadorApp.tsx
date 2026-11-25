@@ -1027,7 +1027,7 @@ function AbaAplicadores({ meuId }: { meuId: string }) {
             <div className="flex items-center gap-3">
               <select aria-label={`Papel de ${u.nome}`} className={inputCls + ' !w-auto'} value={u.papel} disabled={u.id === meuId}
                 onChange={(e) => atualizar(u.id, { papel: e.target.value as Papel })}>
-                <option value="aplicador">Aplicador</option><option value="medico">Supervisor</option><option value="admin">Administrador</option>
+                <option value="aplicador">Aplicador</option><option value="medico">Médico</option><option value="admin">Administrador</option>
               </select>
               <label className="flex items-center gap-1 text-sm text-gray-700">
                 <input type="checkbox" checked={u.ativo} disabled={u.id === meuId} onChange={(e) => atualizar(u.id, { ativo: e.target.checked })} /> Ativo
