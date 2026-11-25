@@ -1121,7 +1121,7 @@ function AbaCriancas() {
       {msg && <p role="status" className="rounded-lg bg-amber-50 p-3 text-sm text-amber-900">{msg}</p>}
 
       <form onSubmit={addCrianca} className={`${cardCls} space-y-3`}>
-        <h2 className="text-lg font-bold text-gray-900">Nova criança</h2>
+        <h2 className="text-lg font-bold text-gray-900">Nova Aprendente</h2>
         <div className="grid gap-3 sm:grid-cols-2">
           <div><label className={labelCls} htmlFor="c-nome">Nome (ou iniciais)</label>
             <input id="c-nome" required className={inputCls} value={nome} onChange={(e) => setNome(e.target.value)} /></div>
@@ -1231,7 +1231,7 @@ function AbaAtribuicoes() {
   return (
     <div className="space-y-4">
       <form onSubmit={adicionar} className={`${cardCls} space-y-3`}>
-        <h2 className="text-lg font-bold text-gray-900">Atribuir aplicador a uma criança</h2>
+        <h2 className="text-lg font-bold text-gray-900">Atribuir aplicador a uma Aprendente</h2>
         <div className="grid gap-3 sm:grid-cols-2">
           <div><label className={labelCls} htmlFor="a-ap">Aplicador</label>
             <select id="a-ap" required className={inputCls} value={ap} onChange={(e) => setAp(e.target.value)}>
