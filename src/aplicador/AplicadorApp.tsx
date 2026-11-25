@@ -586,7 +586,7 @@ function AdminPanel({ perfil }: { perfil: Perfil }) {
         { id: 'atendimentos', nome: 'Atendimentos' },
         { id: 'locais', nome: pend > 0 ? `Locais pendentes (${pend})` : 'Locais pendentes' },
         { id: 'aplicadores', nome: 'Aplicadores' },
-        { id: 'criancas', nome: 'Crianças e locais' },
+        { id: 'criancas', nome: 'Aprendentes e locais' },
         { id: 'atribuicoes', nome: 'Atribuições' },
       ];
   const [aba, setAba] = useState<Aba>('atendimentos');
