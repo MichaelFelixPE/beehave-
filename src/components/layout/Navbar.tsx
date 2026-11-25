@@ -10,11 +10,7 @@ const Navbar: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 10);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -34,7 +30,10 @@ const Navbar: React.FC = () => {
     { name: 'Aplicadores', path: '/aplicador' },
   ];
 
-  const handleSectionClick = (e: React.MouseEvent, path: string) => {
+  const handleSectionClick = (
+    e: React.MouseEvent,
+    path: string
+  ) => {
     if (location.pathname === '/') {
       e.preventDefault();
       const sectionId = path.substring(2);
@@ -62,8 +61,9 @@ const Navbar: React.FC = () => {
         isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
         <div className="flex justify-between h-20">
+          {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link
               to="/"
@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
               <img
                 src="https://i.imgur.com/vAT2VjM.png"
                 alt="Beehave Logo"
-                className="w-48 lg:w-60 h-auto"
+                className="w-36 sm:w-40 lg:w-48 xl:w-52 h-auto"
                 fetchPriority="high"
                 decoding="async"
               />
@@ -81,40 +81,51 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center space-x-1 lg:space-x-2">
-            {navLinks.map((link) => {
-              if (link.path === '/') {
+          <div className="hidden md:flex items-center justify-end flex-1 min-w-0 ml-2 lg:ml-4">
+            <div className="flex items-center justify-end gap-x-0.5 lg:gap-x-1 xl:gap-x-2">
+              {navLinks.map((link) => {
+                const commonClass =
+                  "whitespace-nowrap text-black hover:text-yellow-500 transition-colors px-1 lg:px-1.5 xl:px-2 py-2 text-[10px] lg:text-[11px] xl:text-xs 2xl:text-sm font-medium font-bunday";
+
+                if (link.path === '/') {
+                  return (
+                    <Link
+                      key={link.name}
+                      to={link.path}
+                      onClick={handleHomeClick}
+                      className={commonClass}
+                    >
+                      {link.name}
+                    </Link>
+                  );
+                }
+
+                if (link.path.startsWith('/#')) {
+                  return (
+                    <Link
+                      key={link.name}
+                      to={link.path}
+                      onClick={(e) =>
+                        handleSectionClick(e, link.path)
+                      }
+                      className={commonClass}
+                    >
+                      {link.name}
+                    </Link>
+                  );
+                }
+
                 return (
                   <Link
                     key={link.name}
                     to={link.path}
-                    onClick={handleHomeClick}
-                    className="whitespace-nowrap text-black hover:text-yellow-500 transition-colors px-2 py-2 text-xs lg:text-sm font-medium font-bunday"
+                    className={commonClass}
                   >
                     {link.name}
                   </Link>
                 );
-              }
-
-              return link.path.startsWith('/#') ? (
-                <Link
-                  key={link.name}
-                  to={link.path}
-                  onClick={(e) => handleSectionClick(e, link.path)}
-                  className="whitespace-nowrap text-black hover:text-yellow-500 transition-colors px-2 py-2 text-xs lg:text-sm font-medium font-bunday"
-                >
-                  {link.name}
-                </Link>
-              ) : (
-                <Link
-                  key={link.name}
-                  to={link.path}
-                  className="whitespace-nowrap text-black hover:text-yellow-500 transition-colors px-2 py-2 text-xs lg:text-sm font-medium font-bunday"
-                >
-                  {link.name}
-                </Link>
-              );
-            })}
+              })}
+            </div>
           </div>
 
           {/* Mobile Nav Button */}
@@ -148,16 +159,22 @@ const Navbar: React.FC = () => {
                 );
               }
 
-              return link.path.startsWith('/#') ? (
-                <Link
-                  key={link.name}
-                  to={link.path}
-                  onClick={(e) => handleSectionClick(e, link.path)}
-                  className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-base font-medium font-bunday"
-                >
-                  {link.name}
-                </Link>
-              ) : (
+              if (link.path.startsWith('/#')) {
+                return (
+                  <Link
+                    key={link.name}
+                    to={link.path}
+                    onClick={(e) =>
+                      handleSectionClick(e, link.path)
+                    }
+                    className="text-black hover:text-yellow-500 transition-colors px-3 py-2 text-base font-medium font-bunday"
+                  >
+                    {link.name}
+                  </Link>
+                );
+              }
+
+              return (
                 <Link
                   key={link.name}
                   to={link.path}
