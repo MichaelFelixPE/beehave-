@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -61,8 +60,8 @@ const Navbar: React.FC = () => {
         isScrolled ? 'bg-white shadow-md' : 'bg-transparent'
       }`}
     >
-      <div className="max-w-7xl mx-auto px-2 sm:px-4 lg:px-6">
-        <div className="flex justify-between h-20">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between gap-6 h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link
@@ -73,66 +72,64 @@ const Navbar: React.FC = () => {
               <img
                 src="https://i.imgur.com/vAT2VjM.png"
                 alt="Beehave Logo"
-                className="w-36 sm:w-40 lg:w-48 xl:w-52 h-auto"
+                className="w-36 sm:w-40 xl:w-44 h-auto"
                 fetchPriority="high"
                 decoding="async"
               />
             </Link>
           </div>
 
-          {/* Desktop Nav */}
-          <div className="hidden md:flex items-center justify-end flex-1 min-w-0 ml-2 lg:ml-4">
-            <div className="flex items-center justify-end gap-x-0.5 lg:gap-x-1 xl:gap-x-2">
-              {navLinks.map((link) => {
-                const commonClass =
-                  "whitespace-nowrap text-black hover:text-yellow-500 transition-colors px-1 lg:px-1.5 xl:px-2 py-2 text-[10px] lg:text-[11px] xl:text-xs 2xl:text-sm font-medium font-bunday";
+          {/* Desktop Nav (apenas a partir de xl: 1280px para não sobrepor a logo) */}
+          <div className="hidden xl:flex items-center justify-end gap-x-1 2xl:gap-x-2">
+            {navLinks.map((link) => {
+              const commonClass =
+                "whitespace-nowrap text-black hover:text-yellow-500 transition-colors px-2 py-2 text-xs 2xl:text-sm font-medium font-bunday";
 
-                if (link.path === '/') {
-                  return (
-                    <Link
-                      key={link.name}
-                      to={link.path}
-                      onClick={handleHomeClick}
-                      className={commonClass}
-                    >
-                      {link.name}
-                    </Link>
-                  );
-                }
-
-                if (link.path.startsWith('/#')) {
-                  return (
-                    <Link
-                      key={link.name}
-                      to={link.path}
-                      onClick={(e) =>
-                        handleSectionClick(e, link.path)
-                      }
-                      className={commonClass}
-                    >
-                      {link.name}
-                    </Link>
-                  );
-                }
-
+              if (link.path === '/') {
                 return (
                   <Link
                     key={link.name}
                     to={link.path}
+                    onClick={handleHomeClick}
                     className={commonClass}
                   >
                     {link.name}
                   </Link>
                 );
-              })}
-            </div>
+              }
+
+              if (link.path.startsWith('/#')) {
+                return (
+                  <Link
+                    key={link.name}
+                    to={link.path}
+                    onClick={(e) =>
+                      handleSectionClick(e, link.path)
+                    }
+                    className={commonClass}
+                  >
+                    {link.name}
+                  </Link>
+                );
+              }
+
+              return (
+                <Link
+                  key={link.name}
+                  to={link.path}
+                  className={commonClass}
+                >
+                  {link.name}
+                </Link>
+              );
+            })}
           </div>
 
-          {/* Mobile Nav Button */}
-          <div className="md:hidden flex items-center">
+          {/* Mobile/Tablet Nav Button */}
+          <div className="xl:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-black hover:text-yellow-500 transition-colors"
+              className="text-black hover:text-yellow-500 transition-colors p-2"
               aria-label="Toggle menu"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
@@ -141,10 +138,10 @@ const Navbar: React.FC = () => {
         </div>
       </div>
 
-      {/* Mobile Nav Menu */}
+      {/* Mobile/Tablet Nav Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white px-2 pt-2 pb-4 shadow-lg">
-          <div className="flex flex-col space-y-2">
+        <div className="xl:hidden bg-white px-4 pt-2 pb-4 shadow-lg border-t border-gray-100">
+          <div className="flex flex-col space-y-1">
             {navLinks.map((link) => {
               if (link.path === '/') {
                 return (
