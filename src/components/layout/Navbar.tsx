@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -24,12 +25,13 @@ const Navbar: React.FC = () => {
     { name: 'Início', path: '/' },
     { name: 'Sobre', path: '/#about' },
     { name: 'Beehave Serviços', path: '/#services' },
-    { name: 'Beehave Cursos', path: '/cursos' }, // REATIVADO
+    { name: 'Beehave Cursos', path: '/cursos' },
     { name: 'BeeEquipe', path: '/#team' },
     { name: 'Depoimentos', path: '/#testimonials' },
     { name: 'FAQ', path: '/#faq' },
     { name: 'Contato', path: '/#contact' },
     { name: 'Trabalhe Conosco', path: '/trabalhe-conosco' },
+    { name: 'Aplicadores', path: '/aplicador' },
   ];
 
   const handleSectionClick = (e: React.MouseEvent, path: string) => {
@@ -37,10 +39,12 @@ const Navbar: React.FC = () => {
       e.preventDefault();
       const sectionId = path.substring(2);
       const element = document.getElementById(sectionId);
+
       if (element) {
         element.scrollIntoView({ behavior: 'smooth' });
       }
     }
+
     setIsOpen(false);
   };
 
@@ -48,6 +52,7 @@ const Navbar: React.FC = () => {
     if (location.pathname === '/') {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
     setIsOpen(false);
   };
 
@@ -60,11 +65,21 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-20">
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="flex items-center" onClick={handleHomeClick}>
-              <img src="https://i.imgur.com/vAT2VjM.png" alt="Beehave Logo" className="w-48 lg:w-60 h-auto" fetchPriority="high" decoding="async" />
+            <Link
+              to="/"
+              className="flex items-center"
+              onClick={handleHomeClick}
+            >
+              <img
+                src="https://i.imgur.com/vAT2VjM.png"
+                alt="Beehave Logo"
+                className="w-48 lg:w-60 h-auto"
+                fetchPriority="high"
+                decoding="async"
+              />
             </Link>
           </div>
-          
+
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-1 lg:space-x-2">
             {navLinks.map((link) => {
@@ -80,6 +95,7 @@ const Navbar: React.FC = () => {
                   </Link>
                 );
               }
+
               return link.path.startsWith('/#') ? (
                 <Link
                   key={link.name}
@@ -100,7 +116,7 @@ const Navbar: React.FC = () => {
               );
             })}
           </div>
-          
+
           {/* Mobile Nav Button */}
           <div className="md:hidden flex items-center">
             <button
@@ -131,6 +147,7 @@ const Navbar: React.FC = () => {
                   </Link>
                 );
               }
+
               return link.path.startsWith('/#') ? (
                 <Link
                   key={link.name}
