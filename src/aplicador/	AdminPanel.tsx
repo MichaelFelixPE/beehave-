@@ -540,7 +540,7 @@ function AbaAtribuicoes() {
               <option value="">Selecione</option>
               {aplicadores.map((o) => <option key={o.id} value={o.id}>{o.nome}</option>)}
             </select></div>
-          <div><label className={labelCls} htmlFor="a-cr">Criança</label>
+          <div><label className={labelCls} htmlFor="a-cr">Aprendente</label>
             <select id="a-cr" required className={inputCls} value={cr} onChange={(e) => setCr(e.target.value)}>
               <option value="">Selecione</option>
               {criancas.map((o) => <option key={o.id} value={o.id}>{o.nome}</option>)}
