@@ -25,13 +25,16 @@ const ScrollToTop: React.FC = () => {
   return null;
 };
 
-function App() {
+const AppContent: React.FC = () => {
+  const { pathname } = useLocation();
+  const isAplicadorRoute = pathname.startsWith('/aplicador');
+
   return (
-    <Router>
+    <>
       <ScrollToTop />
 
       <div className="flex flex-col min-h-screen">
-        <Navbar />
+        {!isAplicadorRoute && <Navbar />}
 
         <main className="flex-grow">
           <Routes>
@@ -52,12 +55,23 @@ function App() {
               element={<ValidarCertificadoPage />}
             />
 
-            <Route path="/aplicador" element={<AplicadorApp />} />
+            <Route
+              path="/aplicador/*"
+              element={<AplicadorApp />}
+            />
           </Routes>
         </main>
 
-        <Footer />
+        {!isAplicadorRoute && <Footer />}
       </div>
+    </>
+  );
+};
+
+function App() {
+  return (
+    <Router>
+      <AppContent />
     </Router>
   );
 }
