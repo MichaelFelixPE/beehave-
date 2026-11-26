@@ -21,17 +21,6 @@ export default function AplicadorLogin() {
 
   return (
     <div className={`${cardCls} mx-auto max-w-sm`}>
-      {/* Botão para voltar à página principal */}
-      <div className="mb-4">
-        <a
-          href="/"
-          className="inline-flex items-center gap-1.5 text-sm font-medium text-gray-500 transition-colors hover:text-gray-900"
-        >
-          <span aria-hidden="true">&larr;</span>
-          Voltar para a página principal
-        </a>
-      </div>
-
       <div className="mb-4 flex items-center gap-3">
         <LogoAbelha size={40} />
         <div>
@@ -39,7 +28,6 @@ export default function AplicadorLogin() {
           <p className="text-sm text-gray-500">Acesso restrito à equipe Behave</p>
         </div>
       </div>
-
       <form onSubmit={entrar} className="space-y-3">
         <div>
           <label htmlFor="ap-email" className={labelCls}>E-mail</label>
