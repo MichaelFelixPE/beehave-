@@ -19,7 +19,7 @@ const supabase = createClient(
   { auth: { storageKey: 'behave-aplicador-auth' } }
 );
 
-type Papel = 'admin' | 'aplicador' | 'medico';
+type Papel = 'admin' | 'aplicador' | 'medico'|'psicologo'; 
 
 interface Perfil {
   id: string;
